@@ -24,25 +24,7 @@ const CustomRedo = () => (
   </svg>
 );
 
-// Undo and redo functions for Custom Toolbar
-function undoChange(this: {
-  [x: string]: any;
-  undo: () => void;
-  redo: () => void;
-}) {
-  this.quill.history.undo();
-}
-function redoChange(this: {
-  [x: string]: any;
-  undo: (this: {
-    [x: string]: any;
-    undo: () => void;
-    redo: () => void;
-  }) => void;
-  redo: () => void;
-}) {
-  this.quill.history.redo();
-}
+
 
 // Add sizes to whitelist and register them
 const Size = Quill.import("formats/size");
@@ -62,42 +44,8 @@ Font.whitelist = [
 Quill.register(Font, true);
 
 // Modules object for setting up the Quill editor
-export const modules = {
-  toolbar: {
-    container: "#toolbar",
-    handlers: {
-      undo: undoChange,
-      redo: redoChange,
-    },
-  },
-  history: {
-    delay: 500,
-    maxStack: 100,
-    userOnly: true,
-  },
-};
+
 // Formats objects for setting up the Quill editor
-export const formats = [
-  "video",
-  "header",
-  "font",
-  "size",
-  "bold",
-  "italic",
-  "underline",
-  "align",
-  "strike",
-  "script",
-  "blockquote",
-  "background",
-  "list",
-  "bullet",
-  "indent",
-  "link",
-  "image",
-  "color",
-  "code-block",
-];
 
 // Quill Toolbar component
 const QuillToolbar = () => (
