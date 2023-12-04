@@ -20,7 +20,6 @@ const QuillEditor = () => {
     e.preventDefault;
 
     if (typeof document !== 'undefined') {
-      let element = document.querySelector('.class-name')
       
       var myEditor = document.querySelector(".ql-editor");
     var htmlContent = myEditor?.innerHTML || "";
