@@ -1,11 +1,30 @@
 "use client";
-import React, { useRef, useState } from "react";
-import ReactQuill from "react-quill";
+import dynamic from "next/dynamic";
+import React, { useMemo, useRef, useState } from "react";
+//import ReactQuill, { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import QuillToolbar, { formats, modules } from "@/app/(components)/QuillEditorToolbar";
+// import QuillToolbar, {
+//   formats,
+//   modules,
+// } from "@/app/(components)/QuillEditorToolbar";
+// import dynamic from "next/dynamic";
+
 
 const QuillEditor = () => {
+  const ReactQuill = useMemo(
+    () => dynamic(() => import("react-quill"), { ssr: false }),
+    []
+);
+  const QuillToolbar = useMemo(
+    () => dynamic(() => import("@/app/(components)/QuillEditorToolbar"), { ssr: false }),
+    []
+);
+
+const { formats, modules }:any = dynamic(() => import('@/app/(components)/QuillEditorToolbar'), { ssr: false });
+
   const [content, setContent] = useState({ value: "" });
+ // const quillRef = useRef<ReactQuill>(null);
+  //const turndown = new TurndownService();
 
   const handleChange = (value: string) => {
     setContent({ value });
@@ -13,24 +32,23 @@ const QuillEditor = () => {
 
   const handleUpload = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
+    if(typeof document !== 'undefined' && document.querySelector('ql-editor') && typeof window !== 'undefined'){
+    var myEditor = document.querySelector(".ql-editor");
+    var htmlContent = myEditor?.innerHTML || "";
+    console.log("Content:querySelector==", htmlContent);
 
-    if (typeof document !== 'undefined') {
-      var myEditor = document.querySelector(".ql-editor");
-      var htmlContent = myEditor?.innerHTML || "";
-      console.log("Content:querySelector==", htmlContent);
-
-      const writeHtmlFileApi = async () => {
-        await fetch("/api/ncism", {
-          method: "POST",
-          body: JSON.stringify({ content: htmlContent }),
-        });
-      };
-      writeHtmlFileApi();
-    }
+    const writeHtmlFileApi = async () => {
+      await fetch("/api/ncism", {
+        method: "POST",
+        body: JSON.stringify({ content: htmlContent }),
+      });
+    };
+    writeHtmlFileApi();
+  }
   };
 
   return (
-    <div className="">
+    <div>
       <QuillToolbar />
       <div id="editorcontainer">
         <ReactQuill
@@ -40,9 +58,10 @@ const QuillEditor = () => {
           placeholder="Write something awesome..."
           modules={modules}
           formats={formats}
+          //ref={quillRef}
         />
         <button
-          className="text-white bg-teal-400 py-2 px-3 rounded-lg mt-10 text-center align-middle block mx-auto"
+          className=" text-white bg-teal-400 py-2 px-3 rounded-lg mt-10 text-center align-middle block mx-auto"
           onClick={(e) => handleUpload(e)}
         >
           Upload
@@ -51,5 +70,6 @@ const QuillEditor = () => {
     </div>
   );
 };
+
 
 export default QuillEditor;
