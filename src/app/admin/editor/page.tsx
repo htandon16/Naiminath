@@ -117,18 +117,33 @@ const QuillEditor = () => {
 
   const handleUpload = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
-    
+
     var myEditor = document.querySelector(".ql-editor");
     var htmlContent = myEditor?.innerHTML || "";
     console.log("Content:querySelector==", htmlContent);
 
     const writeHtmlFileApi = async () => {
-      await fetch("/api/ncism", {
-        method: "POST",
-        body: JSON.stringify({ content: htmlContent }),
-      });
+
+      try {
+        const response = await fetch("/api/ncism", {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ content: htmlContent }),
+        });
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log(data);
+        return data;
+      } catch (error: any) {
+        console.error("Error fetching data:", error.message);
+      }
     };
     writeHtmlFileApi();
+    
   
   };
 
