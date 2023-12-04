@@ -133,7 +133,7 @@ const QuillEditor = () => {
           body: JSON.stringify({ content: htmlContent }),
         });
         if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
+          throw new Error(`HTTP error! Status: ${response}`);
         }
         const data = await response.json();
         console.log(data);
