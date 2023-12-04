@@ -5,10 +5,9 @@ import path from "path";
 
 export async function GET(request:NextRequest) {
 
-  
-  //const directoryPath = `src/app/blogfiles`;
-  //const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
-  const directoryPath = path.join('/temp', 'blogfiles');
+  // const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
+  // console.log("Current working directory:", directoryPath);
+  const directoryPath = '/temp'
   console.log("Current working directory:", directoryPath);
 
   if (!fs.existsSync(directoryPath)) {
@@ -38,23 +37,26 @@ export async function POST(req: NextRequest,res:NextResponse) {
   try{
     const body = await req.json();
 
-   // const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
-    const directoryPath = path.join('/temp', 'blogfiles');
+    // const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
+    // console.log("directoryPath", directoryPath);
+  
+    // const fileName = `dynamicFile_${Date.now()}.html`;
+    // const filePath = `${directoryPath}/${fileName}`; // Adjusted file path
+    // console.log("HTML string has been written to the file:", filePath);
+  
+    // // Make sure the directory exists before writing the file
+    // if (!fs.existsSync(directoryPath)) {
+    //   fs.mkdirSync(directoryPath, { recursive: true });
+    // }
+
+    const directoryPath = path.join('/temp', `dynamicFile_${Date.now()}.html`);
     console.log("directoryPath", directoryPath);
   
-    const fileName = `dynamicFile_${Date.now()}.html`;
-    //const filePath = `${directoryPath}/${fileName}`; // Adjusted file path
-    const filePath = `${directoryPath}/${fileName}`; // Adjusted file path
-    console.log("HTML string has been written to the file:", filePath);
+
   
-    // Make sure the directory exists before writing the file
-    if (!fs.existsSync(directoryPath)) {
-      fs.mkdirSync(directoryPath, { recursive: true });
-    }
+    fs.writeFileSync(directoryPath, body.content, "utf-8");
   
-    fs.writeFileSync(filePath, body.content, "utf-8");
-  
-    console.log("HTML string has been written to the file:", filePath);
+   // console.log("HTML string has been written to the file:", filePath);
     return new NextResponse(body);
   }catch(e){
     return new Response(`Error:${e}`);
