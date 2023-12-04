@@ -9,6 +9,7 @@ const nextConfig = {
     },
     experimental: {
         scrollRestoration: true,
+        nftTracing: true 
     },
     rewrites: async () => {
         return [
