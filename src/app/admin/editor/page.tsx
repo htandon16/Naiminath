@@ -117,6 +117,7 @@ const QuillEditor = () => {
 
   const handleUpload = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
+    
     var myEditor = document.querySelector(".ql-editor");
     var htmlContent = myEditor?.innerHTML || "";
     console.log("Content:querySelector==", htmlContent);

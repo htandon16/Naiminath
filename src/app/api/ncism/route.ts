@@ -35,7 +35,8 @@ export async function GET(request:NextRequest) {
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const directoryPath = `src/app/blogfiles`;
+  //const directoryPath = `src/app/blogfiles`;
+  const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
   console.log("directoryPath", directoryPath);
 
   const fileName = `dynamicFile_${Date.now()}.html`;
