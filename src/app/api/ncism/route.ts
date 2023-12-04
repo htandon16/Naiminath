@@ -5,6 +5,9 @@ import path from "path";
 
 export async function GET(request:NextRequest) {
   const directoryPath = `src/app/blogfiles`;
+
+  console.log("Current working directory:", process.cwd());
+  
   if (!fs.existsSync(directoryPath)) {
     return new Response("Directory not found", { status: 404 });
   }
