@@ -55,7 +55,7 @@ export async function POST(req: NextRequest,res:NextResponse) {
     console.log("HTML string has been written to the file:", filePath);
     return new NextResponse(body);
   }catch(e){
-    return new Response(JSON.stringify(e), {});
+    return new Response(`Error:${e}`);
   } 
   
   //
