@@ -7,7 +7,7 @@ import QuillToolbar, {
   modules,
 } from "@/app/(components)/QuillEditorToolbar";
 
-export const QuillEditor = () => {
+const QuillEditor = () => {
   const [content, setContent] = useState({ value: "" });
   const quillRef = useRef<ReactQuill>(null);
   //const turndown = new TurndownService();
