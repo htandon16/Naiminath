@@ -19,7 +19,10 @@ const QuillEditor = () => {
   const handleUpload = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault;
 
-    var myEditor = document.querySelector(".ql-editor");
+    if (typeof document !== 'undefined') {
+      let element = document.querySelector('.class-name')
+      
+      var myEditor = document.querySelector(".ql-editor");
     var htmlContent = myEditor?.innerHTML || "";
     console.log("Content:querySelector==", htmlContent);
 
@@ -30,6 +33,8 @@ const QuillEditor = () => {
       });
     };
     writeHtmlFileApi();
+   }
+    
 
     // const fileName = `dynamicFile_${Date.now()}.html`;
 
