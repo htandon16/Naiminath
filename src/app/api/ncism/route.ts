@@ -7,7 +7,8 @@ export async function GET(request:NextRequest) {
 
   
   //const directoryPath = `src/app/blogfiles`;
-  const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
+  //const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
+  const directoryPath = path.join('/temp', 'blogfiles');
   console.log("Current working directory:", directoryPath);
 
   if (!fs.existsSync(directoryPath)) {
@@ -37,11 +38,12 @@ export async function POST(req: NextRequest,res:NextResponse) {
   try{
     const body = await req.json();
 
-    //const directoryPath = `src/app/blogfiles`;
-    const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
+   // const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
+    const directoryPath = path.join('/temp', 'blogfiles');
     console.log("directoryPath", directoryPath);
   
     const fileName = `dynamicFile_${Date.now()}.html`;
+    //const filePath = `${directoryPath}/${fileName}`; // Adjusted file path
     const filePath = `${directoryPath}/${fileName}`; // Adjusted file path
     console.log("HTML string has been written to the file:", filePath);
   
