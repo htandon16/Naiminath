@@ -3,7 +3,7 @@ import fs from "fs";
 import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 
-export async function GET() {
+export async function GET(request:NextRequest) {
   const directoryPath = `src/app/blogfiles`;
   if (!fs.existsSync(directoryPath)) {
     return new Response("Directory not found", { status: 404 });

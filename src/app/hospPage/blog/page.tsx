@@ -13,7 +13,8 @@ interface Blog {
 const BlogPage = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const { blogData, setBlogData } = useGlobalContext();
-
+  const router = useRouter();
+  
   const fetchBlogsApi = async () => {
     try {
       const response = await fetch("/api/ncism", {
@@ -36,7 +37,7 @@ const BlogPage = () => {
       console.log("getResult=", result);
     });
   }, []);
-  const router = useRouter();
+ 
   return (
     <div className="min-h-screen flex flex-wrap gap-5 p-[20px] justify-center items-center">
       {blogs.map((blog, index) => (
