@@ -33,7 +33,7 @@ export async function GET(request:NextRequest) {
   });
 }
 
-export async function POST(req: NextRequest) {
+export async function POST(req: NextRequest,res:NextResponse) {
   const body = await req.json();
   //const directoryPath = `src/app/blogfiles`;
   const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
@@ -51,6 +51,6 @@ export async function POST(req: NextRequest) {
   fs.writeFileSync(filePath, body.content, "utf-8");
 
   console.log("HTML string has been written to the file:", filePath);
-
-  return new NextResponse(body);
+  return new Response(JSON.stringify(body), {});
+  //return new NextResponse(body);
 }
