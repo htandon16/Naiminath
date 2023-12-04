@@ -4,12 +4,14 @@ import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 
 export async function GET(request:NextRequest) {
-  const directoryPath = `src/app/blogfiles`;
 
-  //console.log("Current working directory:", process.cwd());
+  
+  //const directoryPath = `src/app/blogfiles`;
+  const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
+  console.log("Current working directory:", directoryPath);
 
   if (!fs.existsSync(directoryPath)) {
-    return new Response(`Directory not found, current path${process.cwd()}`, { status: 404 });
+    return new Response(`Directory not found`, { status: 404 });
   }
   const files = fs.readdirSync(directoryPath);
 
