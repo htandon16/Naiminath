@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import "flowbite";
 import { useGlobalContext } from "../context/store";
 import { usePathname } from "next/navigation";
 
