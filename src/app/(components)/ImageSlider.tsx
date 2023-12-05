@@ -27,9 +27,10 @@ const ImageSlider = () => {
   return (
     <Slider {...settings}>
       {/* Add your slider images here */}
-      <div className="h-[80vh] w-[100vw] bg-cover bg-no-repeat bg-[url('/images/image1.png')]" />
-      <div className="h-[80vh] w-[100vw] bg-cover bg-no-repeat bg-[url('/images/image2.png')]" />
-      <div className="h-[80vh] w-[100vw] bg-cover bg-no-repeat bg-[url('/images/image3.jpg')]" />
+      <div className="h-[80vh] w-[100vw] bg-cover bg-no-repeat bg-[url('/images/banner1.jpg')]" />
+      <div className="h-[80vh] w-[100vw] bg-cover bg-no-repeat bg-[url('/images/banner2.jpg')]" />
+      <div className="h-[80vh] w-[100vw] bg-cover bg-no-repeat bg-[url('/images/banner3.jpg')]" />
+      <div className="h-[80vh] w-[100vw] bg-cover bg-no-repeat bg-[url('/images/banner4.jpg')]" />
       {/* Add more images as needed */}
     </Slider>
   );

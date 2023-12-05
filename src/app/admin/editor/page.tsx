@@ -89,24 +89,6 @@ const formats = [
 
 const QuillEditor = () => {
 
-//   const ReactQuill = useMemo(
-//     () => dynamic(() => import("react-quill"), { 
-//       ssr: false,
-//       loading: () => <p>Loading Quill Editor...</p>, }),
-//     []
-// );
-//   const QuillToolbar = useMemo(
-//     () => dynamic(() => import("@/app/(components)/QuillEditorToolbar"), { 
-//       ssr: false,
-//       loading: () => <p>Loading Quill Editor...</p>,  }),
-//     []
-// );
-
-// const { formats, modules }:any = dynamic(() => import('@/app/(components)/QuillEditorToolbar'), {
-//    ssr: false, 
-//    loading: () => <p>Loading Quill Editor...</p>, 
-//   });
-
   const [content, setContent] = useState({ value: "" });
  // const quillRef = useRef<ReactQuill>(null);
   //const turndown = new TurndownService();
