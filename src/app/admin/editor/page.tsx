@@ -90,6 +90,7 @@ const formats = [
 const QuillEditor = () => {
 
   const [content, setContent] = useState({ value: "" });
+  const [isLoading, setIsLoading] = useState(false);
  // const quillRef = useRef<ReactQuill>(null);
   //const turndown = new TurndownService();
 
@@ -99,6 +100,7 @@ const QuillEditor = () => {
 
   const handleUpload = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
+    setIsLoading(true);
 
     var myEditor = document.querySelector(".ql-editor");
     var htmlContent = myEditor?.innerHTML || "";
@@ -117,11 +119,14 @@ const QuillEditor = () => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response}`);
         }
+        setContent({ value: "" }); // Empty the editor content
         const data = await response.json();
         console.log(data);
         return data;
       } catch (error: any) {
         console.error("Error fetching data:", error.message);
+      }finally {
+        setIsLoading(false);
       }
     };
     writeHtmlFileApi();
@@ -145,8 +150,9 @@ const QuillEditor = () => {
         <button
           className=" text-white bg-teal-400 py-2 px-3 rounded-lg mt-10 text-center align-middle block mx-auto"
           onClick={(e) => handleUpload(e)}
+          disabled={isLoading}
         >
-          Upload
+           {isLoading ? 'Uploading...' : 'Upload'}
         </button>
       </div>
     </div>
