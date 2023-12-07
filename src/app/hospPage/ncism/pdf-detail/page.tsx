@@ -1,13 +1,11 @@
-// components/PdfViewer.js
+'use client'
 import { useGlobalContext } from "@/app/context/store";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 
 const PdfViewer = () => {
   const { blogData } = useGlobalContext();
 
   console.log("data=========", blogData);
-  useEffect(() => {}, []);
+ 
 
   return (
     <div className=" flex flex-col">

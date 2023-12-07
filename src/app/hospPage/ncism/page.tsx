@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import path from "path";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/app/context/store";
 
 interface Doc {
@@ -105,8 +105,6 @@ const NCISM = () => {
                 />
                 <Link
                   href='#' // Assuming pdfDoc.content contains the base64-encoded PDF content
-                  target="_blank"
-                  rel="noopener noreferrer"
                     onClick={async () => {
                       const dataUrl = `data:application/pdf;base64,${pdfDoc.content}`;
                       setBlogData(dataUrl);
