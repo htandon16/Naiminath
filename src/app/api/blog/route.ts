@@ -48,8 +48,14 @@ export async function POST(req: NextRequest,res:NextResponse) {
     // if (!fs.existsSync(directoryPath)) {
     //   fs.mkdirSync(directoryPath, { recursive: true });
     // }
+    const dirPath = '/tmp/blog';
 
-    const directoryPath = path.join('/tmp/blog', `dynamicFile_${Date.now()}.html`);
+    // Check if the directory exists
+    if (!fs.existsSync(dirPath)) {
+      // If it doesn't exist, create the directory
+      fs.mkdirSync(dirPath, { recursive: true });
+    }
+    const directoryPath = path.join(dirPath, `dynamicFile_${Date.now()}.html`);
     console.log("directoryPath", directoryPath);
   
 
