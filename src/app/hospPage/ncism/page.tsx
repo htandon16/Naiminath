@@ -103,16 +103,16 @@ const NCISM = () => {
                   size={customSize}
                   className="pr-3"
                 />
-                <button
-                    onClick={async () => {
-                      const dataUrl = `data:application/pdf;base64,${pdfDoc.content}`;
-                      setBlogData(dataUrl);
-                      // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
-                      router.push(`/hospPage/ncism/pdf-detail`);
-                    }}
+                <Link href={'data:application/pdf;base64,${pdfDoc.content}'}
+                    // onClick={async () => {
+                    //   const dataUrl = `data:application/pdf;base64,${pdfDoc.content}`;
+                    //   setBlogData(dataUrl);
+                    //   // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
+                    //   router.push(`/hospPage/ncism/pdf-detail`);
+                    // }}
                 >
                   {pdfDoc.title}
-                </button>
+                </Link>
                 {/* <Link
                   href={`/tmp/upload/${encodeURIComponent(pdfDoc.fileName)}`}
                   target="_blank"
