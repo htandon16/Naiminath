@@ -10,7 +10,7 @@ const PdfViewer = () => {
   return (
     <div className=" flex flex-col">
       <div>{blogData}</div>
-      <iframe src={blogData} width="100%" height="500px"></iframe>
+      <iframe srcDoc={blogData} width="100%" height="500px"></iframe>
     </div>
   );
 };
