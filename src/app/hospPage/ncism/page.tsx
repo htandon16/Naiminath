@@ -123,7 +123,8 @@ const NCISM = () => {
 };
 
 function createBlobUrl(content: string): string {
-  const blob = new Blob([content], { type: 'application/pdf' });
+  const pdfContent = atob(content);
+  const blob = new Blob([pdfContent], { type: 'application/pdf' });
   return URL.createObjectURL(blob);
 }
 
