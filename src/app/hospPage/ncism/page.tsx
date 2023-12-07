@@ -104,11 +104,12 @@ const NCISM = () => {
                   className="pr-3"
                 />
                 <Link
-                  href={`data:application/pdf;base64,${pdfDoc.content}`} // Assuming pdfDoc.content contains the base64-encoded PDF content
+                  href='#' // Assuming pdfDoc.content contains the base64-encoded PDF content
                   target="_blank"
                   rel="noopener noreferrer"
                     onClick={async () => {
-                      setBlogData(pdfDoc.content);
+                      const dataUrl = `data:application/pdf;base64,${pdfDoc.content}`;
+                      setBlogData(dataUrl);
                       // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
                       router.push(`/hospPage/ncism/pdf-detail`);
                     }}

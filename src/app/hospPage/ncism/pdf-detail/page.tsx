@@ -11,6 +11,7 @@ const PdfViewer = () => {
 
   return (
     <div>
+      
       <iframe src={blogData} width="100%" height="500px"></iframe>
     </div>
   );
