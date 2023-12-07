@@ -8,8 +8,8 @@ const PdfViewer = () => {
  
 
   return (
-    <div className=" flex flex-col">
-      <iframe src={blogData} width="70%" height="350px"></iframe>
+    <div className=" flex flex-col justify-center items-center w-full h-screen overflow-auto bg-slate-400">
+      <iframe src={blogData} width="70%" height="fit"></iframe>
     </div>
   );
 };
