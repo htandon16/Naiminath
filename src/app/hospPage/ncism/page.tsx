@@ -102,7 +102,7 @@ const NCISM = () => {
               <div
                 key={index}
                 className="flex justify-start items-center w-full h-fit border-b-[0.01px] p-3"
-                onClick={async (e) => DocDetail(pdfDoc.fileName)}
+                onClick={async (e) => DocDetail(pdfDoc.content)}
               >
                 <FontAwesomeIcon
                   color="#23a455"
