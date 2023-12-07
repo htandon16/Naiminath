@@ -16,6 +16,7 @@ interface Doc {
   filePath: string;
   content: string;
   title: string;
+  blobUrl: string;
 }
 
 const NCISM = () => {
@@ -98,10 +99,18 @@ const NCISM = () => {
                   size={customSize}
                   className="pr-3"
                 />
-
-                <Link href={`/tmp/upload/${encodeURIComponent(pdfDoc.fileName)}`} target="_blank">
-                {pdfDoc.title}
+                <Link
+                  href={`${pdfDoc.blobUrl}`}
+                  target="_blank"
+                >
+                  {pdfDoc.title}
                 </Link>
+                {/* <Link
+                  href={`/tmp/upload/${encodeURIComponent(pdfDoc.fileName)}`}
+                  target="_blank"
+                >
+                  {pdfDoc.title}
+                </Link> */}
 
                 {/* <p className="text-[#8ed1fc]">{pdfDoc.title}</p> */}
               </div>
@@ -113,7 +122,6 @@ const NCISM = () => {
 };
 
 const DocDetail = (filename: string) => {
-  
   const dirPath = path.join(process.cwd(), process.env.DEV_DOC_STORE_PATH!);
   console.log("file path=======", dirPath);
   const fileUrl = path.join(dirPath, filename);

@@ -54,18 +54,16 @@ const getStringBeforeLastDot = (inputString: string): string | null =>
   (inputString.lastIndexOf('.') !== -1) ? inputString.substring(0, inputString.lastIndexOf('.')) : null;
 
 
-export async function GET(request:NextRequest) {
-
-
-    //const directoryPath = path.join(process.env.LIVE_DOC_STORE_PATH!);
-    const directoryPath = '/tmp/upload'
+  export async function GET(request: NextRequest) {
+    const directoryPath = '/tmp/upload';
     console.log(directoryPath);
-
+  
     console.log("Current working directory:", directoryPath);
   
     if (!existsSync(directoryPath)) {
       return new Response(`Directory not found`, { status: 404 });
     }
+  
     const files = readdirSync(directoryPath);
   
     // Create a list of file names
@@ -73,15 +71,25 @@ export async function GET(request:NextRequest) {
       const filePath = `${directoryPath}/${file}`;
       const fileContent = readFileSync(filePath, "utf-8");
   
-      return {
+      // Convert file content to a Blob
+      const blob = new Blob([fileContent], { type: 'application/octet-stream' });
+  
+      // Create a Blob URL
+      const blobUrl = URL.createObjectURL(blob);
+  
+      // Add the Blob URL as a parameter to the response
+      const responseParams = {
         fileName: file,
         filePath: filePath,
         content: fileContent,
-        title:getStringBeforeLastDot(file)
+        title: getStringBeforeLastDot(file),
+        blobUrl: blobUrl, // Add Blob URL as a parameter
       };
+  
+      return responseParams;
     });
   
-    console.log("readFIles==", JSON.stringify(fileList));
+    console.log("readFiles == ", JSON.stringify(fileList));
     return new Response(JSON.stringify(fileList), {
       headers: { "Content-Type": "application/json" },
     });
