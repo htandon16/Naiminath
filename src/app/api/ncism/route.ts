@@ -69,7 +69,7 @@ const getStringBeforeLastDot = (inputString: string): string | null =>
     // Create a list of file names
     const fileList = files.map((file) => {
       const filePath = `${directoryPath}/${file}`;
-      const fileContent = readFileSync(filePath);
+      const fileContent = readFileSync(filePath,"base64");
   
     
   
