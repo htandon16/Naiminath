@@ -25,7 +25,7 @@ const NCISM = () => {
 
   const fetchDocsApi = async () => {
     try {
-      const response = await fetch("/api/document", {
+      const response = await fetch("/api/ncism", {
         method: "GET",
       });
       if (!response.ok) {
