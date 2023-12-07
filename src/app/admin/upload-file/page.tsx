@@ -105,7 +105,7 @@ const clearBrowseFileName=async ()=>{
   
   return (
     <div className="mb-3 flex flex-col items-center justify-center">
-    <div className='flex justify-center items-center flex-wrap gap-4 my-10 bg-blue-400 min-h-[25vh] max-h-[70vh] overflow-y-auto'>
+    <div className='flex justify-center items-center flex-wrap gap-4 my-10 min-h-[25vh] max-h-[70vh] overflow-y-auto'>
       {loading ? ( // Show loader if still loading
         <div className="text-center text-black w-fit">Loading...</div>
       ) : (docs.map((doc, index) => {

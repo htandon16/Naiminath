@@ -82,7 +82,8 @@ const NCISM = () => {
             .map((pdfDoc, index) => (
               <div
                 key={index}
-                className="flex justify-start items-center w-full h-fit border-b-[0.01px] p-3"
+                className="flex justify-start items-center w-full h-fit border-b-[0.01px] p-3 hover:bg-slate-50 cursor-pointer"
+                onClick={async (e) => DocDetail(pdfDoc.content)}
               >
                 <FontAwesomeIcon
                   color="#ad1c1c"
@@ -101,7 +102,7 @@ const NCISM = () => {
             .map((pdfDoc, index) => (
               <div
                 key={index}
-                className="flex justify-start items-center w-full h-fit border-b-[0.01px] p-3"
+                className="flex justify-start items-center w-full h-fit border-b-[0.01px] p-3 hover:bg-slate-50 cursor-pointer"
                 onClick={async (e) => DocDetail(pdfDoc.content)}
               >
                 <FontAwesomeIcon
