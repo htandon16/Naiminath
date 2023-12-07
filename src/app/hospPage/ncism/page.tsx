@@ -100,7 +100,7 @@ const NCISM = () => {
                   className="pr-3"
                 />
                 <a
-                  href={`data:application/pdf;base64,${pdfDoc.content}`} // Assuming pdfDoc.content contains the base64-encoded PDF content
+                  href={`${createBlobUrl(pdfDoc.content)}`} // Assuming pdfDoc.content contains the base64-encoded PDF content
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -121,6 +121,11 @@ const NCISM = () => {
     </div>
   );
 };
+
+function createBlobUrl(content: string): string {
+  const blob = new Blob([content], { type: 'application/pdf' });
+  return URL.createObjectURL(blob);
+}
 
 const DocDetail = (filename: string) => {
   const dirPath = path.join(process.cwd(), process.env.DEV_DOC_STORE_PATH!);
