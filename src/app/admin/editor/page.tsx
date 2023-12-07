@@ -109,7 +109,7 @@ const QuillEditor = () => {
     const writeHtmlFileApi = async () => {
 
       try {
-        const response = await fetch("/api/ncism", {
+        const response = await fetch("/api/blog", {
           method: "POST",
           headers: {
             'Content-Type': 'application/json',

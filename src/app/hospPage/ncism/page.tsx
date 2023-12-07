@@ -99,7 +99,7 @@ const NCISM = () => {
                   className="pr-3"
                 />
 
-                <Link href={`/tmp/upload/${encodeURIComponent(pdfDoc.fileName)}`} target="_blank">
+                <Link href={`/puplic/upload/${encodeURIComponent(pdfDoc.fileName)}`} target="_blank">
                 {pdfDoc.title}
                 </Link>
 

@@ -21,7 +21,7 @@ const UploadFile = () => {
  
   const fetchDocsApi = async () => {
     try {
-      const response = await fetch("/api/document", {
+      const response = await fetch("/api/ncism", {
         method: "GET",
       });
       if (!response.ok) {
@@ -79,7 +79,7 @@ const clearBrowseFileName=async ()=>{
       formData.append('title', title);
       
       try {
-        const response = await fetch('/api/document', {
+        const response = await fetch('/api/ncism', {
           method: 'POST',
           body: formData,
         });

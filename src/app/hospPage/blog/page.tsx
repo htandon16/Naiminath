@@ -18,7 +18,7 @@ const BlogPage = () => {
   
   const fetchBlogsApi = async () => {
     try {
-      const response = await fetch("/api/ncism", {
+      const response = await fetch("/api/blog", {
         method: "GET",
       });
       if (!response.ok) {
