@@ -52,7 +52,7 @@ const BlogPage = () => {
       ) : (
         blogs.map((blog, index) => (
           <div
-            key={blog.fileName}
+            key={index}
             className="flex flex-col justify-center items-center basis-1/4 h-fit rounded-lg 
           overflow-hidden min-h-[350px] shadow-md inset-11 hover:bg-slate-50 cursor-pointer"
             onClick={async () => {

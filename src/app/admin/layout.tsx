@@ -19,10 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <script
-          async
-          src="../../node_modules/flowbite/dist/flowbite.min.js"
-        ></script>
         <div className="w-full min-h-screen overflow-hidden">{children}</div>
       </body>
     </html>
