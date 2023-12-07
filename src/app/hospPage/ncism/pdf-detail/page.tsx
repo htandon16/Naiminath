@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 const PdfViewer = () => {
   const { blogData } = useGlobalContext();
  
-  
+  console.log('data=========',blogData)
   useEffect(() => {
    
   }, []);
