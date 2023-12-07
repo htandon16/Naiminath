@@ -99,13 +99,13 @@ const NCISM = () => {
                   size={customSize}
                   className="pr-3"
                 />
-                <a
+                <Link
                   href={`${createBlobUrl(pdfDoc.content)}`} // Assuming pdfDoc.content contains the base64-encoded PDF content
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {pdfDoc.title}
-                </a>
+                </Link>
                 {/* <Link
                   href={`/tmp/upload/${encodeURIComponent(pdfDoc.fileName)}`}
                   target="_blank"
