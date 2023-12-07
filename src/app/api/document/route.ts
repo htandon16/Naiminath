@@ -19,7 +19,8 @@ export async function POST(req: NextRequest) {
   console.log(`File name: ${file.name}`);
   console.log(`Content-Length: ${file.size}`);
 
-  const destinationDirPath = path.join(process.env.LIVE_DOC_STORE_PATH!);
+  //const destinationDirPath = path.join(process.env.LIVE_DOC_STORE_PATH!);
+  const destinationDirPath = '/tmp/upload'
   console.log(destinationDirPath);
 
   const fileArrayBuffer = await file.arrayBuffer();
@@ -56,7 +57,8 @@ const getStringBeforeLastDot = (inputString: string): string | null =>
 export async function GET(request:NextRequest) {
 
 
-    const directoryPath = path.join(process.env.LIVE_DOC_STORE_PATH!);
+    //const directoryPath = path.join(process.env.LIVE_DOC_STORE_PATH!);
+    const directoryPath = '/tmp/upload'
     console.log(directoryPath);
 
     console.log("Current working directory:", directoryPath);
