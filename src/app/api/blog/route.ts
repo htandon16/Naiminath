@@ -7,7 +7,7 @@ export async function GET(request:NextRequest) {
 
   // const directoryPath = path.join(process.cwd(), 'src/app/blogfiles');
   // console.log("Current working directory:", directoryPath);
-  const directoryPath = path.join('/tmp')
+  const directoryPath = path.join('/tmp/blog')
   console.log("Current working directory:", directoryPath);
 
   if (!fs.existsSync(directoryPath)) {
@@ -49,7 +49,7 @@ export async function POST(req: NextRequest,res:NextResponse) {
     //   fs.mkdirSync(directoryPath, { recursive: true });
     // }
 
-    const directoryPath = path.join('/tmp', `dynamicFile_${Date.now()}.html`);
+    const directoryPath = path.join('/tmp/blog', `dynamicFile_${Date.now()}.html`);
     console.log("directoryPath", directoryPath);
   
 
