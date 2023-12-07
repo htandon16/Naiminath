@@ -61,6 +61,13 @@ const NCISM = () => {
       });
   };
 
+  const DocDetail = (content: string) => {
+    const dataUrl = `data:application/pdf;base64,${content}`;
+    setBlogData(dataUrl);
+    // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
+    router.push(`/hospPage/ncism/pdf-detail`);
+};
+
   return (
     <div className="flex flex-col my-12 justify-center items-center mx-40">
       <div className="">
@@ -95,7 +102,7 @@ const NCISM = () => {
               <div
                 key={index}
                 className="flex justify-start items-center w-full h-fit border-b-[0.01px] p-3"
-                onClick={(e) => DocDetail(pdfDoc.fileName)}
+                onClick={async (e) => DocDetail(pdfDoc.fileName)}
               >
                 <FontAwesomeIcon
                   color="#23a455"
@@ -103,16 +110,9 @@ const NCISM = () => {
                   size={customSize}
                   className="pr-3"
                 />
-                <Link href='#'
-                    onClick={async () => {
-                      const dataUrl = `data:application/pdf;base64,${pdfDoc.content}`;
-                      setBlogData(dataUrl);
-                      // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
-                      router.push(`/hospPage/ncism/pdf-detail`);
-                    }}
-                >
+                <p>
                   {pdfDoc.title}
-                </Link>
+                </p>
                 {/* <Link
                   href={`/tmp/upload/${encodeURIComponent(pdfDoc.fileName)}`}
                   target="_blank"
@@ -135,16 +135,6 @@ function createBlobUrl(content: string): string {
   return URL.createObjectURL(blob);
 }
 
-const DocDetail = (filename: string) => {
-  const dirPath = path.join(process.cwd(), process.env.DEV_DOC_STORE_PATH!);
-  console.log("file path=======", dirPath);
-  const fileUrl = path.join(dirPath, filename);
 
-  return (
-    <div>
-      <iframe src={fileUrl} />
-    </div>
-  );
-};
 
 export default NCISM;
