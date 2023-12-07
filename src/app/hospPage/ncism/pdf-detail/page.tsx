@@ -10,8 +10,8 @@ const PdfViewer = () => {
   useEffect(() => {}, []);
 
   return (
-    <div>
-      
+    <div className=" flex flex-col">
+      <div>{blogData}</div>
       <iframe src={blogData} width="100%" height="500px"></iframe>
     </div>
   );
