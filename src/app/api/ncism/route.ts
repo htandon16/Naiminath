@@ -71,12 +71,7 @@ const getStringBeforeLastDot = (inputString: string): string | null =>
       const filePath = `${directoryPath}/${file}`;
       const fileContent = readFileSync(filePath, "utf-8");
   
-      // Convert file content to a Blob
-     // const pdfContent = atob(fileContent);
-      const blob = new Blob([fileContent], { type: 'application/pdf' });
-  
-      // Create a Blob URL
-      const blobUrl = URL.createObjectURL(blob);
+    
   
       // Add the Blob URL as a parameter to the response
       const responseParams = {
@@ -84,7 +79,7 @@ const getStringBeforeLastDot = (inputString: string): string | null =>
         filePath: filePath,
         content: fileContent,
         title: getStringBeforeLastDot(file),
-        blobUrl: blobUrl, // Add Blob URL as a parameter
+       // blobUrl: blobUrl, // Add Blob URL as a parameter
       };
   
       return responseParams;
