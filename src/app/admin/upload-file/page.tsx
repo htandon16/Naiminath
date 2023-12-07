@@ -87,7 +87,7 @@ const clearBrowseFileName=async ()=>{
         if (response.ok) {
           console.log('File uploaded successfully.');
         } else {
-          console.error('Error uploading file:', response.statusText);
+          console.error('Error uploading file status:', response.status);
         }
       } catch (error:any) {
         console.error('Error uploading file:', error.message);
