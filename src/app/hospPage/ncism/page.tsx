@@ -103,8 +103,7 @@ const NCISM = () => {
                   size={customSize}
                   className="pr-3"
                 />
-                <Link
-                  href='#' // Assuming pdfDoc.content contains the base64-encoded PDF content
+                <button
                     onClick={async () => {
                       const dataUrl = `data:application/pdf;base64,${pdfDoc.content}`;
                       setBlogData(dataUrl);
@@ -113,7 +112,7 @@ const NCISM = () => {
                     }}
                 >
                   {pdfDoc.title}
-                </Link>
+                </button>
                 {/* <Link
                   href={`/tmp/upload/${encodeURIComponent(pdfDoc.fileName)}`}
                   target="_blank"
