@@ -1,15 +1,13 @@
 // components/PdfViewer.js
-import { useGlobalContext } from '@/app/context/store';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useGlobalContext } from "@/app/context/store";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const PdfViewer = () => {
   const { blogData } = useGlobalContext();
- 
-  console.log('data=========',blogData)
-  useEffect(() => {
-   
-  }, []);
+
+  console.log("data=========", blogData);
+  useEffect(() => {}, []);
 
   return (
     <div>
