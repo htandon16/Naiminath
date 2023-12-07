@@ -10,6 +10,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import path from "path";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useGlobalContext } from "@/app/context/store";
 
 interface Doc {
   fileName: string;
@@ -20,6 +22,8 @@ interface Doc {
 }
 
 const NCISM = () => {
+  const router = useRouter();
+  const { blogData, setBlogData } = useGlobalContext();
   const customSize: SizeProp = "2xl";
   const [docs, setDocs] = useState<Doc[]>([]);
   const [loading, setLoading] = useState(true); // Added loading state
@@ -100,9 +104,14 @@ const NCISM = () => {
                   className="pr-3"
                 />
                 <Link
-                  href={`${createBlobUrl(pdfDoc.content)}`} // Assuming pdfDoc.content contains the base64-encoded PDF content
+                  href={`data:application/pdf;base64,${pdfDoc.content}`} // Assuming pdfDoc.content contains the base64-encoded PDF content
                   target="_blank"
                   rel="noopener noreferrer"
+                    onClick={async () => {
+                      setBlogData(pdfDoc.content);
+                      // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
+                      router.push(`/hospPage/ncism/pdf-detail`);
+                    }}
                 >
                   {pdfDoc.title}
                 </Link>
