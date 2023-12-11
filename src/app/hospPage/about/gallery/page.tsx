@@ -1,5 +1,7 @@
-import React from "react";
+'use client'
+import React, { useEffect } from "react";
 import Image from "next/image";
+import { useGlobalContext } from "@/app/context/store";
 
 const AboutGallery = () => {
   const imageUrls = [
@@ -29,6 +31,13 @@ const AboutGallery = () => {
     "https://naiminathayurveda.org/wp-content/uploads/cache/2021/10/IMG-20211209-WA0048/864618023.jpg",
     "https://naiminathayurveda.org/wp-content/uploads/cache/2021/10/IMG-20211209-WA0035/3010540637.jpg",
   ];
+
+  const { setImageSlide } = useGlobalContext();
+  
+  useEffect(() => {
+    console.log('Page loaded');
+    setImageSlide(false);
+  }, [setImageSlide]);
 
   return (
     <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-10 my-10">

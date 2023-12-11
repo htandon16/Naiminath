@@ -30,8 +30,10 @@ const tailwindConfig: Config = {
         "blue-accent-hover": "#009fff",
       },
     },
+    
   },
   plugins: [
+    
     // Add the plugins from both configs
    // require("flowbite/plugin"),
   ],

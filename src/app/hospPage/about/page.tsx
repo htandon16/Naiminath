@@ -4,6 +4,14 @@ import Image from "next/image";
 import { useGlobalContext } from "@/app/context/store";
 
 const AboutUs = () => {
+
+  const { setImageSlide } = useGlobalContext();
+  
+  useEffect(() => {
+    console.log('Page loaded');
+    setImageSlide(false);
+  }, [setImageSlide]);
+
   return (
     <div className="flex flex-col items-center justify-center font-sans h-full w-full">
       <div
@@ -15,7 +23,7 @@ const AboutUs = () => {
       <div className="flex flex-row w-[74vw] justify-center gap-6 mt-10">
         <Image
           src="/images/about_hospital.jpg"
-          className="w-[34vw] h-[40vh] rounded-[7px]"
+          className="w-[390px] h-[290px] rounded-[7px]"
           alt="about image"
           width={1600}
           height={800}
@@ -58,8 +66,8 @@ const AboutUs = () => {
               training with Holistic approach and appropriate guidance.
             </p>
           </div>
-          <div className=" basis-1/2 text-[#3c763d]">
-            <div className="text-[32px] font-medium">Mission</div>
+          <div className=" basis-1/2 text-white" style={{ textShadow: '1px 1px 2px #0005b6' }}>
+            <div className="text-[30px] font-medium">Mission</div>
             <p className="mt-3">
               The mission of Naiminath Ayurvedic Hospital is to improve the
               health of our Community and the Global Community by setting the

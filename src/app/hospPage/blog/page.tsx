@@ -13,7 +13,7 @@ interface Blog {
 const BlogPage = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true); // Added loading state
-  const { blogData, setBlogData } = useGlobalContext();
+  const { blogData, setBlogData,setImageSlide } = useGlobalContext();
   const router = useRouter();
   
   const fetchBlogsApi = async () => {
@@ -34,6 +34,9 @@ const BlogPage = () => {
   };
 
   useEffect(() => {
+    console.log('Page loaded');
+    setImageSlide(false);
+
     fetchBlogsApi()
       .then((result) => {
         setBlogs(result);
@@ -43,7 +46,7 @@ const BlogPage = () => {
       .catch(() => {
         setLoading(false); // Set loading to false on error
       });
-  }, []);
+  }, [setImageSlide]);
  
   return (
     <div className="min-h-screen flex flex-wrap gap-5 p-[20px] justify-center items-center">

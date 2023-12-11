@@ -12,11 +12,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useGlobalContext } from "@/app/context/store";
 
+type SliderItem = {
+  image: string;
+  text: string;
+};
+
 const HomePage = () => {
+  const { setImageSlide } = useGlobalContext();
+  
+  useEffect(() => {
+    console.log('Page loaded');
+    setImageSlide(true);
+  }, [setImageSlide]);
+
+ 
   return (
     <div className="w-max-full flex flex-col justify-center items-center mt-[28px] font-sans pb-20">
       {/* ayurveda treatement section */}
-      <AyurvedaTreatmentSection />
+      <AyurvedaTreatmentSection  />
       <WhatIsAyurveda />
       <OpdSection />
       <PrivateBamsSection />
@@ -27,24 +40,46 @@ const HomePage = () => {
 };
 
 const AyurvedaTreatmentSection = () => {
+  const sliderItems:SliderItem[] = [
+    { image: '/images/ayd_treate1.jpg', text: 'Abhyangam' },
+    { image: '/images/ayd_treate2.jpg', text: 'Shirodhara' },
+    { image: '/images/ayd_treate3.jpg', text: 'Kashayadhara' },
+    { image: '/images/ayd_treate4.jpg', text: 'Greeva Basti' },
+    { image: '/images/ayd_treate5.jpg', text: 'Janu Basti' },
+    { image: '/images/ayd_treate6.jpg', text: 'Kati Basti' },
+    { image: '/images/ayd_treate7.jpg', text: 'Spine Basti' },
+    { image: '/images/ayd_treate8.jpg', text: 'Kizhi' },
+   
+  ];
   return (
     <>
       <h2 className="text-[32px] text-[#525252]">Ayurvedic Treatments</h2>
       <p className="text-[17px] text-[#7c7777]">List of Ayurvedic Treatments</p>
       <div className=" w-[66%] my-[3%] mx-[20%]  items-center justify-center">
-        <AyurvedaTreatmentImageSlider />
+        <AyurvedaTreatmentImageSlider items={sliderItems} />
       </div>
     </>
   );
 };
 
 const OpdSection = () => {
+  const sliderItems:SliderItem[] = [
+    { image: '/images/opd1.jpg', text: 'Kaumarbhritya' },
+    { image: '/images/opd2.jpg', text: 'Kayachikitsa' },
+    { image: '/images/opd3.jpg', text: 'Panchkarma' },
+    { image: '/images/opd4.jpg', text: 'Prasuti & Stri Roga' },
+    { image: '/images/opd5.jpg', text: 'Shalakya Tantra' },
+    { image: '/images/opd6.jpg', text: 'Shalya Tantra' },
+    { image: '/images/opd7.jpg', text: 'Swasthavritta' },
+    { image: '/images/opd1.jpg', text: 'Kaumarbhritya' },
+   
+  ];
   return (
     <>
       <h2 className="text-[32px] text-[#525252]">OPD</h2>
       <p className="text-[17px] text-[#7c7777]">List of OPD</p>
       <div className=" w-[66%] my-[3%] mx-[20%] items-center justify-center">
-        <AyurvedaTreatmentImageSlider />
+        <AyurvedaTreatmentImageSlider items={sliderItems}/>
       </div>
     </>
   );
@@ -55,7 +90,7 @@ const WhatIsAyurveda = () => {
     <div className=" w-[70%] my-[4%] mx-[10%] flex flex-row">
       <div className="w-[28vw] h-[46vh] bg-cover bg-no-repeat bg-[url('/images/ayurveda_img.png')]" />
       <div className="w-[44vw] h-full ms-[5%]">
-        <text className=" text-3xl text-[#525252]">What is Ayurveda?</text>
+        <label className=" text-3xl text-[#525252]">What is Ayurveda?</label>
         <p className="text-[#7c7777] mt-[3%]">
           Ayurveda is an ancient knowledge cultivated by the sages of India. It
           has been developed from various treatises and manuscripts and has made
@@ -84,10 +119,10 @@ const PrivateBamsSection = () => {
     <div className=" w-[70%] h-full mt-[6%] mx-[10%] flex flex-row-reverse">
       <div className="w-[40vw] h-[35vw] bg-contain -mt-[4%] bg-no-repeat bg-[url('/images/private_bams_img.jpg')]" />
       <div className="w-[44vw] h-full mr-[10%]">
-        <text className=" text-3xl text-[#525252] font-semibold">
+        <label className=" text-3xl text-[#525252] font-semibold">
           Private BAMS College in Agra, UP <br />
           (India)
-        </text>
+        </label>
         <p className="text-[#7c7777] mt-[3%]">
           Naiminath Ayurveda is one of the best private BAMS colleges in Agra,
           Uttar Pradesh. With its commitment to providing quality education and
@@ -114,9 +149,9 @@ const NaiminathAyurvedaSection = () => {
     <div className=" w-[70%] h-full mt-[3%] mx-[10%] flex flex-row-reverse">
       <div className="w-[48vw] h-[48vh] mt-[5%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
       <div className="w-[44vw] h-full mr-[1%]">
-        <text className=" text-3xl text-[#525252] font-semibold">
+        <label className=" text-3xl text-[#525252] font-semibold">
           Naiminath Ayurveda : Inside Agra&apos;s Ayurvedic Medical College
-        </text>
+        </label>
         <p className="text-[#7c7777] mt-[3%]">
           Located in the historical city of Agra, Naiminath Ayurveda is a hidden
           gem that stands out as the top ayurvedic college in Agra. This
@@ -153,7 +188,7 @@ const AboutUsSection = () => {
         height={800}
       />
       <div className="w-full-max absolute top-[12%] start-[45%] right-[10%]">
-        <text className=" text-3xl font-semibold text-[#525252]">About Us</text>
+        <label className=" text-3xl font-semibold text-[#525252]">About Us</label>
         <p className="text-[#7c7777] mt-[5%]">
           Naiminath Ayurvedic Hospital is the pioneer in the field of Ayurvedic
           treatment in the world. The Hospital offers treatment for every
@@ -184,7 +219,7 @@ const AboutUsSection = () => {
   );
 };
 
-const AyurvedaTreatmentImageSlider = () => {
+const AyurvedaTreatmentImageSlider = ({ items }:{items:SliderItem[]}) => {
   const customSize: SizeProp = "xl";
 
   const PrevArrow = (props: any) => {
@@ -229,43 +264,22 @@ const AyurvedaTreatmentImageSlider = () => {
     useTransform: false,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    
   };
+
+
 
   return (
     <Slider {...settings} className="text-[#7c7777] relative ">
-      {/* Add your slider images here */}
-      <div className=" p-[10px] text-center">
-        <div className="h-[30vh] w-[15vw] bg-cover bg-no-repeat bg-[url('/images/image1.png')] rounded-[10px]" />
-        <p>Janu Basti</p>
-      </div>
-      <div className=" p-[10px] text-center">
-        <div className="h-[30vh] w-[15vw] bg-cover bg-no-repeat bg-[url('/images/image2.png')] rounded-[10px]" />
-        <p>Janu Basti</p>
-      </div>
-      <div className=" p-[10px] text-center">
-        <div className="h-[30vh] w-[15vw] bg-cover bg-no-repeat bg-[url('/images/image3.jpg')] rounded-[10px]" />
-        <p>Janu Basti</p>
-      </div>
-      <div className=" p-[10px] text-center">
-        <div className="h-[30vh] w-[15vw] bg-cover bg-no-repeat bg-[url('/images/image1.png')] rounded-[10px]" />
-        <p>Janu Basti</p>
-      </div>
-      <div className=" p-[10px] text-center">
-        <div className="h-[30vh] w-[15vw] bg-cover bg-no-repeat bg-[url('/images/image2.png')] rounded-[10px]" />
-        <p>Janu Basti</p>
-      </div>
-      <div className=" p-[10px] text-center">
-        <div className="h-[30vh] w-[15vw] bg-cover bg-no-repeat bg-[url('/images/image3.jpg')] rounded-[10px]" />
-        <p>Janu Basti</p>
-      </div>
-      <div className=" p-[10px] text-center">
-        <div className="h-[30vh] w-[15vw] bg-cover bg-no-repeat bg-[url('/images/image1.png')] rounded-[10px]" />
-        <p>Janu Basti</p>
-      </div>
-      <div className=" p-[10px] text-center">
-        <div className="h-[30vh] w-[15vw] bg-cover bg-no-repeat bg-[url('/images/image2.png')] rounded-[10px]" />
-        <p>Janu Basti</p>
-      </div>
+      {items.map((item, index) => (
+        <div key={index} className=" p-[10px] text-center">
+          <div
+            className="h-[235px] w-[235px] bg-cover bg-no-repeat rounded-[10px]"
+            style={{ backgroundImage: `url(${item.image})` }}
+          />
+          <p>{item.text}</p>
+        </div>
+      ))}
     </Slider>
   );
 };

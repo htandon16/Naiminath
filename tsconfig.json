@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/app/(components)/dropdown/Submenu.js", "src/app/(components)/dropdown/Item.js", "src/app/(components)/dropdown/Divider.js", "src/app/(components)/dropdown/index.js"  ],
   "exclude": [
     "node_modules"
   ]

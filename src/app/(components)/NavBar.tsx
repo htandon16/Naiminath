@@ -1,19 +1,20 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
 import { useGlobalContext } from "../context/store";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import Dropdown from "./dropdown";
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 
 const NavBar = () => {
-  // const [active, setActive] = useState("home");
-
-  const { setImageSlide } = useGlobalContext();
+  const customSize: SizeProp = "lg";
+  const router = useRouter();
   let pathname = usePathname();
-  // console.log("NavBar=", active);
+  
+
   return (
     <header className="">
       <nav>
-        <ul className="flex space-x-8 text-[#252525] text-[15px] font-bold">
+        <ul className="flex justify-center items-center space-x-8 text-[#252525] text-[15px] font-bold">
           <li>
             <Link
               href="/hospPage/home"
@@ -24,9 +25,7 @@ const NavBar = () => {
               scroll={false}
               onClick={(e) => {
                 console.log("pathname==", pathname);
-                setImageSlide(true);
-
-                // //setActive("home");
+                
               }}
             >
               Home
@@ -39,7 +38,7 @@ const NavBar = () => {
               prefetch
               scroll={false}
               onClick={(e) => {
-                setImageSlide(true);
+                //setImageSlide(true);
                 //setActive("home");
               }}
             >
@@ -47,53 +46,111 @@ const NavBar = () => {
             </Link> */}
           </li>
           <li>
-            <Link
-              href="/hospPage/about"
-              prefetch
-              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b]  ${
+            <div
+              className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
                 pathname === "/hospPage/about" ? "border-[2px]" : "border-[0px]"
               } `}
-              scroll={false}
-              onClick={(e) => {
-                console.log("pathname==", pathname);
-                setImageSlide(false);
-                ////setActive("about");
-              }}
             >
-              About us
-            </Link>
-            {/* <Link
-              href="/hospPage/about"
-              prefetch
-              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                active === "about" ? "border-[2px]" : "border-[0px]"
-              } `}
-              scroll={false}
-              onClick={(e) => {
-                setImageSlide(false);
-                //setActive("about");
-              }}
-            >
-              About us
-            </Link> */}
+              <Link
+                href="/hospPage/about"
+                prefetch
+                className={` p-1.5  hover:text-gray-600 `}
+                scroll={false}
+                onClick={(e) => {
+                  console.log("pathname==", pathname);
+                  ////setActive("about");
+                }}
+              >
+                About us
+              </Link>
+              <Dropdown title="">
+                <Dropdown.Item
+                  onClick={() => {
+                    router.push(`/hospPage/about/gallery`);
+                  }}
+                >
+                  GALLERY
+                </Dropdown.Item>
+              </Dropdown>
+            </div>
           </li>
           <li>
-            <Link
-              href="/hospPage/hospital"
-              prefetch
-              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/hospPage/hospital"
+            <div
+              className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
+                (pathname === "/hospPage/hospital"||pathname === "/hospPage/hospital/opd"||
+                pathname ==="/hospPage/hospital/medical-sup"||pathname === "/hospPage/hospital/ipd")
                   ? "border-[2px]"
                   : "border-[0px]"
-              }  transition-opacity duration-300 ease-in-out`}
-              scroll={false}
-              onClick={(e) => {
-                setImageSlide(false);
-                ////setActive("hospital");
-              }}
+              } `}
             >
-              Hospital
-            </Link>
+              <Link
+                href="#"
+                prefetch
+                className={` p-1.5  hover:text-gray-600 `}
+                scroll={false}
+                onClick={(e) => {
+                  ////setImageSlide(false);
+                  ////setActive("hospital");
+                }}
+              >
+                Hospital
+              </Link>
+              <Dropdown openOnHover={false} title="">
+                <Dropdown.Item>
+                  OPD
+                  <Dropdown.Submenu>
+                    <Dropdown.Item onClick={()=>{//setImageSlide(false);
+                       router.push(`/hospPage/hospital/opd?id=${0}`)}
+                    }>
+                      Kayachikitsa
+                      </Dropdown.Item>
+                    <Dropdown.Item 
+                    onClick={()=>{//setImageSlide(false);
+                       router.push(`/hospPage/hospital/opd?id=${1}`)}
+                    }>
+                      Kaumarbhritya
+                      </Dropdown.Item>
+                    <Dropdown.Item 
+                     onClick={()=>{//setImageSlide(false);
+                      router.push(`/hospPage/hospital/opd?id=${2}`)}
+                   }>
+                    Panchkarma</Dropdown.Item>
+                    <Dropdown.Item
+                     onClick={()=>{//setImageSlide(false);
+                      router.push(`/hospPage/hospital/opd?id=${3}`)}
+                   }>Prasuti & Stri Roga</Dropdown.Item>
+                    <Dropdown.Item
+                     onClick={()=>{//setImageSlide(false);
+                      router.push(`/hospPage/hospital/opd?id=${4}`)}
+                   }>Shalakya Tantra</Dropdown.Item>
+                    <Dropdown.Item
+                     onClick={()=>{//setImageSlide(false);
+                      router.push(`/hospPage/hospital/opd?id=${5}`)}
+                   }>Shalya Tantra</Dropdown.Item>
+                    <Dropdown.Item
+                     onClick={()=>{
+                      //setImageSlide(false);
+                      router.push(`/hospPage/hospital/opd?id=${6}`)}
+                   }>Swasthavritta</Dropdown.Item>
+                  </Dropdown.Submenu>
+                </Dropdown.Item>
+
+                <Dropdown.Item
+                onClick={()=>{
+                  //setImageSlide(false);
+                  router.push(`/hospPage/hospital/ipd`)}
+               }>
+                  IPD
+                </Dropdown.Item>
+                <Dropdown.Item
+                  onClick={()=>{
+                    //setImageSlide(false);
+                    router.push(`/hospPage/hospital/medical-sup`)}
+                 }>
+                  MEDICAL SUPERINTENDENT
+                </Dropdown.Item>
+              </Dropdown>
+            </div>
             {/* <Link
               href="#"
               prefetch
@@ -102,7 +159,7 @@ const NavBar = () => {
               } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
-                setImageSlide(false);
+                //setImageSlide(false);
                 //setActive("hospital");
               }}
             >
@@ -110,7 +167,52 @@ const NavBar = () => {
             </Link> */}
           </li>
           <li>
-            <Link
+          <div
+              className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
+                (pathname === "/hospPage/college"||pathname === "/hospPage/college/course"||
+                pathname ==="/hospPage/college/faculty"||pathname === "/hospPage/college/principle-profile")
+                  ? "border-[2px]"
+                  : "border-[0px]"
+              } `}
+            >
+              <Link
+                href="#"
+                prefetch
+                className={` p-1.5  hover:text-gray-600 `}
+                scroll={false}
+                onClick={(e) => {
+                  ////setImageSlide(false);
+                  ////setActive("hospital");
+                }}
+              >
+                College
+              </Link>
+              <Dropdown openOnHover={false} title="">
+                <Dropdown.Item
+                 onClick={()=>{
+                  ////setImageSlide(false);
+                  router.push(`/hospPage/college/course`)}
+               }>
+                  COURSES OFFERED
+                </Dropdown.Item>
+
+                <Dropdown.Item
+                onClick={()=>{
+                  //setImageSlide(false);
+                  router.push(`/hospPage/college/faculty`)}
+               }>
+                  FACULTY
+                </Dropdown.Item>
+                <Dropdown.Item
+                  onClick={()=>{
+                    //setImageSlide(false);
+                    router.push(`/hospPage/college/principle-profile`)}
+                 }>
+                  PRINCIPALS PROFILE
+                </Dropdown.Item>
+              </Dropdown>
+            </div>
+            {/* <Link
               href="/hospPage/college"
               prefetch
               className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
@@ -120,12 +222,12 @@ const NavBar = () => {
               } transition-opacity duration-6000 ease-in-out`}
               scroll={false}
               onClick={(e) => {
-                setImageSlide(false);
+                //setImageSlide(false);
                 //setActive("college");
               }}
             >
               College
-            </Link>
+            </Link> */}
           </li>
           <li>
             <Link
@@ -136,7 +238,7 @@ const NavBar = () => {
               } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
-                setImageSlide(false);
+                //setImageSlide(false);
                 //setActive("ncism");
               }}
             >
@@ -152,7 +254,7 @@ const NavBar = () => {
               } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
-                setImageSlide(false);
+                //setImageSlide(false);
                 //setActive("blog");
               }}
             >
@@ -170,7 +272,7 @@ const NavBar = () => {
               } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
-                setImageSlide(false);
+                //setImageSlide(false);
                 //setActive("facilities");
               }}
             >
@@ -179,16 +281,16 @@ const NavBar = () => {
           </li>
           <li>
             <Link
-              href="/hospPage/contact"
+              href="/hospPage/contactus"
               prefetch
               className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/hospPage/contact"
+                pathname === "/hospPage/contactus"
                   ? "border-[2px]"
                   : "border-[0px]"
               } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
-                setImageSlide(false);
+                //setImageSlide(false);
                 //setActive("contact");
               }}
             >
@@ -200,5 +302,6 @@ const NavBar = () => {
     </header>
   );
 };
+
 
 export default NavBar;

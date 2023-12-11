@@ -4,6 +4,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ImageSlider = () => {
+
+
+  const SlickButtonFix = ({currentSlide, slideCount, children, ...props}:any) => (
+    <span {...props}>{children}</span>
+);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -13,14 +19,14 @@ const ImageSlider = () => {
     autoplay: true,
     autoplaySpeed: 8000,
     nextArrow: (
-      <div>
+      <SlickButtonFix>
         <div className="next-slick-arrow bg-slate-900"> ⫸ </div>
-      </div>
+      </SlickButtonFix>
     ),
     prevArrow: (
-      <div>
+      <SlickButtonFix>
         <div className="prev-slick-arrow bg-sky-900"> ⫷ </div>
-      </div>
+      </SlickButtonFix>
     ),
   };
 

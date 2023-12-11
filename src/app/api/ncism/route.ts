@@ -61,7 +61,7 @@ const getStringBeforeLastDot = (inputString: string): string | null =>
     console.log("Current working directory:", directoryPath);
   
     if (!existsSync(directoryPath)) {
-      return new Response(`Directory not found`, { status: 404 });
+      return new Response(`Directory not found`, { status: 200 });
     }
   
     const files = readdirSync(directoryPath);
