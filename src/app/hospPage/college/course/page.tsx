@@ -74,7 +74,7 @@ const Course = () => {
             the University will be allowed.
           </li>
         </ul>
-        <Link href='/images/fee_st_namc.pdf'>
+        <Link href='/doc/fee_st_namc.pdf'>
         <div
           className="w-fit flex justify-center items-center rounded-sm bg-gradient-to-r from-[#fde03a] to-[#ffb047] 
         py-1 px-4 mt-8"

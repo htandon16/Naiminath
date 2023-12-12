@@ -58,13 +58,13 @@ const Footer = () => {
               Etmadpur, Agra – 283202, Uttar Pradesh, India.
             </div>
             <Link
-              href="/contact"
+              href="/hospPage/bams"
               className="text-[#50b9ce] text-[15px] font-sans font-semibold mt-10  hover:text-white"
             >
               🡪 UP BAMS Counselling
             </Link>
             <Link
-              href="/contact"
+              href="/doc/anti_rag.pdf"
               className="text-[#50b9ce] text-[15px] font-sans font-semibold mt-3  hover:text-white"
             >
               🡪 Anti Ragging Committee
@@ -82,7 +82,7 @@ const Footer = () => {
                   size={customSize}
                   className="pr-3"
                 />
-                <span>info@naiminathayurveda.org</span>
+                <a href={'mailto:recipient@example.com?subject=Subject%20Text&body=Body%20Text'}>info@naiminathayurveda.org</a>
               </div>
 
               <div className="mt-2">
@@ -91,7 +91,7 @@ const Footer = () => {
                   size={customSize}
                   className="pr-3"
                 />
-                <span>namcagra@gmail.com</span>
+                <a href={'mailto:recipient@example.com?subject=Subject%20Text&body=Body%20Text'}> namcagra@gmail.com</a>
               </div>
             </div>
             <div className="mt-8 text-[14px]">MOBILE</div>
@@ -102,7 +102,7 @@ const Footer = () => {
                   size={customSize}
                   className="pr-2"
                 />
-                <span>+91-9522004573</span>
+                <a href={`tel:${9522004573}`} >+91-9522004573</a>
               </div>
 
               <div className="mt-2  cursor-pointer hover:text-white">
@@ -111,7 +111,7 @@ const Footer = () => {
                   size={customSize}
                   className="pr-2"
                 />
-                <span>+91-9522004573</span>
+              <a href={`tel:${9522004573}`} >+91-9522004573</a>
               </div>
             </div>
           </div>

@@ -10,23 +10,23 @@ export async function POST(req: NextRequest,res:NextResponse):Promise<void |Resp
     
     try{
 
-      const body: MyRequestBody | null =  req.body as MyRequestBody | null; 
+      const body: MyRequestBody | null = await req.json() as MyRequestBody | null; 
 
-      console.log(body);
-      
+      console.log("data mail====",body?.email);
+         
       let nodemailer = require('nodemailer');
       const transporter = nodemailer.createTransport({
         port: 465,
         host: "smtp.gmail.com",
         auth: {
-          user: 'salman.khandvl@gmail.com',
-          pass: 'devlups@123',
+          user: 'john.celinadm',
+          pass: 'tksvlznqfxhxpkpj',
         },
         secure: true,
       })  
       const mailData = {
         from: `${body?.email}`,
-        to: 'salman.khandvl@gmail.com',
+        to: 'john.celinadm@gmail.com',
         subject: `Message From ${body?.name}`,
         text: `${body?.comments} | Sent from: ${body?.email}`,
         html: `<div>${body?.comments}</div><p>Sent from:

@@ -11,19 +11,21 @@
     display: flex;
     align-items: center;
     color: #172B4D;
+    background-color: rgb(240, 195, 109);
 }
 
 .item:hover {
-    background-color: #EEF3FF;
-    color: #2C5DE5;
+    background-color: #353533;
+    color: #f6f7f6;
 }
 
 .item:hover > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    
 }
 
 .active {
-    background-color: #EEF3FF;
+    background-color: #fff5ee;
     color: #2C5DE5 !important;
 }

@@ -65,9 +65,9 @@ const BlogPage = () => {
             }}
           >
             <div className="w-full pb-2 flex-1 justify-center items-center">
-              <h1 className="text-white py-2 text-center bg-black ">
+              <h5 className="text-white py-2 text-center bg-black ">
                 Blog {"-"} {index + 1}
-              </h1>
+              </h5>
               <div
                 className=" overflow-hidden px-2 pt-2 w-full"
                 style={{

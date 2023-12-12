@@ -63,7 +63,7 @@ const NavBar = () => {
               >
                 About us
               </Link>
-              <Dropdown title="">
+              <Dropdown title="" openOnHover={true}>
                 <Dropdown.Item
                   onClick={() => {
                     router.push(`/hospPage/about/gallery`);
@@ -95,46 +95,61 @@ const NavBar = () => {
               >
                 Hospital
               </Link>
-              <Dropdown openOnHover={false} title="">
+              <Dropdown openOnHover={true} title="">
                 <Dropdown.Item>
-                  OPD
+                  <div className="w-full flex flex-row justify-between">
+                    <div>OPD</div>
+                    <div>{'>'}</div>
+                  </div>
+                 
                   <Dropdown.Submenu>
                     <Dropdown.Item onClick={()=>{//setImageSlide(false);
                        router.push(`/hospPage/hospital/opd?id=${0}`)}
                     }>
                       Kayachikitsa
                       </Dropdown.Item>
+                      <Dropdown.Divider size="lg"/>
                     <Dropdown.Item 
                     onClick={()=>{//setImageSlide(false);
                        router.push(`/hospPage/hospital/opd?id=${1}`)}
                     }>
                       Kaumarbhritya
                       </Dropdown.Item>
+                      <Dropdown.Divider size="lg"/>
                     <Dropdown.Item 
                      onClick={()=>{//setImageSlide(false);
                       router.push(`/hospPage/hospital/opd?id=${2}`)}
                    }>
-                    Panchkarma</Dropdown.Item>
+                    Panchkarma
+                    </Dropdown.Item>
+                    <Dropdown.Divider size="lg"/>
                     <Dropdown.Item
                      onClick={()=>{//setImageSlide(false);
                       router.push(`/hospPage/hospital/opd?id=${3}`)}
-                   }>Prasuti & Stri Roga</Dropdown.Item>
+                   }>Prasuti & Stri Roga
+                   </Dropdown.Item>
+                   <Dropdown.Divider size="lg"/>
                     <Dropdown.Item
                      onClick={()=>{//setImageSlide(false);
                       router.push(`/hospPage/hospital/opd?id=${4}`)}
-                   }>Shalakya Tantra</Dropdown.Item>
+                   }>Shalakya Tantra
+                   </Dropdown.Item>
+                   <Dropdown.Divider size="lg"/>
                     <Dropdown.Item
                      onClick={()=>{//setImageSlide(false);
                       router.push(`/hospPage/hospital/opd?id=${5}`)}
-                   }>Shalya Tantra</Dropdown.Item>
+                   }>Shalya Tantra
+                   </Dropdown.Item>
+                   <Dropdown.Divider size="lg"/>
                     <Dropdown.Item
                      onClick={()=>{
                       //setImageSlide(false);
                       router.push(`/hospPage/hospital/opd?id=${6}`)}
-                   }>Swasthavritta</Dropdown.Item>
+                   }>Swasthavritta
+                   </Dropdown.Item>
                   </Dropdown.Submenu>
                 </Dropdown.Item>
-
+                <Dropdown.Divider size="lg"/>
                 <Dropdown.Item
                 onClick={()=>{
                   //setImageSlide(false);
@@ -142,6 +157,7 @@ const NavBar = () => {
                }>
                   IPD
                 </Dropdown.Item>
+                <Dropdown.Divider size="lg"/>
                 <Dropdown.Item
                   onClick={()=>{
                     //setImageSlide(false);
@@ -187,7 +203,7 @@ const NavBar = () => {
               >
                 College
               </Link>
-              <Dropdown openOnHover={false} title="">
+              <Dropdown openOnHover={true} title="">
                 <Dropdown.Item
                  onClick={()=>{
                   ////setImageSlide(false);
@@ -195,7 +211,7 @@ const NavBar = () => {
                }>
                   COURSES OFFERED
                 </Dropdown.Item>
-
+                <Dropdown.Divider size="lg"/>
                 <Dropdown.Item
                 onClick={()=>{
                   //setImageSlide(false);
@@ -203,6 +219,7 @@ const NavBar = () => {
                }>
                   FACULTY
                 </Dropdown.Item>
+                <Dropdown.Divider size="lg"/>
                 <Dropdown.Item
                   onClick={()=>{
                     //setImageSlide(false);

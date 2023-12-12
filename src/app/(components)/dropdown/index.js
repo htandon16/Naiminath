@@ -92,13 +92,14 @@ const Dropdown = forwardRef(
             (isOpen || isActive) && style.active,
             isDisabled && style.disabled,
             buttonVariant && style[`button-${buttonVariant}`],
-            buttonClassName
+            buttonClassName,
           )}
           disabled={isDisabled}
           tabIndex={0}
           onClick={!openOnHover ? handleButtonOnClick : undefined}
           onMouseOver={openOnHover ? handleButtonOnClick : undefined}
           {...props}
+          
         >
           {'▼'}
         </label>
