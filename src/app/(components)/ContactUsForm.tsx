@@ -13,9 +13,42 @@ const ContactUsForm = () => {
     email: '',
     comments: '',
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => { 
+  const validateForm = () => {
+    let errors: Record<string, string> = {};
+    let isValid = true;
+
+    if (!formData.name.trim()) {
+      errors.name = 'Name is required';
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      errors.email = 'Email is required';
+      isValid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      errors.email = 'Invalid email format';
+      isValid = false;
+    }else if(!formData.comments.trim()){
+      errors.name = 'Comment is required';
+      isValid = false;
+    }
+
+    setErrors(errors);
+    return isValid;
+  };
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => { 
     e.preventDefault()
+
+    if (!validateForm()) {
+      alert('Something went wrong')
+      return;
+    }
+
+    setIsLoading(true);
     console.log(formData);
 
     fetch('/api/contact', {
@@ -27,11 +60,13 @@ const ContactUsForm = () => {
         body: JSON.stringify(formData)
       }).then((res) => {
         console.log('Response received')
+        setIsLoading(false);
         if (res.status === 200) {
           console.log('Response succeeded!')
-          formData.comments=''
-          formData.email=''
-          formData.name=''
+          setFormData({
+            name:'',
+          email:'',
+          comments:''})
         }
       })
   }
@@ -107,8 +142,9 @@ const ContactUsForm = () => {
             onClick={(e)=>
                 handleSubmit(e)
             }
+            disabled={isLoading} 
           >
-            Submit Form
+             {isLoading ? 'Submitting...' : 'Submit Form'}
           </button>
         </div>
       </form>
