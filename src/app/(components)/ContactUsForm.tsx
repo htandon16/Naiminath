@@ -117,14 +117,14 @@ const ContactUsForm = () => {
           </div>
         </div>
 
-        <div className="mb-4 flex flex-row gap-3">
+        <div className="mb-4 flex flex-row gap-7">
           <label htmlFor="comments" className="block mb-2 whitespace-nowrap">
-            Comments
+          Message
           </label>
           <textarea
             id="comments"
-            className="w-full px-3 py-2 border-[1px] border-gray-300 rounded-[4px] focus:outline-none focus:border-blue-500 h-36"
-            placeholder="Your Comments"
+            className=" w-full px-3 py-2 border-[1px] border-gray-300 rounded-[4px] focus:outline-none focus:border-blue-500 h-36"
+            placeholder="Your Message"
             onChange={(e)=>{
                 setFormData((prevData) => ({
                     ...prevData,
@@ -144,7 +144,7 @@ const ContactUsForm = () => {
             }
             disabled={isLoading} 
           >
-             {isLoading ? 'Submitting...' : 'Submit Form'}
+             {isLoading ? 'Submitting...' : 'Submit'}
           </button>
         </div>
       </form>
