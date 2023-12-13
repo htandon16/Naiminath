@@ -38,9 +38,10 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
             <p>Permission Letter</p>
           </div>
         </div>
-        <div className=" flex px-[60px] w-full h-fit justify-between items-center bg-white py-5 border-b-[1px] border-r-slate-300">
-          <div className="w-[200px] h-[60px]">
-            <div className="w-full h-full bg-[url('/images/logo.png')] bg-no-repeat  bg-contain"></div>
+        <div className=" flex px-[60px] w-full h-fit justify-between items-center
+         bg-white py-5 border-b-[1px] border-r-slate-300">
+          <div className="w-[200px] h-[50px] mt-1">
+            <div className="w-full h-full bg-[url('/images/ayurvedalogo.png')] bg-no-repeat  bg-contain"></div>
           </div>
           <NavBar />
           <div className="flex h-fit justify-start items-center bg-[#fff500] rounded-lg px-4 py-3 gap-2 text-[14px] font-semibold">

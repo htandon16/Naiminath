@@ -21,8 +21,7 @@
 
 .item:hover > div {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
 
 .active {

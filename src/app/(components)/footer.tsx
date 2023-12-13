@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="p-5 basis-[25%] ps-[10%]">
           <div className=" text-xl  text-white font-extrabold">Treatments</div>
           <div className="text-[#748182] my-8 text-[15px] flex flex-col gap-2">
-            <Link href="/abhyangam">Abhyangam</Link>
+            <Link href="/hospPage">Abhyangam</Link>
 
             <Link href="/shirodhara">Shirodhara</Link>
 

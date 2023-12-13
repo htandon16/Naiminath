@@ -35,23 +35,66 @@ const Dropdown = forwardRef(
 
     const dropdownRef = useRef();
 
+    // const handleClick = useCallback((e) => {
+    //   if (
+    //     dropdownRef.current !== null &&
+    //     dropdownRef.current !== undefined &&
+    //     !dropdownRef.current.contains(e.target)
+    //   ) {
+    //     setOpen(false);
+    //     document.removeEventListener("mousedown", handleClick);
+    //   }
+    // }, []);
+
+    const margin = 3; // Adjust this value based on your preference
+
+
+
     const handleClick = useCallback((e) => {
       if (
         dropdownRef.current !== null &&
         dropdownRef.current !== undefined &&
         !dropdownRef.current.contains(e.target)
       ) {
-        setOpen(false);
-        document.removeEventListener("mousedown", handleClick);
+        // Check if the mouse is outside the menu and its items
+        const menu = dropdownRef.current.querySelector(`.${style.menu}`);
+        const isOutsideMenu =
+        menu &&
+        !menu.contains(e.target) &&
+        !Array.from(menu.getElementsByTagName('*')).some(el => el.contains(e.target)) &&
+        !(
+          e.clientX >= menu.getBoundingClientRect().left - margin &&
+          e.clientX <= menu.getBoundingClientRect().right + margin &&
+          e.clientY >= menu.getBoundingClientRect().top - margin &&
+          e.clientY <= menu.getBoundingClientRect().bottom + margin
+        );
+    
+        if (isOutsideMenu) {
+          setOpen(false);
+          document.removeEventListener("mousedown", handleClick);
+          document.removeEventListener("mouseover", handleClick);
+        }
       }
     }, []);
 
-    useEffect(
-      () => () => {
+    // useEffect(
+    //   () => () => {
+    //     document.removeEventListener("mousedown", handleClick);
+    //   },
+    //   []
+    // );
+
+    useEffect(() => {
+      if (isOpen) {
+        document.addEventListener("mousedown", handleClick);
+        document.addEventListener("mouseover", handleClick);
+      }
+    
+      return () => {
         document.removeEventListener("mousedown", handleClick);
-      },
-      []
-    );
+        document.removeEventListener("mouseover", handleClick);
+      };
+    }, [isOpen, handleClick]);
 
     const handleButtonOnClick = (e) => {
       if (e) {
@@ -66,12 +109,12 @@ const Dropdown = forwardRef(
       onClick(e);
 
       setOpen(!isOpen);
-
       if (isOpen) {
         document.removeEventListener("mousedown", handleClick);
       } else {
         document.addEventListener("mousedown", handleClick);
       }
+      
     };
 
     useImperativeHandle(ref, () => ({
@@ -160,5 +203,8 @@ Dropdown.defaultProps = {
 Dropdown.Item = Item;
 Dropdown.Submenu = Submenu;
 Dropdown.Divider = Divider;
+
+
+
 
 export default Dropdown;
