@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 
+
 const Footer = () => {
   const customSize: SizeProp = "lg";
   return (
