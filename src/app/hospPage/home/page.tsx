@@ -29,11 +29,11 @@ const HomePage = () => {
   return (
     <div className="w-max-full flex flex-col justify-center items-center mt-[28px] font-sans pb-20">
       {/* ayurveda treatement section */}
-      <div className="stretch-bg1">
+      <div className="bg-[url(https://www.kandathiljeevamrutham.com/images/yogaayur.png)]">
       <AyurvedaTreatmentSection  />
       <WhatIsAyurveda /> 
     </div>
-      <div className="stretch-bg2">
+      <div className="bg-[url(https://www.kandathiljeevamrutham.com/images/yogaayur.png)]">
       <OpdSection />
       <PrivateBamsSection />
       </div>
