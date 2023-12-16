@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import "../style.css";
 import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/app/context/store";
+import Abhyangam from "../../treatment/shirodhara/page";
+import KizhiPage from "../../treatment/kizhi/page";
 
 const Hospital = ({
   params,
@@ -11,9 +13,8 @@ const Hospital = ({
   params: { slug: string };
   searchParams?: { [key: string]: string | string[] | undefined };
 }) => {
-
-  const id = searchParams?.id ? Number(searchParams.id) : 0;  
-  console.log('outerkjjewfjefw=====',id)
+  let id = searchParams?.id ? Number(searchParams.id) : 0;
+  console.log("outerkjjewfjefw=====", id);
 
   const items = [
     {
@@ -304,7 +305,6 @@ const Hospital = ({
         </>
       ),
     },
-
     {
       title: "Swasthvritta",
       content: (
@@ -344,20 +344,99 @@ const Hospital = ({
         </>
       ),
     },
+    {
+      title: "Abhyangam Treatment",
+      content: (
+        <>
+          <Abhyangam />
+        </>
+      ),
+    },
+    {
+      title: "Shirodhara",
+      content: (
+        <>
+          <Abhyangam />
+        </>
+      ),
+    },
+    {
+      title: "Kashayadhara Treatment: The Holistic Healing Experience",
+      content: (
+        <>
+          <Abhyangam />
+        </>
+      ),
+    },
+    {
+      title: "Greeva Basti Treatment: Relieve Neck and Shoulder Discomfort",
+      content: (
+        <>
+          <Abhyangam />
+        </>
+      ),
+    },
+    {
+      title: "Janu Basti Treatment: Soothe and Revitalize Your Knees",
+      content: (
+        <>
+          <Abhyangam />
+        </>
+      ),
+    },
+    {
+      title: "Kati Basti Treatment: Easing Your Way to a Pain-Free Back",
+      content: (
+        <>
+          <Abhyangam />
+        </>
+      ),
+    },
+    {
+      title: "Spine Basti: Holistic Healing for Your Backbone",
+      content: (
+        <>
+          <Abhyangam />
+        </>
+      ),
+    },
+    {
+      title: "Kizhi Treatment: A Healing Experience for Body and Soul ",
+      content: (
+        <>
+          <KizhiPage />
+        </>
+      ),
+    },
+    {
+      title: "Mukha Lepam: Revitalize Your Skin with Ayurvedic Care ",
+      content: (
+        <>
+          <Abhyangam />
+        </>
+      ),
+    },
+    {
+      title: "Discover the Healing Benefits of Netra Tarpanam Treatment",
+      content: (
+        <>
+          <Abhyangam />
+        </>
+      ),
+    },
   ];
 
   const [itemsContent, setItemsContent] = useState(items[id]);
   const { setImageSlide } = useGlobalContext();
-  
 
   useEffect(() => {
-    if (typeof id === 'number') {
-      console.log('Page loaded');
+    if (typeof id === "number") {
+      console.log("Page loaded");
       setItemsContent(items[id]);
       setImageSlide(false);
     }
   }, [id]);
-  
+
   return (
     <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
       <div
@@ -369,11 +448,14 @@ const Hospital = ({
       <div className="flex flex-row w-full justify-center items-start mt-12">
         <div className=" flex flex-col basis-2/5 flex-none  gap-3 items-center justify-center ">
           <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2">
-            {items.map((item, index) => (
+            {items.slice(0, 7).map((item, index) => (
               <li
                 key={index}
                 className=" hover:text-[#54595f] text-[#50b9ce] "
-                onClick={() => setItemsContent(item)}
+                onClick={() => {
+                  console.log('idahjh===',id);
+                  setItemsContent(item)
+                }}
               >
                 {item.title}
               </li>
@@ -389,20 +471,39 @@ const Hospital = ({
             `}</style>
           </ul>
         </div>
-        <ShowRightSideText data={itemsContent} />
+        <ShowRightSideText id={id} data={itemsContent} />
       </div>
     </div>
   );
 };
 
-const ShowRightSideText = ({ data }: any) => {
+const ShowRightSideText = ({ id, data }: any) => {
+  
+ console.log('id===',id);
   return (
+    <>
     <div className=" flex flex-col gap-3 items-start justify-center mr-44">
-      <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
-      <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
-        {data.content}
-      </div>
-    </div>
+          <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
+          <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
+            {data.content}
+          </div>
+        </div>
+      {/* {typeof id === "number" && id ===0 &&(
+        <div className=" flex flex-col gap-3 items-start justify-center mr-44">
+          <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
+          <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
+            {data.content}
+          </div>
+        </div>
+      )}
+
+      {typeof id === "number" && id >= 7 && id <= 16 &&(
+        <div className=" flex flex-col items-start justify-center mr-44">
+            {data.content}
+        </div>
+      )} */}
+
+    </>
   );
 };
 

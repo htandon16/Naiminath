@@ -11,27 +11,27 @@ const Footer = () => {
         <div className="p-5 basis-[25%] ps-[10%]">
           <div className=" text-xl  text-white font-extrabold">Treatments</div>
           <div className="text-[#748182] my-8 text-[15px] flex flex-col gap-2">
-            <Link href="/hospPage">Abhyangam</Link>
+            <Link href="/hospPage/hospital/opd?id=7">Abhyangam</Link>
 
-            <Link href="/shirodhara">Shirodhara</Link>
+            <Link href="/hospPage/hospital/opd?id=8">Shirodhara</Link>
 
-            <Link href="/kashayadhara">Kashayadhara</Link>
+            <Link href="/hospPage/hospital/opd?id=9">Kashayadhara</Link>
 
-            <Link href="/greeva-basti">Greeva Basti</Link>
+            <Link href="/hospPage/hospital/opd?id=10">Greeva Basti</Link>
 
-            <Link href="/janu-basti">Janu Basti</Link>
+            <Link href="/hospPage/hospital/opd?id=11">Janu Basti</Link>
 
-            <Link href="/kati-basti">Kati Basti</Link>
+            <Link href="/hospPage/hospital/opd?id=12">Kati Basti</Link>
 
-            <Link href="/spine-basti">Spine Basti</Link>
+            <Link href="/hospPage/hospital/opd?id=13">Spine Basti</Link>
 
-            <Link href="/kizhi">Kizhi</Link>
+            <Link href="/hospPage/hospital/opd?id=14">Kizhi</Link>
 
-            <Link href="/mukha-lepam">Mukha Lepam</Link>
+            <Link href="/hospPage/hospital/opd?id=15">Mukha Lepam</Link>
 
-            <Link href="/netra-tarpanam">Netra Tarpanam</Link>
+            <Link href="/hospPage/hospital/opd?id=16">Netra Tarpanam</Link>
 
-            <Link href="/panchakarma">Panchakarma</Link>
+            <Link href="/hospPage/hospital/opd?id=2">Panchakarma</Link>
 
             <Link href="/private-bams-colleges">Private BAMS Colleges</Link>
 

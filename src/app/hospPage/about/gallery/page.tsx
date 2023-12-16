@@ -34,7 +34,7 @@ const AboutGallery = () => {
   // ];
 
   const imageUrls = Array.from(
-    { length: 10 },
+    { length: 23 },
     (url, index) => `/images/gallery/gallery${index + 1}-min.jpg`
   );
 

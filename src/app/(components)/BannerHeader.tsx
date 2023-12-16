@@ -1,8 +1,18 @@
 "use client";
 import React from "react";
+import { useGlobalContext } from "../context/store";
+import dynamic from "next/dynamic";
 import Header from "./Header";
 import ImageSlider from "./ImageSlider";
-import { useGlobalContext } from "../context/store";
+
+// const Header = dynamic(
+//   () => import('./Header'),
+//   { ssr: false }
+// )
+// const ImageSlider = dynamic(
+//   () => import('./ImageSlider'),
+//   { ssr: false }
+// )
 
 const BannerHeader = () => {
   const { imageSlide, setImageSlide } = useGlobalContext();

@@ -1,3 +1,4 @@
+'use client'
 import {
   faBook,
   faMailBulk,
@@ -9,6 +10,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 import { useRouter } from "next/navigation";
+
 
 const Header = ({ imageSlider }: { imageSlider: boolean }) => {
   const customSize: SizeProp = "lg";

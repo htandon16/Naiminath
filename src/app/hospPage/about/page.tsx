@@ -23,10 +23,11 @@ const AboutUs = () => {
       <div className="flex flex-row w-[74vw] justify-center gap-6 mt-10">
         <Image
           src="/images/about_hospital.jpg"
-          className="w-[390px] h-[290px] rounded-[7px]"
+          className="w-[390px] h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100"
           alt="about image"
           width={1600}
           height={800}
+          
         />
         <div className="text-[#7c7777] text-[17px]">
           <p>
