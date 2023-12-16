@@ -12,31 +12,31 @@ const Footer = () => {
         <div className="p-5 basis-[25%] ps-[10%]">
           <div className=" text-xl  text-white font-extrabold">Treatments</div>
           <div className="text-[#748182] my-8 text-[15px] flex flex-col gap-2">
-            <Link href="/hospPage/hospital/opd?id=7">Abhyangam</Link>
+            <a href="/hospPage/hospital/opd?id=7">Abhyangam</a>
 
-            <Link href="/hospPage/hospital/opd?id=8">Shirodhara</Link>
+            <a href="/hospPage/hospital/opd?id=8">Shirodhara</a>
 
-            <Link href="/hospPage/hospital/opd?id=9">Kashayadhara</Link>
+            <a href="/hospPage/hospital/opd?id=9">Kashayadhara</a>
 
-            <Link href="/hospPage/hospital/opd?id=10">Greeva Basti</Link>
+            <a href="/hospPage/hospital/opd?id=10">Greeva Basti</a>
 
-            <Link href="/hospPage/hospital/opd?id=11">Janu Basti</Link>
+            <a href="/hospPage/hospital/opd?id=11">Janu Basti</a>
 
-            <Link href="/hospPage/hospital/opd?id=12">Kati Basti</Link>
+            <a href="/hospPage/hospital/opd?id=12">Kati Basti</a>
 
-            <Link href="/hospPage/hospital/opd?id=13">Spine Basti</Link>
+            <a href="/hospPage/hospital/opd?id=13">Spine Basti</a>
 
-            <Link href="/hospPage/hospital/opd?id=14">Kizhi</Link>
+            <a href="/hospPage/hospital/opd?id=14">Kizhi</a>
 
-            <Link href="/hospPage/hospital/opd?id=15">Mukha Lepam</Link>
+            <a href="/hospPage/hospital/opd?id=15">Mukha Lepam</a>
 
-            <Link href="/hospPage/hospital/opd?id=16">Netra Tarpanam</Link>
+            <a href="/hospPage/hospital/opd?id=16">Netra Tarpanam</a>
 
-            <Link href="/hospPage/hospital/opd?id=2">Panchakarma</Link>
+            <a href="/hospPage/hospital/opd?id=2">Panchakarma</a>
 
-            <Link href="/private-bams-colleges">Private BAMS Colleges</Link>
+            {/* <a href="/private-bams-colleges">Private BAMS Colleges</a>
 
-            <Link href="/bams-fees">BAMS Fees</Link>
+            <a href="/bams-fees">BAMS Fees</a> */}
           </div>
         </div>
         <div className="p-5 basis-[25%]">

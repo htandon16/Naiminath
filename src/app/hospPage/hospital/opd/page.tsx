@@ -5,6 +5,10 @@ import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/app/context/store";
 import Abhyangam from "../../treatment/shirodhara/page";
 import KizhiPage from "../../treatment/kizhi/page";
+import SpineBastiPage from "../../treatment/spine-basti/page";
+import KatiBastiPage from "../../treatment/kati-basti/page";
+import GreevaBastiPage from "../../treatment/greeva-basti/page";
+import JanuBastiPage from "../../treatment/janu-basti/page";
 
 const Hospital = ({
   params,
@@ -372,7 +376,7 @@ const Hospital = ({
       title: "Greeva Basti Treatment: Relieve Neck and Shoulder Discomfort",
       content: (
         <>
-          <Abhyangam />
+          <GreevaBastiPage />
         </>
       ),
     },
@@ -380,7 +384,7 @@ const Hospital = ({
       title: "Janu Basti Treatment: Soothe and Revitalize Your Knees",
       content: (
         <>
-          <Abhyangam />
+          <JanuBastiPage />
         </>
       ),
     },
@@ -388,7 +392,7 @@ const Hospital = ({
       title: "Kati Basti Treatment: Easing Your Way to a Pain-Free Back",
       content: (
         <>
-          <Abhyangam />
+          <KatiBastiPage />
         </>
       ),
     },
@@ -396,7 +400,7 @@ const Hospital = ({
       title: "Spine Basti: Holistic Healing for Your Backbone",
       content: (
         <>
-          <Abhyangam />
+          <SpineBastiPage />
         </>
       ),
     },
@@ -426,14 +430,21 @@ const Hospital = ({
     },
   ];
 
+  const rounter=useRouter();
+
   const [itemsContent, setItemsContent] = useState(items[id]);
-  const { setImageSlide } = useGlobalContext();
+  const [currentId, setCurrentId] = useState(id);
+  const { imageSlide,setImageSlide } = useGlobalContext();
 
   useEffect(() => {
     if (typeof id === "number") {
       console.log("Page loaded");
       setItemsContent(items[id]);
-      setImageSlide(false);
+      setCurrentId(id)
+      if(imageSlide){
+        setImageSlide(false);
+      }
+      
     }
   }, [id]);
 
@@ -454,6 +465,7 @@ const Hospital = ({
                 className=" hover:text-[#54595f] text-[#50b9ce] "
                 onClick={() => {
                   console.log('idahjh===',id);
+                  setCurrentId(index)
                   setItemsContent(item)
                 }}
               >
@@ -471,7 +483,7 @@ const Hospital = ({
             `}</style>
           </ul>
         </div>
-        <ShowRightSideText id={id} data={itemsContent} />
+        <ShowRightSideText id={currentId} data={itemsContent} />
       </div>
     </div>
   );
@@ -482,13 +494,13 @@ const ShowRightSideText = ({ id, data }: any) => {
  console.log('id===',id);
   return (
     <>
-    <div className=" flex flex-col gap-3 items-start justify-center mr-44">
+    {/* <div className=" flex flex-col gap-3 items-start justify-center mr-44">
           <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
           <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
             {data.content}
           </div>
-        </div>
-      {/* {typeof id === "number" && id ===0 &&(
+        </div> */}
+      {typeof id === "number" &&  id >= 0 && id <= 6 &&(
         <div className=" flex flex-col gap-3 items-start justify-center mr-44">
           <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
           <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
@@ -498,10 +510,10 @@ const ShowRightSideText = ({ id, data }: any) => {
       )}
 
       {typeof id === "number" && id >= 7 && id <= 16 &&(
-        <div className=" flex flex-col items-start justify-center mr-44">
+        <div className=" flex flex-col items-start justify-center mr-44 font-serif">
             {data.content}
         </div>
-      )} */}
+      )}
 
     </>
   );

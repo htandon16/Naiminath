@@ -29,10 +29,16 @@ const HomePage = () => {
   return (
     <div className="w-max-full flex flex-col justify-center items-center mt-[28px] font-sans pb-20">
       {/* ayurveda treatement section */}
+      <div className="w-full flex flex-col justify-center items-center bg-cover bg-no-repeat
+      bg-[url('https://files.123freevectors.com/wp-content/original/150873-green-and-beige-diagonal-shiny-lines-background-vector-art.jpg')] pt-5">
       <AyurvedaTreatmentSection  />
       <WhatIsAyurveda />
+      </div>
+      <div className="w-full flex flex-col justify-center items-center pt-5">
       <OpdSection />
       <PrivateBamsSection />
+      </div>
+      
       <AboutUsSection />
       <NaiminathAyurvedaSection />
     </div>
