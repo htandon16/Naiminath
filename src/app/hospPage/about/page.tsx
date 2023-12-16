@@ -29,7 +29,7 @@ const AboutUs = () => {
           height={800}
           
         />
-        <div className="text-[#7c7777] text-[17px]">
+        <div className="text-[#7c7777] text-[17px] text-justify">
           <p>
             Naiminath Ayurvedic Hospital is the pioneer in the field of Ayurveda
             in the world. The Hospital offers treatment for every ailment and is
