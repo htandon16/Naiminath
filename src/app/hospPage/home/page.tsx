@@ -33,7 +33,7 @@ const HomePage = () => {
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100% cover;
-  max-height: 750px;
+  height: 700px;
       ">
         {/*className="bg-no-repeat bg-cover bg-[url(https://www.kandathiljeevamrutham.com/images/yogaayur.png)]">*/
       <AyurvedaTreatmentSection  />
@@ -43,7 +43,7 @@ const HomePage = () => {
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100% cover;
-  max-height: 750px;
+  height: 700px;
         ">
       <OpdSection />
       <PrivateBamsSection />
