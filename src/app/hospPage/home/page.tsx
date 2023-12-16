@@ -29,11 +29,22 @@ const HomePage = () => {
   return (
     <div className="w-max-full flex flex-col justify-center items-center mt-[28px] font-sans pb-20">
       {/* ayurveda treatement section */}
-      <div className="bg-no-repeat bg-cover bg-[url(https://www.kandathiljeevamrutham.com/images/yogaayur.png)]">
+      <div style="background-image: url('https://files.123freevectors.com/wp-content/original/150873-green-and-beige-diagonal-shiny-lines-background-vector-art.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100% cover;
+  max-height: 750px;
+      ">
+        {/*className="bg-no-repeat bg-cover bg-[url(https://www.kandathiljeevamrutham.com/images/yogaayur.png)]">*/
       <AyurvedaTreatmentSection  />
       <WhatIsAyurveda /> 
     </div>
-      <div className="bg-no-repeat bg-cover bg-[url(https://www.kandathiljeevamrutham.com/images/yogaayur.png)]">
+      <div style="background-image: url('https://files.123freevectors.com/wp-content/original/150873-green-and-beige-diagonal-shiny-lines-background-vector-art.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100% cover;
+  max-height: 750px;
+        ">
       <OpdSection />
       <PrivateBamsSection />
       </div>
