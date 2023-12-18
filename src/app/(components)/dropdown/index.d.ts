@@ -26,7 +26,7 @@
         className?: string;
       }>;
       Divider: FC<{
-        size?: "sm" | "lg";
+        size?: "xs" |"sm" | "lg";
       }>;
       Item: FC<{
         children?: ReactNode | ReactNode[];

@@ -18,7 +18,7 @@ const Hospital = ({
   searchParams?: { [key: string]: string | string[] | undefined };
 }) => {
   let id = searchParams?.id ? Number(searchParams.id) : 0;
-  console.log("outerkjjewfjefw=====", id);
+  
 
   const items = [
     {
@@ -491,7 +491,6 @@ const Hospital = ({
 
 const ShowRightSideText = ({ id, data }: any) => {
   
- console.log('id===',id);
   return (
     <>
     {/* <div className=" flex flex-col gap-3 items-start justify-center mr-44">

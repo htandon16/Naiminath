@@ -1,4 +1,4 @@
-export default function Loading() {
+ function Loading() {
   return (
     <div className="fixed inset-0 bg-white z-[10000] flex flex-1 items-center justify-center">
       <div className="flex gap-2">
@@ -9,3 +9,5 @@ export default function Loading() {
     </div>
   );
 }
+ 
+export default Loading;
