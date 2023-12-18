@@ -4,14 +4,14 @@ import fs from "fs";
 import path from "path";
 import process from "process";
 import { google } from "googleapis";
-import { NextApiRequest, NextApiResponse } from 'next'
 import { NextRequest, NextResponse } from "next/server";
 import apiKey from '../../../../../apikey.json'
-import { resolve } from "path/posix";
-import { error } from "console";
 
- const SCOPES = [process.env.SCOPES||''];
- const folderId:string = process.env.FOLDER_ID||'';
+
+//  const SCOPES = [process.env.SCOPES||''];
+//  const folderId:string = process.env.FOLDER_ID||'';
+const folderId="146Am-MP_RV0TbS44jjSWTsPYZImzk6hq"
+const SCOPES=["https://www.googleapis.com/auth/drive"]
 
  const API_KEY = path.join(process.cwd(),  "apikey.json");
 
