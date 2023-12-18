@@ -31,7 +31,7 @@ const HomePage = () => {
       {/* ayurveda treatement section */}
      
       <div className="w-full flex flex-col justify-center items-center bg-cover bg-no-repeat
-      bg-[url('https://files.123freevectors.com/wp-content/original/150873-green-and-beige-diagonal-shiny-lines-background-vector-art.jpg')] pt-5">
+      bg-[url('https://hindijaankaari.in/wp-content/uploads/2023/12/greenbg-scaled.jpeg')] pt-5 font-sans">
       <AyurvedaTreatmentSection  />
       <WhatIsAyurveda />
       </div>
@@ -60,8 +60,8 @@ const AyurvedaTreatmentSection = () => {
   ];
   return (
     <>
-      <h2 className="text-[32px] text-[#525252]">Ayurvedic Treatments</h2>
-      <p className="text-[17px] text-[#7c7777]">List of Ayurvedic Treatments</p>
+      <h2 className="text-[34px] text-[#525252] font-semibold">Ayurvedic Treatments</h2>
+      <p className="text-[19px] text-[#7c7777] font-semibold">List of Ayurvedic Treatments</p>
       <div className=" w-[66%] my-[3%] mx-[20%]  items-center justify-center">
         <AyurvedaTreatmentImageSlider items={sliderItems} />
       </div>
@@ -97,8 +97,8 @@ const WhatIsAyurveda = () => {
     <div className=" w-[70%] my-[4%] mx-[10%] flex flex-row">
       <div className="w-[28vw] h-[46vh] bg-cover bg-no-repeat bg-[url('/images/ayurveda_img.png')]" />
       <div className="w-[44vw] h-full ms-[5%]">
-        <label className=" text-3xl text-[#525252]">What is Ayurveda?</label>
-        <p className="text-[#7c7777] mt-[3%]">
+        <label className=" text-[32px] font-semibold text-[#525252]">What is Ayurveda?</label>
+        <p className="text-[#042d04] mt-[3%]">
           Ayurveda is an ancient knowledge cultivated by the sages of India. It
           has been developed from various treatises and manuscripts and has made
           its way to becoming one of the ancient most but modern health care
@@ -109,7 +109,7 @@ const WhatIsAyurveda = () => {
           to maintain good health as well as dealing with illness through yoga,
           treatments, herbal medicines, correct diet and lifestyle changes.
         </p>
-        <p className="text-[#7c7777] mt-[3.5%]">
+        <p className="text-[#042d04] mt-[3.5%]">
           Ayurveda prescribes many treatments for various medical conditions
           such as rheumatism, respiratory problems, blood pressure, cholesterol,
           paralysis etc. This system of medicine is special in that it makes use
