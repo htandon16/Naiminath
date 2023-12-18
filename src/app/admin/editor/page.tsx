@@ -1,12 +1,13 @@
 "use client";
 import dynamic from "next/dynamic";
-import React, { useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import "react-quill/dist/quill.snow.css";
+import "./style.css";
 
-import type ReactQuill from 'react-quill';
+import type ReactQuill from "react-quill";
 const QuillWrapper = dynamic(
   async () => {
-    const { default: RQ } = await import('react-quill');
+    const { default: RQ } = await import("react-quill");
     // eslint-disable-next-line react/display-name
     return ({ ...props }) => <RQ {...props} />;
   },
@@ -15,12 +16,13 @@ const QuillWrapper = dynamic(
   }
 ) as typeof ReactQuill;
 
-
 import type QuillToolbar from "@/app/(components)/QuillEditorToolbar";
 
 const QuillToolbarEditor = dynamic(
   async () => {
-    const { default: RQ } = await import('@/app/(components)/QuillEditorToolbar');
+    const { default: RQ } = await import(
+      "@/app/(components)/QuillEditorToolbar"
+    );
     // eslint-disable-next-line react/display-name
     return ({ ...props }) => <RQ {...props} />;
   },
@@ -84,14 +86,16 @@ const formats = [
   "code-block",
 ];
 
-
-
-
+interface Blog {
+  fileName: string;
+  filePath: string;
+  content: string;
+}
 const QuillEditor = () => {
-
   const [content, setContent] = useState({ value: "" });
   const [isLoading, setIsLoading] = useState(false);
- // const quillRef = useRef<ReactQuill>(null);
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  // const quillRef = useRef<ReactQuill>(null);
   //const turndown = new TurndownService();
 
   const handleChange = (value: string) => {
@@ -107,12 +111,11 @@ const QuillEditor = () => {
     console.log("Content:querySelector==", htmlContent);
 
     const writeHtmlFileApi = async () => {
-
       try {
         const response = await fetch("/api/blog", {
           method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: JSON.stringify({ content: htmlContent }),
         });
@@ -125,20 +128,79 @@ const QuillEditor = () => {
         return data;
       } catch (error: any) {
         console.error("Error fetching data:", error.message);
-      }finally {
+      } finally {
         setIsLoading(false);
+        callApi();
       }
     };
     writeHtmlFileApi();
-    
-  
   };
 
+  const fetchDocsApi = async () => {
+    try {
+      const response = await fetch("/api/blog", {
+        method: "GET",
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log(data);
+      return data;
+    } catch (error: any) {
+      console.error("Error fetching data:", error.message);
+      throw error; // Rethrow the error to handle it elsewhere if needed
+    }
+  };
+
+  const deleteDocsApi = async (fileName:string) => {
+    try {
+      const response = await fetch("/api/blog", {
+        method: "DELETE",
+        body: JSON.stringify({ fileName }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log(data);
+      return data;
+    } catch (error: any) {
+      console.error("Error fetching data:", error.message);
+      throw error; // Rethrow the error to handle it elsewhere if needed
+    }
+  };
+
+  useEffect(() => {
+    callApi();
+  }, []);
+
+  const callApi = async () => {
+    fetchDocsApi()
+      .then((result) => {
+        setBlogs(result);
+        console.log("getResult=", result);
+      })
+      .catch(() => {});
+  };
+
+  function handleDeleteClick(fileName:string) {
+    deleteDocsApi(fileName)
+      .then((result) => {
+        callApi()
+      })
+      .catch((error) => {console.log('delete Api error:', error)});
+  }
+
   return (
-    <div>
+    <div className=" flex flex-col">
       <QuillToolbarEditor />
+
       <div id="editorcontainer">
-        <QuillWrapper 
+        <QuillWrapper
           theme="snow"
           value={content.value}
           onChange={handleChange}
@@ -152,12 +214,47 @@ const QuillEditor = () => {
           onClick={(e) => handleUpload(e)}
           disabled={isLoading}
         >
-           {isLoading ? 'Uploading...' : 'Upload'}
+          {isLoading ? "Uploading..." : "Upload"}
         </button>
+      </div>
+
+      <div className="w-full flex flex-wrap justify-start items-center mt-10 mx-10 gap-5">
+        {blogs && blogs.length > 0 ? (
+          blogs.map((blog, index) => (
+            <div key={index} className="basis-1/6">
+              <div
+                className="flex flex-col justify-start h-[100px] items-center  rounded-lg 
+                overflow-hidden shadow-md inset-11 hover:bg-slate-50 cursor-pointer"
+                onClick={async (e) => {}}
+              >
+                <h5 className="text-white py-2 text-center bg-black w-full">
+                  Blog {"-"} {index + 1}
+                </h5>
+                <div
+                  className=" overflow-hidden px-2 pt-2 w-full"
+                  style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    WebkitLineClamp: 2,
+                  }}
+                  dangerouslySetInnerHTML={{ __html: blog.content }}
+                />
+              </div>
+              <button
+                className="w-full mt-4 text-center py-1 px-4 bg-slate-700 text-white "
+                onClick={() => handleDeleteClick(blog.fileName)}
+              >
+                Delete
+              </button>
+            </div>
+          ))
+        ) : (
+          <p>No Blogs available</p>
+        )}
       </div>
     </div>
   );
 };
-
 
 export default QuillEditor;

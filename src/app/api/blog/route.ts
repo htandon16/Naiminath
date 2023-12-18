@@ -66,7 +66,31 @@ export async function POST(req: NextRequest,res:NextResponse) {
   }catch(e){
     return new Response(`Error:${e}`);
   } 
-  
-  //
- 
+}
+
+export async function DELETE(req: NextRequest) {
+
+   const {fileName} = await req.json();
+
+  if (!fileName) {
+    return new Response(`Missing filename in request parameters`, { status: 400 });
+  }
+
+  const directoryPath = path.join('/tmp/blog');
+  const filePath = path.join(directoryPath, fileName);
+
+  try {
+    // Check if the file exists
+    if (!fs.existsSync(filePath)) {
+      return new Response(`File not found`, { status: 404 });
+    }
+
+    // Delete the file
+    fs.unlinkSync(filePath);
+
+    return new Response(JSON.stringify(`File ${fileName} deleted successfully`), { status: 200 });
+  } catch (error) {
+    console.error(`Error deleting file ${fileName}:`, error);
+    return new Response(`Internal Server Error`, { status: 500 });
+  }
 }
