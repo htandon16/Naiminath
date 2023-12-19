@@ -1,14 +1,22 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "../style.css";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useGlobalContext } from "@/app/context/store";
-import Abhyangam from "../../treatment/shirodhara/page";
+import Abhyangam from "../../treatment/abhyangam/page";
 import KizhiPage from "../../treatment/kizhi/page";
 import SpineBastiPage from "../../treatment/spine-basti/page";
 import KatiBastiPage from "../../treatment/kati-basti/page";
 import GreevaBastiPage from "../../treatment/greeva-basti/page";
 import JanuBastiPage from "../../treatment/janu-basti/page";
+import SirodharaPage from "../../treatment/shirodhara/page";
+import KashydharaPage from "../../treatment/kashayadhara/page";
+import MukhaLepam from "../../treatment/mukha-lepam/page";
+import NetraTarpanamPage from "../../treatment/netra-tarpanam/page";
+import { Helmet } from "react-helmet";
+import { render } from "react-dom";
+import { renderToHTML } from "next/dist/server/render";
+import { renderToReadableStream } from "next/dist/server/app-render/entry-base";
 
 const Hospital = ({
   params,
@@ -18,7 +26,6 @@ const Hospital = ({
   searchParams?: { [key: string]: string | string[] | undefined };
 }) => {
   let id = searchParams?.id ? Number(searchParams.id) : 0;
-  
 
   const items = [
     {
@@ -69,6 +76,15 @@ const Hospital = ({
           </p>
         </>
       ),
+      meta: (
+          <head>
+          <meta name="robots" content="max-image-preview:large" />
+          <title>
+            Kayachikitsa; Naiminath Ayurveda : Top BAMS College in India
+          </title>
+          <meta name="description" content="NA" />
+          </head>
+               ),
     },
     {
       title: "Kaumarbhritya",
@@ -108,6 +124,15 @@ const Hospital = ({
           </ul>
         </>
       ),
+      meta: (
+          <head>
+          <meta name="robots" content="max-image-preview:large" />
+          <title>
+            Kaumarbhritya Naiminath Ayurveda : Top BAMS College in India
+          </title>
+          <meta name="description" content="NA" />
+          </head>
+      ),
     },
     {
       title: "Panchkarma",
@@ -145,6 +170,15 @@ const Hospital = ({
           <br />
         </>
       ),
+      meta: (
+          <head>
+          <meta name="robots" content="max-image-preview:large" />
+          <title>
+            Panchkarma Naiminath Ayurveda : Top BAMS College in India
+          </title>
+          <meta name="description" content="NA" />
+          </head>
+      ),
     },
     {
       title: "Prasuti & Stri Roga",
@@ -179,6 +213,15 @@ const Hospital = ({
           </div>
           <br />
         </>
+      ),
+      meta: (
+        <head>
+          <meta name="robots" content="max-image-preview:large" />
+          <title>
+            Prasuti Stri Roga Naiminath Ayurveda : Top BAMS College in India
+          </title>
+          <meta name="description" content="NA" />
+        </head>
       ),
     },
     {
@@ -249,6 +292,15 @@ const Hospital = ({
           <br />
         </>
       ),
+      meta: (
+        <head>
+          <meta name="robots" content="max-image-preview:large" />
+          <title>
+            Shalakya Tantra Naiminath Ayurveda : Top BAMS College in India
+          </title>
+          <meta name="description" content="NA" />
+        </head>
+      ),
     },
     {
       title: "Shalya Tantra",
@@ -308,6 +360,15 @@ const Hospital = ({
           <br />
         </>
       ),
+      meta: (
+        <head>
+          <meta name="robots" content="max-image-preview:large" />
+          <title>
+            Shalya Tantra Naiminath Ayurveda : Top BAMS College in India
+          </title>
+          <meta name="description" content="NA" />
+        </head>
+      ),
     },
     {
       title: "Swasthvritta",
@@ -347,20 +408,77 @@ const Hospital = ({
           <br />
         </>
       ),
+      meta: (
+        <head>
+          <meta name="robots" content="max-image-preview:large" />
+          <title>
+            Swasthavritta Naiminath Ayurveda : Top BAMS College in India
+          </title>
+          <meta name="description" content="NA" />
+        </head>
+      ),
     },
     {
       title: "Abhyangam Treatment",
       content: (
-        <>
           <Abhyangam />
-        </>
       ),
+      meta: (
+        <head>
+        <title>
+          Abhyangam Treatment | Abhyangam Therapy - Naiminath Ayurveda
+        </title>
+        <meta
+          name="description"
+          content="Escape to a world of tranquility and healing with Abhyangam Treatment at Naiminath Ayurveda. Rediscover harmony within yourself today!"
+        />
+
+        <meta
+          name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:standard"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Abhyangam Treatment | Abhyangam Therapy - Naiminath Ayurveda"
+        />
+        <meta
+          property="og:description"
+          content="Escape to a world of tranquility and healing with Abhyangam Treatment at Naiminath Ayurveda. Rediscover harmony within yourself today!"
+        />
+        <meta
+          property="og:url"
+          content="https://naiminathayurveda.org/abhyangam/"
+        />
+        <meta
+          property="og:site_name"
+          content="Naiminath Ayurveda : Best Private BAMS College in Agra, UP, India"
+        />
+        <meta
+          property="og:updated_time"
+          content="2023-09-04T09:20:08+00:00"
+        />
+        <meta
+          property="og:image"
+          content="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904100943_fpdl.in_chinese-asian-woman-wellness-beauty-spa-having-aroma-therapy-massage-with-min.jpg"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904100943_fpdl.in_chinese-asian-woman-wellness-beauty-spa-having-aroma-therapy-massage-with-min.jpg"
+        />
+        <meta property="og:image:width" content="960" />
+        <meta property="og:image:height" content="640" />
+        <meta property="og:image:alt" content="Abhyangam" />
+        <meta property="og:image:type" content="image/jpeg" />
+      </head>
+      )
     },
     {
       title: "Shirodhara",
       content: (
         <>
-          <Abhyangam />
+          <SirodharaPage />
         </>
       ),
     },
@@ -368,7 +486,7 @@ const Hospital = ({
       title: "Kashayadhara Treatment: The Holistic Healing Experience",
       content: (
         <>
-          <Abhyangam />
+          <KashydharaPage />
         </>
       ),
     },
@@ -416,7 +534,7 @@ const Hospital = ({
       title: "Mukha Lepam: Revitalize Your Skin with Ayurvedic Care ",
       content: (
         <>
-          <Abhyangam />
+          <MukhaLepam />
         </>
       ),
     },
@@ -424,31 +542,35 @@ const Hospital = ({
       title: "Discover the Healing Benefits of Netra Tarpanam Treatment",
       content: (
         <>
-          <Abhyangam />
+          <NetraTarpanamPage />
         </>
       ),
     },
   ];
 
-  const rounter=useRouter();
+  const rounter = useRouter();
 
   const [itemsContent, setItemsContent] = useState(items[id]);
   const [currentId, setCurrentId] = useState(id);
-  const { imageSlide,setImageSlide } = useGlobalContext();
+  const { imageSlide, setImageSlide } = useGlobalContext();
 
   useEffect(() => {
+   
     if (typeof id === "number") {
       console.log("Page loaded");
       setItemsContent(items[id]);
-      setCurrentId(id)
-      if(imageSlide){
+      setCurrentId(id);
+      if (imageSlide) {
         setImageSlide(false);
       }
-      
     }
   }, [id]);
 
   return (
+    <>
+    {itemsContent.meta && (
+        <>{itemsContent.meta}</>
+      )}
     <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
       <div
         className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
@@ -464,9 +586,17 @@ const Hospital = ({
                 key={index}
                 className=" hover:text-[#54595f] text-[#50b9ce] "
                 onClick={() => {
-                  console.log('idahjh===',id);
-                  setCurrentId(index)
-                  setItemsContent(item)
+                  setCurrentId(index);
+                  setItemsContent(item);
+                 // rounter.push(`/hospPage/hospital/opd?id=${index}`)
+                  
+                 // console.log("idahjh===", index);
+                  
+                   const currentUrl = window.location.href;
+                   const newUrl = `${currentUrl.split('?')[0]}?id=${index}`;
+                   window.history.replaceState(null, '', newUrl);
+                  // window.location.reload()
+
                 }}
               >
                 {item.title}
@@ -486,20 +616,21 @@ const Hospital = ({
         <ShowRightSideText id={currentId} data={itemsContent} />
       </div>
     </div>
+    </>
+    
   );
 };
 
 const ShowRightSideText = ({ id, data }: any) => {
-  
   return (
     <>
-    {/* <div className=" flex flex-col gap-3 items-start justify-center mr-44">
+      {/* <div className=" flex flex-col gap-3 items-start justify-center mr-44">
           <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
           <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
             {data.content}
           </div>
         </div> */}
-      {typeof id === "number" &&  id >= 0 && id <= 6 &&(
+      {typeof id === "number" && id >= 0 && id <= 6 && (
         <div className=" flex flex-col gap-3 items-start justify-center mr-44">
           <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
           <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
@@ -508,12 +639,11 @@ const ShowRightSideText = ({ id, data }: any) => {
         </div>
       )}
 
-      {typeof id === "number" && id >= 7 && id <= 16 &&(
+      {typeof id === "number" && id >= 7 && id <= 16 && (
         <div className=" flex flex-col items-start justify-center mr-44 font-serif">
-            {data.content}
+          {data.content}
         </div>
       )}
-
     </>
   );
 };

@@ -11,6 +11,8 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useGlobalContext } from "@/app/context/store";
+import { Helmet } from 'react-helmet';
+
 
 type SliderItem = {
   image: string;
@@ -27,9 +29,15 @@ const HomePage = () => {
 
  
   return (
+    <>
+    <Helmet>
+    <meta name="robots" content="max-image-preview:large"/>
+    <title>Home Naiminath Ayurveda : Top BAMS College in India</title>
+    <meta name="description" content="NA" />
+    </Helmet>
     <div className="w-max-full flex flex-col justify-center items-center -mt-4 font-sans pb-20">
       {/* ayurveda treatement section */}
-     
+      
       <div className="w-full flex flex-col justify-center items-center bg-cover bg-no-repeat
       bg-[url('https://hindijaankaari.in/wp-content/uploads/2023/12/greenbg-scaled.jpeg')] pt-[32px] font-sans">
       <AyurvedaTreatmentSection  />
@@ -43,6 +51,8 @@ const HomePage = () => {
       <AboutUsSection />
       <NaiminathAyurvedaSection />
     </div>
+    </>
+    
   );
 };
 

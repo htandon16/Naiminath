@@ -11,6 +11,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/app/context/store";
 import Loading from '../../loading'
+import { Helmet } from "react-helmet";
 
 interface Doc {
   name: string;
@@ -199,7 +200,15 @@ const NCISM = () => {
   };
 
   return (
-    <div className="flex flex-col my-12 justify-center items-center mx-40">
+    <>
+    
+    <Helmet>
+    <meta name="robots" content="max-image-preview:large"/>
+    <title>Regulatory Info Naiminath Ayurveda : Top BAMS College in India</title>
+    <meta name="description" content="NA" />
+    </Helmet>
+
+     <div className="flex flex-col my-12 justify-center items-center mx-40">
       <div className="">
         <h2 className="text-2xl text-[#144575] font-medium">
           REGULATORY INFO - NCISM Mandate
@@ -233,6 +242,8 @@ const NCISM = () => {
       )}
       </div>
     </div>
+    </>
+   
 
     // <div className="flex flex-col my-12 justify-center items-center mx-40">
     //   <div className="">

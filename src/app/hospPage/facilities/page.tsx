@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { useGlobalContext } from "@/app/context/store";
+import { Helmet } from "react-helmet";
 
 const Facilities = () => {
   const { setImageSlide } = useGlobalContext();
@@ -12,6 +13,14 @@ const Facilities = () => {
   }, [setImageSlide]);
 
   return (
+    <>
+    
+    <Helmet>
+    <meta name="robots" content="max-image-preview:large"/>
+    <title>Facilities Naiminath Ayurveda : Top BAMS College in India</title>
+    <meta name="description" content="NA" />
+    </Helmet>
+
     <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
       <div
         className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
@@ -65,6 +74,7 @@ const Facilities = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

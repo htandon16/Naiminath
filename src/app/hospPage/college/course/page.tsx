@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Course = () => {
     const rounter = useRouter()
@@ -20,7 +21,14 @@ const Course = () => {
   }, [setImageSlide]);
   
   return (
-    <div className=" flex flex-col justify-center items-center">
+    <>
+    <Helmet>
+    <meta name="robots" content="max-image-preview:large"/>
+    <title>Courses OfferedNaiminath Ayurveda : Top BAMS College in India</title>
+    <meta name="description" content="NA" />
+    </Helmet>
+    
+ <div className=" flex flex-col justify-center items-center">
         <div className=" text-3xl mt-10 text-gray-800 text-center font-sans font-bold">Courses Offered</div>
       <div className="w-[55vw] bg-white p-6 rounded-md shadow-md ring-1 ring-slate-100 font-serif text-[#7f7f7f] my-12">
         <h1 className="text-3xl font-extrabold text-black mb-4">
@@ -135,6 +143,8 @@ const Course = () => {
         </ol>
       </div>
     </div>
+    </>
+   
   );
 };
 

@@ -1,6 +1,7 @@
 "use client";
 import { useGlobalContext } from "@/app/context/store";
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Faculty = () => {
   const { setImageSlide } = useGlobalContext();
@@ -91,7 +92,13 @@ const Faculty = () => {
   ];
 
   return (
-    <div className=" flex flex-col">
+    <>
+    <Helmet>
+    <meta name="robots" content="max-image-preview:large"/>
+    <title>Faculty Naiminath Ayurveda : Top BAMS College in India</title>
+    <meta name="description" content="NA" />
+    </Helmet>
+      <div className=" flex flex-col">
       <div className=" text-3xl mt-10 text-gray-800 text-center font-sans font-bold">
         Faculty
       </div>
@@ -148,6 +155,8 @@ const Faculty = () => {
         </table>
       </div>
     </div>
+    </>
+  
   );
 };
 

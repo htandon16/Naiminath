@@ -1,8 +1,12 @@
+'use client'
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const Abhyangam = () => {
   return (
+    
     <div>
+     
       <style
         dangerouslySetInnerHTML={{
           __html:
@@ -11,9 +15,8 @@ const Abhyangam = () => {
       />
       <div>
         <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904100943_fpdl.in_chinese-asian-woman-wellness-beauty-spa-having-aroma-therapy-massage-with-min.jpg"
+          src="https://naiminath.org/NAMC/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c-768x512.jpg"
           sizes="(max-width: 640px) 100vw, 640px"
-          srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904100943_fpdl.in_chinese-asian-woman-wellness-beauty-spa-having-aroma-therapy-massage-with-min.jpg 960w, https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904100943_fpdl.in_chinese-asian-woman-wellness-beauty-spa-having-aroma-therapy-massage-with-min-300x200.jpg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904100943_fpdl.in_chinese-asian-woman-wellness-beauty-spa-having-aroma-therapy-massage-with-min-768x512.jpg 768w"
           alt=""
           width={640}
           height={427}
@@ -179,6 +182,7 @@ const Abhyangam = () => {
   </html>
 */}
     </div>
+    
   );
 };
 

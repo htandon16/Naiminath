@@ -1,6 +1,6 @@
 import React from "react";
 
-const Abhyangam = () => {
+const NetraTarpanamPage = () => {
   return (
     <div>
       <style
@@ -155,4 +155,4 @@ const Abhyangam = () => {
   );
 };
 
-export default Abhyangam;
+export default NetraTarpanamPage;
