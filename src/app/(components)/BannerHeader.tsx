@@ -18,7 +18,7 @@ const BannerHeader = () => {
   const { imageSlide, setImageSlide } = useGlobalContext();
   // const imageSlide = false;
   return (
-    <div className=" ">
+    <div className="">
       <Header imageSlider={imageSlide} />
       {imageSlide && <ImageSlider />}
     </div>

@@ -27,11 +27,11 @@ const HomePage = () => {
 
  
   return (
-    <div className="w-max-full flex flex-col justify-center items-center mt-[28px] font-sans pb-20">
+    <div className="w-max-full flex flex-col justify-center items-center -mt-4 font-sans pb-20">
       {/* ayurveda treatement section */}
      
       <div className="w-full flex flex-col justify-center items-center bg-cover bg-no-repeat
-      bg-[url('https://hindijaankaari.in/wp-content/uploads/2023/12/greenbg-scaled.jpeg')] pt-5 font-sans">
+      bg-[url('https://hindijaankaari.in/wp-content/uploads/2023/12/greenbg-scaled.jpeg')] pt-[32px] font-sans">
       <AyurvedaTreatmentSection  />
       <WhatIsAyurveda />
       </div>
