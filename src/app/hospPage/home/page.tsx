@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useGlobalContext } from "@/app/context/store";
 import { Helmet } from 'react-helmet';
+import Divider from "@/app/(components)/dropdown/Divider";
 
 
 type SliderItem = {
@@ -39,7 +40,8 @@ const HomePage = () => {
       {/* ayurveda treatement section */}
       
       <div className="w-full flex flex-col justify-center items-center bg-cover bg-no-repeat
-      bg-[url('https://hindijaankaari.in/wp-content/uploads/2023/12/greenbg-scaled.jpeg')] pt-[32px] font-sans">
+      bg-[url('https://hindijaankaari.in/wp-content/uploads/2023/12/greenbg-scaled.jpeg')] font-sans">
+       <div className=" bg-slate-500 w-full h-3 mb-[32px]"></div> 
       <AyurvedaTreatmentSection  />
       <WhatIsAyurveda />
       </div>
