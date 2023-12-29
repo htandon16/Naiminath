@@ -25,7 +25,7 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
         <div className="flex border-[#748182] bg-[#ded636] py-3 px-[60px]">
           <div className="basis-[70%]  flex gap-4 justify-start items-center text-[11px] md:text-[14px] text-stone-700">
             <FontAwesomeIcon icon={faStopwatch} color="#a33a2e" size={customSize}/>
-            <p>Open-Hours:10 am to 7pm</p>
+            <p>Open Hours-9am to 4pm</p>
             <div className="h-full border border-[#a33a2e]"></div>
             <FontAwesomeIcon icon={faMailBulk} color="#a33a2e" size={customSize}/>
             <p>info@naiminathayurveda.org</p>
@@ -35,7 +35,7 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
              rounter.push('/doc/perm_letter.pdf')
           }}>
             <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize}/>
-            <p>+91-9522004573</p>
+            <p>+91-8193896320</p>
             <div className="h-full border mx-3 border-[#a33a2e]"></div>
             <p>Permission Letter</p>
           </div>

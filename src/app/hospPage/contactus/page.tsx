@@ -72,7 +72,7 @@ const ContactUs = () => {
                   size={customSize}
                   className="pr-2"
                 />
-                <span>+91-9522004573</span>
+                <span>+91-9528024473</span>
               </div>
             </div>
           </div>

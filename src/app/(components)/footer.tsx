@@ -103,7 +103,7 @@ const Footer = () => {
                   size={customSize}
                   className="pr-2"
                 />
-                <a href={`tel:${9522004573}`} >+91-9522004573</a>
+                <a href={`tel:${8193896320}`} >+91-8193896320</a>
               </div>
 
               <div className="mt-2  cursor-pointer hover:text-white">
@@ -112,7 +112,7 @@ const Footer = () => {
                   size={customSize}
                   className="pr-2"
                 />
-              <a href={`tel:${9522004573}`} >+91-9522004573</a>
+              <a href={`tel:${9528024473}`} >+91-9528024473</a>
               </div>
             </div>
           </div>
