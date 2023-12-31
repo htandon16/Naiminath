@@ -8,8 +8,7 @@ export interface MyRequestBody {
   
 export async function POST(req: NextRequest,res:NextResponse):Promise<void |Response> {
     
-    try{
-
+  try{
       const body: MyRequestBody | null = await req.json() as MyRequestBody | null; 
       console.log("data mail====",body?.email);
       let nodemailer = require('nodemailer');
@@ -21,7 +20,8 @@ export async function POST(req: NextRequest,res:NextResponse):Promise<void |Resp
           pass: 'gozfoeyggyismrvk',
         },
         secure: true,
-      })  
+      })
+
       const mailData = {
         from: `web.namc@gmail.com`,
         to: 'officenamc@gmail.com',
