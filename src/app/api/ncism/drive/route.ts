@@ -10,7 +10,8 @@ import apiKey from '../../../../../apikey.json'
 
 //  const SCOPES = [process.env.SCOPES||''];
 //  const folderId:string = process.env.FOLDER_ID||'';
-const folderId="146Am-MP_RV0TbS44jjSWTsPYZImzk6hq"
+//const folderId="146Am-MP_RV0TbS44jjSWTsPYZImzk6hq"
+const folderId="1bsYtbg3QnOS0kUoQPPPGcmO_mV4YIKgX"
 const SCOPES=["https://www.googleapis.com/auth/drive"]
 
 const API_KEY = path.join(process.cwd(),  "apikey.json");

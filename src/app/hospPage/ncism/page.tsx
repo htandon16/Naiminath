@@ -6,8 +6,6 @@ import {
   faBookReader,faFileCsv,faFileExcel,
   faFilePdf,faFileText,faFileZipper,
 } from "@fortawesome/free-solid-svg-icons";
-import path from "path";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/app/context/store";
 import Loading from '../../loading'
@@ -27,9 +25,9 @@ const NCISM = () => {
   const [docs, setDocs] = useState<Doc[]>([]);
   const [loading, setLoading] = useState(true); // Added loading state
 
-  const API_KEY = "AIzaSyCYBae_0O2BuXaG6oiDAouK0ZHO5vlM27Y";
-  const folderId = "146Am-MP_RV0TbS44jjSWTsPYZImzk6hq";
-  const apiUrl = `https://www.googleapis.com/drive/v3/files?q=${folderId}+in+parents&key=${API_KEY}`;
+  // const API_KEY = "AIzaSyCYBae_0O2BuXaG6oiDAouK0ZHO5vlM27Y";
+  // const folderId = "146Am-MP_RV0TbS44jjSWTsPYZImzk6hq";
+  // const apiUrl = `https://www.googleapis.com/drive/v3/files?q=${folderId}+in+parents&key=${API_KEY}`;
 
   const fetchDocsApi = async () => {
     try {
