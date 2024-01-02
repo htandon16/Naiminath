@@ -76,6 +76,7 @@ export async function DELETE(req: NextRequest) {
     return new Response(`Missing filename in request parameters`, { status: 400 });
   }
 
+  
   const directoryPath = path.join('/tmp/blog');
   const filePath = path.join(directoryPath, fileName);
 
