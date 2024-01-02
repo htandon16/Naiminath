@@ -8,6 +8,7 @@ export interface MyRequestBody {
   
 export async function POST(req: NextRequest,res:NextResponse):Promise<void |Response> {
     
+
   try{
       const body: MyRequestBody | null = await req.json() as MyRequestBody | null; 
       console.log("data mail====",body?.email);
