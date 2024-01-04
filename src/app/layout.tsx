@@ -6,14 +6,15 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import { GlobalContextProvider } from "./context/store";
 import BannerHeader from "./(components)/BannerHeader";
 import Footer from "./(components)/footer";
+import { ImportantLink } from "./(components)/ImportantLink";
 
 config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: 'NAMC',
-    template:'%s | NAMC'
+    default: "NAMC",
+    template: "%s | NAMC",
   },
   description: "NAMC website",
 };
@@ -31,12 +32,13 @@ export default function RootLayout({
             <BannerHeader />
             {children}
             <Footer />
+          <ImportantLink/>
           </GlobalContextProvider>
         </div>
       </body>
     </html>
   );
-};
+}
 // export default function RootLayout({
 //   children,
 // }: {

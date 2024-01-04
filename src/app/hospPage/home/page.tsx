@@ -51,6 +51,7 @@ const HomePage = () => {
       
       <AboutUsSection />
       <NaiminathAyurvedaSection />
+      
     </div>
     </>
     
