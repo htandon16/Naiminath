@@ -29,6 +29,7 @@ if (!fs.existsSync(API_KEY)) {
 const getStringBeforeLastDot = (inputString: string): string | null =>
   (inputString.lastIndexOf('.') !== -1) ? inputString.substring(0, inputString.lastIndexOf('.')) : null;
 
+export const revalidate = 0
 export async function GET(req: NextRequest) {
     try {
         // Authorize and get the authClient
