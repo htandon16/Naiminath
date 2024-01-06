@@ -1,6 +1,6 @@
 import BannerHeader from "./(components)/BannerHeader";
 import Footer from "./(components)/footer";
-import HomePage from "./hospPage/home/page";
+import HomePage from "./(hospPage)/home/page";
 
 const DashBoard = () => {
   return (

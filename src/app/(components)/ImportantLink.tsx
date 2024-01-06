@@ -19,7 +19,7 @@ export const ImportantLink = () => {
         onMouseEnter={showPopup}
         onMouseLeave={hidePopup}
       >
-        Show Text
+        Important Links
       </button>
 
       {isPopupVisible && (
@@ -75,7 +75,7 @@ export const ImportantLink = () => {
             </p>
             <p>
               <a href="https://forms.eduqfix.com/nhmcharcof/add">
-                FEES PAYMENT: CLICK HERE TO PAY FEES
+               8. FEES PAYMENT: CLICK HERE TO PAY FEES
               </a>
             </p>
           </div>

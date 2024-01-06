@@ -61,7 +61,7 @@ const BlogPage = () => {
             onClick={async () => {
               setBlogData(blog.content);
               // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
-              router.push(`/hospPage/blog/blog-detail`);
+              router.push(`/blog/blog-detail`);
             }}
           >
             <div className="w-full pb-2 flex-1 justify-center items-center">

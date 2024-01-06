@@ -17,10 +17,10 @@ const NavBar = () => {
         <ul className="flex justify-center items-center space-x-8 text-[#252525] text-[15px] font-bold">
           <li>
             <Link
-              href="/hospPage/home"
+              href="/home"
               prefetch
               className={` p-1.5 hover:text-gray-600 border-[#3b3b3b] link ${
-                pathname === "/hospPage/home" ? "border-[2px]" : "border-[0px]"
+                pathname === "/home" ? "border-[2px]" : "border-[0px]"
               } `}
               scroll={false}
               onClick={(e) => {
@@ -31,7 +31,7 @@ const NavBar = () => {
               Home
             </Link>
             {/* <Link
-              href="/hospPage/home"
+              href="/home"
               className={` p-1.5 hover:text-gray-600 border-[#3b3b3b] ${
                 active === "home" ? "border-[2px]" : "border-[0px]"
               } `}
@@ -48,11 +48,11 @@ const NavBar = () => {
           <li>
             <div
               className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
-                pathname === "/hospPage/about" ? "border-[2px]" : "border-[0px]"
+                pathname === "/about" ? "border-[2px]" : "border-[0px]"
               } `}
             >
               <Link
-                href="/hospPage/about"
+                href="/about"
                 prefetch
                 className={` p-1.5  hover:text-gray-600 `}
                 scroll={false}
@@ -66,7 +66,7 @@ const NavBar = () => {
               <Dropdown title="" openOnHover={true}>
                 <Dropdown.Item
                   onClick={() => {
-                    router.push(`/hospPage/about/gallery`);
+                    router.push(`/about/gallery`);
                   }}
                 >
                   GALLERY
@@ -77,8 +77,8 @@ const NavBar = () => {
           <li>
             <div
               className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
-                (pathname === "/hospPage/hospital"||pathname === "/hospPage/hospital/opd"||
-                pathname ==="/hospPage/hospital/medical-sup"||pathname === "/hospPage/hospital/ipd")
+                (pathname === "/hospital"||pathname === "/hospital/opd"||
+                pathname ==="/hospital/medical-sup"||pathname === "/hospital/ipd")
                   ? "border-[2px]"
                   : "border-[0px]"
               } `}
@@ -104,47 +104,47 @@ const NavBar = () => {
                  
                   <Dropdown.Submenu>
                     <Dropdown.Item onClick={()=>{//setImageSlide(false);
-                       router.push(`/hospPage/hospital/opd?id=${0}`)}
+                       router.push(`/hospital/opd?id=${0}`)}
                     }>
                       Kayachikitsa
                       </Dropdown.Item>
                       <Dropdown.Divider size="xs"/>
                     <Dropdown.Item 
                     onClick={()=>{//setImageSlide(false);
-                       router.push(`/hospPage/hospital/opd?id=${1}`)}
+                       router.push(`/hospital/opd?id=${1}`)}
                     }>
                       Kaumarbhritya
                       </Dropdown.Item>
                       <Dropdown.Divider size="xs"/>
                     <Dropdown.Item 
                      onClick={()=>{//setImageSlide(false);
-                      router.push(`/hospPage/hospital/opd?id=${2}`)}
+                      router.push(`/hospital/opd?id=${2}`)}
                    }>
                     Panchkarma
                     </Dropdown.Item>
                     <Dropdown.Divider size="xs"/>
                     <Dropdown.Item
                      onClick={()=>{//setImageSlide(false);
-                      router.push(`/hospPage/hospital/opd?id=${3}`)}
+                      router.push(`/hospital/opd?id=${3}`)}
                    }>Prasuti & Stri Roga
                    </Dropdown.Item>
                    <Dropdown.Divider size="xs"/>
                     <Dropdown.Item
                      onClick={()=>{//setImageSlide(false);
-                      router.push(`/hospPage/hospital/opd?id=${4}`)}
+                      router.push(`/hospital/opd?id=${4}`)}
                    }>Shalakya Tantra
                    </Dropdown.Item>
                    <Dropdown.Divider size="xs"/>
                     <Dropdown.Item
                      onClick={()=>{//setImageSlide(false);
-                      router.push(`/hospPage/hospital/opd?id=${5}`)}
+                      router.push(`/hospital/opd?id=${5}`)}
                    }>Shalya Tantra
                    </Dropdown.Item>
                    <Dropdown.Divider size="xs"/>
                     <Dropdown.Item
                      onClick={()=>{
                       //setImageSlide(false);
-                      router.push(`/hospPage/hospital/opd?id=${6}`)}
+                      router.push(`/hospital/opd?id=${6}`)}
                    }>Swasthavritta
                    </Dropdown.Item>
                   </Dropdown.Submenu>
@@ -153,7 +153,7 @@ const NavBar = () => {
                 <Dropdown.Item
                 onClick={()=>{
                   //setImageSlide(false);
-                  router.push(`/hospPage/hospital/ipd`)}
+                  router.push(`/hospital/ipd`)}
                }>
                   IPD
                 </Dropdown.Item>
@@ -161,7 +161,7 @@ const NavBar = () => {
                 <Dropdown.Item
                   onClick={()=>{
                     //setImageSlide(false);
-                    router.push(`/hospPage/hospital/medical-sup`)}
+                    router.push(`/hospital/medical-sup`)}
                  }>
                   MEDICAL SUPERINTENDENT
                 </Dropdown.Item>
@@ -185,8 +185,8 @@ const NavBar = () => {
           <li>
           <div
               className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
-                (pathname === "/hospPage/college"||pathname === "/hospPage/college/course"||
-                pathname ==="/hospPage/college/faculty"||pathname === "/hospPage/college/principle-profile")
+                (pathname === "/college"||pathname === "/college/course"||
+                pathname ==="/college/faculty"||pathname === "/college/principle-profile")
                   ? "border-[2px]"
                   : "border-[0px]"
               } `}
@@ -207,7 +207,7 @@ const NavBar = () => {
                 <Dropdown.Item
                  onClick={()=>{
                   ////setImageSlide(false);
-                  router.push(`/hospPage/college/course`)}
+                  router.push(`/college/course`)}
                }>
                   COURSES OFFERED
                 </Dropdown.Item>
@@ -215,7 +215,7 @@ const NavBar = () => {
                 <Dropdown.Item
                 onClick={()=>{
                   //setImageSlide(false);
-                  router.push(`/hospPage/college/faculty`)}
+                  router.push(`/college/faculty`)}
                }>
                   FACULTY
                 </Dropdown.Item>
@@ -223,17 +223,17 @@ const NavBar = () => {
                 <Dropdown.Item
                   onClick={()=>{
                     //setImageSlide(false);
-                    router.push(`/hospPage/college/principle-profile`)}
+                    router.push(`/college/principle-profile`)}
                  }>
                   PRINCIPALS PROFILE
                 </Dropdown.Item>
               </Dropdown>
             </div>
             {/* <Link
-              href="/hospPage/college"
+              href="/college"
               prefetch
               className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/hospPage/college"
+                pathname === "/college"
                   ? "border-[2px]"
                   : "border-[0px]"
               } transition-opacity duration-6000 ease-in-out`}
@@ -248,10 +248,10 @@ const NavBar = () => {
           </li>
           <li>
             <Link
-              href="/hospPage/ncism"
+              href="/ncism"
               prefetch
               className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/hospPage/ncism" ? "border-[2px]" : "border-[0px]"
+                pathname === "/ncism" ? "border-[2px]" : "border-[0px]"
               } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
@@ -264,10 +264,10 @@ const NavBar = () => {
           </li>
           <li>
             <Link
-              href="/hospPage/blog"
+              href="/blog"
               prefetch
               className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/hospPage/blog" ? "border-[2px]" : "border-[0px]"
+                pathname === "/blog" ? "border-[2px]" : "border-[0px]"
               } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
@@ -280,10 +280,10 @@ const NavBar = () => {
           </li>
           <li>
             <Link
-              href="/hospPage/facilities"
+              href="/facilities"
               prefetch
               className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/hospPage/facilities"
+                pathname === "/facilities"
                   ? "border-[2px]"
                   : "border-[0px]"
               } transition-opacity duration-300 ease-in-out`}
@@ -298,10 +298,10 @@ const NavBar = () => {
           </li>
           <li>
             <Link
-              href="/hospPage/contactus"
+              href="/contactus"
               prefetch
               className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/hospPage/contactus"
+                pathname === "/contactus"
                   ? "border-[2px]"
                   : "border-[0px]"
               } transition-opacity duration-300 ease-in-out`}

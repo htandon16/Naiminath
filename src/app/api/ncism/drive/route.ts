@@ -66,6 +66,7 @@ async function getFiles(authClient:any) {
       // List files in the specified folder
       const res = await drive.files.list({
         q:`'${encodeURIComponent(folderId)}' in parents`,
+       // spaces: 'drive'
       });
   
       return res.data.files;

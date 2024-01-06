@@ -194,7 +194,7 @@ const NCISM = () => {
     const dataUrl = `data:application/pdf;base64,${content}`;
     setBlogData(dataUrl);
     // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
-    router.push(`/hospPage/ncism/pdf-detail`);
+    router.push(`/ncism/pdf-detail`);
   };
 
   return (

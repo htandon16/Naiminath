@@ -12,27 +12,27 @@ const Footer = () => {
         <div className="p-5 basis-[25%] ps-[10%]">
           <div className=" text-xl  text-white font-extrabold">Treatments</div>
           <div className="text-[#748182] my-8 text-[15px] flex flex-col gap-2">
-            <a href="/hospPage/hospital/opd?id=7">Abhyangam</a>
+            <a href="/hospital/opd?id=7">Abhyangam</a>
 
-            <a href="/hospPage/hospital/opd?id=8">Shirodhara</a>
+            <a href="/hospital/opd?id=8">Shirodhara</a>
 
-            <a href="/hospPage/hospital/opd?id=9">Kashayadhara</a>
+            <a href="/hospital/opd?id=9">Kashayadhara</a>
 
-            <a href="/hospPage/hospital/opd?id=10">Greeva Basti</a>
+            <a href="/hospital/opd?id=10">Greeva Basti</a>
 
-            <a href="/hospPage/hospital/opd?id=11">Janu Basti</a>
+            <a href="/hospital/opd?id=11">Janu Basti</a>
 
-            <a href="/hospPage/hospital/opd?id=12">Kati Basti</a>
+            <a href="/hospital/opd?id=12">Kati Basti</a>
 
-            <a href="/hospPage/hospital/opd?id=13">Spine Basti</a>
+            <a href="/hospital/opd?id=13">Spine Basti</a>
 
-            <a href="/hospPage/hospital/opd?id=14">Kizhi</a>
+            <a href="/hospital/opd?id=14">Kizhi</a>
 
-            <a href="/hospPage/hospital/opd?id=15">Mukha Lepam</a>
+            <a href="/hospital/opd?id=15">Mukha Lepam</a>
 
-            <a href="/hospPage/hospital/opd?id=16">Netra Tarpanam</a>
+            <a href="/hospital/opd?id=16">Netra Tarpanam</a>
 
-            <a href="/hospPage/hospital/opd?id=2">Panchakarma</a>
+            <a href="/hospital/opd?id=2">Panchakarma</a>
 
             {/* <a href="/private-bams-colleges">Private BAMS Colleges</a>
 
@@ -59,7 +59,7 @@ const Footer = () => {
               Etmadpur, Agra – 283202, Uttar Pradesh, India.
             </div>
             <Link
-              href="/hospPage/bams"
+              href="/bams"
               className="text-[#50b9ce] text-[15px] font-sans font-semibold mt-10  hover:text-white"
             >
               🡪 UP BAMS Counselling
@@ -69,6 +69,12 @@ const Footer = () => {
               className="text-[#50b9ce] text-[15px] font-sans font-semibold mt-3  hover:text-white"
             >
               🡪 Anti Ragging Committee
+            </Link>
+            <Link
+              href="https://forms.eduqfix.com/nhmcharcof/add" rel="noopener noreferrer" target="_blank"
+              className="text-[#50b9ce] text-[15px] font-sans font-bold mt-3  hover:text-white"
+            >
+              🡪 FEES PAYMENT: CLICK HERE TO PAY FEES
             </Link>
           </div>
         </div>
