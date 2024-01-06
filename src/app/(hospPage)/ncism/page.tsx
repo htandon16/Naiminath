@@ -35,7 +35,7 @@ const NCISM = () => {
       //   method: "GET",
       // });
       const response = await fetch("/api/ncism/drive", {
-        method: "GET",
+        method: "GET", cache: 'no-store'
       });
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
