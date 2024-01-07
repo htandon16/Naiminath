@@ -12,9 +12,9 @@ const NavBar = () => {
   
 
   return (
-    <header className="">
+    <header className=" md:my-0 my-5 md:mx-5 mx-5">
       <nav>
-        <ul className="flex justify-center items-center space-x-8 text-[#252525] text-[15px] font-bold">
+        <ul className="flex md:flex-row flex-col justify-center items-center md:space-y-0 space-y-4 space-x-8 text-[#252525] text-[15px] font-bold">
           <li>
             <Link
               href="/home"

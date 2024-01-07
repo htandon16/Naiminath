@@ -35,6 +35,7 @@ const HomePage = () => {
     <meta name="robots" content="max-image-preview:large"/>
     <title>Home Naiminath Ayurveda : Top BAMS College in India</title>
     <meta name="description" content="NA" />
+    <meta name="viewport" content="width=1024"></meta>
     </Helmet>
     <div className="w-max-full flex flex-col justify-center items-center -mt-4 font-sans pb-20">
       {/* ayurveda treatement section */}
@@ -107,7 +108,7 @@ const OpdSection = () => {
 const WhatIsAyurveda = () => {
   return (
     <div className=" w-[70%] my-[4%] mx-[10%] flex flex-row">
-      <div className="w-[28vw] h-[46vh] bg-cover bg-no-repeat bg-[url('/images/ayurveda_img.png')]" />
+      <div className="w-[28vw] h-[46vh] bg-contain bg-no-repeat bg-[url('/images/ayurveda_img.png')]" />
       <div className="w-[44vw] h-full ms-[5%]">
         <label className=" text-[32px] font-semibold text-[#525252]">What is Ayurveda?</label>
         <p className="text-[#042d04] mt-[3%]">
@@ -206,9 +207,10 @@ const AboutUsSection = () => {
         width={1600}
         height={800}
       />
+       
       <div className="w-full-max absolute top-[12%] start-[45%] right-[10%]">
-        <label className=" text-3xl font-semibold text-[#525252]">About Us</label>
-        <p className="text-[#7c7777] mt-[5%]">
+        <label className="md:text-3xl text-xl font-semibold text-[#525252]">About Us</label>
+        <p className="text-[#7c7777] mt-[5%] text-[11px] md:text-[16px]">
           Naiminath Ayurvedic Hospital is the pioneer in the field of Ayurvedic
           treatment in the world. The Hospital offers treatment for every
           ailment and is affordable. The Hospital has
@@ -220,7 +222,7 @@ const AboutUsSection = () => {
           panchkarma therapy rooms to suit the need and affordability of one and
           all.
         </p>
-        <p className="text-[#7c7777] mt-[3%]">
+        <p className="text-[#7c7777] mt-[3%] text-[11px]  md:text-[16px]">
           To provide world class education and treatment, this 100 bedded state
           of art Ayurvedic Hospital is functional since 2016 where more than 200
           patients visit the Outdoor Department every day and around 40 patients
@@ -245,7 +247,7 @@ const AyurvedaTreatmentImageSlider = ({ items }:{items:SliderItem[]}) => {
     const { className, style, onClick } = props;
     return (
       <div
-        className="slick-arrow w-fit h-fit absolute z-10 top-[40%] left-[3%]"
+        className="slick-arrow w-fit h-fit absolute z-10 top-[30%] md:top-[40%] left-[3%]"
         onClick={onClick}
       >
         <FontAwesomeIcon
@@ -261,7 +263,7 @@ const AyurvedaTreatmentImageSlider = ({ items }:{items:SliderItem[]}) => {
     const { className, style, onClick } = props;
     return (
       <div
-        className="slick-arrow w-fit h-fit absolute z-10 top-[40%] right-[3%]"
+        className="slick-arrow w-fit h-fit absolute z-10 top-[30%] md:top-[40%] right-[3%]"
         onClick={onClick}
       >
         <FontAwesomeIcon
@@ -292,8 +294,11 @@ const AyurvedaTreatmentImageSlider = ({ items }:{items:SliderItem[]}) => {
     <Slider {...settings} className="text-[#7c7777] relative ">
       {items.map((item, index) => (
         <div key={index} className=" p-[10px] text-center">
+          {/* <div className="h-fit w-[10vw] md:h-[235px] md:w-[235px] bg-no-repeat rounded-[10px]">
+  <img className="w-full h-full" src={item.image} alt={item.image} />
+</div> */}
           <div
-            className="h-[235px] w-[235px] bg-cover bg-no-repeat rounded-[10px]"
+            className=" h-[18vh] w-[15vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
             style={{ backgroundImage: `url(${item.image})` }}
           />
           <p>{item.text}</p>
