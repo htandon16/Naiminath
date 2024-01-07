@@ -26,7 +26,7 @@ export const metadata: MetadataWithMeta = {
   meta: [
     {
       name: "viewport",
-      content: "width=1200",
+      content: "width=1536",
     },
     // You can add more meta tags if needed
   ],
