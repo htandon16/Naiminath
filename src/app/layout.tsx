@@ -11,12 +11,25 @@ import { ImportantLink } from "./(components)/ImportantLink";
 config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+interface MetadataWithMeta extends Metadata {
+  meta?: {
+    name: string;
+    content: string;
+  }[];
+}
+export const metadata: MetadataWithMeta = {
   title: {
     default: "NAMC",
     template: "%s | NAMC",
   },
   description: "NAMC website",
+  meta: [
+    {
+      name: "viewport",
+      content: "width=1200",
+    },
+    // You can add more meta tags if needed
+  ],
 };
 
 export default function RootLayout({
