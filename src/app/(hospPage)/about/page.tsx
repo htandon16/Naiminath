@@ -14,7 +14,7 @@ const AboutUs = () => {
   return (
     <>
       <head>
-      <meta name="viewport" content="width=1500"/>
+      <meta name="viewport" content="width=1200"/>
         <title>
           About us
         </title>

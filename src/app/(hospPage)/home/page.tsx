@@ -35,7 +35,7 @@ const HomePage = () => {
     <meta name="robots" content="max-image-preview:large"/>
     <title>Home Naiminath Ayurveda : Top BAMS College in India</title>
     <meta name="description" content="NA" />
-    <meta name="viewport" content="width=1500"></meta>
+    <meta name="viewport" content="width=1200"></meta>
     </Helmet>
     <div className="w-max-full flex flex-col justify-center items-center -mt-4 font-sans pb-20">
       {/* ayurveda treatement section */}
