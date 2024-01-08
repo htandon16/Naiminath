@@ -10,6 +10,7 @@ const AboutUs = () => {
     console.log("Page loaded");
     setImageSlide(false);
   }, [setImageSlide]);
+  
 
   return (
     <>
