@@ -67,14 +67,14 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
     >
       <div className="flex flex-col  w-full justify-center">
         <div className="flex md:flex-row flex-col border-[#748182] bg-[#ded636] py-3 px-[60px]">
-          <div className="basis-[70%]  flex md:flex-row flex-col gap-4 justify-start items-center text-[11px] md:text-[14px] text-stone-700">
+          <div className="basis-[70%]  flex md:flex-row flex-col gap-1 md:gap-4 justify-start items-center text-[13px] md:text-[14px] text-stone-700">
             <FontAwesomeIcon icon={faStopwatch} color="#a33a2e" size={customSize}/>
             <p>Open Hours-9am to 4pm</p>
             <div className="h-full border border-[#a33a2e]"></div>
             <FontAwesomeIcon icon={faMailBulk} color="#a33a2e" size={customSize}/>
             <p>info@naiminathayurveda.org</p>
           </div>
-          <div className="flex md:flex-row flex-col basis-[30%] justify-end items-center text-[11px] md:text-[14px] font-semibold"
+          <div className="flex md:flex-row flex-col basis-[30%] md:mt-0 mt-4 justify-end items-center text-[11px] md:text-[14px] font-semibold"
           onClick={()=>{
              rounter.push('/doc/perm_letter.pdf')
           }}>

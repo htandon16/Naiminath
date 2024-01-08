@@ -10,12 +10,11 @@ const AboutUs = () => {
     console.log("Page loaded");
     setImageSlide(false);
   }, [setImageSlide]);
-  
+
 
   return (
     <>
       <head>
-      <meta name="viewport" content="width=1536"/>
         <title>
           About us
         </title>

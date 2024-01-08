@@ -12,7 +12,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useGlobalContext } from "@/app/context/store";
 import { Helmet } from 'react-helmet';
-import Divider from "@/app/(components)/dropdown/Divider";
 
 
 type SliderItem = {
@@ -35,7 +34,6 @@ const HomePage = () => {
     <meta name="robots" content="max-image-preview:large"/>
     <title>Home Naiminath Ayurveda : Top BAMS College in India</title>
     <meta name="description" content="NA" />
-    <meta name="viewport" content="width=1536"></meta>
     </Helmet>
     <div className="w-max-full flex flex-col justify-center items-center -mt-4 font-sans pb-20">
       {/* ayurveda treatement section */}
@@ -107,9 +105,9 @@ const OpdSection = () => {
 
 const WhatIsAyurveda = () => {
   return (
-    <div className=" w-[70%] my-[4%] mx-[10%] flex flex-row">
-      <div className="w-[28vw] h-[46vh] bg-contain bg-no-repeat bg-[url('/images/ayurveda_img.png')]" />
-      <div className="w-[44vw] h-full ms-[5%]">
+    <div className=" w-[70%] my-[4%] mx-[10%] flex md:flex-row flex-col ">
+      <div className="w-[350px] h-[350px] md:w-[28vw] md:h-[46vh] bg-contain bg-no-repeat bg-[url('/images/ayurveda_img.png')]" />
+      <div className="md:w-[44vw] h-full md:ms-[5%]">
         <label className=" text-[32px] font-semibold text-[#525252]">What is Ayurveda?</label>
         <p className="text-[#042d04] mt-[3%]">
           Ayurveda is an ancient knowledge cultivated by the sages of India. It
@@ -136,9 +134,9 @@ const WhatIsAyurveda = () => {
 
 const PrivateBamsSection = () => {
   return (
-    <div className=" w-[70%] h-full mt-[6%] mx-[10%] flex flex-row-reverse">
-      <div className="w-[40vw] h-[35vw] bg-contain -mt-[4%] bg-no-repeat bg-[url('/images/private_bams_img.jpg')]" />
-      <div className="w-[44vw] h-full mr-[10%]">
+    <div className=" md:w-[70%] h-full mt-[6%] mx-[10%] flex md:flex-row-reverse flex-col justify-center items-center md:items-start">
+      <div className="w-[400px] h-[450px] md:w-[40vw] md:h-[35vw] bg-contain -mt-[4%] bg-no-repeat bg-[url('/images/private_bams_img.jpg')]"/>
+      <div className="md:w-[44vw] h-full md:mr-[10%]">
         <label className=" text-3xl text-[#525252] font-semibold">
           Private BAMS College in Agra, UP <br />
           (India)
@@ -166,9 +164,9 @@ const PrivateBamsSection = () => {
 
 const NaiminathAyurvedaSection = () => {
   return (
-    <div className=" w-[70%] h-full mt-[3%] mx-[10%] flex flex-row-reverse">
-      <div className="w-[48vw] h-[48vh] mt-[5%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
-      <div className="w-[44vw] h-full mr-[1%]">
+    <div className=" md:w-[70%] h-full mt-[3%] mx-[10%] flex md:flex-row-reverse flex-col ">
+      <div className=" w-[350px] h-[290px] md:w-[48vw] md:h-[30vw]  mt-[2%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
+      <div className="md:w-[44vw] h-full mr-[1%]">
         <label className=" text-3xl text-[#525252] font-semibold">
           Naiminath Ayurveda : Inside Agra&apos;s Ayurvedic Medical College
         </label>
@@ -199,7 +197,7 @@ const NaiminathAyurvedaSection = () => {
 
 const AboutUsSection = () => {
   return (
-    <div className="w-full h-fit bg-blue-300 relative">
+    <div className="w-full h-fit bg-blue-300 relative md:mt-0 mt-6">
       <Image
         src="/images/about_home_bg.jpg"
         className="w-full h-[85vh]"
@@ -208,9 +206,9 @@ const AboutUsSection = () => {
         height={800}
       />
        
-      <div className="w-full-max absolute top-[12%] start-[45%] right-[10%]">
-        <label className="md:text-3xl text-xl font-semibold text-[#525252]">About Us</label>
-        <p className="text-[#7c7777] mt-[5%] text-[11px] md:text-[16px]">
+      <div className="w-full-max absolute top-[12%] text-justify md:mx-0 mx-[10%] md:start-[45%] md:right-[10%]">
+        <label className="md:text-3xl text-2xl font-semibold text-[#525252]">About Us</label>
+        <p className="text-[#7c7777] mt-[5%] text-[14px] md:text-[16px]">
           Naiminath Ayurvedic Hospital is the pioneer in the field of Ayurvedic
           treatment in the world. The Hospital offers treatment for every
           ailment and is affordable. The Hospital has
@@ -222,7 +220,7 @@ const AboutUsSection = () => {
           panchkarma therapy rooms to suit the need and affordability of one and
           all.
         </p>
-        <p className="text-[#7c7777] mt-[3%] text-[11px]  md:text-[16px]">
+        <p className="text-[#7c7777] mt-[3%] text-[14px]  md:text-[16px]">
           To provide world class education and treatment, this 100 bedded state
           of art Ayurvedic Hospital is functional since 2016 where more than 200
           patients visit the Outdoor Department every day and around 40 patients
@@ -301,7 +299,8 @@ const AyurvedaTreatmentImageSlider = ({ items }:{items:SliderItem[]}) => {
             className=" h-[18vh] w-[15vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
             style={{ backgroundImage: `url(${item.image})` }}
           />
-          <p>{item.text}</p>
+          <p className=" truncate">{item.text}</p>
+
         </div>
       ))}
     </Slider>
