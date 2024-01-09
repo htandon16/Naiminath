@@ -134,7 +134,7 @@ const WhatIsAyurveda = () => {
 
 const PrivateBamsSection = () => {
   return (
-    <div className=" md:w-[70%] h-full mt-[6%] mx-[10%] flex md:flex-row-reverse flex-col justify-center items-center md:items-start">
+    <div className="w-[90%] md:w-[70%] h-full mt-[6%] md:mx-[10%] mx-[5%] flex md:flex-row-reverse flex-col justify-center items-center md:items-start">
       <div className="w-[300px] h-[400px] md:w-[40vw] md:h-[35vw] bg-contain -mt-[4%] bg-no-repeat bg-[url('/images/private_bams_img.jpg')]"/>
       <div className="md:w-[44vw] h-full md:mr-[10%]">
         <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
@@ -164,7 +164,7 @@ const PrivateBamsSection = () => {
 
 const NaiminathAyurvedaSection = () => {
   return (
-    <div className=" md:w-[70%] h-full mt-[3%] md:mx-[10%] mx-[5%]  flex md:flex-row-reverse flex-col ">
+    <div className="w-[90%] md:w-[70%] h-full mt-[3%] md:mx-[10%] mx-[5%]  flex md:flex-row-reverse flex-col ">
       <div className=" w-[300px] h-[220px] md:w-[48vw] md:h-[30vw]  mt-[2%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
       <div className="md:w-[44vw] h-full mr-[1%]">
         <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
