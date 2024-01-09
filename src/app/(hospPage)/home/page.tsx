@@ -71,9 +71,9 @@ const AyurvedaTreatmentSection = () => {
   ];
   return (
     <>
-      <h2 className="text-[34px] text-[#525252] font-semibold">Ayurvedic Treatments</h2>
-      <p className="text-[19px] text-[#7c7777] font-semibold">List of Ayurvedic Treatments</p>
-      <div className=" w-[66%] my-[3%] mx-[20%]  items-center justify-center">
+      <h2 className="text-[28px] md:text-[34px] text-[#525252] font-semibold">Ayurvedic Treatments</h2>
+      <p className="text-[14px] md:text-[19px] text-[#7c7777] font-semibold">List of Ayurvedic Treatments</p>
+      <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
         <AyurvedaTreatmentImageSlider items={sliderItems} />
       </div>
     </>
@@ -94,9 +94,9 @@ const OpdSection = () => {
   ];
   return (
     <>
-      <h2 className="text-[32px] text-[#525252]">OPD</h2>
-      <p className="text-[17px] text-[#7c7777]">List of OPD</p>
-      <div className=" w-[66%] my-[3%] mx-[20%] items-center justify-center">
+      <h2 className="text-[27px] md:text-[32px] text-[#525252]">OPD</h2>
+      <p className="text-[14px] md:text-[17px] text-[#7c7777]">List of OPD</p>
+      <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
         <AyurvedaTreatmentImageSlider items={sliderItems}/>
       </div>
     </>
@@ -105,8 +105,8 @@ const OpdSection = () => {
 
 const WhatIsAyurveda = () => {
   return (
-    <div className=" w-[70%] my-[4%] mx-[10%] flex md:flex-row flex-col ">
-      <div className="w-[350px] h-[350px] md:w-[28vw] md:h-[46vh] bg-contain bg-no-repeat bg-[url('/images/ayurveda_img.png')]" />
+    <div className="w-[90%] md:w-[70%] my-[4%] mx-[10%] flex md:flex-row flex-col">
+      <div className="w-[300px] h-[300px] md:w-[28vw] md:h-[46vh] bg-contain bg-no-repeat bg-[url('/images/ayurveda_img.png')]" />
       <div className="md:w-[44vw] h-full md:ms-[5%]">
         <label className=" text-[32px] font-semibold text-[#525252]">What is Ayurveda?</label>
         <p className="text-[#042d04] mt-[3%]">
@@ -135,9 +135,9 @@ const WhatIsAyurveda = () => {
 const PrivateBamsSection = () => {
   return (
     <div className=" md:w-[70%] h-full mt-[6%] mx-[10%] flex md:flex-row-reverse flex-col justify-center items-center md:items-start">
-      <div className="w-[400px] h-[450px] md:w-[40vw] md:h-[35vw] bg-contain -mt-[4%] bg-no-repeat bg-[url('/images/private_bams_img.jpg')]"/>
+      <div className="w-[300px] h-[400px] md:w-[40vw] md:h-[35vw] bg-contain -mt-[4%] bg-no-repeat bg-[url('/images/private_bams_img.jpg')]"/>
       <div className="md:w-[44vw] h-full md:mr-[10%]">
-        <label className=" text-3xl text-[#525252] font-semibold">
+        <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
           Private BAMS College in Agra, UP <br />
           (India)
         </label>
@@ -164,10 +164,10 @@ const PrivateBamsSection = () => {
 
 const NaiminathAyurvedaSection = () => {
   return (
-    <div className=" md:w-[70%] h-full mt-[3%] mx-[10%] flex md:flex-row-reverse flex-col ">
-      <div className=" w-[350px] h-[290px] md:w-[48vw] md:h-[30vw]  mt-[2%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
+    <div className=" md:w-[70%] h-full mt-[3%] md:mx-[10%] mx-[5%]  flex md:flex-row-reverse flex-col ">
+      <div className=" w-[300px] h-[220px] md:w-[48vw] md:h-[30vw]  mt-[2%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
       <div className="md:w-[44vw] h-full mr-[1%]">
-        <label className=" text-3xl text-[#525252] font-semibold">
+        <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
           Naiminath Ayurveda : Inside Agra&apos;s Ayurvedic Medical College
         </label>
         <p className="text-[#7c7777] mt-[3%]">
@@ -206,7 +206,7 @@ const AboutUsSection = () => {
         height={800}
       />
        
-      <div className="w-full-max absolute top-[12%] text-justify md:mx-0 mx-[10%] md:start-[45%] md:right-[10%]">
+      <div className="w-full-max absolute md:top-[12%] top-[5%] text-justify md:mx-0 mx-[5%] md:start-[45%] md:right-[10%]">
         <label className="md:text-3xl text-2xl font-semibold text-[#525252]">About Us</label>
         <p className="text-[#7c7777] mt-[5%] text-[14px] md:text-[16px]">
           Naiminath Ayurvedic Hospital is the pioneer in the field of Ayurvedic
@@ -245,7 +245,7 @@ const AyurvedaTreatmentImageSlider = ({ items }:{items:SliderItem[]}) => {
     const { className, style, onClick } = props;
     return (
       <div
-        className="slick-arrow w-fit h-fit absolute z-10 top-[30%] md:top-[40%] left-[3%]"
+        className="slick-arrow w-fit h-fit absolute z-10 top-[30%] md:top-[40%] left-[5%]"
         onClick={onClick}
       >
         <FontAwesomeIcon
@@ -261,7 +261,7 @@ const AyurvedaTreatmentImageSlider = ({ items }:{items:SliderItem[]}) => {
     const { className, style, onClick } = props;
     return (
       <div
-        className="slick-arrow w-fit h-fit absolute z-10 top-[30%] md:top-[40%] right-[3%]"
+        className="slick-arrow w-fit h-fit absolute z-10 top-[30%] md:top-[40%] right-[5%]"
         onClick={onClick}
       >
         <FontAwesomeIcon
@@ -296,7 +296,7 @@ const AyurvedaTreatmentImageSlider = ({ items }:{items:SliderItem[]}) => {
   <img className="w-full h-full" src={item.image} alt={item.image} />
 </div> */}
           <div
-            className=" h-[18vh] w-[15vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
+            className=" h-[12vh] w-[18vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
             style={{ backgroundImage: `url(${item.image})` }}
           />
           <p className=" truncate">{item.text}</p>
