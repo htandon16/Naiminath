@@ -117,7 +117,7 @@ const NavBar = () => {
                       Kaumarbhritya
                       </Dropdown.Item>
                       <Dropdown.Divider size="xs"/>
-                    <Dropdown.Item className="md:text-[12px] text-[10px]"
+                    <Dropdown.Item className="md:text-[12px] text-[8px]"
                      onClick={()=>{//setImageSlide(false);
                       router.push(`/hospital/opd?id=${2}`)}
                    }>
@@ -159,7 +159,7 @@ const NavBar = () => {
                   IPD
                 </Dropdown.Item>
                 <Dropdown.Divider size="xs"/>
-                <Dropdown.Item className="md:text-[12px] text-[8px]"
+                <Dropdown.Item className="md:text-[12px] text-[7px]"
                   onClick={()=>{
                     //setImageSlide(false);
                     router.push(`/hospital/medical-sup`)}
