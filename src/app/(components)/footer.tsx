@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <div className="bg-[#080808] py-[2%] grow bottom-0 w-full">
       <div className="max-w-screen text-gray-800 flex-wrap justify-center flex font-serif">
-        <div className="p-5 basis-[25%] ps-[10%]">
-          <div className=" text-xl  text-white font-extrabold">Treatments</div>
-          <div className="text-[#748182] my-8 text-[15px] flex flex-col gap-2">
+        <div className="p-5 md:basis-[25%] md:ps-[10%]">
+          <div className=" text-lg md:text-xl  text-white font-extrabold">Treatments</div>
+          <div className="text-[#748182] my-8 text-[15px] md:flex md:flex-col gap-2 grid grid-cols-2">
             <a href="/hospital/opd?id=7">Abhyangam</a>
 
             <a href="/hospital/opd?id=8">Shirodhara</a>
@@ -39,8 +39,8 @@ const Footer = () => {
             <a href="/bams-fees">BAMS Fees</a> */}
           </div>
         </div>
-        <div className="p-5 basis-[25%]">
-          <div className="text-xl  text-white font-extrabold">
+        <div className="p-5 md:basis-[25%]">
+          <div className="text-lg md:text-xl  text-white font-extrabold">
             About Naiminath Ayurveda
           </div>
           <p className="text-[#748182] my-8 text-[15px] font-serif leading-8 tracking-wide">
@@ -50,9 +50,9 @@ const Footer = () => {
             40 patients are present in the Indoor Department.
           </p>
         </div>
-        <div className="p-5 basis-[25%]">
+        <div className="p-5 md:basis-[25%]">
           <div className=" text-white font-extrabold flex flex-col">
-            <div className="text-xl">Naiminath Ayurveda</div>
+            <div className="text-lg md:text-xl">Naiminath Ayurveda</div>
             <div className="mt-8 text-[14px]">ADDRESS</div>
             <div className="text-[15px] font-medium mt-2 font-serif leading-8 tracking-wide">
               N.H. 19, Nawalpur, Kuberpur, Behind Maruti TrueValue Showroom,
@@ -72,15 +72,15 @@ const Footer = () => {
             </Link>
             <Link
               href="https://forms.eduqfix.com/nhmcharcof/add" rel="noopener noreferrer" target="_blank"
-              className="text-[#50b9ce] text-[15px] font-sans font-bold mt-3  hover:text-white"
+              className="text-[#50b9ce] text-[13px] md:text-[15px] font-sans font-bold mt-3  hover:text-white"
             >
               🡪 FEES PAYMENT: CLICK HERE TO PAY FEES
             </Link>
           </div>
         </div>
-        <div className="p-5 basis-[25%] ">
+        <div className="p-5 md:basis-[25%] ">
           <div className=" text-white font-extrabold flex flex-col">
-            <div className="text-xl">Get In Touch</div>
+            <div className="text-lg md:text-xl">Get In Touch</div>
             <div className="mt-8 text-[14px]">EMAIL</div>
             <div className="text-[14px] font-serif font-medium text-start mt-2">
               <div>

@@ -24,14 +24,14 @@ export const ImportantLink = () => {
 
       {isPopupVisible && (
         <div
-          className="fixed bottom-[25vh] right-12 bg-[#ded636] text-[#000000] px-4 py-2 rounded shadow"
+          className=" overflow-auto  w-[80vw] h-[50vh] md:w-fit md:h-fit fixed bottom-[25vh] right-12 bg-[#ded636] text-[#000000] px-4 py-2 rounded shadow"
           onMouseEnter={showPopup}
           onMouseLeave={hidePopup}
         >
           <div className="modal-window-content flex flex-col gap-1 font-sans">
             <p>
               {" "}
-              <span style={{ fontSize: "24px" }}>Important Links</span>
+              <span className="text-[20px] md:text-[24px]">Important Links</span>
             </p>
             <p>
               1. Ministry of AYUSH (
