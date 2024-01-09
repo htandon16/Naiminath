@@ -62,23 +62,23 @@ const Footer = () => {
               href="/bams"
               className="text-[#50b9ce] text-[15px] font-sans font-semibold mt-10  hover:text-white"
             >
-              🡪 UP BAMS Counselling
+               <span className="text-xl">&rarr;</span> UP BAMS Counselling
             </Link>
             <Link
               href="/doc/anti_rag.pdf"
               className="text-[#50b9ce] text-[15px] font-sans font-semibold mt-3  hover:text-white"
             >
-              🡪 Anti Ragging Committee
+               <span className="text-xl">&rarr;</span> Anti Ragging Committee
             </Link>
             <Link
               href="https://forms.eduqfix.com/nhmcharcof/add" rel="noopener noreferrer" target="_blank"
               className="text-[#50b9ce] text-[13px] md:text-[15px] font-sans font-bold mt-3  hover:text-white"
             >
-              🡪 FEES PAYMENT: CLICK HERE TO PAY FEES
+               <span className="text-xl">&rarr;</span> FEES PAYMENT: CLICK HERE TO PAY FEES
             </Link>
           </div>
         </div>
-        <div className="p-5 md:basis-[25%] ">
+        <div className="p-5 md:basis-[25%] w-full">
           <div className=" text-white font-extrabold flex flex-col">
             <div className="text-lg md:text-xl">Get In Touch</div>
             <div className="mt-8 text-[14px]">EMAIL</div>
