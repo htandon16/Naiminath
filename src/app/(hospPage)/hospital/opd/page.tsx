@@ -640,7 +640,7 @@ const ShowRightSideText = ({ id, data }: any) => {
       )}
 
       {typeof id === "number" && id >= 7 && id <= 16 && (
-        <div className="flex flex-col items-start justify-center md:mr-44 md:mx-0 mx-4 md:mt-0 mt-4 font-serif">
+        <div className="flex flex-col items-start justify-center md:mr-44 md:mx-0 mx-4 md:mt-0 mt-4 font-serif overflow-x-auto">
           {data.content}
         </div>
       )}
