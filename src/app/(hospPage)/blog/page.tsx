@@ -48,6 +48,7 @@ const BlogPage = () => {
       });
   }, [setImageSlide]);
  
+  
   return (
     <div className="min-h-screen flex flex-wrap gap-5 p-[20px] justify-center items-center">
       {loading ? ( // Show loader if still loading
