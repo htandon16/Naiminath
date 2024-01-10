@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="bg-[#080808] py-[2%] grow bottom-0 w-full">
       <div className="max-w-screen text-gray-800 flex-wrap justify-center flex font-serif">
-        <div className="p-5 md:basis-[25%] md:ps-[10%]">
+        <div className="p-5 md:basis-[25%] md:ps-[10%] w-full">
           <div className=" text-lg md:text-xl  text-white font-extrabold">Treatments</div>
           <div className="text-[#748182] my-8 text-[15px] md:flex md:flex-col gap-2 grid grid-cols-2">
             <a href="/hospital/opd?id=7">Abhyangam</a>
