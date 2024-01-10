@@ -52,7 +52,7 @@ const AboutGallery = () => {
       className="flex-none w-fit h-fit basis-1/5"
       onClick={() => openModal(index)}
     >
-      <div className="relative w-[300px] h-[200px] overflow-hidden">
+      <div className="relative md:w-[300px] md:h-[200px] w-[110px] h-[100px] overflow-hidden">
         <Image
           fill
           src={src}
