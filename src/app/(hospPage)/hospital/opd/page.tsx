@@ -574,11 +574,11 @@ const Hospital = ({
     <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
       <div
         className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
-      text-[#54595f] text-[32px] font-extrabold border-b-[0.009px] border-[#8b939465]"
+      text-[#54595f] md:text-[32px] text-[28px] text-center font-extrabold border-b-[0.009px] border-[#8b939465]"
       >
         {itemsContent.title}
       </div>
-      <div className="flex flex-row w-full justify-center items-start mt-12">
+      <div className="flex md:flex-row flex-col w-full justify-center items-start md:mt-12">
         <div className=" flex flex-col basis-2/5 flex-none  gap-3 items-center justify-center ">
           <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2">
             {items.slice(0, 7).map((item, index) => (
@@ -631,16 +631,16 @@ const ShowRightSideText = ({ id, data }: any) => {
           </div>
         </div> */}
       {typeof id === "number" && id >= 0 && id <= 6 && (
-        <div className=" flex flex-col gap-3 items-start justify-center mr-44">
+        <div className=" flex flex-col gap-3 items-start justify-center md:mr-44 md:mx-0 mx-4 md:mt-0 mt-4 ">
           <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
-          <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
+          <div className=" text-[#7f7f7f] text-[16px] md:text-justify font-medium font-serif">
             {data.content}
           </div>
         </div>
       )}
 
       {typeof id === "number" && id >= 7 && id <= 16 && (
-        <div className=" flex flex-col items-start justify-center mr-44 font-serif">
+        <div className=" flex flex-col items-start justify-center md:mr-44 md:mx-0 mx-4 md:mt-0 mt-4 font-serif">
           {data.content}
         </div>
       )}
