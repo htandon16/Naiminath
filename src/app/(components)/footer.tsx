@@ -71,7 +71,7 @@ const Footer = () => {
                <span className="text-xl">&rarr;</span> Anti Ragging Committee
             </Link>
             <Link
-              href="https://forms.eduqfix.com/nhmcharcof/add" rel="noopener noreferrer" target="_blank"
+              href="https://forms.eduqfix.com/namcharcaof/home" rel="noopener noreferrer" target="_blank"
               className="text-[#50b9ce] text-[13px] md:text-[15px] font-sans font-bold mt-3  hover:text-white"
             >
                <span className="text-xl">&rarr;</span> FEES PAYMENT: CLICK HERE TO PAY FEES

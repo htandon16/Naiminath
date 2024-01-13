@@ -74,7 +74,7 @@ export const ImportantLink = () => {
               )
             </p>
             <p>
-              <a href="https://forms.eduqfix.com/nhmcharcof/add" className=" font-bold">
+              <a href="https://forms.eduqfix.com/namcharcaof/home" className=" font-bold">
                8. FEES PAYMENT: CLICK HERE TO PAY FEES
               </a>
             </p>
