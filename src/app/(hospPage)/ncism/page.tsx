@@ -206,9 +206,9 @@ const NCISM = () => {
     <meta name="description" content="NA" />
     </Helmet>
 
-     <div className="flex flex-col my-12 justify-center items-center mx-40">
+     <div className="flex flex-col my-12 justify-center items-center md:mx-40">
       <div className="">
-        <h2 className="text-2xl text-[#144575] font-medium">
+        <h2 className="text-2xl md:mx-0 mx-5 text-[#144575] font-medium">
           REGULATORY INFO - NCISM Mandate
         </h2>
       </div>
@@ -221,7 +221,7 @@ const NCISM = () => {
             docs.map((doc, index) => (
               <div
                 key={index}
-                className="flex justify-start items-center basis-1/2 h-fit border-b-[0.01px] p-3 hover:bg-slate-50 cursor-pointer"
+                className="flex justify-start items-center md:basis-1/2 md:mx-0 mx-5 h-fit border-b-[0.01px] p-3 hover:bg-slate-50 cursor-pointer"
                 onClick={async (e) =>
                   router.push(`https://drive.google.com/uc?id=${doc.id}`)
                 }

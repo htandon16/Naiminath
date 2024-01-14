@@ -24,14 +24,15 @@ const AboutUs = () => {
     <div className="flex flex-col items-center justify-center font-sans h-full w-full">
       <div
         className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
-      text-[#54595f] text-[32px] font-extrabold border-b-[0.009px] border-[#8b939465]"
+      text-[#54595f] md:text-[32px] text-[28px] font-extrabold border-b-[0.009px] border-[#8b939465]"
       >
         IPD
       </div>
-      <div className="flex flex-row w-[74vw] justify-center gap-6 mt-10">
+      <div className="flex md:flex-row flex-col md:w-[74vw] w-[94vw] 
+      justify-center md:items-start items-center gap-6 mt-10">
         <Image
           src="/images/ipd_img1.png"
-          className="w-[400px] h-[300px] rounded-[7px]"
+          className="md:w-[400px] md:h-[300px] w-[300px] h-[300px] rounded-[7px] "
           alt="about image"
           width={1600}
           height={800}
@@ -62,7 +63,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="w-[75vw] mt-10  text-justify text-[#7c7777] text-[17px]">
+      <div className="md:w-[75vw] w-[94vw] mt-10  text-justify text-[#7c7777] text-[17px]">
         <p>
           The in-house canteen at Naiminath Ayurveda caters a full experience
           which aids in the treatment of patients. The Institution promotes an
@@ -82,16 +83,16 @@ const AboutUs = () => {
           Ayurveda.
         </p>
       </div>
-      <div className=" flex flex-row w-[75vw] my-12">
+      <div className=" flex md:flex-row flex-col md:items-start items-center md:w-[75vw] w-[94vw] my-12 ">
         <Image
           src="/images/ipd_img2.jpg"
-          className="w-[800px] h-[370px] rounded-[7px] basis-[27%] flex-none 
+          className="md:w-[800px] md:h-[370px] w-[300px] h-[300px] rounded-[7px] md:basis-[27%] flex-none 
           shadow-[0_0px_20px_1px_rgba(0,0,0,0.2)]"
           alt="about image"
           width={1600}
           height={800}
         />
-        <div className=" flex-1 px-5  text-justify text-[#7c7777] text-[17px]">
+        <div className=" flex-1 md:px-5  text-justify text-[#7c7777] text-[17px] md:mt-0 mt-5">
           <p>
             Naiminath has its own organic farms that are free from pesticides,
             chemicals and preservatives that snatch away the piquant essence and
@@ -112,7 +113,7 @@ const AboutUs = () => {
         </div>
         <Image
           src="/images/ipd_img3.jpg"
-          className="w-[800px] h-[370px] rounded-[7px] basis-[27%] flex-none shadow-[0_0px_20px_1px_rgba(0,0,0,0.2)]"
+          className="md:mt-0 mt-5 md:w-[800px] md:h-[370px]  w-[300px] h-[300px] rounded-[7px] md:basis-[27%] flex-none shadow-[0_0px_20px_1px_rgba(0,0,0,0.2)]"
           alt="about image"
           width={1600}
           height={800}

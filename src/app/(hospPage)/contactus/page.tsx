@@ -27,11 +27,11 @@ const ContactUs = () => {
       <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
         <div
           className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
-    text-[#54595f] text-[32px] font-extrabold border-b-[0.009px] border-[#8b939465]"
+    text-[#54595f] md:text-[32px] text-[28px] font-extrabold border-b-[0.009px] border-[#8b939465]"
         >
           Contact Us
         </div>
-        <div className="flex flex-row justify-between w-[70vw] mt-10 items-start text-[#333333] ">
+        <div className="flex md:flex-row flex-col justify-between w-[70vw] mt-10 items-start text-[#333333] md:gap-0 gap-4">
           <div className=" text-[18px] font-serif">
             Naiminath Ayurvedic Medical College
             <br /> Hospital and Research Centre <br />

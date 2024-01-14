@@ -22,12 +22,12 @@ const PrincipalProfile = () => {
      <div className="flex flex-col justify-center items-center font-serif">
          <div
         className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
-      text-[#54595f] text-[32px] font-extrabold border-b-[0.009px] border-[#8b939465] font-sans"
+      text-[#54595f] md:text-[32px] text-[28px] font-extrabold border-b-[0.009px] border-[#8b939465] font-sans"
       >
         Principal’s Profile
       </div>
-      <div className=" text-2xl mt-10 text-gray-500">Prof. Dr. Ganesh Basweshar Patil</div>
-      <div className="w-[60vw] flex flex-col bg-white border border-gray-200 divide-y divide-gray-200 rounded-xl m-12">
+      <div className=" text-2xl mt-10 text-gray-500 px-5">Prof. Dr. Ganesh Basweshar Patil</div>
+      <div className="md:w-[60vw] w-[90vw] flex flex-col bg-white border border-gray-200 divide-y divide-gray-200 rounded-xl m-12">
         <details className="py-6 group" open={false}>
           <summary className="flex items-center justify-between cursor-pointer px-6">
             <h5 className="text-lg font-medium text-gray-900">Basic Details</h5>

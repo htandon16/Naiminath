@@ -30,7 +30,7 @@ const Course = () => {
     
  <div className=" flex flex-col justify-center items-center">
         <div className=" text-3xl mt-10 text-gray-800 text-center font-sans font-bold">Courses Offered</div>
-      <div className="w-[55vw] bg-white p-6 rounded-md shadow-md ring-1 ring-slate-100 font-serif text-[#7f7f7f] my-12">
+      <div className="md:w-[55vw] w-[90vw] bg-white p-6 rounded-md shadow-md ring-1 ring-slate-100 font-serif text-[#7f7f7f] my-12">
         <h1 className="text-3xl font-extrabold text-black mb-4">
           Bachelor of Ayurveda Medical and Surgery (BAMS)
         </h1>
@@ -100,14 +100,14 @@ const Course = () => {
         
 
         <div
-          className="w-fit justify-center items-center rounded-sm bg-gradient-to-r from-[#fde03a] to-[#ffb047] 
+          className="md:w-fit justify-center items-center rounded-sm bg-gradient-to-r from-[#fde03a] to-[#ffb047] 
         py-3 px-4 mt-4 flex flex-col border-[3px] border-[#ffaa4e] text-black"
        >
 
-          <p className=" text-xl font-semibold">
+          <p className="text-xl font-semibold">
             FOR FEES STRUCTURE AND OTHER DETAILS PLEASE CONTACT US ON
           </p>
-          <div className="flex justify-center items-center text-lg font-semibold font-sans mt-2">
+          <div className="flex md:flex-row flex-col justify-center items-center text-lg font-semibold font-sans mt-2">
             <FontAwesomeIcon
               color="#000000"
               icon={faPhone}

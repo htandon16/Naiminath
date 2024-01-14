@@ -72,8 +72,8 @@ const ContactUsForm = () => {
   }
 
   return (
-    <div className=" w-full flex flex-row justify-center items-start gap-28 mt-20">
-      <form className=" text-[#666666] font-sans text-[16px] w-[30vw] p-8 border-[1px] rounded-[4px]">
+    <div className=" md:w-full w-[90vw] flex md:flex-row flex-col justify-center items-start gap-28 mt-20">
+      <form className=" text-[#666666] font-sans text-[16px] md:w-[30vw] p-8 border-[1px] rounded-[4px]">
         <div className="mb-4 flex flex-row gap-3 items-center">
           <label htmlFor="name" className="block whitespace-nowrap mb-2">
             Your Name
@@ -148,7 +148,7 @@ const ContactUsForm = () => {
           </button>
         </div>
       </form>
-      <div className="container  w-[40vw]">
+      <div className="container  md:w-[40vw]">
         <section className="mb-32 ">
           <div className="block  bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div className="flex flex-wrap items-center">

@@ -23,13 +23,13 @@ export const metadata: MetadataWithMeta = {
     template: "%s | NAMC",
   },
   description: "NAMC website",
-  meta: [
-    {
-      name: "viewport",
-      content: "width=1536",
-    },
-    // You can add more meta tags if needed
-  ],
+  // meta: [
+  //   {
+  //     name: "viewport",
+  //     content: "width=1536",
+  //   },
+  //   // You can add more meta tags if needed
+  // ],
 };
 
 export default function RootLayout({

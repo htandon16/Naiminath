@@ -24,11 +24,11 @@ const Facilities = () => {
     <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
       <div
         className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
-    text-[#54595f] text-[32px] font-extrabold border-b-[0.009px] border-[#8b939465]"
+    text-[#54595f] md:text-[32px] text-[28px] font-extrabold border-b-[0.009px] border-[#8b939465]"
       >
         Our Facilities
       </div>
-      <div className="flex flex-row w-[70vw] justify-center items-start mt-8 ">
+      <div className="flex md:flex-row flex-col w-[70vw] justify-center items-start mt-8 ">
         <div className=" flex flex-col w-full gap-3 items-start justify-center">
           <strong className=" text-[30px] text-[#212121]">Regular OPDs:</strong>
           <ol className="list-decimal list-inside space-y-2 text-[17px] text-[#95989b] ps-6">
@@ -43,7 +43,7 @@ const Facilities = () => {
             <li className="mb-2">Physiotherapy</li>
           </ol>
         </div>
-        <div className=" flex flex-col w-full gap-3 items-start justify-center">
+        <div className=" flex flex-col w-full gap-3 items-start justify-center md:mt-0 mt-5">
           <strong className=" text-[30px] text-[#212121]">
             Other Facilities:
           </strong>

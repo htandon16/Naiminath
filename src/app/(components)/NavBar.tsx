@@ -12,9 +12,9 @@ const NavBar = () => {
   
 
   return (
-    <header className=" md:my-0 my-5 md:mx-5 mx-5">
+    <header className="my-0 mx-5">
       <nav>
-        <ul className="flex md:flex-row flex-col justify-center md:items-center md:space-y-0 space-y-4 md:space-x-8 
+        <ul className="flex flex-row justify-center items-center space-y-0  space-x-8 
         text-[#252525] text-[15px] font-bold">
           <li>
             <Link
@@ -65,7 +65,7 @@ const NavBar = () => {
                 About us
               </Link>
               <Dropdown title="" openOnHover={true}>
-                <Dropdown.Item className="md:text-[12px] text-[8px]"
+                <Dropdown.Item className="text-[12px]"
                   onClick={() => {
                     router.push(`/about/gallery`);
                   }}
@@ -97,52 +97,52 @@ const NavBar = () => {
                 Hospital
               </Link>
               <Dropdown openOnHover={true} title="">
-                <Dropdown.Item className="md:text-[12px] text-[8px]">
+                <Dropdown.Item className="text-[12px]">
                   <div className="w-full flex flex-row justify-between">
                     <div>OPD</div>
                     <div>{'>'}</div>
                   </div>
                  
                   <Dropdown.Submenu>
-                    <Dropdown.Item  className="md:text-[12px] text-[8px]" onClick={()=>{//setImageSlide(false); 
+                    <Dropdown.Item  className="text-[12px]" onClick={()=>{//setImageSlide(false); 
                        router.push(`/hospital/opd?id=${0}`)}
                     }>
                       Kayachikitsa
                       </Dropdown.Item>
                       <Dropdown.Divider size="xs"/>
-                    <Dropdown.Item  className="md:text-[12px] text-[8px]"
+                    <Dropdown.Item  className="text-[12px]"
                     onClick={()=>{//setImageSlide(false);
                        router.push(`/hospital/opd?id=${1}`)}
                     }>
                       Kaumarbhritya
                       </Dropdown.Item>
                       <Dropdown.Divider size="xs"/>
-                    <Dropdown.Item className="md:text-[12px] text-[8px]"
+                    <Dropdown.Item className="text-[12px]"
                      onClick={()=>{//setImageSlide(false);
                       router.push(`/hospital/opd?id=${2}`)}
                    }>
                     Panchkarma
                     </Dropdown.Item>
                     <Dropdown.Divider size="xs"/>
-                    <Dropdown.Item className="md:text-[12px] text-[8px]"
+                    <Dropdown.Item className="text-[12px]"
                      onClick={()=>{//setImageSlide(false);
                       router.push(`/hospital/opd?id=${3}`)}
                    }>Prasuti & Stri Roga
                    </Dropdown.Item>
                    <Dropdown.Divider size="xs"/>
-                    <Dropdown.Item className="md:text-[12px] text-[8px]"
+                    <Dropdown.Item className="text-[12px]"
                      onClick={()=>{//setImageSlide(false);
                       router.push(`/hospital/opd?id=${4}`)}
                    }>Shalakya Tantra
                    </Dropdown.Item>
                    <Dropdown.Divider size="xs"/>
-                    <Dropdown.Item className="md:text-[12px] text-[8px]"
+                    <Dropdown.Item className="text-[12px]"
                      onClick={()=>{//setImageSlide(false);
                       router.push(`/hospital/opd?id=${5}`)}
                    }>Shalya Tantra
                    </Dropdown.Item>
                    <Dropdown.Divider size="xs"/>
-                    <Dropdown.Item className="md:text-[12px] text-[8px]"
+                    <Dropdown.Item className="text-[12px]"
                      onClick={()=>{
                       //setImageSlide(false);
                       router.push(`/hospital/opd?id=${6}`)}
@@ -151,7 +151,7 @@ const NavBar = () => {
                   </Dropdown.Submenu>
                 </Dropdown.Item>
                 <Dropdown.Divider size="xs"/>
-                <Dropdown.Item className="md:text-[12px] text-[8px]"
+                <Dropdown.Item className="text-[12px]"
                 onClick={()=>{
                   //setImageSlide(false);
                   router.push(`/hospital/ipd`)}
@@ -159,12 +159,12 @@ const NavBar = () => {
                   IPD
                 </Dropdown.Item>
                 <Dropdown.Divider size="xs"/>
-                <Dropdown.Item className="md:text-[12px] text-[7px]"
+                <Dropdown.Item className="text-[12px]"
                   onClick={()=>{
                     //setImageSlide(false);
                     router.push(`/hospital/medical-sup`)}
                  }>
-                  MEDICAL<br className=" md:hidden" />SUPERINTENDENT
+                  MEDICAL<br className="hidden" />SUPERINTENDENT
                 </Dropdown.Item>
               </Dropdown>
             </div>
@@ -205,7 +205,7 @@ const NavBar = () => {
                 College
               </Link>
               <Dropdown  openOnHover={true} title="">
-                <Dropdown.Item className="md:text-[12px] text-[8px]"
+                <Dropdown.Item className="text-[12px]"
                  onClick={()=>{
                   ////setImageSlide(false);
                   router.push(`/college/course`)}
@@ -213,7 +213,7 @@ const NavBar = () => {
                   COURSES OFFERED
                 </Dropdown.Item>
                 <Dropdown.Divider size="xs"/>
-                <Dropdown.Item className="md:text-[12px] text-[8px]"
+                <Dropdown.Item className="text-[12px]"
                 onClick={()=>{
                   //setImageSlide(false);
                   router.push(`/college/faculty`)}
@@ -221,7 +221,7 @@ const NavBar = () => {
                   FACULTY
                 </Dropdown.Item>
                 <Dropdown.Divider size="xs"/>
-                <Dropdown.Item className="md:text-[12px] text-[8px]"
+                <Dropdown.Item className="text-[12px]"
                   onClick={()=>{
                     //setImageSlide(false);
                     router.push(`/college/principle-profile`)}

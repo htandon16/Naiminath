@@ -11,7 +11,7 @@ const BlogDetail = () => {
   return (
     <div className="w-full h-screen flex flex-row justify-center items-top mt-10">
       <div
-        className="basis-1/2 bg-white shadow-slate-400 shadow-[0_0px_50px_-20px_rgba(0,0,0,0.3)] 
+        className="md:basis-1/2 md:mx-0 mx-5 bg-white shadow-slate-400 shadow-[0_0px_50px_-20px_rgba(0,0,0,0.3)] 
       z-10 border-slate-400 rounded-[15px] min-h-[350px] max-h-[90%] overflow-hidden flex flex-col justify-center items-center"
       >
         <div className=" bg-black text-center text-white text-[20px] py-2 font-sans w-full">

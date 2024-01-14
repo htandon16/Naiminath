@@ -13,7 +13,7 @@ const MedicalSup = () => {
   return (
     <div className="flex flex-col justify-center items-center font-serif">
       <div className=" text-3xl mt-10 text-gray-800 text-center font-sans font-bold">Medical Superintendent</div>
-      <div className="w-[60vw] flex flex-col bg-white border border-gray-200 divide-y divide-gray-200 rounded-xl m-12">
+      <div className="md:w-[60vw] w-[90vw] flex flex-col bg-white border border-gray-200 divide-y divide-gray-200 rounded-xl m-12">
         <details className="py-6 group" open={false}>
           <summary className="flex items-center justify-between cursor-pointer px-6">
             <h5 className="text-lg font-medium text-gray-900">Basic Details</h5>
