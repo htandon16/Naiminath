@@ -112,7 +112,7 @@ const Course = () => {
               color="#000000"
               icon={faPhone}
               size={customSize}
-              className="pr-2 "
+              className="pr-2 invisible md:visible"
             />
             <span className=" mr-3">+91-9528024473</span>
             <span className=" ">info@naiminathayurveda.org</span>

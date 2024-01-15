@@ -120,13 +120,13 @@ const Faculty = () => {
           <tbody>
             {facList.map((department, index) => (
               <tr key={department.id} className="text-[#748182] font-sans">
-                <td className="py-2 px-4 border">
+                <td className="py-2 px-2 md:px-4 border">
                   <strong>{index + 1}.</strong>
                 </td>
-                <td className="py-2 px-4 border">
+                <td className="py-2 px-2 md:px-4 border">
                   <strong>{department.name}</strong>
                 </td>
-                <td className="py-2 px-4 border">
+                <td className="py-2 px-2 md:px-4 border">
                   <ul className="list-inside">
                     {department.faculty.map((faculty, facultyIndex) => (
                       <div className="my-4" key={facultyIndex}>
