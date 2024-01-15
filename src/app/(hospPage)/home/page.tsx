@@ -196,6 +196,7 @@ const NaiminathAyurvedaSection = () => {
   );
 };
 
+
 const AboutUsSection = () => {
   return (
     <div className="w-full h-fit bg-blue-300 relative md:mt-0 mt-6">
