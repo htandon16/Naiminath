@@ -30,7 +30,7 @@ const MobileNavBar = ({
   const mobileNavLinks: NavLink[] = [
     { label: "Home", path: "/home" },
     { label: "About us", path: "/about" },
-    { label: "Gallery", path: "about/gallery" },
+    { label: "Gallery", path: "/about/gallery" },
     {
       label: "Hospital",
       submenu: [

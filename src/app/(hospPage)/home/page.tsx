@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useGlobalContext } from "@/app/context/store";
 import { Helmet } from 'react-helmet';
+import Link from "next/link";
 
 
 type SliderItem = {
@@ -206,9 +207,9 @@ const AboutUsSection = () => {
         height={800}
       />
        
-      <div className="w-full-max absolute md:top-[12%] top-[5%] text-justify md:mx-0 mx-[5%] md:start-[45%] md:right-[10%]">
+      <div className="w-full-max flex flex-col absolute md:top-[12%] top-[5%] text-justify md:mx-0 mx-[5%] md:start-[45%] md:right-[10%]">
         <label className="md:text-3xl text-2xl font-semibold text-[#525252]">About Us</label>
-        <p className="text-[#7c7777] mt-[5%] text-[14px] md:text-[16px]">
+        <p className="text-[#381a04] mt-[5%] text-[14px] md:text-[16px]">
           Naiminath Ayurvedic Hospital is the pioneer in the field of Ayurvedic
           treatment in the world. The Hospital offers treatment for every
           ailment and is affordable. The Hospital has
@@ -220,19 +221,18 @@ const AboutUsSection = () => {
           panchkarma therapy rooms to suit the need and affordability of one and
           all.
         </p>
-        <p className="text-[#7c7777] mt-[3%] text-[14px]  md:text-[16px]">
+        <p className="text-[#381a04] mt-[3%] text-[14px]  md:text-[16px]">
           To provide world class education and treatment, this 100 bedded state
           of art Ayurvedic Hospital is functional since 2016 where more than 200
           patients visit the Outdoor Department every day and around 40 patients
           are present in the Indoor Department.
         </p>
 
-        <button
+        <Link
           className="mt-[6%] w-fit h-fit px-[26px] pt-[5px] pb-[10px] text-[16px] text-white rounded-[20px] bg-[#e63280]
-          hover:underline"
-        >
+          hover:underline" href="/about">
           Read More
-        </button>
+        </Link>
       </div>
     </div>
   );
@@ -299,7 +299,11 @@ const AyurvedaTreatmentImageSlider = ({ items }:{items:SliderItem[]}) => {
             className=" h-[12vh] w-[18vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
             style={{ backgroundImage: `url(${item.image})` }}
           />
-          <p className=" truncate">{item.text}</p>
+           
+    <p className="text-[11px] md:text-[18px] word-wrap break-words">
+      {item.text}
+    </p>
+ 
 
         </div>
       ))}

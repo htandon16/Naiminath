@@ -52,7 +52,7 @@ const AboutGallery = () => {
       className="flex-none w-fit h-fit basis-1/5"
       onClick={() => openModal(index)}
     >
-      <div className="relative md:w-[300px] md:h-[200px] w-[110px] h-[100px] overflow-hidden">
+      <div className="relative md:w-[300px] md:h-[200px] w-[80px] h-[70px] overflow-hidden">
         <Image
           fill
           src={src}
@@ -111,7 +111,7 @@ const AboutGallery = () => {
   }, [setImageSlide]);
 
   return (
-    <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-10 my-10">
+    <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
       {imageUrls.map(renderImageContent)}
 
       <GalleryModal

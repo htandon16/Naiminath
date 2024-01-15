@@ -7,6 +7,7 @@ import ImageSlider from "./ImageSlider";
 import MobileNavBar from "./MobileNavBar";
 import Image from "next/image";
 import { faVirusCovid } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/navigation";
 
 // const Header = dynamic(
 //   () => import('./Header'),
@@ -23,7 +24,7 @@ const BannerHeader = () => {
 
 
   const [isMobile, setIsMobile] = useState(false);
-
+  const rounter= useRouter();
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
@@ -45,7 +46,10 @@ const BannerHeader = () => {
 
       {isMobile && (<div className=" flex flex-row justify-between w-full my-5">
 
-        <div className="w-[200px] h-[50px] bg-[url('/images/ayurvedalogo.png')] bg-no-repeat  bg-contain ml-5"></div>
+        <div className="w-[200px] h-[50px] bg-[url('/images/ayurvedalogo.png')] bg-no-repeat  bg-contain ml-5 cursor-pointer"
+        onClick={
+          ()=>{rounter.push('/home')}
+        }></div>
 
         <div className=" absolute z-20 right-0">
           {!isExpanded && (

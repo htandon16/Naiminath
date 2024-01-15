@@ -87,7 +87,9 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
         <div className=" flex md:flex-row flex-col px-[60px] w-full h-fit justify-between items-center
          bg-white py-5 border-b-[1px] border-r-slate-300">
           <div className="w-[200px] h-[50px] mt-1">
-            <div className="w-full h-full bg-[url('/images/ayurvedalogo.png')] bg-no-repeat  bg-contain"></div>
+            <div className="w-full h-full bg-[url('/images/ayurvedalogo.png')] bg-no-repeat  bg-contain cursor-pointer" onClick={
+              ()=>{rounter.push('/home')}
+            }></div>
           </div>
           <NavBar />
           <div className="flex md:flex-row flex-col h-fit justify-start items-center bg-[#fff500] rounded-lg px-4 py-3 gap-2 text-[14px] font-semibold">
