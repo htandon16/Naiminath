@@ -31,11 +31,10 @@ const HomePage = () => {
  
   return (
     <>
-    <Helmet>
-    <meta name="robots" content="max-image-preview:large"/>
-    <title>Home Naiminath Ayurveda : Top BAMS College in India</title>
-    <meta name="description" content="NA" />
-    </Helmet>
+    <head>
+    <title>Naiminath Ayurveda : Best Private BAMS College in Agra, UP</title>
+    <meta name="description" content="Experience excellence at Naiminath Ayurveda, the leading private BAMS college in Agra, UP. Begin your journey towards a fulfilling career in Ayurveda now!"/>
+    </head>
     <div className="w-max-full flex flex-col justify-center items-center -mt-4 font-sans pb-20">
       {/* ayurveda treatement section */}
       <div className="w-full flex flex-col justify-center items-center bg-cover bg-no-repeat

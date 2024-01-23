@@ -15,11 +15,11 @@ const Facilities = () => {
   return (
     <>
     
-    <Helmet>
-    <meta name="robots" content="max-image-preview:large"/>
-    <title>Facilities Naiminath Ayurveda : Top BAMS College in India</title>
-    <meta name="description" content="NA" />
-    </Helmet>
+    <head>
+    
+    <title>Facilities - Naiminath Ayurveda : Top BAMS College in India</title>
+    <meta name="description" content=" "/>
+    </head>
 
     <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
       <div

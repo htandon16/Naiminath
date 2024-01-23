@@ -15,11 +15,9 @@ const AboutUs = () => {
   return (
     <>
     
-    <Helmet>
-    <meta name="robots" content="max-image-preview:large"/>
-    <title>IPD Naiminath Ayurveda : Top BAMS College in India</title>
-    <meta name="description" content="NA" />
-    </Helmet>
+    <head>
+    <title>IPD - Naiminath Ayurveda </title>
+    </head>
 
     <div className="flex flex-col items-center justify-center font-sans h-full w-full">
       <div

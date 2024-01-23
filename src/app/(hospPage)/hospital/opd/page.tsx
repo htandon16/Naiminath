@@ -77,14 +77,11 @@ const Hospital = ({
         </>
       ),
       meta: (
-          <head>
-          <meta name="robots" content="max-image-preview:large" />
-          <title>
-            Kayachikitsa; Naiminath Ayurveda : Top BAMS College in India
-          </title>
-          <meta name="description" content="NA" />
-          </head>
-               ),
+        <head>
+          <title>Kayachikitsa - Naiminath Ayurveda </title>
+          <meta name="description" content="Discover holistic healing with Kayachikitsa at Naminath Aryuveda. Our Ayurveda OPD offers personalized consultations for a healthier and balanced life"/>
+        </head>
+      ),
     },
     {
       title: "Kaumarbhritya",
@@ -125,13 +122,10 @@ const Hospital = ({
         </>
       ),
       meta: (
-          <head>
-          <meta name="robots" content="max-image-preview:large" />
-          <title>
-            Kaumarbhritya Naiminath Ayurveda : Top BAMS College in India
-          </title>
-          <meta name="description" content="NA" />
-          </head>
+        <head>
+         <title>Kaumarbhritya - Naiminath Ayurveda</title>
+         <meta name="description" content="Explore Kaumarbhritya at Naminath Ayurveda for comprehensive pediatric care. Our experts blend traditional wisdom with modern healthcare for your child's well-being "/>
+        </head>
       ),
     },
     {
@@ -171,13 +165,10 @@ const Hospital = ({
         </>
       ),
       meta: (
-          <head>
-          <meta name="robots" content="max-image-preview:large" />
-          <title>
-            Panchkarma Naiminath Ayurveda : Top BAMS College in India
-          </title>
-          <meta name="description" content="NA" />
-          </head>
+        <head>
+         <title>Panchkarma - Naiminath Ayurveda</title>
+         <meta name="description" content="Embark on your healing journey with Panchakarma at Naminath Ayurveda. Rejuvenate your body, mind, and spirit through authentic therapies for lasting well-being"/>
+        </head>
       ),
     },
     {
@@ -216,11 +207,8 @@ const Hospital = ({
       ),
       meta: (
         <head>
-          <meta name="robots" content="max-image-preview:large" />
-          <title>
-            Prasuti Stri Roga Naiminath Ayurveda : Top BAMS College in India
-          </title>
-          <meta name="description" content="NA" />
+          <title>Prasuti Stri Roga - Naiminath Ayurveda =</title>
+          <meta name="description" content="Experience compassionate care for maternal health with Prasuti Stri Roga at Naminath Ayurveda. Our expert team ensures a holistic approach for a healthy pregnancy and postpartum"/>
         </head>
       ),
     },
@@ -294,11 +282,8 @@ const Hospital = ({
       ),
       meta: (
         <head>
-          <meta name="robots" content="max-image-preview:large" />
-          <title>
-            Shalakya Tantra Naiminath Ayurveda : Top BAMS College in India
-          </title>
-          <meta name="description" content="NA" />
+         <title>Shalakya Tantra - Naiminath Ayurveda =</title>
+         <meta name="description" content="Discover specialized care for head and neck disorders with Shalakya Tantra at Naminath Ayurveda. Our expert treatments ensure comprehensive relief and well-being"/>
         </head>
       ),
     },
@@ -362,11 +347,8 @@ const Hospital = ({
       ),
       meta: (
         <head>
-          <meta name="robots" content="max-image-preview:large" />
-          <title>
-            Shalya Tantra Naiminath Ayurveda : Top BAMS College in India
-          </title>
-          <meta name="description" content="NA" />
+        <title>Shalya Tantra - Naiminath Ayurveda =</title>
+        <meta name="description" content="Experience advanced surgical care rooted in Ayurveda with Shalya Tantra at Naminath Ayurveda. Our expert treatments ensure effective solutions for surgical conditions and postoperative care"/>
         </head>
       ),
     },
@@ -410,69 +392,25 @@ const Hospital = ({
       ),
       meta: (
         <head>
-          <meta name="robots" content="max-image-preview:large" />
-          <title>
-            Swasthavritta Naiminath Ayurveda : Top BAMS College in India
-          </title>
-          <meta name="description" content="NA" />
+          <title>Swasthavritta - Naiminath Ayurveda</title>
+          <meta name="description" content="Explore Swasthavritta at Naminath Ayurveda—Ayurvedic wisdom for disease prevention through holistic practices. Embrace well-being with diet, hygiene, and yoga for a healthier life"/>
         </head>
       ),
     },
     {
       title: "Abhyangam Treatment",
-      content: (
-          <Abhyangam />
-      ),
+      content: <Abhyangam />,
       meta: (
         <head>
-        <title>
-          Abhyangam Treatment | Abhyangam Therapy - Naiminath Ayurveda
-        </title>
-        <meta
-          name="description"
-          content="Escape to a world of tranquility and healing with Abhyangam Treatment at Naiminath Ayurveda. Rediscover harmony within yourself today!"
-        />
-
-        <meta
-          name="robots"
-          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:standard"
-        />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:title"
-          content="Abhyangam Treatment | Abhyangam Therapy - Naiminath Ayurveda"
-        />
-        <meta
-          property="og:description"
-          content="Escape to a world of tranquility and healing with Abhyangam Treatment at Naiminath Ayurveda. Rediscover harmony within yourself today!"
-        />
-        <meta
-          property="og:url"
-          content="https://naiminathayurveda.org/abhyangam/"
-        />
-        <meta
-          property="og:site_name"
-          content="Naiminath Ayurveda : Best Private BAMS College in Agra, UP, India"
-        />
-        <meta
-          property="og:updated_time"
-          content="2023-09-04T09:20:08+00:00"
-        />
-        <meta
-          property="og:image"
-          content="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904100943_fpdl.in_chinese-asian-woman-wellness-beauty-spa-having-aroma-therapy-massage-with-min.jpg"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904100943_fpdl.in_chinese-asian-woman-wellness-beauty-spa-having-aroma-therapy-massage-with-min.jpg"
-        />
-        <meta property="og:image:width" content="960" />
-        <meta property="og:image:height" content="640" />
-        <meta property="og:image:alt" content="Abhyangam" />
-        <meta property="og:image:type" content="image/jpeg" />
-      </head>
-      )
+          <title>
+            Abhyangam Treatment | Abhyangam Therapy - Naiminath Ayurveda
+          </title>
+          <meta
+            name="description"
+            content="Escape to a world of tranquility and healing with Abhyangam Treatment at Naiminath Ayurveda. Rediscover harmony within yourself today!"
+          />
+        </head>
+      ),
     },
     {
       title: "Shirodhara",
@@ -480,6 +418,18 @@ const Hospital = ({
         <>
           <SirodharaPage />
         </>
+      ),
+      meta: (
+        <head>
+          <title>
+            Shirodhara Therapy - Treatment, Benefits &amp; Side Effects |
+            Naiminath Ayurveda
+          </title>
+          <meta
+            name="description"
+            content="Elevate your well-being with Shirodhara therapy. Discover the therapeutic effects on stress reduction, improved sleep, and overall wellness."
+          />
+        </head>
       ),
     },
     {
@@ -489,6 +439,15 @@ const Hospital = ({
           <KashydharaPage />
         </>
       ),
+      meta: (
+        <head>
+          <title>Kashayadhara Treatment - Naiminath Ayurveda</title>
+          <meta
+            name="description"
+            content="Unleash the healing potential of Ayurvedic Treatment at Naiminath Ayurveda. Embrace a personalized approach to wellness for lasting vitality and peace."
+          />
+        </head>
+      ),
     },
     {
       title: "Greeva Basti Treatment: Relieve Neck and Shoulder Discomfort",
@@ -496,6 +455,15 @@ const Hospital = ({
         <>
           <GreevaBastiPage />
         </>
+      ),
+      meta: (
+        <head>
+          <title>Greeva Basti Treatment - Naiminath Ayurveda</title>
+          <meta
+            name="description"
+            content="Experience the healing power of Greeva Basti Treatment at Naiminath Ayurveda. Say goodbye to neck pain and stiffness. Book your session now!"
+          />
+        </head>
       ),
     },
     {
@@ -505,6 +473,15 @@ const Hospital = ({
           <JanuBastiPage />
         </>
       ),
+      meta: (
+        <head>
+          <title>Janu Basti Treatment - Naiminath Ayurveda</title>
+          <meta
+            name="description"
+            content="Experience the healing power of Janu Basti Treatment at Naiminath Ayurveda. Say goodbye to knee pain and enjoy a life free from discomfort."
+          />
+        </head>
+      ),
     },
     {
       title: "Kati Basti Treatment: Easing Your Way to a Pain-Free Back",
@@ -512,6 +489,15 @@ const Hospital = ({
         <>
           <KatiBastiPage />
         </>
+      ),
+      meta: (
+        <head>
+          <title>Kati Basti Treatment - Naiminath Ayurveda</title>
+          <meta
+            name="description"
+            content="Experience the healing power of Kati Basti Treatment at Naiminath Ayurveda. Say goodbye to back pain and find relief today!"
+          />
+        </head>
       ),
     },
     {
@@ -521,6 +507,15 @@ const Hospital = ({
           <SpineBastiPage />
         </>
       ),
+      meta: (
+        <head>
+          <title>Spine Basti Treatment - Naiminath Ayurveda</title>
+          <meta
+            name="description"
+            content="Experience the healing power of Spine Basti treatment at Naiminath Ayurveda. Find relief from spine issues and rejuvenate your body naturally."
+          />
+        </head>
+      ),
     },
     {
       title: "Kizhi Treatment: A Healing Experience for Body and Soul ",
@@ -528,6 +523,15 @@ const Hospital = ({
         <>
           <KizhiPage />
         </>
+      ),
+      meta: (
+        <head>
+          <title>Kizhi Treatment &amp; Massage- Naiminath Ayurveda</title>
+          <meta
+            name="description"
+            content="Experience the healing power of Kizhi treatment at Naiminath Ayurveda. Restore balance and rejuvenate your body naturally."
+          />
+        </head>
       ),
     },
     {
@@ -537,6 +541,15 @@ const Hospital = ({
           <MukhaLepam />
         </>
       ),
+      meta: (
+        <head>
+          <title>Mukha Lepam - Naiminath Ayurveda</title>
+          <meta
+            name="description"
+            content="Transform your skin with Mukha Lepam - Naiminath Ayurveda. Experience the power of ancient remedies for a radiant, youthful complexion."
+          />
+        </head>
+      ),
     },
     {
       title: "Discover the Healing Benefits of Netra Tarpanam Treatment",
@@ -544,6 +557,15 @@ const Hospital = ({
         <>
           <NetraTarpanamPage />
         </>
+      ),
+      meta: (
+        <head>
+          <title>Netra Tarpanam Treatment - Naiminath Ayurveda</title>
+          <meta
+            name="description"
+            content="Get relief from eye problems with Netra Tarpanam treatment at Naiminath Ayurveda. Experience the power of ancient healing techniques today!"
+          />
+        </head>
       ),
     },
   ];
@@ -555,7 +577,6 @@ const Hospital = ({
   const { imageSlide, setImageSlide } = useGlobalContext();
 
   useEffect(() => {
-   
     if (typeof id === "number") {
       console.log("Page loaded");
       setItemsContent(items[id]);
@@ -568,56 +589,52 @@ const Hospital = ({
 
   return (
     <>
-    {itemsContent.meta && (
-        <>{itemsContent.meta}</>
-      )}
-    <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
-      <div
-        className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
+      {itemsContent.meta && <>{itemsContent.meta}</>}
+      <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
+        <div
+          className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
       text-[#54595f] md:text-[32px] text-[28px] text-center font-extrabold border-b-[0.009px] border-[#8b939465]"
-      >
-        {itemsContent.title}
-      </div>
-      <div className="flex md:flex-row flex-col w-full justify-center items-start md:mt-12">
-        <div className=" flex flex-col basis-2/5 flex-none  gap-3 items-center justify-center ">
-          <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2">
-            {items.slice(0, 7).map((item, index) => (
-              <li
-                key={index}
-                className=" hover:text-[#54595f] text-[#50b9ce] "
-                onClick={() => {
-                  setCurrentId(index);
-                  setItemsContent(item);
-                 // rounter.push(`/hospPage/hospital/opd?id=${index}`)
-                  
-                 // console.log("idahjh===", index);
-                  
-                   const currentUrl = window.location.href;
-                   const newUrl = `${currentUrl.split('?')[0]}?id=${index}`;
-                   window.history.replaceState(null, '', newUrl);
-                  // window.location.reload()
-
-                }}
-              >
-                {item.title}
-              </li>
-            ))}
-            <style jsx>{`
-              /* Use the utility class to change the color of the list item bullets */
-              .custom-list li::before {
-                font-size: 20px;
-                content: "•"; /* Use the desired bullet character */
-                color: #54595f; /* Change this to the color you want for the bullets */
-                margin-right: 8px; /* Adjust the spacing between the bullet and text */
-              }
-            `}</style>
-          </ul>
+        >
+          {itemsContent.title}
         </div>
-        <ShowRightSideText id={currentId} data={itemsContent} />
+        <div className="flex md:flex-row flex-col w-full justify-center items-start md:mt-12">
+          <div className=" flex flex-col basis-2/5 flex-none  gap-3 items-center justify-center ">
+            <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2">
+              {items.slice(0, 7).map((item, index) => (
+                <li
+                  key={index}
+                  className=" hover:text-[#54595f] text-[#50b9ce] "
+                  onClick={() => {
+                    setCurrentId(index);
+                    setItemsContent(item);
+                    // rounter.push(`/hospPage/hospital/opd?id=${index}`)
+
+                    // console.log("idahjh===", index);
+
+                    const currentUrl = window.location.href;
+                    const newUrl = `${currentUrl.split("?")[0]}?id=${index}`;
+                    window.history.replaceState(null, "", newUrl);
+                    // window.location.reload()
+                  }}
+                >
+                  {item.title}
+                </li>
+              ))}
+              <style jsx>{`
+                /* Use the utility class to change the color of the list item bullets */
+                .custom-list li::before {
+                  font-size: 20px;
+                  content: "•"; /* Use the desired bullet character */
+                  color: #54595f; /* Change this to the color you want for the bullets */
+                  margin-right: 8px; /* Adjust the spacing between the bullet and text */
+                }
+              `}</style>
+            </ul>
+          </div>
+          <ShowRightSideText id={currentId} data={itemsContent} />
+        </div>
       </div>
-    </div>
     </>
-    
   );
 };
 

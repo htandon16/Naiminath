@@ -93,11 +93,11 @@ const Faculty = () => {
 
   return (
     <>
-    <Helmet>
-    <meta name="robots" content="max-image-preview:large"/>
-    <title>Faculty Naiminath Ayurveda : Top BAMS College in India</title>
-    <meta name="description" content="NA" />
-    </Helmet>
+    <head>
+    <title>Faculty - Naiminath Ayurveda</title>
+    <meta name="description" content=" "/>
+    </head>
+
       <div className=" flex flex-col">
       <div className=" text-3xl mt-10 text-gray-800 text-center font-sans font-bold">
         Faculty

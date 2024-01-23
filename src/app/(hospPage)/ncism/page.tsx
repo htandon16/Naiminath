@@ -200,11 +200,10 @@ const NCISM = () => {
   return (
     <>
     
-    <Helmet>
-    <meta name="robots" content="max-image-preview:large"/>
-    <title>Regulatory Info Naiminath Ayurveda : Top BAMS College in India</title>
-    <meta name="description" content="NA" />
-    </Helmet>
+    <head>
+    <title>Regulatory Info - Naiminath Ayurveda</title>
+    <meta name="description" content=" "/>
+    </head>
 
      <div className="flex flex-col my-12 justify-center items-center md:mx-40">
       <div className="">

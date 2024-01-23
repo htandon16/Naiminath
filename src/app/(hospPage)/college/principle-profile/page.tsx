@@ -13,11 +13,10 @@ const PrincipalProfile = () => {
 
   return (
     <>
-    <Helmet>
-    <meta name="robots" content="max-image-preview:large"/>
-    <title>Principal’s Profile Naiminath Ayurveda : Top BAMS College in India</title>
-    <meta name="description" content="NA" />
-    </Helmet>
+    <head>
+    <title>Principal’s Profile - Naiminath Ayurveda</title>
+    <meta name="description" content=" "/>
+    </head>
     
      <div className="flex flex-col justify-center items-center font-serif">
          <div
