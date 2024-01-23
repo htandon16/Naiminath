@@ -66,6 +66,7 @@ const MobileNavBar = ({
     { label: "Blog", path: "/blog" },
     { label: "Facilities", path: "/facilities" },
     { label: "Contact", path: "/contactus" },
+    { label: "Admission Open", path: "https://bams-admission.naiminathayurveda.org/" },
     // Add other links as needed
   ];
 
@@ -138,6 +139,7 @@ const MobileNavBar = ({
             <FontAwesomeIcon icon={faClose} />
           </MenuItem>
           {renderMenuItems(mobileNavLinks)}
+
           {/* <MenuItem> Home </MenuItem>
           <MenuItem> About us</MenuItem>
           <MenuItem> Gallery </MenuItem>
