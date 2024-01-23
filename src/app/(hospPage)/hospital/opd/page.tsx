@@ -207,7 +207,7 @@ const Hospital = ({
       ),
       meta: (
         <head>
-          <title>Prasuti Stri Roga - Naiminath Ayurveda =</title>
+          <title>Prasuti Stri Roga - Naiminath Ayurveda</title>
           <meta name="description" content="Experience compassionate care for maternal health with Prasuti Stri Roga at Naminath Ayurveda. Our expert team ensures a holistic approach for a healthy pregnancy and postpartum"/>
         </head>
       ),
@@ -282,7 +282,7 @@ const Hospital = ({
       ),
       meta: (
         <head>
-         <title>Shalakya Tantra - Naiminath Ayurveda =</title>
+         <title>Shalakya Tantra - Naiminath Ayurveda</title>
          <meta name="description" content="Discover specialized care for head and neck disorders with Shalakya Tantra at Naminath Ayurveda. Our expert treatments ensure comprehensive relief and well-being"/>
         </head>
       ),
@@ -347,7 +347,7 @@ const Hospital = ({
       ),
       meta: (
         <head>
-        <title>Shalya Tantra - Naiminath Ayurveda =</title>
+        <title>Shalya Tantra - Naiminath Ayurveda</title>
         <meta name="description" content="Experience advanced surgical care rooted in Ayurveda with Shalya Tantra at Naminath Ayurveda. Our expert treatments ensure effective solutions for surgical conditions and postoperative care"/>
         </head>
       ),
