@@ -50,6 +50,12 @@ const BlogPage = () => {
  
   
   return (
+    <>
+    <head>
+    <title>Blogs - Naiminath Ayurveda : Top BAMS College in India</title>
+    <meta name="description" content=" "/>
+    </head>
+
     <div className="min-h-screen flex flex-wrap gap-5 p-[20px] justify-center items-center">
       {loading ? ( // Show loader if still loading
         <div className="text-center text-black">Loading...</div>
@@ -95,6 +101,7 @@ const BlogPage = () => {
         ))
       )}
     </div>
+    </>
   );
 };
 
