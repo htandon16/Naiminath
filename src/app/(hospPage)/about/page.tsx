@@ -11,13 +11,10 @@ const AboutUs = () => {
     setImageSlide(false);
   }, [setImageSlide]);
 
-
   return (
     <>
       <head>
-        <title>
-          About us
-        </title>
+        <title>About us</title>
         <meta name="description" content="NA" />
       </head>
       <div className="flex flex-col items-center justify-center font-sans h-full w-full">
@@ -37,21 +34,25 @@ const AboutUs = () => {
           />
           <div className="text-[#7c7777] text-[17px] text-justify">
             <p>
-              Naiminath Ayurvedic Hospital is the pioneer in the field of
-              Ayurveda in the world. The Hospital offers treatment for every
-              ailment and is affordable. The Hospital has is successfully
-              running Out patient departments in Kayachikitsa, Kaumarbhritya,
-              Panchkarma, Prasuti & Stri Roga, Shalakya tantra, Shalya tantra,
-              Swasthavritta, Dental and Physiotherapy. The Hospital prides
-              itself in providing a well-equipped, hygienically maintained
-              panchkarma therapy rooms to suit the need and affordability of one
-              and all.
+              Naiminath Ayurveda holds a commitment to providing quality
+              education and top-notch facilities in the field of ayurveda
+              medicine. We are a 100 bedded state of art Ayurvedic Hospital
+              which is functional since 2016, where more than 200 patients visit
+              the Outpatient Department every day and around 40 patients are
+              present in the Inpatient Department.
             </p>
             <p className=" mt-3">
-              To provide world class education and treatment, this 100 bedded
-              state of art Ayurvedic Hospital is functional since 2016 where
-              more than 200 patients visit the Outdoor Department every day and
-              around 40 patients are present in the Indoor Department.
+              The college offers a comprehensive curriculum that not only covers
+              traditional Ayurvedic practices but also integrates modern medical
+              advancements with its emphasis on practical training and
+              experiential learning. Students have access to well-equipped
+              laboratories where they can develop their skills and gain hands-on
+              experience under the guidance of experienced faculty members. This
+              approach ensures that graduates are prepared to enter the
+              professional world with confidence and expertise. The Hospital
+              prides itself in providing a well-equipped, hygienically
+              maintained panchkarma therapy rooms to suit the need and
+              affordability of one and all.
             </p>
           </div>
         </div>
@@ -62,9 +63,10 @@ const AboutUs = () => {
             alt="about image"
             layout="fill"
           />
-          <div className="absolute top-2 md:top-1/4 w-[90vw] md:w-[75vw] md:h-full flex md:flex-row flex-col
-           justify-center items-start bg-opacity-70 gap-2 md:gap-10">
-
+          <div
+            className="absolute top-2 md:top-1/4 w-[90vw] md:w-[75vw] md:h-full flex md:flex-row flex-col
+           justify-center items-start bg-opacity-70 gap-2 md:gap-10"
+          >
             <div className=" md:basis-1/2 ">
               <div className="text-[#3c4f43] md:text-[32px] text-[26px] font-medium">
                 Vision
@@ -81,9 +83,11 @@ const AboutUs = () => {
             </div>
             <div
               className=" md:basis-1/2 text-white"
-              style={{ textShadow: "1px 1px 2px #0005b6" }} 
+              style={{ textShadow: "1px 1px 2px #0005b6" }}
             >
-              <div className="md:text-[30px] text-[24px] font-medium">Mission</div>
+              <div className="md:text-[30px] text-[24px] font-medium">
+                Mission
+              </div>
               <p className="md:mt-3">
                 The mission of Naiminath Ayurvedic Hospital is to improve the
                 health of our Community and the Global Community by setting the
