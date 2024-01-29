@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useGlobalContext } from "@/app/context/store";
 
 const AboutUs = () => {
+  
   const { setImageSlide } = useGlobalContext();
 
   useEffect(() => {
