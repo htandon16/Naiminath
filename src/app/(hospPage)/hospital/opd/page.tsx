@@ -13,10 +13,7 @@ import SirodharaPage from "../../treatment/shirodhara/page";
 import KashydharaPage from "../../treatment/kashayadhara/page";
 import MukhaLepam from "../../treatment/mukha-lepam/page";
 import NetraTarpanamPage from "../../treatment/netra-tarpanam/page";
-import { Helmet } from "react-helmet";
-import { render } from "react-dom";
-import { renderToHTML } from "next/dist/server/render";
-import { renderToReadableStream } from "next/dist/server/app-render/entry-base";
+
 
 const Hospital = ({
   params,
@@ -82,6 +79,7 @@ const Hospital = ({
           <meta name="description" content="Discover holistic healing with Kayachikitsa at Naminath Aryuveda. Our Ayurveda OPD offers personalized consultations for a healthier and balanced life"/>
         </head>
       ),
+      image:"kayachikitsa.webp"
     },
     {
       title: "Kaumarbhritya",
@@ -127,6 +125,7 @@ const Hospital = ({
          <meta name="description" content="Explore Kaumarbhritya at Naminath Ayurveda for comprehensive pediatric care. Our experts blend traditional wisdom with modern healthcare for your child's well-being "/>
         </head>
       ),
+      image:"kaumarbhritya.jpg"
     },
     {
       title: "Panchkarma",
@@ -170,6 +169,7 @@ const Hospital = ({
          <meta name="description" content="Embark on your healing journey with Panchakarma at Naminath Ayurveda. Rejuvenate your body, mind, and spirit through authentic therapies for lasting well-being"/>
         </head>
       ),
+      image:"panchakarma.jpeg"
     },
     {
       title: "Prasuti & Stri Roga",
@@ -211,6 +211,7 @@ const Hospital = ({
           <meta name="description" content="Experience compassionate care for maternal health with Prasuti Stri Roga at Naminath Ayurveda. Our expert team ensures a holistic approach for a healthy pregnancy and postpartum"/>
         </head>
       ),
+      image:"prasuti.jpg"
     },
     {
       title: "Shalakya Tantra",
@@ -286,6 +287,7 @@ const Hospital = ({
          <meta name="description" content="Discover specialized care for head and neck disorders with Shalakya Tantra at Naminath Ayurveda. Our expert treatments ensure comprehensive relief and well-being"/>
         </head>
       ),
+      image:"shalakya.jpeg"
     },
     {
       title: "Shalya Tantra",
@@ -351,6 +353,7 @@ const Hospital = ({
         <meta name="description" content="Experience advanced surgical care rooted in Ayurveda with Shalya Tantra at Naminath Ayurveda. Our expert treatments ensure effective solutions for surgical conditions and postoperative care"/>
         </head>
       ),
+      image:"kayachikitsa.webp"
     },
     {
       title: "Swasthvritta",
@@ -396,6 +399,7 @@ const Hospital = ({
           <meta name="description" content="Explore Swasthavritta at Naminath Ayurveda—Ayurvedic wisdom for disease prevention through holistic practices. Embrace well-being with diet, hygiene, and yoga for a healthier life"/>
         </head>
       ),
+      image:"about_home_bg.jpg"
     },
     {
       title: "Abhyangam Treatment",
@@ -411,6 +415,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
     {
       title: "Shirodhara",
@@ -431,6 +436,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
     {
       title: "Kashayadhara Treatment: The Holistic Healing Experience",
@@ -448,6 +454,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
     {
       title: "Greeva Basti Treatment: Relieve Neck and Shoulder Discomfort",
@@ -465,6 +472,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
     {
       title: "Janu Basti Treatment: Soothe and Revitalize Your Knees",
@@ -482,6 +490,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
     {
       title: "Kati Basti Treatment: Easing Your Way to a Pain-Free Back",
@@ -499,6 +508,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
     {
       title: "Spine Basti: Holistic Healing for Your Backbone",
@@ -516,6 +526,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
     {
       title: "Kizhi Treatment: A Healing Experience for Body and Soul ",
@@ -533,6 +544,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
     {
       title: "Mukha Lepam: Revitalize Your Skin with Ayurvedic Care ",
@@ -550,6 +562,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
     {
       title: "Discover the Healing Benefits of Netra Tarpanam Treatment",
@@ -567,6 +580,7 @@ const Hospital = ({
           />
         </head>
       ),
+      image:""
     },
   ];
 
@@ -590,16 +604,21 @@ const Hospital = ({
   return (
     <>
       {itemsContent.meta && <>{itemsContent.meta}</>}
-      <div className="flex flex-col items-center justify-center font-sans h-full w-full pb-16">
+      <div className="flex flex-col items-center justify-center font-sans h-full w-full">
         <div
           className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
       text-[#54595f] md:text-[32px] text-[28px] text-center font-extrabold border-b-[0.009px] border-[#8b939465]"
         >
           {itemsContent.title}
         </div>
-        <div className="flex md:flex-row flex-col w-full justify-center items-start md:mt-12">
-          <div className=" flex flex-col basis-2/5 flex-none  gap-3 items-center justify-center ">
-            <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2">
+        <div className={`flex md:flex-row flex-col w-full justify-center items-start md:pt-12 pb-16 bg-[')] 
+        bg-no-repeat bg-cover`}  
+        style={{
+          backgroundImage: `linear-gradient(90deg, #ffffff, #ffffffc7), url('/images/opd/${itemsContent.image}')`,
+          backgroundSize: 'cover',
+        }}>
+          <div className=" flex flex-col basis-[30%] flex-none  gap-3 items-center justify-center ">
+            <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2 ">
               {items.slice(0, 7).map((item, index) => (
                 <li
                   key={index}
@@ -648,7 +667,7 @@ const ShowRightSideText = ({ id, data }: any) => {
           </div>
         </div> */}
       {typeof id === "number" && id >= 0 && id <= 6 && (
-        <div className=" flex flex-col gap-3 items-start justify-center md:mr-44 md:mx-0 mx-4 md:mt-0 mt-4 ">
+        <div className=" flex flex-col gap-3 items-start justify-center md:mr-32 md:mx-0 mx-4 md:mt-0 mt-4 ">
           <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
           <div className=" text-[#7f7f7f] text-[16px] md:text-justify font-medium font-serif">
             {data.content}
@@ -657,7 +676,7 @@ const ShowRightSideText = ({ id, data }: any) => {
       )}
 
       {typeof id === "number" && id >= 7 && id <= 16 && (
-        <div className="flex flex-col items-start justify-center md:mr-44 md:mx-0 mx-4 md:mt-0 mt-4 font-serif overflow-x-auto">
+        <div className="flex flex-col items-start justify-center md:mr-32 md:mx-0 mx-4 md:mt-0 mt-4 font-serif overflow-x-auto">
           {data.content}
         </div>
       )}

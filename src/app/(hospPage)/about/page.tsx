@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useGlobalContext } from "@/app/context/store";
 
 const AboutUs = () => {
-  
   const { setImageSlide } = useGlobalContext();
 
   useEffect(() => {
@@ -54,6 +53,24 @@ const AboutUs = () => {
               prides itself in providing a well-equipped, hygienically
               maintained panchkarma therapy rooms to suit the need and
               affordability of one and all.
+            </p>
+            <p className=" mt-3">
+              What sets Naiminath apart from other private ayurvedic colleges in
+              UP is its emphasis on practical experience alongside theoretical
+              knowledge. This prestigious ayurvedic medical college offers a
+              unique blend of traditional practices and modern advancements,
+              making it one of the most sought-after institutions for aspiring
+              ayurvedic practitioners. Students here have the unique opportunity
+              to engage in hands-on learning through internships at the attached
+              hospital.
+            </p>
+            <p className=" mt-3">
+              We have Outpatient departments in Kayachikitsa, Kaumarbhritya,
+              Panchkarma, Prasuti & Stri Roga, Shalakya tantra, Shalya tantra,
+              Swasthavritta, Dental and Physiotherapy. The Hospital prides
+              itself in providing a well-equipped, hygienically maintained
+              panchkarma therapy rooms to suit the need and affordability of one
+              and all.
             </p>
           </div>
         </div>

@@ -56,15 +56,15 @@ const BlogPage = () => {
     <meta name="description" content=" "/>
     </head>
 
-    <div className="min-h-screen flex flex-wrap gap-5 p-[20px] justify-center items-center">
+    <div className="min-h-screen flex flex-wrap gap-5 p-[20px] justify-center mt-14">
       {loading ? ( // Show loader if still loading
         <div className="text-center text-black">Loading...</div>
       ) : (
         blogs.map((blog, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center md:basis-1/4 h-fit rounded-lg 
-          overflow-hidden min-h-[350px] shadow-md inset-11 hover:bg-slate-50 cursor-pointer"
+            className="flex flex-col justify-center items-center md:basis-1/4 rounded-lg 
+          overflow-hidden h-[350px] shadow-md inset-11 hover:bg-slate-50 cursor-pointer"
             onClick={async () => {
               setBlogData(blog.content);
               // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
@@ -72,7 +72,7 @@ const BlogPage = () => {
             }}
           >
             <div className="w-full pb-2 flex-1 justify-center items-center">
-              <h5 className="text-white py-2 text-center bg-black ">
+              <h5 className="text-white py-2 text-center bg-[#ded636] ">
                 Blog {"-"} {index + 1}
               </h5>
               <div
