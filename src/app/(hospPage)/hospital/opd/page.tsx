@@ -663,15 +663,15 @@ const ShowRightSideText = ({ id, data }: any) => {
   return (
     <>
       {/* <div className=" flex flex-col gap-3 items-start justify-center mr-44">
-          <h5 className="text-[#54595f] font-bold">{data.title}</h5>
-          <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
+          <h5 className="text-[#000] font-serif font-bold">{data.title}</h5>
+          <div className=" text-[#000] text-[16px] text-justify font-medium font-serif">
             {data.content}
           </div>
         </div> */}
       {typeof id === "number" && id >= 0 && id <= 6 && (
         <div className=" flex flex-col gap-3 items-start justify-center md:mr-32 md:mx-0 mx-4 md:mt-0 mt-4 ">
-          <h5 className="text-[#54595f] font-bold">{data.title}</h5>
-          <div className=" text-[#7f7f7f] text-[16px] border-t-1 border-b-1  md:text-justify font-semibold font-serif">
+          <h5 className="text-[#000] font-bold">{data.title}</h5>
+          <div className=" text-[#000] text-[16px] border-t-1 border-b-1  md:text-justify font-semibold font-serif">
             {data.content}
           </div>
         </div>
