@@ -45,7 +45,7 @@ const Hospital = ({
           </p>
           <br />
           <br />
-          <h6 className="text-[16px] font-semibold text-[#212121]">
+          <h6 className="text-[16px] font-semibold font-serif	text-[#000]">
             Medical Conditions Comprehensively Managed By Kayachikitsa
             Speciality at Naiminath
           </h6>
@@ -98,7 +98,7 @@ const Hospital = ({
             ash of gold (Suvarna Bhasma) with fortified ghee to the child.
           </p>
           <br />
-          <h6 className="text-[16px] font-semibold text-[#212121]">
+          <h6 className="text-[16px] font-semibold text-[#000]">
             Treatment of Kaumarabhritya at Naiminath has one of the major
             possibilities in serving the pediatric conditions between the age
             group of 0 to 16 years with:
@@ -670,8 +670,8 @@ const ShowRightSideText = ({ id, data }: any) => {
         </div> */}
       {typeof id === "number" && id >= 0 && id <= 6 && (
         <div className=" flex flex-col gap-3 items-start justify-center md:mr-32 md:mx-0 mx-4 md:mt-0 mt-4 ">
-          <h5 className="text-[#000] font-bold">{data.title}</h5>
-          <div className=" text-[#000] text-[16px] border-t-1 border-b-1  md:text-justify font-semibold font-serif">
+          <h5 className="text-[#000] font-bold font-serif	">{data.title}</h5>
+          <div className=" text-[#000] text-[16px] border-t-1 border-b-1  md:text-justify font-normal font-serif">
             {data.content}
           </div>
         </div>
