@@ -618,7 +618,7 @@ const Hospital = ({
           backgroundSize: 'cover',
         }}>
           <div className=" flex flex-col basis-[30%] flex-none  gap-3 items-center justify-center ">
-            <ul className="list-none list-inside text-[17px] ps-6 cursor-pointer font-serif mt-2 ">
+            <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2 ">
               {items.slice(0, 7).map((item, index) => (
                 <li
                   key={index}
@@ -643,9 +643,11 @@ const Hospital = ({
                 /* Use the utility class to change the color of the list item bullets */
                 .custom-list li::before {
                   font-size: 20px;
-                  content: "•"; /* Use the desired bullet character */
-                  color: #54595f; /* Change this to the color you want for the bullets */
-                  margin-right: 8px; /* Adjust the spacing between the bullet and text */
+                  content: "⇨"; /* Use the desired bullet character */
+                  color: #17a960; /* Change this to the color you want for the bullets */
+                  margin-right: 8px; 
+                   border-top: 0.5px solid #ffffff; /* Adjust the spacing between the bullet and text */
+                   border-bottom: 1px solid #cfe1cf;
                 }
               `}</style>
             </ul>
@@ -669,7 +671,7 @@ const ShowRightSideText = ({ id, data }: any) => {
       {typeof id === "number" && id >= 0 && id <= 6 && (
         <div className=" flex flex-col gap-3 items-start justify-center md:mr-32 md:mx-0 mx-4 md:mt-0 mt-4 ">
           <h5 className="text-[#54595f] font-bold">{data.title}</h5>
-          <div className=" text-[#7f7f7f] text-[16px] md:text-justify font-medium font-serif">
+          <div className=" text-[#7f7f7f] text-[16px] border-t-1 border-b-1  md:text-justify font-semibold font-serif">
             {data.content}
           </div>
         </div>
