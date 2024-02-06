@@ -614,7 +614,7 @@ const Hospital = ({
         <div className={`flex md:flex-row flex-col w-full justify-center items-start md:pt-12 pb-16 bg-[')] 
         bg-no-repeat bg-cover bg-center`}  
         style={{
-          backgroundImage: `linear-gradient(93deg, rgb(246 255 238), rgb(255 255 255), #f5ffa399), url('/images/opd/${itemsContent.image}')`,
+          backgroundImage: `linear-gradient(93deg, rgb(246 255 238), rgb(255 255 255, 65% ), #f5ffa399), url('/images/opd/${itemsContent.image}')`,
           backgroundSize: 'cover',
         }}>
           <div className=" flex flex-col basis-[30%] flex-none  gap-3 items-center justify-center ">
