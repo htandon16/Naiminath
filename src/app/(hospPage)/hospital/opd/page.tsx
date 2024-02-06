@@ -612,17 +612,17 @@ const Hospital = ({
           {itemsContent.title}
         </div>
         <div className={`flex md:flex-row flex-col w-full justify-center items-start md:pt-12 pb-16 bg-[')] 
-        bg-no-repeat bg-cover`}  
+        bg-no-repeat bg-cover bg-center`}  
         style={{
-          backgroundImage: `linear-gradient(90deg, #ffffff, #ffffffc7), url('/images/opd/${itemsContent.image}')`,
+          backgroundImage: `linear-gradient(93deg, rgb(246 255 238), rgb(255 255 255), #f5ffa399), url('/images/opd/${itemsContent.image}')`,
           backgroundSize: 'cover',
         }}>
           <div className=" flex flex-col basis-[30%] flex-none  gap-3 items-center justify-center ">
-            <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2 ">
+            <ul className="list-none list-inside text-[17px] ps-6 cursor-pointer font-serif mt-2 ">
               {items.slice(0, 7).map((item, index) => (
                 <li
                   key={index}
-                  className=" hover:text-[#54595f] text-[#50b9ce] "
+                  className=" hover:text-[#54595f] text-[#17a960] "
                   onClick={() => {
                     setCurrentId(index);
                     setItemsContent(item);
@@ -661,14 +661,14 @@ const ShowRightSideText = ({ id, data }: any) => {
   return (
     <>
       {/* <div className=" flex flex-col gap-3 items-start justify-center mr-44">
-          <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
+          <h5 className="text-[#54595f] font-bold">{data.title}</h5>
           <div className=" text-[#7f7f7f] text-[16px] text-justify font-medium font-serif">
             {data.content}
           </div>
         </div> */}
       {typeof id === "number" && id >= 0 && id <= 6 && (
         <div className=" flex flex-col gap-3 items-start justify-center md:mr-32 md:mx-0 mx-4 md:mt-0 mt-4 ">
-          <h5 className="text-[#54595f] font-semibold">{data.title}</h5>
+          <h5 className="text-[#54595f] font-bold">{data.title}</h5>
           <div className=" text-[#7f7f7f] text-[16px] md:text-justify font-medium font-serif">
             {data.content}
           </div>
