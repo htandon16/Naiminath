@@ -58,6 +58,9 @@ const MedicalSup = () => {
           <div className="border-t border-gray-300 mt-6"></div>
           <div className="mt-4 leading-relaxed text-red-500 px-6">
             <div className=" font-serif">
+               <p>
+                Name : <span className="font-normal text-gray-700">Prof. Dr. Ganesh B. Patil</span>
+              </p>
               <p>
                 D.O.B.: <span className="font-normal text-gray-700">17/04/1983</span>
               </p>
