@@ -59,25 +59,24 @@ const MedicalSup = () => {
           <div className="mt-4 leading-relaxed text-red-500 px-6">
             <div className=" font-serif">
               <p>
-                D.O.B.: <span className="font-normal text-gray-700">06.07.1966</span>
+                D.O.B.: <span className="font-normal text-gray-700">17/04/1983</span>
               </p>
               <p>
-                Registration Number: <span className="font-normal text-gray-700">46702</span>
+                Registration Number: <span className="font-normal text-gray-700">I-50852-A</span>
               </p>
               <p>
-                Date of Joining: <span className="font-normal text-gray-700">21.04.2022</span>
+                Date of Joining: <span className="font-normal text-gray-700">27/12/2022</span>
               </p>
               <p>
                 Teaching Experience:{" "}
-                <span className="font-normal text-gray-700">13 years, Sharir Kriya</span>
+                <span className="font-normal text-gray-700">13 years, Rachana Sharir</span>
               </p>
             </div>
 
             <div className="mt-4">
               <p className=" font-serif text-red-500">Current Address:</p>
               <span className="ml-4 text-gray-700">
-                1109, Basera Heights, Fatehabad Road, Kalal Kheria, Agra, Uttar
-                Pradesh – 283202
+                Quarter No. HA-1, Staff Quarters, Naiminath Ayurvedic Medical College, NH 19, Nawalpur, Kuberpur, Agra, Uttar Pradesh - 283202
               </span>
             </div>
 
