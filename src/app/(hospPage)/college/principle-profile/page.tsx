@@ -65,19 +65,22 @@ const PrincipalProfile = () => {
           </summary>
           <div className="border-t border-gray-300 mt-6"></div>
           <div className="mt-4 leading-relaxed text-red-500 px-6">
-            <div className=" font-serif">
-              <p>
-                D.O.B.: <span className="font-normal text-gray-700">06.07.1966</span>
+           <div className=" font-serif">
+               <p>
+                Name : <span className="font-normal text-gray-700">Prof. Dr. Ganesh B. Patil</span>
               </p>
               <p>
-                Registration Number: <span className="font-normal text-gray-700">46702</span>
+                D.O.B.: <span className="font-normal text-gray-700">17/04/1983</span>
               </p>
               <p>
-                Date of Joining: <span className="font-normal text-gray-700">21.04.2022</span>
+                Registration Number: <span className="font-normal text-gray-700">I-50852-A</span>
+              </p>
+              <p>
+                Date of Joining: <span className="font-normal text-gray-700">27/12/2022</span>
               </p>
               <p>
                 Teaching Experience:{" "}
-                <span className="font-normal text-gray-700">13 years, Sharir Kriya</span>
+                <span className="font-normal text-gray-700">13 years, Rachana Sharir</span>
               </p>
             </div>
 
