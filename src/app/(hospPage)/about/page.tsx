@@ -72,13 +72,14 @@ const AboutUs = () => {
               panchkarma therapy rooms to suit the need and affordability of one
               and all.
             </p> 
-<h3 class="text-2xl font-extrabold dark:text-white">  Sustainable, Scalable and Replicability of Operations</h3>
+<h3 class="text-3xl font-extrabold dark:text-white">  Sustainable, Scalable and Replicability of Operations</h3>
           <p className=" mt-3">
               Through years of practice and practical learnings we have developed detailed SOPs for each and every department which helps us in ramping up our staff on a faster and precise manner. A holistic periodic training curriculum is available for continuity of learning and upgrading our knowledge base. Training processes have been bifurcated for Clinical, Non-Clinical and Physicians separately for clear understanding of job roles. Regular knowledge transfer sessions are conducted to enable cross training and intra-operability of employees. 
             </p>
-<h3 class="text-2xl font-extrabold dark:text-white"> Affordability and Accessibility </h3>
+<h3 class="text-3xl font-extrabold dark:text-white"> Affordability and Accessibility </h3>
           <p className=" mt-3">
-              The institute believes in the principles of healthcare for all and hence our price points have been fixed at a minimal rate based on the general public economic status in the city. Naiminath Ayurvedic Hospital has adopted 5 neighbouring villages and provide free of cost treatment to them all. Regular free camps are conducted for patients who cannot afford quality healthcare in the city and are treated here with exceptional results.  </p>
+              The institute believes in the principles of healthcare for all and hence our price points have been fixed at a minimal rate based on the general public economic status in the city. Naiminath Ayurvedic Hospital has adopted 5 neighbouring villages and provide free of cost treatment to them all. Regular free camps are conducted for patients who cannot afford quality healthcare in the city and are treated here with exceptional results.
+          </p>
           </div>
         </div>
         <div className="relative mt-5 md:mt-12 w-full md:h-[70vh] h-[90vh] bg-orange-700 flex justify-center items-center overflow-hidden ">
