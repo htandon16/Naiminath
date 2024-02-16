@@ -99,9 +99,9 @@ const AboutUs = () => {
                 guidance.
               </p>
             </div>
-            <div
-              className=" md:basis-1/2 text-green"
-              style={{ textShadow: "1px 1px 2px #000000" }}
+            <div font-semibold
+              className=" md:basis-1/2 "
+              style={{ textShadow: "1px 1px 2px #89bd7f" }}
             >
               <div className="md:text-[30px] text-[24px] font-semibold">
                 Mission
