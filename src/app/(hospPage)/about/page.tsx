@@ -85,8 +85,8 @@ const AboutUs = () => {
             className="absolute top-2 md:top-1/4 w-[90vw] md:w-[75vw] md:h-full flex md:flex-row flex-col
            justify-center items-start bg-opacity-70 gap-2 md:gap-10"
           >
-            <div className=" md:basis-1/2 ">
-              <div className="text-[#3c4f43] md:text-[32px] text-[26px] font-medium">
+            <div className=" md:basis-1/2 font-semibold">
+              <div className="text-[#3c4f43] md:text-[32px] text-[26px] font-semibold">
                 Vision
               </div>
               <p className="md:mt-3 text-[#506759]">
@@ -103,7 +103,7 @@ const AboutUs = () => {
               className=" md:basis-1/2 text-green"
               style={{ textShadow: "1px 1px 2px #000000" }}
             >
-              <div className="md:text-[30px] text-[24px] font-medium">
+              <div className="md:text-[30px] text-[24px] font-semibold">
                 Mission
               </div>
               <p className="md:mt-3">
