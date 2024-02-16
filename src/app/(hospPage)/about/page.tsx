@@ -74,7 +74,7 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="relative mt-10 md:mt-20 w-full md:h-[80vh] h-[100vh] bg-orange-700 flex justify-center items-center overflow-hidden ">
+        <div className="relative mt-5 md:mt-12 w-full md:h-[70vh] h-[90vh] bg-orange-700 flex justify-center items-center overflow-hidden ">
           <Image
             src="/images/abou_us_green_tea_bg-overlay (3).webp"
             className="w-full h-full rounded-[7px] object-cover"
@@ -100,8 +100,8 @@ const AboutUs = () => {
               </p>
             </div>
             <div
-              className=" md:basis-1/2 text-white"
-              style={{ textShadow: "1px 1px 2px #0005b6" }}
+              className=" md:basis-1/2 text-green"
+              style={{ textShadow: "1px 1px 2px #000000" }}
             >
               <div className="md:text-[30px] text-[24px] font-medium">
                 Mission
