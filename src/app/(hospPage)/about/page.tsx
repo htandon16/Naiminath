@@ -80,7 +80,7 @@ const AboutUs = () => {
                     <p className="mt-3">
                         Through years of practice and practical learnings we have developed detailed SOPs for each and every department which helps us in ramping up our staff on a faster and precise manner. A holistic periodic training curriculum is available for continuity of learning and upgrading our knowledge base. Training processes have been bifurcated for Clinical, Non-Clinical and Physicians separately for clear understanding of job roles. Regular knowledge transfer sessions are conducted to enable cross training and intra-operability of employees. 
                       </p>
-          <div className=" text-[24px] font-semibold"> Affordability and Accessibility </div>
+          <div className=" text-[24px] font-semibold mt-6"> Affordability and Accessibility </div>
                     <p className="mt-3">
                         The institute believes in the principles of healthcare for all and hence our price points have been fixed at a minimal rate based on the general public economic status in the city. Naiminath Ayurvedic Hospital has adopted 5 neighbouring villages and provide free of cost treatment to them all. Regular free camps are conducted for patients who cannot afford quality healthcare in the city and are treated here with exceptional results.
                     </p>
