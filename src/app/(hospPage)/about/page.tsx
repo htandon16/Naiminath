@@ -56,7 +56,7 @@ const AboutUs = () => {
             </p>
                    </div>
         </div>
-<div className="w-[95%] md:w-[85%] h-full mt-[3%] md:mx-[10%] mx-[5%] py-[2%]"   
+<div className="w-[95%] md:w-[85%] h-full mt-[3%] md:mx-[10%] mx-[5%] py-[2%]">
               <p className=" mt-3 ml-250">
               What sets Naiminath apart from other private ayurvedic colleges in
               UP is its emphasis on practical experience alongside theoretical
