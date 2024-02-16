@@ -54,7 +54,7 @@ const AboutUs = () => {
               maintained panchkarma therapy rooms to suit the need and
               affordability of one and all.
             </p>
-            <p className=" mt-3">
+            <p className=" mt-3 ml-250">
               What sets Naiminath apart from other private ayurvedic colleges in
               UP is its emphasis on practical experience alongside theoretical
               knowledge. This prestigious ayurvedic medical college offers a
@@ -64,7 +64,7 @@ const AboutUs = () => {
               to engage in hands-on learning through internships at the attached
               hospital.
             </p>
-            <p className=" mt-3">
+            <p className=" mt-3 ml-250">
               We have Outpatient departments in Kayachikitsa, Kaumarbhritya,
               Panchkarma, Prasuti & Stri Roga, Shalakya tantra, Shalya tantra,
               Swasthavritta, Dental and Physiotherapy. The Hospital prides
@@ -76,7 +76,7 @@ const AboutUs = () => {
         </div>
         <div className="relative mt-10 md:mt-20 w-full md:h-[80vh] h-[100vh] bg-orange-700 flex justify-center items-center overflow-hidden ">
           <Image
-            src="/images/abou_us_green_tea_bg.jpg"
+            src="/images/abou_us_green_tea_bg-overlay (3).webp"
             className="w-full h-full rounded-[7px] object-cover"
             alt="about image"
             layout="fill"
