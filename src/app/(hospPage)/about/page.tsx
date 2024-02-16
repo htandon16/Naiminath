@@ -32,8 +32,8 @@ const AboutUs = () => {
             width={1600}
             height={800}
           />
-          <div className="text-[#7c7777] text-[17px] text-justify">
-            <p>
+          <div className="text-[#000000] text-[17px] text-justify">
+            <p className="text-[#000000] ">
               Naiminath Ayurveda holds a commitment to providing quality
               education and top-notch facilities in the field of ayurveda
               medicine. We are a 100 bedded state of art Ayurvedic Hospital
@@ -41,7 +41,7 @@ const AboutUs = () => {
               the Outpatient Department every day and around 40 patients are
               present in the Inpatient Department.
             </p>
-            <p className=" mt-3">
+            <p className=" mt-3 text-[#000000]">
               The college offers a comprehensive curriculum that not only covers
               traditional Ayurvedic practices but also integrates modern medical
               advancements with its emphasis on practical training and
