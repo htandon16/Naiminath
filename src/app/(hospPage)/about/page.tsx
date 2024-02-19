@@ -24,15 +24,14 @@ const AboutUs = () => {
         >
           About Us
         </div>
-        <div className="h-screen 
-bg-[url('/images/About_naiminath_hospital-overlay (1).webp')] bg-center bg-cover
-bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 ">
+        <div className="bg-[url('/images/About_naiminath_hospital-overlay (1).webp')] bg-center bg-cover
+bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 px-20 ">
           <Image
             src="/images/About_naiminath_hospital.webp"
             className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100"
             alt="about image"
-            width={1600}
-            height={800}
+            width={800}
+            height={400}
           />
           <div className="text-[#000000] text-[17px] text-justify">
             <p className="text-[#000000] ">
