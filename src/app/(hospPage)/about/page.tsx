@@ -24,7 +24,9 @@ const AboutUs = () => {
         >
           About Us
         </div>
-        <div className="flex md:flex-row flex-col w-[90vw] md:w-[74vw] justify-center gap-6 mt-10">
+        <div className="h-screen 
+bg-[url(/images/about_hospital.jpg)] 
+bg-no-repeat  flex md:flex-row flex-col w-[90vw] md:w-[74vw] justify-center gap-6 mt-10 ">
           <Image
             src="/images/about_hospital.jpg"
             className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100"
