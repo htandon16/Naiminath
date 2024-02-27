@@ -6,12 +6,12 @@ import { useGlobalContext } from "@/app/context/store";
 import GalleryModal from "../../../(components)/gallery-crosel/GalleryModal";
 
 const AboutGallery = () => {
-  const imageUrls = Array.from({ length: 23 }, (url, index) => {
-    if (index == 13 || index == 14) {
-      return `/images/gallery/student-gallery${index + 1}-min.png`;
-    } else {
-      return `/images/gallery/student-gallery${index + 1}-min.jpeg`;
-    }
+  const imageUrls = Array.from({ length: 18 }, (url, index) => {
+ //   if (index == 13 || index == 14) {
+  //    return `/images/gallery/student-gallery${index + 1}-min.png`;
+  //  } else {
+
+ return `/images/gallery/student-gallery${index + 1}-min.jpeg`;
   });
 
   const { setImageSlide } = useGlobalContext();
