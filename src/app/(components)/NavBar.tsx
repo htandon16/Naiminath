@@ -73,6 +73,15 @@ const NavBar = () => {
                   GALLERY
                 </Dropdown.Item>
               </Dropdown>
+              <Dropdown title="" openOnHover={true}>
+                <Dropdown.Item className="text-[12px]"
+                  onClick={() => {
+                    router.push(`/about/student-gallery`);
+                  }}
+                >
+                  STUDENT GALLERY
+                </Dropdown.Item>
+              </Dropdown>
             </div>
           </li>
           <li>
