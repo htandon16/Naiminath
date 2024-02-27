@@ -47,9 +47,12 @@ const NavBar = () => {
             </Link> */}
           </li>
           <li>
-            <div
+         <div
               className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
-                pathname === "/about" ? "border-[2px]" : "border-[0px]"
+                (pathname === "/about" ||pathname === "/about/gallery"||
+                pathname ==="/about/student-gallery" )
+                  ? "border-[2px]"
+                  : "border-[0px]"
               } `}
             >
               <Link
@@ -58,32 +61,30 @@ const NavBar = () => {
                 className={` p-1.5  hover:text-gray-600 `}
                 scroll={false}
                 onClick={(e) => {
-                  console.log("pathname==", pathname);
+                  ////setImageSlide(false);
                   ////setActive("about");
                 }}
               >
-                About us
+                About Us
               </Link>
-              <Dropdown title="" openOnHover={true}>
+              <Dropdown  openOnHover={true} title="">
                 <Dropdown.Item className="text-[12px]"
-                  onClick={() => {
-                    router.push(`/about/gallery`);
-                  }}
-                >
+                 onClick={()=>{
+                  ////setImageSlide(false);
+                  router.push(`/about/gallery`)}
+               }>
                   GALLERY
                 </Dropdown.Item>
-              </Dropdown>
-              <Dropdown title="" openOnHover={true}>
+                <Dropdown.Divider size="xs"/>
                 <Dropdown.Item className="text-[12px]"
-                  onClick={() => {
-                    router.push(`/about/student-gallery`);
-                  }}
-                >
+                onClick={()=>{
+                  //setImageSlide(false);
+                  router.push(`/about/student-gallery`)}
+               }>
                   STUDENT GALLERY
                 </Dropdown.Item>
-              </Dropdown>
             </div>
-          </li>
+                   </li>
           <li>
             <div
               className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
