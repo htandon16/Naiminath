@@ -9,8 +9,6 @@ const NavBar = () => {
   const customSize: SizeProp = "lg";
   const router = useRouter();
   let pathname = usePathname();
-  
-
   return (
     <header className="my-0 mx-5">
       <nav>
@@ -49,8 +47,7 @@ const NavBar = () => {
           <li>
          <div
               className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
-                (pathname === "/about" ||pathname === "/about/gallery"||
-                pathname ==="/about/student-gallery" )
+                (pathname === "/about" || pathname === "/about/gallery"|| pathname ==="/about/student-gallery" )
                   ? "border-[2px]"
                   : "border-[0px]"
               } `}
@@ -83,6 +80,7 @@ const NavBar = () => {
                }>
                   STUDENT GALLERY
                 </Dropdown.Item>
+                </Dropdown>
             </div>
                    </li>
           <li>
