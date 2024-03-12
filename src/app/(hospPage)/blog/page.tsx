@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useGlobalContext } from "@/app/context/store";
+import { postData } from "@/app/(data)/data";
 
 interface Blog {
   fileName: string;
@@ -13,9 +14,9 @@ interface Blog {
 const BlogPage = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true); // Added loading state
-  const { blogData, setBlogData,setImageSlide } = useGlobalContext();
+  const { blogData, setBlogData, setImageSlide } = useGlobalContext();
   const router = useRouter();
-  
+
   const fetchBlogsApi = async () => {
     try {
       const response = await fetch("/api/blog", {
@@ -47,60 +48,61 @@ const BlogPage = () => {
         setLoading(false); // Set loading to false on error
       });
   }, [setImageSlide]);
- 
-  
+
+
   return (
     <>
-    <head>
-    <title>Blogs - Naiminath Ayurveda : Top BAMS College in India</title>
-    <meta name="description" content=" "/>
-    </head>
+      {/* <head>
+        <title>Blogs - Naiminath Ayurveda : Top BAMS College in India</title>
+        <meta name="description" content=" " />
+      </head> */}
 
-    <div className="min-h-screen flex flex-wrap gap-5 p-[20px] justify-center mt-14">
-      {loading ? ( // Show loader if still loading
-        <div className="text-center text-black">Loading...</div>
-      ) : (
-        blogs.map((blog, index) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center md:basis-1/4 rounded-lg 
+      <div className="min-h-screen flex flex-wrap gap-5 p-[20px] justify-center mt-14">
+        {loading ? ( // Show loader if still loading
+          <div className="text-center text-black">Loading...</div>
+        ) : (
+          postData.map((blog, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center md:basis-1/4 rounded-lg 
           overflow-hidden h-[350px] shadow-md inset-11 hover:bg-slate-50 cursor-pointer"
-            onClick={async () => {
-              setBlogData(blog.content);
-              // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
-              router.push(`/blog/blog-detail`);
-            }}
-          >
-            <div className="w-full pb-2 flex-1 justify-center items-center">
-              <h5 className="text-white py-2 text-center bg-[#ded636] ">
-                Blog {"-"} {index + 1}
-              </h5>
+              onClick={async () => {
+                setBlogData(blog.content);
+                // router.push(`/hospPage/blog/blog-detail?data=${blog.content}`);
+                router.push(`/blog/blog-detail`);
+              }}
+            >
+              <div className="w-full pb-2 flex-1 justify-center items-center">
+                <h5 className="text-white py-2 text-center bg-[#ded636] ">
+                  Blog {"-"} {index + 1}
+                </h5>
+                <div
+                  className=" overflow-hidden px-2 pt-2 w-full"
+                  style={{
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    WebkitLineClamp: 10,
+                  }}
+                  dangerouslySetInnerHTML={{ __html: blog.content }}
+                />
+              </div>
               <div
-                className=" overflow-hidden px-2 pt-2 w-full"
+                className="text-white overflow-hidden w-full p-4 text-center  bg-slate-400"
                 style={{
                   display: "-webkit-box",
                   WebkitBoxOrient: "vertical",
                   overflow: "hidden",
-                  WebkitLineClamp: 10,
+                  WebkitLineClamp: 2,
                 }}
-                dangerouslySetInnerHTML={{ __html: blog.content }}
-              />
+              >
+                {blog.college}
+                {/* {`${blog.fileName}`} */}
+              </div>
             </div>
-            <div
-              className="text-white overflow-hidden w-full p-4 text-center  bg-slate-400"
-              style={{
-                display: "-webkit-box",
-                WebkitBoxOrient: "vertical",
-                overflow: "hidden",
-                WebkitLineClamp: 2,
-              }}
-            >
-              {/* {`${blog.fileName}`} */}
-            </div>
-          </div>
-        ))
-      )}
-    </div>
+          ))
+        )}
+      </div>
     </>
   );
 };
