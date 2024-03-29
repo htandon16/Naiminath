@@ -150,12 +150,9 @@ const Hospital = ({
           </p>
           <br />
           
+    <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
+    
 
-<div style="display: flex; justify-content: center;">
-    <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
-    <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
-</div>
-  
           <p>
             To undergo a purification therapy it is highly important for the
             body to be prepared for the rigorous process to encourage the body
