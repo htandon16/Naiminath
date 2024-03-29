@@ -150,6 +150,7 @@ const Hospital = ({
           </p>
           <br />
         <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
+        <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
   
           <p>
             To undergo a purification therapy it is highly important for the
