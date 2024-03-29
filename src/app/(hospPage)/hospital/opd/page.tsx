@@ -150,16 +150,10 @@ const Hospital = ({
           </p>
           <br />
           
-          <style>
-    .image-container {
-        display: flex;
-        justify-content: center;
-    }
-</style>
 
-<div class="image-container">
+<div style="display: flex; justify-content: center;">
     <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
-    <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients2.jpeg" alt="Panchkarma Patients" />
+    <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
 </div>
   
           <p>
