@@ -149,7 +149,7 @@ const Hospital = ({
             body, which needs to be flushed out in the right way by Purvakarma.
           </p>
           <br />
-          <img src="/panchkarma-patients1.jpeg"></img>
+          <img class="rounded-md md:w-[300px] md:h-[200px] w-[80px] h-[70px]" src="/panchkarma-patients1.jpeg"></img>
           
           <p>
             To undergo a purification therapy it is highly important for the
