@@ -149,8 +149,14 @@ const Hospital = ({
             body, which needs to be flushed out in the right way by Purvakarma.
           </p>
           <br />
+ 
+ <div className="flex flex-wrap flex-row flex-4 gap-4 justify-center mx-2 md:mx-10 my-10">
+        
+    <img className="rounded-md w-auto aspect-auto max-h-60"  src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
+           <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients2.jpeg" alt="Panchkarma Patients" />
 
-           <div className="flex flex-wrap flex-row flex-4 gap-4 justify-center mx-2 md:mx-10 my-10">
+             </div>
+           <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
         
     <img className="rounded-md w-auto aspect-auto max-h-60"  src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
            <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients5.jpeg" alt="Panchkarma Patients" />
