@@ -152,16 +152,7 @@ const Hospital = ({
  
  <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
 
-<div class="flex-none w-fit h-fit basis-1/5"><div class="rounded-md relative md:w-[300px] md:h-[200px] w-[80px] h-[70px] overflow-hidden"><img alt="image 0" loading="lazy" decoding="async" data-nimg="fill" class=" object-cover w-full h-full" sizes="100vw" srcset="/_next/image?url=%2Fimages%2Fgallery%2Fgallery1-min.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fgallery%2Fgallery1-min.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fgallery%2Fgallery1-min.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fgallery%2Fgallery1-min.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fgallery%2Fgallery1-min.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fgallery%2Fgallery1-min.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fgallery%2Fgallery1-min.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fgallery%2Fgallery1-min.jpg&amp;w=3840&amp;q=75 3840w" src="/_next/image?url=%2Fimages%2Fgallery%2Fgallery1-min.jpg&amp;w=3840&amp;q=75" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><div class="absolute w-full h-full hover:bg-[#24242465] flex justify-center items-center"></div></div></div>
-
-
-
-
-
-
-   
-       
-    <img className="rounded-md w-auto aspect-auto max-h-60 a" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
+    <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
 
  
            <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients2.jpeg" alt="Panchkarma Patients" />
