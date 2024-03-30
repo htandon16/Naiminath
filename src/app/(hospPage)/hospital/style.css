@@ -34,3 +34,9 @@ h6 {
     /* Add other styles for h6 */
 }
 
+.rounded-md:hover {
+    width:200px;
+height:200px
+   
+}
+
