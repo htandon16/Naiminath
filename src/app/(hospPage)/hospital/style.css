@@ -35,6 +35,8 @@ h6 {
 }
 .a{
 display:flex;
+    align-items:"center";
+justify-content:"center"
 }
 
 .c{
