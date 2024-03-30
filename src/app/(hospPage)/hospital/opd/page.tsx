@@ -151,6 +151,7 @@ const Hospital = ({
           <br />
           
     <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
+           <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients2.jpeg" alt="Panchkarma Patients" />
     
 
           <p>
