@@ -158,11 +158,11 @@ const Hospital = ({
              </div>
           
 
- <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+ <div className="flex flex-wrap flex-row flex-4 gap-1 justify-center mx-2 md:mx-10 my-10">
         
     <img className="rounded-md w-auto aspect-auto max-h-60"  src="/images/opd/panchkarma-patients3.jpeg" alt="Panchkarma Patients" />
            <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients4.jpeg" alt="Panchkarma Patients" />
-    <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients2.jpeg" alt="Panchkarma Patients" />
+    <img className="rounded-md w-100 aspect-auto max-h-60" src="/images/opd/panchkarma-patients2.jpeg" alt="Panchkarma Patients" />
 
              </div>
          
