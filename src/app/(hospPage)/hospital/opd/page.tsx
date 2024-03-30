@@ -151,7 +151,7 @@ const Hospital = ({
           <br />
  
  <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
-        <div className="absolute w-full h-full hover:bg-[#24242465] flex justify-center items-center">
+       
     <img className="rounded-md w-auto aspect-auto max-h-60"  src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
 
    </div>
