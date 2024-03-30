@@ -34,4 +34,6 @@ h6 {
     /* Add other styles for h6 */
 }
 .a{
-display:flex}
+display:flex
+justify-content:"space-between"
+}
