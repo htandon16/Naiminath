@@ -34,7 +34,7 @@ const ImageSlider = () => {
     <Slider {...settings}>
       {/* Add your slider images here */}
       <div className="h-fit md:h-[80vh] w-[100vw]">
-  <img className="w-full h-full object-cover" src="/images/banner1.jpg" alt="Banner 1" />
+ <a href = "https://naiminathayurveda.org/contactus"> <img className="w-full h-full object-cover" src="/images/banner1.jpg" alt="Banner 1" /> </a>
 </div>
 
 <div className="h-fit md:h-[80vh] w-[100vw]">
