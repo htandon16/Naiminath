@@ -64,8 +64,6 @@ const HomePage = () => {
   );
 };
 
-import React from "react";
-
 const AyurvedaTreatmentSection = () => {
   const sliderItems = [
     { image: "/images/ayd_treate1.jpg", text: "Abhyangam", link: "https://naiminathayurveda.org" },
