@@ -87,8 +87,6 @@ const AyurvedaTreatmentSection = () => {
   );
 };
 
-export default AyurvedaTreatmentSection;
-
 {/*
 const AyurvedaTreatmentSection = () => {
   const sliderItems: SliderItem[] = [
