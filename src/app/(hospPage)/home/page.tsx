@@ -205,7 +205,7 @@ const PrivateBamsSection = () => {
 const NaiminathAyurvedaSection = () => {
   return (
     <div className="w-[90%] md:w-[70%] h-full mt-[3%] md:mx-[10%] mx-[5%]  flex md:flex-row-reverse flex-col ">
-      <div className=" w-[300px] h-[220px] md:w-[48vw] md:h-[30vw]  mt-[2%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
+      
       <div className="md:w-[44vw] h-full mr-[1%]">
         <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
           Naiminath Ayurveda : Inside Agra&apos;s Ayurvedic Medical College
@@ -231,6 +231,7 @@ const NaiminathAyurvedaSection = () => {
           colleges fees in UP.
         </p>
       </div>
+      <div className=" w-[300px] h-[220px] md:w-[48vw] md:h-[30vw]  mt-[2%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
     </div>
   );
 };
