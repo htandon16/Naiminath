@@ -17,6 +17,7 @@ import Link from "next/link";
 type SliderItem = {
   image: string;
   text: string;
+  link: string;
 };
 
 const HomePage = () => {
@@ -65,7 +66,7 @@ const HomePage = () => {
 };
 
 const AyurvedaTreatmentSection = () => {
-  const sliderItems = [
+  const sliderItems: SliderItems[] = [
     { image: "/images/ayd_treate1.jpg", text: "Abhyangam", link: "https://naiminathayurveda.org" },
     { image: "/images/ayd_treate2.jpg", text: "Shirodhara", link: "/shirodhara" },
     { image: "/images/ayd_treate3.jpg", text: "Kashayadhara", link: "/kashayadhara" },
