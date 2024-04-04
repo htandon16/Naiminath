@@ -64,6 +64,34 @@ const HomePage = () => {
   );
 };
 
+import React from "react";
+
+const AyurvedaTreatmentSection = () => {
+  const sliderItems = [
+    { image: "/images/ayd_treate1.jpg", text: "Abhyangam", link: "https://naiminathayurveda.org" },
+    { image: "/images/ayd_treate2.jpg", text: "Shirodhara", link: "/shirodhara" },
+    { image: "/images/ayd_treate3.jpg", text: "Kashayadhara", link: "/kashayadhara" },
+    { image: "/images/ayd_treate4.jpg", text: "Greeva Basti", link: "/greeva-basti" },
+    { image: "/images/ayd_treate5.jpg", text: "Janu Basti", link: "/janu-basti" },
+    { image: "/images/ayd_treate6.jpg", text: "Kati Basti", link: "/kati-basti" },
+    { image: "/images/ayd_treate7.jpg", text: "Spine Basti", link: "/spine-basti" },
+    { image: "/images/ayd_treate8.jpg", text: "Kizhi", link: "/kizhi" },
+  ];
+
+  return (
+    <div className="slider">
+      {sliderItems.map((item, index) => (
+        <a key={index} href={item.link}>
+          <img src={item.image} alt={item.text} />
+        </a>
+      ))}
+    </div>
+  );
+};
+
+export default AyurvedaTreatmentSection;
+
+{/*
 const AyurvedaTreatmentSection = () => {
   const sliderItems: SliderItem[] = [
     { image: "/images/ayd_treate1.jpg", text: "Abhyangam" },
@@ -89,6 +117,7 @@ const AyurvedaTreatmentSection = () => {
     </>
   );
 };
+*/}
 
 const OpdSection = () => {
   const sliderItems: SliderItem[] = [
