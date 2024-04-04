@@ -77,12 +77,24 @@ const AyurvedaTreatmentSection = () => {
   ];
 
   return (
-    <div className="slider">
-      {sliderItems.map((item, index) => (
+
+  <>
+      <h2 className="text-[28px] md:text-[34px] text-[#525252] font-semibold">
+        Ayurvedic Treatments
+      </h2>
+      <p className="text-[14px] md:text-[19px] text-[#7c7777] font-semibold">
+        List of Ayurvedic Treatments
+      </p>
+      <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
+       {sliderItems.map((item, index) => (
         <a key={index} href={item.link}>
           <img src={item.image} alt={item.text} />
         </a>
-      ))}
+      ))} 
+      </div>
+    </>
+    <div className="slider">
+      
     </div>
   );
 };
@@ -108,7 +120,7 @@ const AyurvedaTreatmentSection = () => {
         List of Ayurvedic Treatments
       </p>
       <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
-        <AyurvedaTreatmentImageSlider items={sliderItems} />
+      <AyurvedaTreatmentImageSlider items={sliderItems} />
       </div>
     </>
   );
