@@ -45,15 +45,17 @@ const HomePage = () => {
       bg-[url('https://hindijaankaari.in/wp-content/uploads/2023/12/greenbg-scaled.jpeg')] font-sans"
         >
           <div className=" bg-slate-500 w-full h-3 mb-[32px]"></div>
-          <AyurvedaTreatmentSection />
-          <WhatIsAyurveda />
-        </div>
-        <div className="w-full flex flex-col justify-center items-center pt-5">
-          <OpdSection />
-          <PrivateBamsSection />
+     <OpdSection />      
+    <AyurvedaTreatmentSection />
+        /*  <WhatIsAyurveda /> */
         </div>
 
         <AboutUsSection />
+        <div className="w-full flex flex-col justify-center items-center pt-5">
+     
+          <PrivateBamsSection />
+        </div>
+
         <NaiminathAyurvedaSection />
       </div>
     </>
@@ -108,6 +110,7 @@ const OpdSection = () => {
   );
 };
 
+/*
 const WhatIsAyurveda = () => {
   return (
     <div className="w-[90%] md:w-[70%] my-[4%] mx-[10%] flex md:flex-row flex-col">
@@ -138,7 +141,7 @@ const WhatIsAyurveda = () => {
     </div>
   );
 };
-
+*/
 const PrivateBamsSection = () => {
   return (
     <div className="w-[90%] md:w-[70%] h-full mt-[6%] md:mx-[10%] mx-[5%] flex md:flex-row-reverse flex-col justify-center items-center md:items-start">
