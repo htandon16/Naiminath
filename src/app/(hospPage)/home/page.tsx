@@ -66,7 +66,7 @@ const HomePage = () => {
 };
 
 const AyurvedaTreatmentSection = () => {
-  const sliderItems: SliderItems[] = [
+  const sliderItems: SliderItem[] = [
     { image: "/images/ayd_treate1.jpg", text: "Abhyangam", link: "https://naiminathayurveda.org" },
     { image: "/images/ayd_treate2.jpg", text: "Shirodhara", link: "/shirodhara" },
     { image: "/images/ayd_treate3.jpg", text: "Kashayadhara", link: "/kashayadhara" },
