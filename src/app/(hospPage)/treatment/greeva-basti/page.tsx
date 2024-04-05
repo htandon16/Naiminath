@@ -10,7 +10,13 @@ import React from 'react'
         }}
       />
       <div>
-  <img className="rounded-md w-auto aspect-auto max-h-60"  src="/images/opd/greevabasti.jpg" alt="Greeva Basti" />
+  <img
+   src="/images/opd/greevabasti.jpg" alt="Greeva Basti" 
+   sizes="(max-width: 640px) 100vw , 640px"
+   width={640}
+   height={480}
+   
+   />
        
 {/*         <img
           src="/images/opd/greevabasti.jpg"
