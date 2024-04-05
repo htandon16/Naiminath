@@ -10,6 +10,8 @@ import React from 'react'
         }}
       />
       <div>
+
+       <div style="display: flex; justify-content: center;">
 <img
    src="/images/opd/greevabasti.jpg"
    alt="Greeva Basti"
@@ -18,6 +20,7 @@ import React from 'react'
    width="640"
    height="480"
 />
+        </div>
 
 
        
