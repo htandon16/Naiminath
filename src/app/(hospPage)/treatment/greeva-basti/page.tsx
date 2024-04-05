@@ -194,6 +194,8 @@ import React from 'react'
           </li>
         </ol>
       </div>
+
+ <div className="testimonials">
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
@@ -214,8 +216,6 @@ import React from 'react'
           <footer>— divyanshi</footer>
         </div>
       </blockquote>
-
-     
 <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
@@ -236,7 +236,7 @@ import React from 'react'
           <footer>— divyanshi</footer>
         </div>
       </blockquote>
-     
+     </div>
     </div>
   );
 }
