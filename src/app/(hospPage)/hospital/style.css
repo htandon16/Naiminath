@@ -5,14 +5,17 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem; /* Adjust the font size as needed */
-    font-weight: 500; /* Add font-weight property */
+    font-size: 1.125rem; /* Adjust the font size as needed */
+    font-weight:600; /* Add font-weight property */
+    margin-top:20px;
     /* Add other styles for h2 */
 }
 
 h3 {
-    font-size: 1.75rem; /* Adjust the font size as needed */
-    font-weight: 500; /* Add font-weight property */
+    font-size: 1.125rem; /* Adjust the font size as needed */
+    font-weight: 600;
+     margin-top:20px;
+    /* Add font-weight property */
     /* Add other styles for h3 */
 }
 
