@@ -12,7 +12,7 @@ import React from 'react'
       <div>
 
      
-       <div className="flex justify-center;">
+    
       
     <img
         src="/images/opd/greevabasti.jpg"
@@ -22,7 +22,7 @@ import React from 'react'
         width="640"
         height="480"
     />
-</div>
+
 
 
 
