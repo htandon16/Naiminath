@@ -12,8 +12,8 @@ import React from 'react'
       <div>
 
      
-    
-      
+    <div className="flex justify-center items-center w-48 h-48 rounded-lg overflow-hidden">
+     
     <img
         src="/images/opd/greevabasti.jpg"
         alt="Greeva Basti"
@@ -22,6 +22,7 @@ import React from 'react'
         width="640"
         height="480"
     />
+     </div>
 
 
 
