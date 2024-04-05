@@ -371,16 +371,6 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
       ))}
     </Slider>
   );
-  return (
-    <div className="slider">
-      {sliderItems.map((item, index) => (
-        <a key={index} href={item.link}>
-          <img src={item.image} alt={item.text} />
-        </a>
-      ))}
-    </div>
-  );
-  
 };
 
 export default HomePage;
