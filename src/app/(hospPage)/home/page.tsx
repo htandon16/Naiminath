@@ -79,14 +79,14 @@ const HomePage = () => {
   
 const AyurvedaTreatmentSection = () => {
   const sliderItems = [
-    { image: "/images/ayd_treate1.jpg", text: "Abhyangam", link: "/abhyangam" },
-    { image: "/images/ayd_treate2.jpg", text: "Shirodhara", link: "/shirodhara" },
-    { image: "/images/ayd_treate3.jpg", text: "Kashayadhara", link: "/kashayadhara" },
+    { image: "/images/ayd_treate1.jpg", text: "Abhyangam", link: "https://naiminathayurveda.org/hospital/opd?id=7" },
+    { image: "/images/ayd_treate2.jpg", text: "Shirodhara", link: "https://naiminathayurveda.org/hospital/opd?id=8" },
+    { image: "/images/ayd_treate3.jpg", text: "Kashayadhara", link: "https://naiminathayurveda.org/hospital/opd?id=9" },
     { image: "/images/ayd_treate4.jpg", text: "Greeva Basti", link: "https://naiminathayurveda.org/hospital/opd?id=10" },
-    { image: "/images/ayd_treate5.jpg", text: "Janu Basti", link: "/janu-basti" },
-    { image: "/images/ayd_treate6.jpg", text: "Kati Basti", link: "/kati-basti" },
-    { image: "/images/ayd_treate7.jpg", text: "Spine Basti", link: "/spine-basti" },
-    { image: "/images/ayd_treate8.jpg", text: "Kizhi", link: "/kizhi" },
+    { image: "/images/ayd_treate5.jpg", text: "Janu Basti", link: "https://naiminathayurveda.org/hospital/opd?id=11" },
+    { image: "/images/ayd_treate6.jpg", text: "Kati Basti", link: "https://naiminathayurveda.org/hospital/opd?id=12" },
+    { image: "/images/ayd_treate7.jpg", text: "Spine Basti", link: "https://naiminathayurveda.org/hospital/opd?id=13" },
+    { image: "/images/ayd_treate8.jpg", text: "Kizhi", link: "https://naiminathayurveda.org/hospital/opd?id=14" },
   ];
 
   return (
