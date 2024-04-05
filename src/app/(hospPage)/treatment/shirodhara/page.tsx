@@ -154,7 +154,7 @@ const SirodharaPage = () => {
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="https://naiminathayurveda.org/wp-content/uploads/2023/09/73_user2-150x150.jpg"
+              src="/images/gallery/yashi.jpeg"
               width={100}
               height={100}
             />
