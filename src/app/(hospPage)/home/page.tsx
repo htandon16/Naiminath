@@ -17,7 +17,7 @@ import Link from "next/link";
 type SliderItem = {
   image: string;
   text: string;
-  link:String;
+  link:String?;
 };
 
 const HomePage = () => {
