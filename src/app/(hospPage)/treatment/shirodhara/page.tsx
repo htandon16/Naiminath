@@ -91,7 +91,6 @@ const SirodharaPage = () => {
         <h2>
           <strong>Why Choose NAMC for Shirodhara?</strong>
         </h2>
-        <br />
         Experienced Faculty: Naiminath Ayurvedic Medical College boasts a team
         of distinguished faculty members, each an expert in their field. Their
         extensive knowledge of Ayurveda and its various therapies, including
