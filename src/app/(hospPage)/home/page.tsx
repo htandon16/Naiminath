@@ -98,11 +98,7 @@ return (
         List of Ayurvedic Treatments
       </p>
       <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
-      <AyurvedaTreatmentImageSlider items={sliderItems.map((item, index) => (
-        <a key={index} href={item.link}>
-          <img src={item.image} alt={item.text} />
-        </a>
-      ))}/>
+      <AyurvedaTreatmentImageSlider items={sliderItems}
       </div>
     </>
   );
