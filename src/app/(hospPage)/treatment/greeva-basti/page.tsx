@@ -13,7 +13,9 @@ import React from 'react'
   <img
    src="/images/opd/greevabasti.jpg" alt="Greeva Basti" 
    sizes="(max-width: 640px) 100vw , 640px"
-   width={640}
+  
+   srcSet= "/images/opd/greevabasti.jpg" 800w, "/images/opd/greevabasti-300x225.jpg" 300w, "/images/opd/greevabasti-768x576.jpg 768w"  
+        width={640}
    height={480}
    
    />
