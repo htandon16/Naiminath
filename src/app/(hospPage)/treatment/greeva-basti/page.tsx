@@ -219,7 +219,7 @@ import React from 'react'
 <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/divyanshi.jpg"
+            src="/images/gallery/sakshi.jpeg"
             width={100}
             height={100}
           />
@@ -227,13 +227,9 @@ import React from 'react'
         <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            The therapists at Naiminath Ayurveda are truly experts in their
-            field. They demonstrated a deep understanding of Greeva Basti and
-            its holistic healing benefits. Their knowledge and skill were
-            evident as they explained the procedure to me, ensuring I felt
-            comfortable and informed throughout the treatment.
+            I recently experienced the Greeva Basti treatment at Naiminath Ayurveda, and I must say, the therapists there are truly experts in their field. Their deep understanding of Greeva Basti and its holistic healing benefits was evident throughout the session. They patiently explained the procedure to me, ensuring I felt comfortable and well-informed every step of the way. The therapists' knowledge and skill instilled confidence in me, and I left the session feeling rejuvenated and grateful for the experience. I highly recommend Naiminath Ayurveda for anyone seeking authentic Ayurvedic treatments.
           </p>
-          <footer>— divyanshi</footer>
+          <footer>— sakshi</footer>
         </div>
       </blockquote>
      </div>
