@@ -11,11 +11,10 @@ import React from 'react'
       />
       <div>
 
-     
-    <div className="flex justify-center items-center rounded-md overflow-hidden">
-     
-    <img
-        src="/images/opd/greevabasti.jpg"
+      
+
+   <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+    <img className="rounded-md" src="/images/opd/greevabasti.jpg"
         alt="Greeva Basti"
         sizes="(max-width: 640px) 100vw, 640px"
         srcSet="/images/opd/greevabasti.jpg 800w, /images/opd/greevabasti-300x225.jpg 300w, /images/opd/greevabasti-768x576.jpg 768w"
