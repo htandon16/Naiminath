@@ -89,7 +89,7 @@ const AyurvedaTreatmentSection = () => {
     { image: "/images/ayd_treate8.jpg", text: "Kizhi", link: "/kizhi" },
   ];
 
-    return (
+  return (
     <div className="slider">
       {sliderItems.map((item, index) => (
         <a key={index} href={item.link}>
@@ -98,8 +98,6 @@ const AyurvedaTreatmentSection = () => {
       ))}
     </div>
   );
-};
-
 
   return (
     <>
