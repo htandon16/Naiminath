@@ -82,7 +82,7 @@ const AyurvedaTreatmentSection = () => {
     { image: "/images/ayd_treate1.jpg", text: "Abhyangam", link: "/abhyangam" },
     { image: "/images/ayd_treate2.jpg", text: "Shirodhara", link: "/shirodhara" },
     { image: "/images/ayd_treate3.jpg", text: "Kashayadhara", link: "/kashayadhara" },
-    { image: "/images/ayd_treate4.jpg", text: "Greeva Basti", link: "/greeva-basti" },
+    { image: "/images/ayd_treate4.jpg", text: "Greeva Basti", link: "https://naiminathayurveda.org/hospital/opd?id=10" },
     { image: "/images/ayd_treate5.jpg", text: "Janu Basti", link: "/janu-basti" },
     { image: "/images/ayd_treate6.jpg", text: "Kati Basti", link: "/kati-basti" },
     { image: "/images/ayd_treate7.jpg", text: "Spine Basti", link: "/spine-basti" },
