@@ -10,11 +10,11 @@ const SirodharaPage = () => {
         }}
       />
       <div>
-        <img
-        src="/images/opd/shirodhara-treatment.jpg"
+      <img
+        src="/images/opd/greevabasti.jpg"
         alt="Shirodhara"
         sizes="(max-width: 640px) 100vw, 640px"
-        srcSet="/images/opd/shirodhara-treatment.jpg 800w, /images/opd/shirodhara-treatment-300x225.jpg 300w, /images/opd/shirodhara-treatment-768x576.jpg 768w"
+        srcSet="/images/opd/greevabasti.jpg 800w, /images/opd/greevabasti-300x225.jpg 300w, /images/opd/greevabasti-768x576.jpg 768w"
         width="640"
         height="480"
     />
