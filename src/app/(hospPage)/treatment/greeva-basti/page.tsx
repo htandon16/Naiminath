@@ -11,10 +11,10 @@ import React from 'react'
       />
       <div>
         <img
-           src="/images/opd/greevabasti.jpeg"
+          src="/images/opd/greevabasti.jpg"
           sizes="(max-width: 640px) 100vw, 640px"
           srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti.jpeg 800w, https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti-300x225.jpeg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti-768x576.jpeg 768w"
-          alt=""
+          alt="FGreeva Basti"
           width={640}
           height={480}
         />
