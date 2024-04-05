@@ -355,22 +355,19 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
   return (
     <Slider {...settings} className="text-[#7c7777] relative ">
       {items.map((item, index) => (
-        <div key={index} className=" p-[10px] text-center">
-          {/* <div className="h-fit w-[10vw] md:h-[235px] md:w-[235px] bg-no-repeat rounded-[10px]">
-  <img className="w-full h-full" src={item.image} alt={item.image} />
-</div> */}
-          <div
-            className=" h-[12vh] w-[18vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
-            style={{ backgroundImage: `url(${item.image})` }}
-          />
-
-          <p className="text-[11px] md:text-[18px] word-wrap break-words">
-            {item.text}
-          </p>
-        </div>
+        <a key={index} href={item.link} className="slide-link">
+          <div key={index} className=" p-[10px] text-center slide-content">
+            <div
+              className=" h-[12vh] w-[18vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
+              style={{ backgroundImage: `url(${item.image})` }}
+            />
+            <p className="text-[11px] md:text-[18px] word-wrap break-words">
+              {item.text}
+            </p>
+          </div>
+        </a>
       ))}
     </Slider>
   );
 };
-
 export default HomePage;
