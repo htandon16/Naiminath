@@ -145,14 +145,14 @@ const AyurvedaTreatmentSection = () => {
 
 const OpdSection = () => {
   const sliderItems: SliderItem[] = [
-    { image: "/images/opd1.jpg", text: "Kaumarbhritya" },
-    { image: "/images/opd2.jpg", text: "Kayachikitsa" },
-    { image: "/images/opd3.jpg", text: "Panchkarma" },
-    { image: "/images/opd4.jpg", text: "Prasuti & Stri Roga" },
-    { image: "/images/opd5.jpg", text: "Shalakya Tantra" },
-    { image: "/images/opd6.jpg", text: "Shalya Tantra" },
-    { image: "/images/opd7.jpg", text: "Swasthavritta" },
-    { image: "/images/opd1.jpg", text: "Kaumarbhritya" },
+    { image: "/images/opd1.jpg", text: "Kaumarbhritya" ,link :"https://naiminathayurveda.org/hospital/opd?id=1"},
+    { image: "/images/opd2.jpg", text: "Kayachikitsa" , link:"https://naiminathayurveda.org/hospital/opd?id=0" },
+    { image: "/images/opd3.jpg", text: "Panchkarma" , link:"https://naiminathayurveda.org/hospital/opd?id=2"},
+    { image: "/images/opd4.jpg", text: "Prasuti & Stri Roga" , link:"https://naiminathayurveda.org/hospital/opd?id=3" },
+    { image: "/images/opd5.jpg", text: "Shalakya Tantra" , link:"https://naiminathayurveda.org/hospital/opd?id=4" },
+    { image: "/images/opd6.jpg", text: "Shalya Tantra", link:"https://naiminathayurveda.org/hospital/opd?id=5" },
+    { image: "/images/opd7.jpg", text: "Swasthavritta" , link:"https://naiminathayurveda.org/hospital/opd?id=6" },
+    { image: "/images/opd1.jpg", text: "Kaumarbhritya" , link:"https://naiminathayurveda.org/hospital/opd?id=1"},
   ];
   return (
     <>
