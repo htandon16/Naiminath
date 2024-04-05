@@ -89,15 +89,7 @@ const AyurvedaTreatmentSection = () => {
     { image: "/images/ayd_treate8.jpg", text: "Kizhi", link: "https://naiminathayurveda.org/hospital/opd?id=14" },
   ];
 
-  return (
-    <div className="slider">
-      {sliderItems.map((item, index) => (
-        <a key={index} href={item.link}>
-          <img src={item.image} alt={item.text} />
-        </a>
-      ))}
-    </div>
-  );
+
 
   return (
     <>
@@ -112,6 +104,17 @@ const AyurvedaTreatmentSection = () => {
       </div>
     </>
   );
+
+  return (
+    <div className="slider">
+      {sliderItems.map((item, index) => (
+        <a key={index} href={item.link}>
+          <img src={item.image} alt={item.text} />
+        </a>
+      ))}
+    </div>
+  );
+  
 };
 
 {/*
