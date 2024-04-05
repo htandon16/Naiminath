@@ -98,7 +98,7 @@ return (
         List of Ayurvedic Treatments
       </p>
       <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
-      <AyurvedaTreatmentImageSlider items={sliderItems}
+      <AyurvedaTreatmentImageSlider items={sliderItems}/>
       </div>
     </>
   );
