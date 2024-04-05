@@ -11,7 +11,9 @@ import React from 'react'
       />
       <div>
 
-      <div style="display: flex; justify-content: center;">
+     
+       <div className="flex justify-center;">
+      
     <img
         src="/images/opd/greevabasti.jpg"
         alt="Greeva Basti"
