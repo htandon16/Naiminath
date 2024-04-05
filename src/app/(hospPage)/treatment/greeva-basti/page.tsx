@@ -10,14 +10,16 @@ import React from 'react'
         }}
       />
       <div>
-        <img
+  <img className="rounded-md w-auto aspect-auto max-h-60"  src="/images/opd/greevabasti.jpg" alt="Greeva Basti" />
+       
+{/*         <img
           src="/images/opd/greevabasti.jpg"
           sizes="(max-width: 640px) 100vw, 640px"
           srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti.jpeg 800w, https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti-300x225.jpeg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti-768x576.jpeg 768w"
           alt="FGreeva Basti"
           width={640}
           height={480}
-        />
+        /> */}
       </div>
       <div>
         Nestled amidst the historical beauty of Agra, Naiminath Ayurvedic
