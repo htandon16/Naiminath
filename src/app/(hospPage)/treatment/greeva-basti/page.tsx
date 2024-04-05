@@ -197,7 +197,7 @@ import React from 'react'
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="https://naiminathayurveda.org/wp-content/uploads/2023/09/Greeva-Basti--150x150.jpeg"
+            src="/images/gallery/divyanshi.jpg"
             width={100}
             height={100}
           />
