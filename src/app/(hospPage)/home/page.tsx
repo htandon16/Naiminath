@@ -122,7 +122,7 @@ const OpdSection = () => {
   const sliderItems: SliderItem[] = [
     { image: "/images/opd1.jpg", text: "Kaumarbhritya" },
     { image: "/images/opd2.jpg", text: "Kayachikitsa" },
-    { image: "/images/opd3.jpg", text: "Panchkarma" },
+    { image: "/images/opd3.jpg", text: "Panchkarma" , link: "https://naiminathayurveda.org/hospital/opd?id=2" },
     { image: "/images/opd4.jpg", text: "Prasuti & Stri Roga" },
     { image: "/images/opd5.jpg", text: "Shalakya Tantra" },
     { image: "/images/opd6.jpg", text: "Shalya Tantra" },
