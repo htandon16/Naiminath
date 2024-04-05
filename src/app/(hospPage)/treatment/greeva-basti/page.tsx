@@ -11,7 +11,7 @@ import React from 'react'
       />
       <div>
         <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti.jpeg"
+           src="/images/opd/greevabasti.jpeg"
           sizes="(max-width: 640px) 100vw, 640px"
           srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti.jpeg 800w, https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti-300x225.jpeg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti-768x576.jpeg 768w"
           alt=""
