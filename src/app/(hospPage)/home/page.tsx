@@ -17,6 +17,7 @@ import Link from "next/link";
 type SliderItem = {
   image: string;
   text: string;
+  link:String;
 };
 
 const HomePage = () => {
@@ -325,7 +326,7 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
   };
 
   const NextArrow = (props: any) => {
-    const { className, style, onClick } = props;
+    const { className, style, onClick} = props;
     return (
       <div
         className="slick-arrow w-fit h-fit absolute z-10 top-[30%] md:top-[40%] right-[5%]"
