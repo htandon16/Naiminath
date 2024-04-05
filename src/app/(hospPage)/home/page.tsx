@@ -89,7 +89,7 @@ const AyurvedaTreatmentSection = () => {
     { image: "/images/ayd_treate8.jpg", text: "Kizhi", link: "https://naiminathayurveda.org/hospital/opd?id=14" },
   ];
 
- return (
+return (
     <>
       <h2 className="text-[28px] md:text-[34px] text-[#525252] font-semibold">
         Ayurvedic Treatments
@@ -98,21 +98,22 @@ const AyurvedaTreatmentSection = () => {
         List of Ayurvedic Treatments
       </p>
       <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
-        {/* Render the image slider component */}
-        <AyurvedaTreatmentImageSlider items={sliderItems} />
-      </div>
-      {/* Render individual images with links */}
-      <div className="slider">
-        {sliderItems.map((item, index) => (
-          <a key={index} href={item.link}>
-            <img src={item.image} alt={item.text} />
-          </a>
-        ))}
+      <AyurvedaTreatmentImageSlider items={sliderItems} />
       </div>
     </>
   );
-};
 
+  return (
+    <div className="slider">
+      {sliderItems.map((item, index) => (
+        <a key={index} href={item.link}>
+          <img src={item.image} alt={item.text} />
+        </a>
+      ))}
+    </div>
+  );
+  
+};
 {/*
 const AyurvedaTreatmentSection = () => {
   const sliderItems: SliderItem[] = [
