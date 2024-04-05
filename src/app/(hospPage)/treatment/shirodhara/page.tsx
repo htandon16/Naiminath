@@ -11,13 +11,13 @@ const SirodharaPage = () => {
       />
       <div>
         <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c.jpg"
-          sizes="(max-width: 640px) 100vw, 640px"
-          srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c.jpg 960w, https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c-300x200.jpg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c-768x512.jpg 768w"
-          alt=""
-          width={640}
-          height={427}
-        />
+        src="/images/opd/shirodhara-treatment.jpg"
+        alt="Shirodhara"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/opd/shirodhara-treatment.jpg 800w, /images/opd/shirodhara-treatment-300x225.jpg 300w, /images/opd/shirodhara-treatment-768x576.jpg 768w"
+        width="640"
+        height="480"
+    />
       </div>
       <h1>Shirodhara Therapy</h1>
       <div>
