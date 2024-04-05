@@ -12,7 +12,7 @@ import React from 'react'
       <div>
 
      
-    <div className="flex justify-center items-center w-48 h-48 rounded-lg overflow-hidden">
+    <div className="flex justify-center items-center rounded-md overflow-hidden">
      
     <img
         src="/images/opd/greevabasti.jpg"
