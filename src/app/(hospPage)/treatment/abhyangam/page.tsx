@@ -159,41 +159,49 @@ const Abhyangam = () => {
         making it a powerful tool for promoting overall health and well-being.
       </div>
 
-       <div className="testimonials">
-      <blockquote className="testimonial">
-        <div className="testimonial-image">
-          <img
-            src="/images/opd/sohil.jpg"
-            width={100}
-            height={100}
-          />
-        </div>
-        <div className="testimonial-content">
-          <div className="testimonial-rating"></div>
-          <p>
-           During the Abhyangam treatment, I was enveloped in a soothing atmosphere as skilled hands administered gentle yet invigorating strokes using medicated oils. The rhythmic movements, tailored to my individual needs, worked to harmonize my mind, body, and spirit. With each stroke, tension melted away, leaving behind a profound sense of relaxation and rejuvenation.
-          </p>
-          <footer>— Mohit</footer>
-        </div>
-      </blockquote>
-<blockquote className="testimonial">
-        <div className="testimonial-image">
-          <img
-            src="/images/gallery/preeti.jpg"
-            width={100}
-            height={100}
-          />
-        </div>
-        <div className="testimonial-content">
-          <div className="testimonial-rating"></div>
-          <p>
-           Abhyangam Treatment at Naiminath Ayurveda is a blissful journey into the world of holistic well-being. From the moment you step into their tranquil oasis, you are greeted with warmth and a deep commitment to your health and relaxation.</p>
-          <footer>— Preeti</footer>
-        </div>
-      </blockquote>
-     </div>
+        <div className="testimonials">
+        <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/ravikumar.jpg"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+              Abhyangam Treatment at Naiminath Ayurveda is a blissful journey
+              into the world of holistic well-being. From the moment you step
+              into their tranquil oasis, you are greeted with warmth and a deep
+              commitment to your health and relaxation.
+            </p>
+            <footer>— Ravi kumar</footer>
+          </div>
+        </blockquote>
+        <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/yashi.jpeg"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+              After the Abhyangam Therapy, I felt rejuvenated, both physically
+              and mentally. My body felt lighter, and my mind was at ease. The
+              benefits of this therapy extended beyond the immediate experience,
+              as I noticed improved sleep quality and increased energy levels in
+              the days that followed.
+            </p>
+            <footer>— Yashi</footer>
+          </div>
+        </blockquote>
+      </div>
     </div>
   );
-}
+};
 
 export default Abhyangam;
