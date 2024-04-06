@@ -190,13 +190,9 @@ import React from 'react'
       <div className="testimonial-content" >
         <div className="testimonial-rating" ></div>
         <p>
-          The therapists at Naiminath Ayurveda are true experts in the realm of
-          Ayurveda. Their extensive knowledge and commitment to their craft were
-          evident from the beginning. They patiently explained the intricacies of
-          Kizhi treatment, ensuring I was comfortable and well-informed throughout
-          the process.
+         During the treatment, I felt a sense of deep relaxation wash over me as the poultices were applied to specific points on my body. The therapists' gentle touch and expert manipulation of the poultices seemed to melt away my muscular tension and joint stiffness, leaving me feeling rejuvenated and refreshed.
         </p>
-        <footer>— shivam</footer>
+        <footer>— Sameya Sharma</footer>
        </div>
        </blockquote>
           <blockquote className="testimonial">
@@ -210,10 +206,7 @@ import React from 'react'
       <div className="testimonial-content" >
         <div className="testimonial-rating" ></div>
         <p>
-          The therapists at Naiminath Ayurveda are true experts in the realm of
-          Ayurveda. Their extensive knowledge and commitment to their craft were
-          evident from the beginning. They patiently explained the intricacies of
-          Kizhi treatment, ensuring I was comfortable and well-informed throughout
+         I recently had the opportunity to experience the Kizhi treatment at Naiminath Ayurveda, and I must say, it was truly transformative. From the moment I stepped into the serene ambiance of their facility, I knew I was in good hands.
           the process.
         </p>
         <footer>— shivam</footer>
