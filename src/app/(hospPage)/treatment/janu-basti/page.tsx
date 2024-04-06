@@ -307,7 +307,7 @@ const JanuBastiPage = () => {
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/opd/priyanshi.jpg"
+            src="/images/opd/priyanshi.jpg"
             width={100}
             height={100}
           />
@@ -318,7 +318,7 @@ const JanuBastiPage = () => {
             
 Janu Basti treatment at Naiminath Ayurveda was a profound experience that exceeded all my expectations. From the moment I stepped into their serene environment, I felt a sense of calm wash over me. The therapists were incredibly knowledgeable and attentive, guiding me through the entire process with care and expertise.
           </p>
-          <footer>— divyanshi</footer>
+          <footer>— Priyanshi</footer>
         </div>
       </blockquote>
 <blockquote className="testimonial">
