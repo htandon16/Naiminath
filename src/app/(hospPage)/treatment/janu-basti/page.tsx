@@ -319,7 +319,7 @@ const JanuBastiPage = () => {
             Janu Basti procedure, putting me at ease with their professionalism
             and attentiveness.{" "}
           </p>
-          <footer>— Sahil</footer>
+          <footer>— Sohail</footer>
         </div>
       </blockquote>
     </div>
