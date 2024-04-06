@@ -217,6 +217,7 @@ import React from 'react'
             <footer>— Yashi</footer>
           </div>
         </blockquote>
+     </div>
       </div>
     </div>
   );
