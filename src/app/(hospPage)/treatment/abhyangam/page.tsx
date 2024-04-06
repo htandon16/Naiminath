@@ -14,8 +14,13 @@ const Abhyangam = () => {
         }}
       />
       <div>
-        <img
-          src="https://naiminath.org/NAMC/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c-768x512.jpg"
+
+        
+  
+ 
+     </div>
+       <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+        <img className="rounded-md w-auto aspect-auto max-h-576" src="https://naiminath.org/NAMC/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c-768x512.jpg"
           sizes="(max-width: 640px) 100vw, 640px"
           alt=""
           width={640}
@@ -153,37 +158,46 @@ const Abhyangam = () => {
         Research Center, Abhyangam is administered with expertise and care,
         making it a powerful tool for promoting overall health and well-being.
       </div>
-      {/* Generated with CodeShack Testimonial Tool 
-  <div class="testimonials" bis_skin_checked="1">
-    <blockquote class="testimonial">
-      <div class="testimonial-image" bis_skin_checked="1">
-        <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/SSVM-Parent-Testimonial-min-150x150.jpeg" width="100" height="100" />
+
+       <div className="testimonials">
+      <blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/divyanshi.jpg"
+            width={100}
+            height={100}
+          />
         </div>
-        <div class="testimonial-content" bis_skin_checked="1">
-          <div class="testimonial-rating" bis_skin_checked="1">
-          </div>
-          <p>Abhyangam Treatment at Naiminath Ayurveda is a blissful journey into the world of holistic well-being. From the moment you step into their tranquil oasis, you are greeted with warmth and a deep commitment to your health and relaxation.</p>
-          <footer>— Abhay</footer>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+            The therapists at Naiminath Ayurveda are truly experts in their
+            field. They demonstrated a deep understanding of Greeva Basti and
+            its holistic healing benefits. Their knowledge and skill were
+            evident as they explained the procedure to me, ensuring I felt
+            comfortable and informed throughout the treatment.
+          </p>
+          <footer>— divyanshi</footer>
         </div>
       </blockquote>
-      <blockquote class="testimonial">
-        <div class="testimonial-image" bis_skin_checked="1">
-          <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/download-150x150.jpeg" width="100" height="100" />
-          </div>
-          <div class="testimonial-content" bis_skin_checked="1">
-            <div class="testimonial-rating" bis_skin_checked="1">
-            </div>
-            <p>Abhyangam Treatment at Naiminath Ayurveda is a blissful journey into the world of holistic well-being. From the moment you step into their tranquil oasis, you are greeted with warmth and a deep commitment to your health and relaxation.</p>
-            <footer>— akash</footer>
-          </div>
-        </blockquote>
-      </div>
-    </body>
-  </html>
-*/}
+<blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/sakshi.jpeg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+           Abhyangam Treatment at Naiminath Ayurveda is a blissful journey into the world of holistic well-being. From the moment you step into their tranquil oasis, you are greeted with warmth and a deep commitment to your health and relaxation.</p>
+          <footer>— Abhya</footer>
+        </div>
+      </blockquote>
+     </div>
     </div>
-    
   );
-};
+}
 
 export default Abhyangam;
