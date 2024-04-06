@@ -177,29 +177,50 @@ import React from 'react'
         effective therapies.
       </li>
     </ol>
-    <blockquote className="testimonial">
-      <div className="testimonial-image" >
-        <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/Digital-Photo-33-150x150.jpg"
-          width={100}
-          height={100}
-        />
+       <div className="testimonials">
+        <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/ravikumar.jpg"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+              Abhyangam Treatment at Naiminath Ayurveda is a blissful journey
+              into the world of holistic well-being. From the moment you step
+              into their tranquil oasis, you are greeted with warmth and a deep
+              commitment to your health and relaxation.
+            </p>
+            <footer>— Ravi kumar</footer>
+          </div>
+        </blockquote>
+        <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/yashi.jpeg"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+              After the Abhyangam Therapy, I felt rejuvenated, both physically
+              and mentally. My body felt lighter, and my mind was at ease. The
+              benefits of this therapy extended beyond the immediate experience,
+              as I noticed improved sleep quality and increased energy levels in
+              the days that followed.
+            </p>
+            <footer>— Yashi</footer>
+          </div>
+        </blockquote>
       </div>
-      <div className="testimonial-content" >
-        <div className="testimonial-rating" ></div>
-        <p>
-          The therapists at Naiminath Ayurveda are true experts in the realm of
-          Ayurveda. Their extensive knowledge and commitment to their craft were
-          evident from the beginning. They patiently explained the intricacies of
-          Kizhi treatment, ensuring I was comfortable and well-informed throughout
-          the process.
-        </p>
-        <footer>— shivam</footer>
-      </div>
-    </blockquote>
-  </>
-  )
-}
+    </div>
+  );
+};
 
 export default KizhiPage;
 
