@@ -96,8 +96,7 @@ import React from 'react'
         <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            I recently experienced the Greeva Basti treatment at Naiminath Ayurveda, and I must say, the therapists there are truly experts in their field. Their deep understanding of Greeva Basti and its holistic healing benefits was evident throughout the session.
-          </p>
+Kati Basti treatment at Naiminath Ayurveda was nothing short of remarkable. From the moment I arrived, I was greeted with warmth and professionalism, putting me at ease instantly. The therapists' expertise and dedication to their craft were evident from the start, instilling confidence in the treatment process.          </p>
           <footer>— Yasika</footer>
         </div>
       </blockquote>
