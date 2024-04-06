@@ -88,7 +88,7 @@ import React from 'react'
 <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/sakshi.jpeg"
+            src="/images/gallery/yasika.jpg"
             width={100}
             height={100}
           />
@@ -98,7 +98,7 @@ import React from 'react'
           <p>
             I recently experienced the Greeva Basti treatment at Naiminath Ayurveda, and I must say, the therapists there are truly experts in their field. Their deep understanding of Greeva Basti and its holistic healing benefits was evident throughout the session.
           </p>
-          <footer>— sakshi</footer>
+          <footer>— Yasika</footer>
         </div>
       </blockquote>
      </div>
