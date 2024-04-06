@@ -182,7 +182,7 @@ import React from 'react'
       <blockquote className="testimonial">
       <div className="testimonial-image" >
         <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/Digital-Photo-33-150x150.jpg"
+          src="/images/gallery/aman.jpeg"
           width={100}
           height={100}
         />
@@ -192,13 +192,13 @@ import React from 'react'
         <p>
          During the treatment, I felt a sense of deep relaxation wash over me as the poultices were applied to specific points on my body. The therapists' gentle touch and expert manipulation of the poultices seemed to melt away my muscular tension and joint stiffness, leaving me feeling rejuvenated and refreshed.
         </p>
-        <footer>— Sameya Sharma</footer>
+        <footer>— Shivam Sharma</footer>
        </div>
        </blockquote>
           <blockquote className="testimonial">
       <div className="testimonial-image" >
         <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/Digital-Photo-33-150x150.jpg"
+          src="/images/gallery/shivam.webp"
           width={100}
           height={100}
         />
@@ -209,7 +209,7 @@ import React from 'react'
          I recently had the opportunity to experience the Kizhi treatment at Naiminath Ayurveda, and I must say, it was truly transformative. From the moment I stepped into the serene ambiance of their facility, I knew I was in good hands.
           the process.
         </p>
-        <footer>— shivam</footer>
+        <footer>— Aman</footer>
        </div>
        </blockquote>
       </div>
