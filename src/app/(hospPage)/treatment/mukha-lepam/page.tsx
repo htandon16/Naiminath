@@ -10,16 +10,15 @@ const MukhaLepam = () => {
         }}
       />
       <div>
-        <img
-          decoding="async"
-          fetchPriority="high"
-          width={640}
-          height={480}
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/sddefault.jpg"
-          alt=""
-          srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/sddefault.jpg 640w, https://naiminathayurveda.org/wp-content/uploads/2023/09/sddefault-300x225.jpg 300w"
-          sizes="(max-width: 640px) 100vw, 640px"
-        />{" "}
+         <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/mukha.jpg"
+        alt="Kati Basti"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/gallery/mukha.jpg 800w, /images/gallery/mukha-300x225.jpg 300w, /images/gallery/mukha-768x576.jpg 768w"
+        width="640"
+        height="480"
+    />
+   </div>
       </div>
       In a world where stress, pollution, and daily life challenges can take a
       toll on our skin, the timeless wisdom of Ayurveda offers a solution that
