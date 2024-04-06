@@ -302,7 +302,7 @@ const JanuBastiPage = () => {
           dedication to your care is unwavering.
         </li>
       </ol>
-      </div>
+      
       <div className="testimonials">
       <blockquote className="testimonial">
         <div className="testimonial-image">
