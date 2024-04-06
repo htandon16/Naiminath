@@ -305,7 +305,7 @@ const JanuBastiPage = () => {
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="https://naiminathayurveda.org/wp-content/uploads/2023/09/jhanvi-150x150.jpeg"
+            src="/images/gallery/sohil"
             width={100}
             height={100}
           />
