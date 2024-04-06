@@ -305,7 +305,7 @@ const JanuBastiPage = () => {
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/sohil"
+            src="/images/gallery/sohil.jpg"
             width={100}
             height={100}
           />
