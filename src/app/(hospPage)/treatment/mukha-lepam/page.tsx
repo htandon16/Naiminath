@@ -220,6 +220,7 @@ const MukhaLepam = () => {
             time to explain the Mukha Lepam procedure, ensuring I felt
             comfortable and well-informed throughout the process.
           </p>
+          </div>
           <footer>— ravnish</footer>
           </div>
         </blockquote>
