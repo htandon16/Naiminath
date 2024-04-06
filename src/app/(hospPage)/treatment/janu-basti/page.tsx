@@ -12,10 +12,10 @@ const JanuBastiPage = () => {
       <div> </div>
 
          <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
-    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/kashayadhara.jpg"
+    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/janubasti.webp"
         alt="Janu Basti"
         sizes="(max-width: 640px) 100vw, 640px"
-        srcSet="/images/gallery/kashayadhara.jpg 800w, /images/gallery/kashayadhara-300x225.jpg 300w, /images/gallery/kashayadhara-768x576.jpg 768w"
+        srcSet="/images/gallery/janubasti.webp 800w, /images/gallery/janubasti-300x225.webp 300w, /images/gallery/janubasti-768x576.webp 768w"
         width="640"
         height="480"
     />
