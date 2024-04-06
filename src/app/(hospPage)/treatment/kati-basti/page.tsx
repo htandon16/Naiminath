@@ -64,19 +64,46 @@ import React from 'react'
             Every patient’s journey is unique at NAMC, with personalized treatment plans that consider individual needs, preferences, and goals.
           </li>
         </ol>	
-        <blockquote className="testimonial">
-          <div className="testimonial-image" >
-            <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/download-1-150x150.jpeg" width={100} height={100} />
-          </div>
-          <div className="testimonial-content" >
-            <div className="testimonial-rating" >
-            </div>
-            <p>I recently had the privilege of undergoing Kati Basti treatment at Naiminath Ayurveda, and I must say it was a truly remarkable experience. From the moment I stepped into their sanctuary of healing, I felt a sense of calm and assurance that I was in capable hands.</p>
-            <footer>— avanti</footer>
-          </div>
-        </blockquote>
-      </div>
-  )
+        <div className="testimonials">
+      <blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/divyanshi.jpg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+            The therapists at Naiminath Ayurveda are truly experts in their
+            field. They demonstrated a deep understanding of Greeva Basti and
+            its holistic healing benefits. Their knowledge and skill were
+            evident as they explained the procedure to me, ensuring I felt
+            comfortable and informed throughout the treatment.
+          </p>
+          <footer>— divyanshi</footer>
+        </div>
+      </blockquote>
+<blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/sakshi.jpeg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+            I recently experienced the Greeva Basti treatment at Naiminath Ayurveda, and I must say, the therapists there are truly experts in their field. Their deep understanding of Greeva Basti and its holistic healing benefits was evident throughout the session.
+          </p>
+          <footer>— sakshi</footer>
+        </div>
+      </blockquote>
+     </div>
+    </div>
+  );
 }
 
 export default KatiBastiPage;
