@@ -221,10 +221,10 @@ const MukhaLepam = () => {
             comfortable and well-informed throughout the process.
           </p>
           <footer>— ravnish</footer>
-        </div>
+          </div>
         </blockquote>
       </div>
-  
+    
   );
 };
 
