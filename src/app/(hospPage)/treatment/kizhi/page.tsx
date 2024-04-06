@@ -195,7 +195,10 @@ import React from 'react'
           the process.
         </p>
         <footer>— shivam</footer>
-     
+       </div>
+       </blockquote>
+    
+  </>
   )
 }
 
