@@ -70,7 +70,7 @@ import React from 'react'
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="/images/gallery/akshat.jpg"
+              src="/images/gallery/akshay.jpg"
               width={100}
               height={100}
             />
