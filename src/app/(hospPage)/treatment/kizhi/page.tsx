@@ -218,8 +218,7 @@ import React from 'react'
           </div>
         </blockquote>
      </div>
-      </div>
-    </div>
+      
   );
 };
 
