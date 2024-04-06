@@ -66,20 +66,49 @@ import React from 'react'
             Conclusion:
           </li>
         </ol>
+    <div className="testimonials">
         <blockquote className="testimonial">
-          <div className="testimonial-image" >
-            <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/download-1-150x150.jpeg" width={100} height={100} />
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/ravikumar.jpg"
+              width={100}
+              height={100}
+            />
           </div>
-      
-          <div className="testimonial-content" >
-            <div className="testimonial-rating" >
-            </div>
-            <p>The therapists at Naiminath Ayurveda are true masters of their craft. Their deep knowledge of Ayurveda and their meticulous approach to the Spine Basti treatment instilled confidence from the outset. They patiently explained the procedure, making sure I felt comfortable and well-informed throughout the process.</p>
-            <footer>— aruna</footer>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+              Abhyangam Treatment at Naiminath Ayurveda is a blissful journey
+              into the world of holistic well-being. From the moment you step
+              into their tranquil oasis, you are greeted with warmth and a deep
+              commitment to your health and relaxation.
+            </p>
+            <footer>— Ravi kumar</footer>
+          </div>
+        </blockquote>
+        <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/yashi.jpeg"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+              After the Abhyangam Therapy, I felt rejuvenated, both physically
+              and mentally. My body felt lighter, and my mind was at ease. The
+              benefits of this therapy extended beyond the immediate experience,
+              as I noticed improved sleep quality and increased energy levels in
+              the days that followed.
+            </p>
+            <footer>— Yashi</footer>
           </div>
         </blockquote>
       </div>
-  )
-}
+    </div>
+  );
+};
 
 export default SpineBastiPage;
