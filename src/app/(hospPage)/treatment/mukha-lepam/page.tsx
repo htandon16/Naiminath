@@ -202,6 +202,8 @@ const MukhaLepam = () => {
           </li>
         </ol>
       </ol>
+      </div>
+    
     
     
   );
