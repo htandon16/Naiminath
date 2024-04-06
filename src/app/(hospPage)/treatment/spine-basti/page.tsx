@@ -78,21 +78,6 @@ import React from 'react'
             <footer>— aruna</footer>
           </div>
         </blockquote>
-
-       <blockquote className="testimonial">
-          <div className="testimonial-image" >
-            <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/download-1-150x150.jpeg" width={100} height={100} />
-          </div>
-          <div className="testimonial-content" >
-            <div className="testimonial-rating" >
-            </div>
-            <p>The therapists at Naiminath Ayurveda are true masters of their craft. Their deep knowledge of Ayurveda and their meticulous approach to the Spine Basti treatment instilled confidence from the outset. They patiently explained the procedure, making sure I felt comfortable and well-informed throughout the process.</p>
-            <footer>— aruna</footer>
-          </div>
-        </blockquote>
-         </div>
-
-     
       </div>
   )
 }
