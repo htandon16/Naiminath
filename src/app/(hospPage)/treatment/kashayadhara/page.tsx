@@ -10,6 +10,9 @@ const KashydharaPage = () => {
         }}
       />
       <div>
+         </div>
+
+  
        <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
         <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/kashayadhara.jpg"
           sizes="(max-width: 640px) 100vw, 640px"
@@ -19,7 +22,7 @@ const KashydharaPage = () => {
           height={424}
         />
          </div>
-      </div>
+     
       <div>
         Nestled in the heart of Agra, a city renowned for its cultural heritage,
         lies a sanctuary of health and healing – Naiminath Ayurvedic Medical
