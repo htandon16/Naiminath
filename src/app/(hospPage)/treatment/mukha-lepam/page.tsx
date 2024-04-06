@@ -202,29 +202,7 @@ const MukhaLepam = () => {
           </li>
         </ol>
       </ol>
-      <blockquote className="testimonial">
-        <div className="testimonial-image">
-          <img
-            src="https://naiminathayurveda.org/wp-content/uploads/2023/09/SSVM-Parent-Testimonial-min-150x150.jpeg"
-            width={100}
-            height={100}
-          />
-        </div>
-        <div className="testimonials"
-        <div className="testimonial-content">
-          <div className="testimonial-rating"></div>
-          <p>
-            The therapists at Naiminath Ayurveda exemplify expertise and
-            dedication in the realm of Ayurveda. Their profound knowledge and
-            personalized approach were apparent from the outset. They took the
-            time to explain the Mukha Lepam procedure, ensuring I felt
-            comfortable and well-informed throughout the process.
-          </p>
-          </div>
-          <footer>— ravnish</footer>
-          </div>
-        </blockquote>
-      </div>
+    
     
   );
 };
