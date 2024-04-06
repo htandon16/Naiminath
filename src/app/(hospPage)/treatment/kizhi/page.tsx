@@ -199,6 +199,26 @@ import React from 'react'
         <footer>— shivam</footer>
        </div>
        </blockquote>
+          <blockquote className="testimonial">
+      <div className="testimonial-image" >
+        <img
+          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/Digital-Photo-33-150x150.jpg"
+          width={100}
+          height={100}
+        />
+      </div>
+      <div className="testimonial-content" >
+        <div className="testimonial-rating" ></div>
+        <p>
+          The therapists at Naiminath Ayurveda are true experts in the realm of
+          Ayurveda. Their extensive knowledge and commitment to their craft were
+          evident from the beginning. They patiently explained the intricacies of
+          Kizhi treatment, ensuring I was comfortable and well-informed throughout
+          the process.
+        </p>
+        <footer>— shivam</footer>
+       </div>
+       </blockquote>
       </div>
     
   </>
