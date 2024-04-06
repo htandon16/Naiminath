@@ -163,7 +163,7 @@ const Abhyangam = () => {
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/mohit.jpg"
+            src="public/images/gallery/mohit.jpg"
             width={100}
             height={100}
           />
