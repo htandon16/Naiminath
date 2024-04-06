@@ -302,10 +302,12 @@ const JanuBastiPage = () => {
           dedication to your care is unwavering.
         </li>
       </ol>
+      </div>
+      <div className="testimonials">
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/sohil.jpg"
+            src="/images/gallery/divyanshi.jpg"
             width={100}
             height={100}
           />
@@ -313,37 +315,34 @@ const JanuBastiPage = () => {
         <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            The therapists at Naiminath Ayurveda are true experts in their
-            craft. Their knowledge and expertise in the field of Ayurveda were
-            evident from the moment I arrived. They took the time to explain the
-            Janu Basti procedure, putting me at ease with their professionalism
-            and attentiveness.{" "}
+            The therapists at Naiminath Ayurveda are truly experts in their
+            field. They demonstrated a deep understanding of Greeva Basti and
+            its holistic healing benefits. Their knowledge and skill were
+            evident as they explained the procedure to me, ensuring I felt
+            comfortable and informed throughout the treatment.
           </p>
-          <footer>— Sohail</footer>
+          <footer>— divyanshi</footer>
+        </div>
       </blockquote>
-    </div>
-     <blockquote className="testimonial">
+<blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/sohil.jpg"
+            src="/images/gallery/sakshi.jpeg"
             width={100}
             height={100}
           />
         </div>
-     <div className="testimonial-content">
+        <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            The therapists at Naiminath Ayurveda are true experts in their
-            craft. Their knowledge and expertise in the field of Ayurveda were
-            evident from the moment I arrived. They took the time to explain the
-            Janu Basti procedure, putting me at ease with their professionalism
-            and attentiveness.{" "}
+            I recently experienced the Greeva Basti treatment at Naiminath Ayurveda, and I must say, the therapists there are truly experts in their field. Their deep understanding of Greeva Basti and its holistic healing benefits was evident throughout the session.
           </p>
-          <footer>— Sohail</footer>
-       </div>
-       </blockquote>
-      </div>
+          <footer>— sakshi</footer>
+        </div>
+      </blockquote>
+     </div>
+    </div>
   );
-};
+}
 
 export default JanuBastiPage;
