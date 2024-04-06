@@ -10,14 +10,15 @@ const KashydharaPage = () => {
         }}
       />
       <div>
-        <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/jan_2014_Panchakarma_Hindi_960x636__copy.jpg"
+       <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+        <img className="rounded-md w-auto aspect-auto max-h-576" src="https://naiminathayurveda.org/wp-content/uploads/2023/09/jan_2014_Panchakarma_Hindi_960x636__copy.jpg"
           sizes="(max-width: 640px) 100vw, 640px"
           srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/jan_2014_Panchakarma_Hindi_960x636__copy.jpg 960w, https://naiminathayurveda.org/wp-content/uploads/2023/09/jan_2014_Panchakarma_Hindi_960x636__copy-300x199.jpg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/jan_2014_Panchakarma_Hindi_960x636__copy-768x509.jpg 768w"
-          alt=""
+          alt="Kashayadhara"
           width={640}
           height={424}
         />
+         </div>
       </div>
       <div>
         Nestled in the heart of Agra, a city renowned for its cultural heritage,
