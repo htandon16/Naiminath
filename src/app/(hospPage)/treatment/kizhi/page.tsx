@@ -178,7 +178,7 @@ import React from 'react'
       </li>
     </ol>
 
-     <div className="testimonial">
+     <div className="testimonials">
       <blockquote className="testimonial">
       <div className="testimonial-image" >
         <img
