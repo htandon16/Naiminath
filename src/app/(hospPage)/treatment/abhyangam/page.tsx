@@ -163,7 +163,7 @@ const Abhyangam = () => {
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/divyanshi.jpg"
+            src="/images/gallery/mohit.jpg"
             width={100}
             height={100}
           />
@@ -171,19 +171,15 @@ const Abhyangam = () => {
         <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            The therapists at Naiminath Ayurveda are truly experts in their
-            field. They demonstrated a deep understanding of Greeva Basti and
-            its holistic healing benefits. Their knowledge and skill were
-            evident as they explained the procedure to me, ensuring I felt
-            comfortable and informed throughout the treatment.
+           During the Abhyangam treatment, I was enveloped in a soothing atmosphere as skilled hands administered gentle yet invigorating strokes using medicated oils. The rhythmic movements, tailored to my individual needs, worked to harmonize my mind, body, and spirit. With each stroke, tension melted away, leaving behind a profound sense of relaxation and rejuvenation.
           </p>
-          <footer>— divyanshi</footer>
+          <footer>— Mohit</footer>
         </div>
       </blockquote>
 <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/sakshi.jpeg"
+            src="/images/gallery/abhay.jpeg"
             width={100}
             height={100}
           />
@@ -192,7 +188,7 @@ const Abhyangam = () => {
           <div className="testimonial-rating"></div>
           <p>
            Abhyangam Treatment at Naiminath Ayurveda is a blissful journey into the world of holistic well-being. From the moment you step into their tranquil oasis, you are greeted with warmth and a deep commitment to your health and relaxation.</p>
-          <footer>— Abhya</footer>
+          <footer>— Abhay</footer>
         </div>
       </blockquote>
      </div>
