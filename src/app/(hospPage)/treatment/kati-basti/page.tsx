@@ -68,7 +68,7 @@ import React from 'react'
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/divyanshi.jpg"
+            src="/images/gallery/pushpinder.jpg"
             width={100}
             height={100}
           />
@@ -76,13 +76,9 @@ import React from 'react'
         <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            The therapists at Naiminath Ayurveda are truly experts in their
-            field. They demonstrated a deep understanding of Greeva Basti and
-            its holistic healing benefits. Their knowledge and skill were
-            evident as they explained the procedure to me, ensuring I felt
-            comfortable and informed throughout the treatment.
+           The Kati Basti treatment itself was incredibly effective in addressing my lower back issues. The warm medicated oil poured into the dough ring created a soothing sensation that penetrated deep into my muscles, alleviating tension and discomfort. With each session, I could feel my flexibility improving, and the chronic pain I had been experiencing gradually subsiding.
           </p>
-          <footer>— divyanshi</footer>
+          <footer>— Pushpinder Thakur</footer>
         </div>
       </blockquote>
 <blockquote className="testimonial">
