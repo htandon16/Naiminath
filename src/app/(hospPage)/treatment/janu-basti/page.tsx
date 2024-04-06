@@ -307,7 +307,7 @@ const JanuBastiPage = () => {
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/divyanshi.jpg"
+            src="/images/gallery/priyanshi.jpg"
             width={100}
             height={100}
           />
@@ -315,11 +315,8 @@ const JanuBastiPage = () => {
         <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            The therapists at Naiminath Ayurveda are truly experts in their
-            field. They demonstrated a deep understanding of Greeva Basti and
-            its holistic healing benefits. Their knowledge and skill were
-            evident as they explained the procedure to me, ensuring I felt
-            comfortable and informed throughout the treatment.
+            
+Janu Basti treatment at Naiminath Ayurveda was a profound experience that exceeded all my expectations. From the moment I stepped into their serene environment, I felt a sense of calm wash over me. The therapists were incredibly knowledgeable and attentive, guiding me through the entire process with care and expertise.
           </p>
           <footer>— divyanshi</footer>
         </div>
