@@ -10,14 +10,15 @@ const SirodharaPage = () => {
         }}
       />
       <div>
-      <img
-        src="/images/opd/shirodhara.jpg"
+      <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+        <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/opd/shirodhara.jpg"
         alt="Shirodhara"
         sizes="(max-width: 640px) 100vw, 640px"
         srcSet="/images/opd/shirodhara.jpg 800w, /images/opd/shirodhara-300x225.jpg 300w, /images/opd/shirodhara-768x576.jpg 768w"
         width="640"
         height="480"
     />
+        </div>
       </div>
       <h1>Shirodhara Therapy</h1>
       <div>
