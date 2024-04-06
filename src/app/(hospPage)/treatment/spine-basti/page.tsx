@@ -70,7 +70,7 @@ import React from 'react'
           <div className="testimonial-image" >
             <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/download-1-150x150.jpeg" width={100} height={100} />
           </div>
-         < div className="testimonial">
+      
           <div className="testimonial-content" >
             <div className="testimonial-rating" >
             </div>
