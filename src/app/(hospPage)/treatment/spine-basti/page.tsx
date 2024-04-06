@@ -70,7 +70,7 @@ import React from 'react'
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="/images/gallery/ravikumar.jpg"
+              src="/images/gallery/akshat.jpg"
               width={100}
               height={100}
             />
@@ -78,18 +78,17 @@ import React from 'react'
           <div className="testimonial-content">
             <div className="testimonial-rating"></div>
             <p>
-              Abhyangam Treatment at Naiminath Ayurveda is a blissful journey
-              into the world of holistic well-being. From the moment you step
-              into their tranquil oasis, you are greeted with warmth and a deep
-              commitment to your health and relaxation.
+            Spine Basti treatment at Naiminath Ayurveda surpassed all my expectations, providing me with a profound sense of rejuvenation and relief. From the moment I stepped into the serene atmosphere of the clinic, I knew I was in good hands. The therapists exuded professionalism and expertise, immediately putting me at ease and instilling confidence in the treatment process.
+
+
             </p>
-            <footer>— Ravi kumar</footer>
+            <footer>— Akshat</footer>
           </div>
         </blockquote>
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="/images/gallery/yashi.jpeg"
+              src="/images/gallery/aruna.jpg"
               width={100}
               height={100}
             />
@@ -97,13 +96,9 @@ import React from 'react'
           <div className="testimonial-content">
             <div className="testimonial-rating"></div>
             <p>
-              After the Abhyangam Therapy, I felt rejuvenated, both physically
-              and mentally. My body felt lighter, and my mind was at ease. The
-              benefits of this therapy extended beyond the immediate experience,
-              as I noticed improved sleep quality and increased energy levels in
-              the days that followed.
+            The Spine Basti treatment itself was a transformative experience. The warm herbal oil used during the procedure penetrated deep into my spinal muscles, releasing years of accumulated tension and stiffness. With each session, I could feel my spine becoming more flexible and supple, and the chronic back pain that had been plaguing me for years gradually diminishing.
             </p>
-            <footer>— Yashi</footer>
+            <footer>— Sonali</footer>
           </div>
         </blockquote>
       </div>
