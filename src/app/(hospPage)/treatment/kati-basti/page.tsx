@@ -68,7 +68,7 @@ import React from 'react'
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/pushpinder.jpg"
+            src="/images/gallery/pushp.jpg"
             width={100}
             height={100}
           />
