@@ -179,7 +179,7 @@ const Abhyangam = () => {
 <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/abhay.webp"
+            src="/images/gallery/preetin.jpg"
             width={100}
             height={100}
           />
@@ -188,7 +188,7 @@ const Abhyangam = () => {
           <div className="testimonial-rating"></div>
           <p>
            Abhyangam Treatment at Naiminath Ayurveda is a blissful journey into the world of holistic well-being. From the moment you step into their tranquil oasis, you are greeted with warmth and a deep commitment to your health and relaxation.</p>
-          <footer>— Abhay</footer>
+          <footer>— Preeti</footer>
         </div>
       </blockquote>
      </div>
