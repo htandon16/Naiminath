@@ -320,9 +320,29 @@ const JanuBastiPage = () => {
             and attentiveness.{" "}
           </p>
           <footer>— Sohail</footer>
-        </div>
       </blockquote>
     </div>
+     <blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/sohil.jpg"
+            width={100}
+            height={100}
+          />
+        </div>
+     <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+            The therapists at Naiminath Ayurveda are true experts in their
+            craft. Their knowledge and expertise in the field of Ayurveda were
+            evident from the moment I arrived. They took the time to explain the
+            Janu Basti procedure, putting me at ease with their professionalism
+            and attentiveness.{" "}
+          </p>
+          <footer>— Sohail</footer>
+       </div>
+       </blockquote>
+      </div>
   );
 };
 
