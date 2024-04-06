@@ -224,7 +224,7 @@ const MukhaLepam = () => {
         </div>
         </blockquote>
       </div>
-      </div>
+  
   );
 };
 
