@@ -177,6 +177,8 @@ import React from 'react'
         effective therapies.
       </li>
     </ol>
+
+     <div className="testimonial">
       <blockquote className="testimonial">
       <div className="testimonial-image" >
         <img
@@ -197,6 +199,7 @@ import React from 'react'
         <footer>— shivam</footer>
        </div>
        </blockquote>
+      </div>
     
   </>
   )
