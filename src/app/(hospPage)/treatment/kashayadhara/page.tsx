@@ -170,7 +170,7 @@ const KashydharaPage = () => {
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="https://naiminathayurveda.org/wp-content/uploads/2023/09/images-150x150.jpeg"
+              src="/images/gallery/anshita.jpg"
               width={100}
               height={100}
             />
@@ -185,6 +185,22 @@ const KashydharaPage = () => {
               sense of rejuvenation after their sessions.
             </p>
             <footer>— vishwa</footer>
+          </div>
+        </blockquote>
+          <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/anurag.jpg"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+            From the moment I stepped into the serene environment of NAMC, I was greeted with warmth and professionalism. The expert practitioners not only administered the therapy with precision but also provided personalized care tailored to my specific needs.
+            </p>
+            <footer>— Anurag</footer>
           </div>
         </blockquote>
       </div>
