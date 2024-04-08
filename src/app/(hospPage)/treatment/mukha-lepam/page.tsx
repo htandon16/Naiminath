@@ -216,13 +216,13 @@ const MukhaLepam = () => {
           <p>
            At Naiminath Ayurveda, Mukha Lepam is more than just a cosmetic procedure; it's a holistic approach to skincare and well-being. The therapy not only nourishes the skin externally but also aims to restore energetic balance, promoting inner well-being and radiance. By stimulating marma points (energy centers) on the face, Mukha Lepam helps in promoting overall energy flow and well-being.
           </p>
-          <footer>— divyanshi</footer>
+          <footer>— Sajid</footer>
         </div>
       </blockquote>
 <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/sakshi.jpeg"
+            src="/images/gallery/lepan2.jpg"
             width={100}
             height={100}
           />
@@ -230,9 +230,8 @@ const MukhaLepam = () => {
         <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            I recently experienced the Greeva Basti treatment at Naiminath Ayurveda, and I must say, the therapists there are truly experts in their field. Their deep understanding of Greeva Basti and its holistic healing benefits was evident throughout the session.
-          </p>
-          <footer>— sakshi</footer>
+The therapists at Naiminath Ayurveda are skilled practitioners with profound knowledge of herbal formulations and their effects on the skin. They customize Mukha Lepam sessions according to individual skin types and concerns, ensuring effective and safe treatments. The center offers a comprehensive approach to Ayurvedic therapies, allowing patients to complement Mukha Lepam with other holistic treatments for overall well-being.          </p>
+          <footer>— Samiksha</footer>
         </div>
       </blockquote>
      </div>
