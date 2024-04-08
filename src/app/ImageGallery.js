@@ -1,7 +1,9 @@
+import React, { useState } from 'react';
+
 const ImageGallery = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
 
-           const images = [
+  const images = [
     '/images/opd/panchkarma-patients1.jpeg',
     '/images/opd/panchkarma-patients2.jpeg',
     '/images/opd/panchkarma-patients3.jpeg',
@@ -9,14 +11,15 @@ const ImageGallery = () => {
     '/images/opd/panchkarma-patients5.jpeg',
   ];
 
-            const enlargeImage = (imageSrc) => {
+  const enlargeImage = (imageSrc) => {
     setEnlargedImage(imageSrc);
   };
 
   const closeEnlargedImage = () => {
     setEnlargedImage(null);
   };
-           return (
+
+  return (
     <div>
       <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
         {images.map((imageSrc, index) => (
@@ -42,4 +45,7 @@ const ImageGallery = () => {
         </div>
       )}
     </div>
- 
+  );
+};
+
+export default ImageGallery;
