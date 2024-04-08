@@ -57,16 +57,16 @@ const ImageGallery = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
           <div className="relative">
             <img
-              className="max-h-full max-w-full"
+              className="max-w-screen-xl max-h-screen-3/4 mx-auto"
               src={enlargedImage}
               alt="Enlarged Image"
             />
-            <div className="absolute top-1/2 -left-8 cursor-pointer" onClick={() => handleNavigation('left')}>
+            <div className="absolute top-1/2 -left-12 cursor-pointer" onClick={() => handleKeyDown({ key: 'ArrowLeft' })}>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white hover:text-gray-300 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
               </svg>
             </div>
-            <div className="absolute top-1/2 -right-8 cursor-pointer" onClick={() => handleNavigation('right')}>
+            <div className="absolute top-1/2 -right-12 cursor-pointer" onClick={() => handleKeyDown({ key: 'ArrowRight' })}>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white hover:text-gray-300 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
               </svg>
