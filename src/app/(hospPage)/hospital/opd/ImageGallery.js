@@ -21,19 +21,27 @@ const ImageGallery = () => {
     setEnlargedImage(null);
   };
 
-  const handleKeyDown = (e) => {
-    if (enlargedImage) {
-      if (e.key === 'ArrowRight') {
-        const nextIndex = (currentImageIndex + 1) % images.length;
-        enlargeImage(images[nextIndex], nextIndex);
-      } else if (e.key === 'ArrowLeft') {
-        const prevIndex = (currentImageIndex - 1 + images.length) % images.length;
-        enlargeImage(images[prevIndex], prevIndex);
-      }
+  const handleNavigation = (direction) => {
+    if (direction === 'next') {
+      const nextIndex = (currentImageIndex + 1) % images.length;
+      enlargeImage(images[nextIndex], nextIndex);
+    } else if (direction === 'prev') {
+      const prevIndex = (currentImageIndex - 1 + images.length) % images.length;
+      enlargeImage(images[prevIndex], prevIndex);
     }
   };
 
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (enlargedImage) {
+        if (e.key === 'ArrowRight') {
+          handleNavigation('next');
+        } else if (e.key === 'ArrowLeft') {
+          handleNavigation('prev');
+        }
+      }
+    };
+
     window.addEventListener('keydown', handleKeyDown);
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
@@ -61,12 +69,12 @@ const ImageGallery = () => {
               src={enlargedImage}
               alt="Enlarged Image"
             />
-            <div className="absolute top-1/2 -left-12 cursor-pointer" onClick={() => handleKeyDown({ key: 'ArrowLeft' })}>
+            <div className="absolute top-1/2 -left-12 cursor-pointer" onClick={() => handleNavigation('prev')}>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white hover:text-gray-300 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
               </svg>
             </div>
-            <div className="absolute top-1/2 -right-12 cursor-pointer" onClick={() => handleKeyDown({ key: 'ArrowRight' })}>
+            <div className="absolute top-1/2 -right-12 cursor-pointer" onClick={() => handleNavigation('next')}>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white hover:text-gray-300 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
               </svg>
