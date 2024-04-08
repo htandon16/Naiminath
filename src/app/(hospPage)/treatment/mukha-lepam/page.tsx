@@ -202,6 +202,44 @@ const MukhaLepam = () => {
           </li>
         </ol>
       </ol>
+       <div className="testimonials">
+      <blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/divyanshi.jpg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+            The therapists at Naiminath Ayurveda are truly experts in their
+            field. They demonstrated a deep understanding of Greeva Basti and
+            its holistic healing benefits. Their knowledge and skill were
+            evident as they explained the procedure to me, ensuring I felt
+            comfortable and informed throughout the treatment.
+          </p>
+          <footer>— divyanshi</footer>
+        </div>
+      </blockquote>
+<blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/sakshi.jpeg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+            I recently experienced the Greeva Basti treatment at Naiminath Ayurveda, and I must say, the therapists there are truly experts in their field. Their deep understanding of Greeva Basti and its holistic healing benefits was evident throughout the session.
+          </p>
+          <footer>— sakshi</footer>
+        </div>
+      </blockquote>
+     </div>
       </div>
     
     
