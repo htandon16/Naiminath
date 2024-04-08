@@ -13,6 +13,7 @@ import SirodharaPage from "../../treatment/shirodhara/page";
 import KashydharaPage from "../../treatment/kashayadhara/page";
 import MukhaLepam from "../../treatment/mukha-lepam/page";
 import NetraTarpanamPage from "../../treatment/netra-tarpanam/page";
+import ImageGallery from "../opd/ImageGallery"
 
 
 
