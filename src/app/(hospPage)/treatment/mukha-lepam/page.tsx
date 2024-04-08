@@ -206,7 +206,7 @@ const MukhaLepam = () => {
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/divyanshi.jpg"
+            src="/images/gallery/lepan.jpg"
             width={100}
             height={100}
           />
@@ -214,11 +214,7 @@ const MukhaLepam = () => {
         <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            The therapists at Naiminath Ayurveda are truly experts in their
-            field. They demonstrated a deep understanding of Greeva Basti and
-            its holistic healing benefits. Their knowledge and skill were
-            evident as they explained the procedure to me, ensuring I felt
-            comfortable and informed throughout the treatment.
+           At Naiminath Ayurveda, Mukha Lepam is more than just a cosmetic procedure; it's a holistic approach to skincare and well-being. The therapy not only nourishes the skin externally but also aims to restore energetic balance, promoting inner well-being and radiance. By stimulating marma points (energy centers) on the face, Mukha Lepam helps in promoting overall energy flow and well-being.
           </p>
           <footer>— divyanshi</footer>
         </div>
