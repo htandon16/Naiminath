@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ImageGallery = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
     '/images/opd/panchkarma-patients1.jpeg',
@@ -11,13 +12,36 @@ const ImageGallery = () => {
     '/images/opd/panchkarma-patients5.jpeg',
   ];
 
-  const enlargeImage = (imageSrc) => {
+  const enlargeImage = (imageSrc, index) => {
     setEnlargedImage(imageSrc);
+    setCurrentImageIndex(index);
   };
 
   const closeEnlargedImage = () => {
     setEnlargedImage(null);
   };
+
+  // Function to handle keyboard navigation
+  const handleKeyDown = (e) => {
+    if (enlargedImage) {
+      if (e.key === 'ArrowRight') {
+        // Move to the next image
+        const nextIndex = (currentImageIndex + 1) % images.length;
+        enlargeImage(images[nextIndex], nextIndex);
+      } else if (e.key === 'ArrowLeft') {
+        // Move to the previous image
+        const prevIndex = (currentImageIndex - 1 + images.length) % images.length;
+        enlargeImage(images[prevIndex], prevIndex);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [enlargedImage, currentImageIndex]);
 
   return (
     <div>
@@ -28,7 +52,7 @@ const ImageGallery = () => {
             className="rounded-md w-auto aspect-auto max-h-60 cursor-pointer"
             src={imageSrc}
             alt="Panchkarma Patients"
-            onClick={() => enlargeImage(imageSrc)}
+            onClick={() => enlargeImage(imageSrc, index)}
           />
         ))}
       </div>
