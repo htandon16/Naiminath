@@ -184,7 +184,7 @@ const KashydharaPage = () => {
               improved sleep quality, enhanced mental clarity, and an overall
               sense of rejuvenation after their sessions.
             </p>
-            <footer>— vishwa</footer>
+            <footer>— Anshita</footer>
           </div>
         </blockquote>
           <blockquote className="testimonial">
