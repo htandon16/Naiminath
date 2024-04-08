@@ -134,7 +134,7 @@ const NetraTarpanamPage = () => {
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="https://naiminathayurveda.org/wp-content/uploads/2023/09/rohit-kumar-150x150.jpg"
+            src="/images/gallery/netra.jpg"
             width={100}
             height={100}
           />
