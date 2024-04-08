@@ -203,25 +203,20 @@ const PrivateBamsSection = () => {
       <div className="w-[300px] h-[400px] md:w-[40vw] md:h-[35vw] bg-contain -mt-[4%] bg-no-repeat bg-[url('/images/private_bams_img.jpg')]" />
       <div className="md:w-[44vw] h-full md:mr-[10%]">
         <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
-          Private BAMS College in Agra, UP <br />
+        Naiminath Ayurveda: Leading Excellence in BAMS Education and Practice <br />
           (India)
         </label>
         <p className="text-[#7c7777] mt-[3%]">
-          Naiminath Ayurveda is one of the best private BAMS colleges in Agra,
-          Uttar Pradesh. With its commitment to providing quality education and
-          top-notch facilities, Naiminath Ayurveda stands out as a leader in the
-          field of ayurveda medicine. The college offers a comprehensive
-          curriculum that not only covers traditional Ayurvedic practices but
-          also integrates modern medical advancements.
+         Naiminath Ayurveda, located in the historical city of Agra, Uttar Pradesh, stands as one of the finest private BAMS colleges in the region. Renowned for its unwavering commitment to quality education and state-of-the-art facilities, Naiminath Ayurveda has emerged as a leader in the field of Ayurvedic medicine. Its comprehensive curriculum seamlessly integrates traditional Ayurvedic practices with modern medical advancements, ensuring graduates are well-equipped for the professional world. What sets Naiminath Ayurveda apart is its emphasis on practical training and experiential learning. With access to well-equipped laboratories and guidance from experienced faculty members, students develop essential skills and gain hands-on experience, preparing them with confidence and expertise. The college's excellent faculty further enriches the learning experience, providing students with invaluable mentorship and expertise. Additionally, the college offers unique opportunities for internships at the attached hospital, allowing students to further enhance their practical knowledge under the mentorship of seasoned practitioners. This holistic approach to education distinguishes Naiminath Ayurveda as a premier institution in the field of Ayurvedic medicine.
         </p>
-        <p className="text-[#7c7777] mt-[3.5%]">
+{/*         <p className="text-[#7c7777] mt-[3.5%]">
           What sets Naiminath Ayurveda apart from other institutions is its
           emphasis on practical training and experiential learning. Students
           have access to well-equipped laboratories where they can develop their
           skills and gain hands-on experience under the guidance of experienced
           faculty members. This approach ensures that graduates are prepared to
           enter the professional world with confidence and expertise.
-        </p>
+        </p> */}
       </div>
     </div>
   );
