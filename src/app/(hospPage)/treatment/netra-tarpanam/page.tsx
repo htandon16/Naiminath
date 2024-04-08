@@ -131,10 +131,11 @@ const NetraTarpanamPage = () => {
           nurtured and cared for, facilitating a nurturing space for healing.
         </li>
       </ol>
+      <div className="testimonials">
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="/images/gallery/netra.jpg"
+            src="/images/gallery/netra2.jpg"
             width={100}
             height={100}
           />
@@ -147,9 +148,26 @@ const NetraTarpanamPage = () => {
             exceptional experience. From start to finish, my journey with this
             traditional Ayurvedic therapy was nothing short of transformative.
           </p>
-          <footer>— avnish</footer>
+          <footer>— Avantika</footer>
         </div>
       </blockquote>
+        <blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/netra3.jpg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+          As the treatment unfolded, I found myself immersed in a state of profound relaxation, surrendering to the gentle rhythm of the therapeutic process. With each soothing application of medicated ghee to my eyes, I could feel tensions melting away and a deep sense of rejuvenation taking hold.
+          </p>
+          <footer>— Radhika</footer>
+        </div>
+      </blockquote>
+    </div>
     </div>
   );
 };
