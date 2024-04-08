@@ -134,7 +134,7 @@ const SirodharaPage = () => {
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="/images/gallery/ravikumar.jpg"
+              src="/images/gallery/shelja.jpg"
               width={100}
               height={100}
             />
@@ -142,18 +142,15 @@ const SirodharaPage = () => {
           <div className="testimonial-content">
             <div className="testimonial-rating"></div>
             <p>
-              Abhyangam Treatment at Naiminath Ayurveda is a blissful journey
-              into the world of holistic well-being. From the moment you step
-              into their tranquil oasis, you are greeted with warmth and a deep
-              commitment to your health and relaxation.
+             After the treatment, I emerged feeling rejuvenated, with a newfound clarity of mind and a lightness in my spirit that I hadn't experienced in ages. The effects of Shirodhara seemed to linger long after the session ended, leaving me with a renewed sense of vitality and well-being.
             </p>
-            <footer>— Ravi kumar</footer>
+            <footer>— Shelja</footer>
           </div>
         </blockquote>
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="/images/gallery/yashi.jpeg"
+              src="/images/gallery/dimple.jpg"
               width={100}
               height={100}
             />
@@ -161,13 +158,9 @@ const SirodharaPage = () => {
           <div className="testimonial-content">
             <div className="testimonial-rating"></div>
             <p>
-              After the Abhyangam Therapy, I felt rejuvenated, both physically
-              and mentally. My body felt lighter, and my mind was at ease. The
-              benefits of this therapy extended beyond the immediate experience,
-              as I noticed improved sleep quality and increased energy levels in
-              the days that followed.
+             I recently had the pleasure of experiencing the Shirodhara treatment at Naiminath Ayurveda, and I must say it was nothing short of transformative. From the moment I stepped into their serene clinic, I was greeted by a warm and welcoming atmosphere that instantly put me at ease.
             </p>
-            <footer>— Yashi</footer>
+            <footer>— Dimple</footer>
           </div>
         </blockquote>
       </div>
