@@ -154,9 +154,8 @@ const Hospital = ({
           </p>
           <br />
 
-          
-
- <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+         <ImageGallery/>
+{/*  <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
 
     <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
 
@@ -170,11 +169,8 @@ const Hospital = ({
            <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients4.jpeg" alt="Panchkarma Patients" />
        <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients5.jpeg" alt="Panchkarma Patients" />
 
-             </div>
-        
+             </div> */}
 
-         
-    
 
           <p>
             To undergo a purification therapy it is highly important for the
