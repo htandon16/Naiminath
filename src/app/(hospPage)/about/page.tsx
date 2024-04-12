@@ -43,7 +43,7 @@ bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 px-20 ">
               the Outpatient Department every day and around 40 patients are
               present in the Inpatient Department.
             </p>
-            <p className=" mt-3 text-[#000000]">
+            <p className="mt-3 text-left w-full">
               The college offers a comprehensive curriculum that not only covers
               traditional Ayurvedic practices but also integrates modern medical
               advancements with its emphasis on practical training and
