@@ -33,7 +33,7 @@ bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 px-20 ">
             width={800}
             height={400}
           />
-           <div className="text-[#000000] text-[17px]"> 
+           <div className="text-[#000000] text-[17px] px-4"> 
              {/*   <div className="w-[95%] md:w-[85%] h-full mt-3 md:mx-[10%] mx-[5%] py-[2%]">*/}
             <p className="text-[#000000] ">
               Naiminath Ayurveda holds a commitment to providing quality
