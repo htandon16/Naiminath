@@ -59,7 +59,7 @@ const HomePage = () => {
           <PrivateBamsSection />
         </div>
 
-        <NaiminathAyurvedaSection />
+{/*          <NaiminathAyurvedaSection /> */}
       </div>
     </>
   );
