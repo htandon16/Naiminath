@@ -222,39 +222,39 @@ const PrivateBamsSection = () => {
   );
 };
 
-const NaiminathAyurvedaSection = () => {
-  return (
-    <div className="w-[90%] md:w-[70%] h-full mt-[3%] md:mx-[10%] mx-[5%]  flex md:flex-row-reverse flex-col ">
+// const NaiminathAyurvedaSection = () => {
+//   return (
+//     <div className="w-[90%] md:w-[70%] h-full mt-[3%] md:mx-[10%] mx-[5%]  flex md:flex-row-reverse flex-col ">
       
-      <div className="md:w-[44vw] h-full mr-[1%]">
-        <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
-          Naiminath Ayurveda : Inside Agra&apos;s Ayurvedic Medical College
-        </label>
-        <p className="text-[#7c7777] mt-[3%]">
-          Located in the historical city of Agra, Naiminath Ayurveda is a hidden
-          gem that stands out as the top ayurvedic college in Agra. This
-          prestigious ayurvedic medical college offers a unique blend of
-          traditional practices and modern advancements, making it one of the
-          most sought-after institutions for aspiring ayurvedic practitioners.
-          Stepping foot inside its hallowed halls feels like entering a
-          sanctuary devoted to ancient healing wisdom.
-        </p>
-        <p className="text-[#7c7777] mt-[3.5%]">
-          What sets Naiminath apart from other private ayurvedic colleges in UP
-          is its emphasis on practical experience alongside theoretical
-          knowledge. Students here have the unique opportunity to engage in
-          hands-on learning through internships at the attached hospital. Under
-          the expert guidance of seasoned practitioners, they gain invaluable
-          insight into diagnosing ailments, prescribing treatments, and
-          observing patients’ progress firsthand. Depending upon the type of
-          colleges, there are different fees structures for private BAMS
-          colleges fees in UP.
-        </p>
-      </div>
-      <div className=" w-[300px] h-[220px] md:w-[48vw] md:h-[30vw]  mt-[2%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
-    </div>
-  );
-};
+//       <div className="md:w-[44vw] h-full mr-[1%]">
+//         <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
+//           Naiminath Ayurveda : Inside Agra&apos;s Ayurvedic Medical College
+//         </label>
+//         <p className="text-[#7c7777] mt-[3%]">
+//           Located in the historical city of Agra, Naiminath Ayurveda is a hidden
+//           gem that stands out as the top ayurvedic college in Agra. This
+//           prestigious ayurvedic medical college offers a unique blend of
+//           traditional practices and modern advancements, making it one of the
+//           most sought-after institutions for aspiring ayurvedic practitioners.
+//           Stepping foot inside its hallowed halls feels like entering a
+//           sanctuary devoted to ancient healing wisdom.
+//         </p>
+//         <p className="text-[#7c7777] mt-[3.5%]">
+//           What sets Naiminath apart from other private ayurvedic colleges in UP
+//           is its emphasis on practical experience alongside theoretical
+//           knowledge. Students here have the unique opportunity to engage in
+//           hands-on learning through internships at the attached hospital. Under
+//           the expert guidance of seasoned practitioners, they gain invaluable
+//           insight into diagnosing ailments, prescribing treatments, and
+//           observing patients’ progress firsthand. Depending upon the type of
+//           colleges, there are different fees structures for private BAMS
+//           colleges fees in UP.
+//         </p>
+//       </div>
+//       <div className=" w-[300px] h-[220px] md:w-[48vw] md:h-[30vw]  mt-[2%] bg-contain bg-no-repeat bg-[url('/images/namida_ayurveda.png')]" />
+//     </div>
+//   );
+// };
 
 const AboutUsSection = () => {
   return (
