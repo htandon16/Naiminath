@@ -25,7 +25,7 @@ const AboutUs = () => {
           About Us
         </div>
         <div className="bg-[url('/images/About_naiminath_hospital-overlay (1).webp')] bg-center bg-cover
-bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 px-20 sm:px-5 ">
+bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 lg:px-20 sm:px-0 ">
           <Image
             src="/images/About_naiminath_hospital.webp"
             className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100"
