@@ -358,7 +358,7 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
               className=" h-[12vh] w-[18vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
               style={{ backgroundImage: `url(${item.image})` }}
             />
-            <p className="text-[11px] md:text-[18px] word-wrap break-words">
+            <p className="text-[11px] md:text-[18px]">
               {item.text}
             </p>
           </div>
