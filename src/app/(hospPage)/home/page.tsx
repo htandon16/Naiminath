@@ -161,6 +161,11 @@ const OpdSection = () => {
       <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
         <AyurvedaTreatmentImageSlider items={sliderItems} />
       </div>
+      {sliderItems.map((item, index) => (
+        <div key={index} style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+          {item.text}
+        </div>
+      ))}
     </>
   );
 };
