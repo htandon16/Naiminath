@@ -156,8 +156,8 @@ const OpdSection = () => {
   ];
   return (
     <>
-      <h2 className="text-[27px] md:text-[32px] text-[#525252]">OPD</h2>
-      <p className="text-[17px] md:text-[21px] text-[#7c7777]">Explore Our Range of Outpatient Departments(OPDs)</p>
+      <h2 className="text-[28px] md:text-[34px] text-[#525252] font-semibold">OPD</h2>
+      <p className="text-[14px] md:text-[19px] text-[#7c7777] font-semobold">Explore Our Range of Outpatient Departments(OPDs)</p>
       <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
         <AyurvedaTreatmentImageSlider items={sliderItems} />
       </div>
