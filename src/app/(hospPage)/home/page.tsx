@@ -62,15 +62,11 @@ const HomePage = () => {
           <h2 className="text-[26px] md:text-[32px] mt-5 mb-5 text-[#525252] font-semibold">
         Most Appreciated Services </h2>
 
-        <div className="flex flex-row flex-4 gap-2  justify-center">
+        <div className="flex flex-row flex-1 gap-2  justify-center">
 
-          <Image className="rounded-md w-full sm:w-auto aspect-w-16 aspect-h-9 sm:aspect-w-3 sm:aspect-h-2 md:h-60"
-                src="/images/gallery/n1.jpg" alt="Patient 1"
-              width={1920} height={1080}
-            />
-          
-          <Image className="rounded-md w-auto aspect-auto h-60" src="/images/gallery/n2.jpg" alt="Patient 2"/>
-          <Image className="rounded-md w-auto  h-60" src="/images/gallery/n3.jpg" alt="Patient 3"/>
+          <Image className="rounded-md w-full sm:w-auto aspect-w-16 aspect-h-9 sm:aspect-w-3 sm:aspect-h-2 md:h-60" src="/images/gallery/n1.jpg" alt="Patient 1"/>
+          <Image className="rounded-md w-full sm:w-auto aspect-w-16 aspect-h-9 sm:aspect-w-3 sm:aspect-h-2 md:h-60" src="/images/gallery/n2.jpg" alt="Patient 2"/>
+          <Image className="rounded-md w-full sm:w-auto aspect-w-16 aspect-h-9 sm:aspect-w-3 sm:aspect-h-2 md:h-60" src="/images/gallery/n3.jpg" alt="Patient 3"/>
           <Image className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4"/>
           </div>
 
