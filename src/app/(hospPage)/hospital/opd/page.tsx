@@ -610,8 +610,6 @@ const Hospital = ({
     },
   ];
 
-
- User
  const rounter = useRouter();
 
   const [itemsContent, setItemsContent] = useState(items[id]);
