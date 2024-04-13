@@ -628,7 +628,6 @@ const Hospital = ({
   }, [id]);
 
   return (
-
   <>
     {itemsContent.meta && <>{itemsContent.meta}</>}
     <div className="flex flex-col items-center justify-center font-sans h-full w-full">
@@ -650,7 +649,7 @@ const Hospital = ({
       </div>
     </div>
     {/* Bottom Content for Small and Medium Devices */}
-    <div className="sm:flex md:flex flex-col items-center justify-center w-full pb-4">
+    <div className="sm:flex md:flex hidden lg:hidden xl:hidden flex-col items-center justify-center w-full pb-4">
       <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2 ">
         {items.slice(0, 7).map((item, index) => (
           <li
