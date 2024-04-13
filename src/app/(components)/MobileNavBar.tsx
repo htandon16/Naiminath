@@ -31,6 +31,7 @@ const MobileNavBar = ({
     { label: "Home", path: "/home" },
     { label: "About us", path: "/about" },
     { label: "Gallery", path: "/about/gallery" },
+      { label: "Student Gallery", path: "/about/student-gallery" },
     {
       label: "Hospital",
       submenu: [
