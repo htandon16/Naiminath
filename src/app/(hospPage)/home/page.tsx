@@ -262,7 +262,7 @@ const AboutUsSection = () => {
     <div className="w-full h-fit bg-blue-300 relative mt-0">
       <Image
         src="/images/about_home_bg.jpg"
-        className="w-full h-[85vh]"
+        className="w-full h-[85vh] object-cover"
         alt="about image"
         width={1600}
         height={800}
