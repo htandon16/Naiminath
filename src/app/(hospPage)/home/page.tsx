@@ -59,15 +59,15 @@ const HomePage = () => {
           <PrivateBamsSection />
         </div>
 
-          <h2 className="text-[28px] md:text-[34px] text-[#525252] font-semibold">
+          <h2 className="text-[26px] md:text-[32px] mt-5 mb-5 text-[#525252] font-semibold">
         Most Appreciated Services </h2>
 
         <div className="flex flex-row flex-4 gap-2  justify-center">
 
-          <Image className="rounded-md w-60 aspect-auto h-auto" src="/images/gallery/n1.jpg" alt="Patient 1"/>
-          <Image className="rounded-md w-60 aspect-auto h-auto" src="/images/gallery/n2.jpg" alt="Patient 2"/>
-          <Image className="rounded-md w-60 aspect-auto h-60" src="/images/gallery/n3.jpg" alt="Patient 3"/>
-          <Image className="rounded-md w-60 aspect-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4"/>
+          <Image className="rounded-md w-auto aspect-auto h-auto" src="/images/gallery/n1.jpg" alt="Patient 1"/>
+          <Image className="rounded-md w-auto aspect-auto h-auto" src="/images/gallery/n2.jpg" alt="Patient 2"/>
+          <Image className="rounded-md w-auto  h-60" src="/images/gallery/n3.jpg" alt="Patient 3"/>
+          <Image className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4"/>
           </div>
 
       
