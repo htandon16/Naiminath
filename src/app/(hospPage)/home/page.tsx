@@ -259,7 +259,7 @@ const PrivateBamsSection = () => {
 
 const AboutUsSection = () => {
   return (
-    <div className="w-full h-fit bg-blue-300 relative md:mt-0 sm:mt-0 mt-6">
+    <div className="w-full h-fit bg-blue-300 relative mt-0">
       <Image
         src="/images/about_home_bg.jpg"
         className="w-full h-[85vh]"
