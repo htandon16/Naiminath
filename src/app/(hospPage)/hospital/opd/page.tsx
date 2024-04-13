@@ -87,17 +87,7 @@ const Hospital = ({
       ),
       image:"kayachikitsa.webp"
     },
-           useEffect(() => {
-    if (typeof id === "number") {
-      console.log("Page loaded");
-      setItemsContent(items[id]);
-      setCurrentId(id);
-      if (imageSlide) {
-        setImageSlide(false);
-      }
-    }
-  }, [id]);
-
+      
   return (
     <>
       {itemsContent.meta && <>{itemsContent.meta}</>}
