@@ -78,74 +78,7 @@ const Hospital = ({
         </>
       ),
 
-       useEffect(() => {
-    if (typeof id === "number") {
-      console.log("Page loaded");
-      setItemsContent(items[id]);
-      setCurrentId(id);
-      if (imageSlide) {
-        setImageSlide(false);
-      }
-    }
-  }, [id]);
 
-  return (
-    <>
-      {itemsContent.meta && <>{itemsContent.meta}</>}
-      <div className="flex flex-col items-center justify-center font-sans h-full w-full">
-        <div
-          className=" bg-[url('/images/aboutus_bg.jpg')] bg-cover h-[20vh] w-full flex items-center justify-center 
-      text-[#54595f] md:text-[32px] text-[28px] text-center font-extrabold border-b-[0.009px] border-[#8b939465]"
-        >
-          {itemsContent.title}
-        </div>
-        <div className={`flex md:flex-row flex-col w-full justify-center items-start md:pt-12 pb-16 bg-[')] 
-        bg-no-repeat bg-cover bg-center`}  
-        style={{
-          backgroundImage: `linear-gradient(93deg, rgb(246 255 238), rgb(255 255 255 / 65% ), #f5ffa399), url('/images/opd/${itemsContent.image}')`,
-          backgroundSize: 'cover',
-        }}>
-          <div className="hidden lg:hidden xl:hidden sm:flex md:flex flex-col lg:basis-[30%] lg:flex-none gap-3 items-center justify-center">
-            <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2 ">
-              {items.slice(0, 7).map((item, index) => (
-                <li
-                  key={index}
-                  className=" hover:text-[#54595f] text-[#17a960] "
-                  onClick={() => {
-                    setCurrentId(index);
-                    setItemsContent(item);
-                    // rounter.push(`/hospPage/hospital/opd?id=${index}`)
-
-                    // console.log("idahjh===", index);
-
-                    const currentUrl = window.location.href;
-                    const newUrl = `${currentUrl.split("?")[0]}?id=${index}`;
-                    window.history.replaceState(null, "", newUrl);
-                    // window.location.reload()
-                  }}
-                >
-                  {item.title}
-                </li>
-              ))}
-              <style jsx>{`
-                /* Use the utility class to change the color of the list item bullets */
-                .custom-list li::before {
-                  font-size: 20px;
-                  content: "⇨"; /* Use the desired bullet character */
-                  color: #17a960; /* Change this to the color you want for the bullets */
-                  margin-right: 8px; 
-                   border-top: 0.5px solid #ffffff; /* Adjust the spacing between the bullet and text */
-                   border-bottom: 1px solid #cfe1cf;
-                }
-              `}</style>
-            </ul>
-          </div>
-          <ShowRightSideText id={currentId} data={itemsContent} />
-        </div>
-      </div>
-    </>
-  );
-};
       meta: (
         <head>
           <title>Kayachikitsa - Naiminath Ayurveda </title>
