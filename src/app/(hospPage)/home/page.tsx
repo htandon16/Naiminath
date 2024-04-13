@@ -61,10 +61,10 @@ const HomePage = () => {
 
         <div className="flex flex-row justify-center">
 
-          <Image className="rounded-md" src="/images/gallery/n1.jpg"/>
-          <Image className="rounded-md" src="/images/gallery/n2.jpg"/>
-          <Image className="rounded-md" src="/images/gallery/n3.jpg"/>
-          <Image className="rounded-md" src="/images/gallery/n4.jpg"/>
+          <Image className="rounded-md" src="/images/gallery/n1.jpg" alt="Patient 1"/>
+          <Image className="rounded-md" src="/images/gallery/n2.jpg" alt="Patient 2"/>
+          <Image className="rounded-md" src="/images/gallery/n3.jpg" alt="Patient 3"/>
+          <Image className="rounded-md" src="/images/gallery/n4.jpg" alt="Patient 4"/>
           </div>
 
       
