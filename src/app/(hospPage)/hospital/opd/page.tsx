@@ -610,7 +610,7 @@ const Hospital = ({
     },
   ];
 
-  const rounter = useRouter();
+ const rounter = useRouter();
 
   const [itemsContent, setItemsContent] = useState(items[id]);
   const [currentId, setCurrentId] = useState(id);
@@ -640,7 +640,7 @@ const Hospital = ({
         <div className={`flex md:flex-row flex-col w-full justify-center items-start md:pt-12 pb-16 bg-[')] 
         bg-no-repeat bg-cover bg-center`}  
         style={{
-          backgroundImage: linear-gradient(93deg, rgb(246 255 238), rgb(255 255 255 / 65% ), #f5ffa399), url('/images/opd/${itemsContent.image}'),
+          backgroundImage: `linear-gradient(93deg, rgb(246 255 238), rgb(255 255 255 / 65% ), #f5ffa399), url('/images/opd/${itemsContent.image}')`,
           backgroundSize: 'cover',
         }}>
           <div className="hidden sm:hidden md:hidden lg:flex xl:flex flex-col lg:basis-[30%] lg:flex-none gap-3 items-center justify-center">
@@ -652,12 +652,12 @@ const Hospital = ({
                   onClick={() => {
                     setCurrentId(index);
                     setItemsContent(item);
-                    // rounter.push(/hospPage/hospital/opd?id=${index})
+                    // rounter.push(`/hospPage/hospital/opd?id=${index}`)
 
                     // console.log("idahjh===", index);
 
                     const currentUrl = window.location.href;
-                    const newUrl = ${currentUrl.split("?")[0]}?id=${index};
+                    const newUrl = `${currentUrl.split("?")[0]}?id=${index}`;
                     window.history.replaceState(null, "", newUrl);
                     // window.location.reload()
                   }}
@@ -681,8 +681,8 @@ const Hospital = ({
           <ShowRightSideText id={currentId} data={itemsContent} />
         </div>
       </div>
-    </>
-  );
+    </>
+  );
 };
 
 const ShowRightSideText = ({ id, data }: any) => {
