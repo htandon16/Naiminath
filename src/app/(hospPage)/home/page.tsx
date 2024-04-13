@@ -62,7 +62,7 @@ const HomePage = () => {
           <h2 className="text-[26px] md:text-[32px] mt-5 mb-5 text-[#525252] font-semibold">
         Most Appreciated Services </h2>
 
-        <div className="flex flex-row flex-4 gap-2  justify-center">
+        <div className="flex flex-row flex-wrap flex-4 gap-2  justify-center sm:justify-start">
 
           <Image className="rounded-md w-auto h-60" src="/images/gallery/n1.jpg" alt="Patient 1"/>
           <Image className="rounded-md w-auto h-60" src="/images/gallery/n2.jpg" alt="Patient 2"/>
