@@ -30,7 +30,7 @@ bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 lg:px-20 sm:p
         
           <Image
             src="/images/About_naiminath_hospital.webp"
-            className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100 sm:mx-auto md:mx-auto"
+            className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100 mx-auto sm:mx-0"
             alt="about image"
             width={800}
             height={400}
