@@ -59,6 +59,16 @@ const HomePage = () => {
           <PrivateBamsSection />
         </div>
 
+        <div className="flex flex-row justify-center">
+
+          <Image className="rounded-md" src="/images/gallery/n1.jpg"/>
+          <Image className="rounded-md" src="/images/gallery/n2.jpg"/>
+          <Image className="rounded-md" src="/images/gallery/n3.jpg"/>
+          <Image className="rounded-md" src="/images/gallery/n4.jpg"/>
+          </div>
+
+      
+
 {/*          <NaiminathAyurvedaSection /> */}
       </div>
     </>
