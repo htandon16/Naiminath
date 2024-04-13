@@ -28,7 +28,7 @@ const AboutUs = () => {
 bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 lg:px-20 sm:px-0 ">
           <Image
             src="/images/About_naiminath_hospital.webp"
-            className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] sm:shrink-0 shadow-md ring-1 ring-slate-100"
+            className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] lg:shrink-0 sm:shrink-0 shadow-md ring-1 ring-slate-100"
             alt="about image"
             width={800}
             height={400}
