@@ -36,9 +36,9 @@ bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 lg:px-20 sm:p
             height={400}
           />
            
-           <div className="text-[#000000] text-[15px] "> 
+           <div className="text-[#000000]"> 
              {/*   <div className="w-[95%] md:w-[85%] h-full mt-3 md:mx-[10%] mx-[5%] py-[2%]">*/}
-            <p className="mt-3 ml-0">
+            <p className="mt-3 ml-2">
               Naiminath Ayurveda holds a commitment to providing quality
               education and top-notch facilities in the field of ayurveda
               medicine. We are a 100 bedded state of art Ayurvedic Hospital
