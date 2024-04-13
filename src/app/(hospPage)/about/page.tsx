@@ -30,15 +30,15 @@ bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 lg:px-20 sm:p
         
           <Image
             src="/images/About_naiminath_hospital.webp"
-            className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100 sm:mx-auto"
+            className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100 sm:mx-auto md:mx-auto"
             alt="about image"
             width={800}
             height={400}
           />
            
-           <div className="text-[#000000] text-[17px] px-4 flex-grow"> 
+           <div className="text-[#000000] text-[15px] "> 
              {/*   <div className="w-[95%] md:w-[85%] h-full mt-3 md:mx-[10%] mx-[5%] py-[2%]">*/}
-            <p className="mt-3">
+            <p className="mt-3 ml-0">
               Naiminath Ayurveda holds a commitment to providing quality
               education and top-notch facilities in the field of ayurveda
               medicine. We are a 100 bedded state of art Ayurvedic Hospital
