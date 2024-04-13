@@ -640,7 +640,7 @@ const Hospital = ({
           backgroundImage: `linear-gradient(93deg, rgb(246 255 238), rgb(255 255 255 / 65% ), #f5ffa399), url('/images/opd/${itemsContent.image}')`,
           backgroundSize: 'cover',
         }}>
-          <div className=" flex flex-col basis-[30%] flex-none  gap-3 items-center justify-center ">
+          <div className="hidden sm:hidden md:hidden flex flex-col basis-[30%] flex-none  gap-3 items-center justify-center ">
             <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2 ">
               {items.slice(0, 7).map((item, index) => (
                 <li
