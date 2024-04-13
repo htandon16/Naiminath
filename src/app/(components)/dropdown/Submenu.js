@@ -5,7 +5,7 @@ import style from './Submenu.module.css';
 
 const Submenu = ({
   children = null,
-  position = 'left',
+  position = 'right',
   className = null,
   ...props
 }) => (
