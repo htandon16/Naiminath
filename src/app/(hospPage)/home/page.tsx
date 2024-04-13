@@ -259,14 +259,21 @@ const PrivateBamsSection = () => {
 
 const AboutUsSection = () => {
   return (
-    <div className="w-full h-fit bg-blue-300 relative mt-0">
-      <Image
-        src="/images/about_home_bg.jpg"
-        className="w-full h-[85vh] object-cover"
-        alt="about image"
-        width={1600}
-        height={800}
-      />
+    // <div className="w-full h-fit bg-blue-300 relative mt-0">
+    //   <Image
+    //     src="/images/about_home_bg.jpg"
+    //     className="w-full h-[85vh] object-cover"
+    //     alt="about image"
+    //     width={1600}
+    //     height={800}
+    //   />
+    <div className="w-full h-[85vh] bg-blue-300 relative mt-0 overflow-hidden">
+  <Image
+    src="/images/about_home_bg.jpg"
+    className="object-cover w-full h-full"
+    alt="about image"
+    layout="fill"
+  />
 
       <div className="w-full-max flex flex-col absolute md:top-[12%] top-[5%] text-justify md:mx-0 mx-[5%] md:start-[45%] md:right-[10%]">
         <label className="md:text-3xl text-2xl font-semibold text-[#525252]">
