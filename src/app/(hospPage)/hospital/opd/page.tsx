@@ -610,7 +610,7 @@ const Hospital = ({
     },
   ];
 
-const YourComponent = ({ id, items }) => {
+
   const router = useRouter();
   const [itemsContent, setItemsContent] = useState(items[id]);
   const [currentId, setCurrentId] = useState(id);
