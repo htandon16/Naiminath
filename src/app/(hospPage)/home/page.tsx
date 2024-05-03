@@ -360,7 +360,7 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
     <Slider {...settings} className="text-[#7c7777] relative ">
       {items.map((item, index) => (
         <a key={index} href={item.link} className="slide-link">
-          <div key={index} className=" p-[14px] text-center slide-content">
+          <div key={index} className=" p-[8px] text-center slide-content">
             <div
               className=" h-[12vh] w-[18vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
               style={{ backgroundImage: `url(${item.image})` }}
