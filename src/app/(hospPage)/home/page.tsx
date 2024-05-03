@@ -367,7 +367,7 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
             />
 {/* <p className="[10px] text-center slide-content flex flex-col items-center"> */}
 
-             <p className="text-[11px] md:text-[18px]"> 
+             <p className="text-[11px]"> 
 {/*                         <p className="absolute bottom-0 left-0 right-0 text-[11px] md:text-[18px] bg-white bg-opacity-75"> */}
 
               {item.text}
