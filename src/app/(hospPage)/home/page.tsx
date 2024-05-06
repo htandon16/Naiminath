@@ -31,7 +31,7 @@ const HomePage = () => {
 
   return (
     <>
-      {/* <head>
+      <head>
         <title>
           Naiminath Ayurveda : Best Private BAMS College in Agra, UP
         </title>
@@ -39,7 +39,7 @@ const HomePage = () => {
           name="description"
           content="Experience excellence at Naiminath Ayurveda, the leading private BAMS college in Agra, UP. Begin your journey towards a fulfilling career in Ayurveda now!"
         />
-      </head> */}
+      </head>
       <div className="w-max-full flex flex-col justify-center items-center -mt-4 font-sans pb-20">
         {/* ayurveda treatement section */}
         <div
@@ -71,7 +71,7 @@ const HomePage = () => {
           <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4" />
         </div>
         {/* <NaiminathAyurvedaSection /> */}
-        <VideoTestimonial />
+        {/* <VideoTestimonial /> */}
       </div>
     </>
   );
