@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useGlobalContext } from "@/app/context/store";
 import { Helmet } from "react-helmet";
 import Link from "next/link";
-import VideoTestimonial from "@/app/(components)/testimonials/VideoTestimonial";
+import VideoTestimonial from "@/app/(components)/VideoTestimonial";
 
 type SliderItem = {
   image: string;
@@ -73,7 +73,7 @@ const HomePage = () => {
         {/* <NaiminathAyurvedaSection /> */}
 
         {/* video testimonials added */}
-        <VideoTestimonial />
+        <Testimonial />
       </div>
     </>
   );
@@ -313,6 +313,27 @@ const AboutUsSection = () => {
   );
 };
 
+const Testimonial = () => {
+  return (
+    <div className="mt-4 gap-3 flex flex-col">
+      <div>
+
+        <h1 className="text-center font-semibold text-[28px] md:text-[34px]  text-[#525252]"> Testimonial's</h1>
+        <p className="text-center text-lg my-[3px]">What People Say About US </p>
+      </div>
+
+      <div className="flex justify-between gap-2 flex-col sm:flex-row">
+
+        <iframe src="https://www.youtube.com/embed/wlOJYMW13zc?si=Ru3u7DiXWQspBGIg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="sm:w-[400px] lg:w-[560px] h-[315px]"></iframe>
+
+
+        <iframe src="https://www.youtube.com/embed/7_s8wssOzuc?si=iabpQEVYQukV1gdb" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="sm:w-[400px] lg:w-[560px] h-[315px]"></iframe>
+
+      </div>
+    </div>
+  );
+};
+
 const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
   const customSize: SizeProp = "xl";
 
@@ -331,6 +352,7 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
       </div>
     );
   };
+
 
   const NextArrow = (props: any) => {
     const { className, style, onClick } = props;

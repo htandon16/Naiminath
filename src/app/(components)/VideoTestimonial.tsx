@@ -28,7 +28,7 @@ const VideoTestimonial = () => {
                     ))
                 }
             </div>
-        </div >
+        </div>
     )
 }
 
