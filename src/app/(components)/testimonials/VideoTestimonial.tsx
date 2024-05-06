@@ -1,4 +1,4 @@
-import Slider from "react-slick";
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 const VideoTestimonial = () => {
@@ -24,7 +24,7 @@ const VideoTestimonial = () => {
 
                 {
                     url.map((obj, i) => (
-                        <iframe src={obj.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="sm:w-[400px] lg:w-[560px] h-[315px]"></iframe>
+                        <iframe key={i} src={obj.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="sm:w-[400px] lg:w-[560px] h-[315px]"></iframe>
                     ))
                 }
             </div>
