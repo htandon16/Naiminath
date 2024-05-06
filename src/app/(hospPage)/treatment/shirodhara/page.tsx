@@ -10,14 +10,15 @@ const SirodharaPage = () => {
         }}
       />
       <div>
-        <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c.jpg"
-          sizes="(max-width: 640px) 100vw, 640px"
-          srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c.jpg 960w, https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c-300x200.jpg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c-768x512.jpg 768w"
-          alt=""
-          width={640}
-          height={427}
-        />
+      <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+        <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/opd/shirodhara.jpg"
+        alt="Shirodhara"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/opd/shirodhara.jpg 800w, /images/opd/shirodhara-300x225.jpg 300w, /images/opd/shirodhara-768x576.jpg 768w"
+        width="640"
+        height="480"
+    />
+        </div>
       </div>
       <h1>Shirodhara Therapy</h1>
       <div>
@@ -91,8 +92,6 @@ const SirodharaPage = () => {
         <h2>
           <strong>Why Choose NAMC for Shirodhara?</strong>
         </h2>
-        <br />
-        <br />
         Experienced Faculty: Naiminath Ayurvedic Medical College boasts a team
         of distinguished faculty members, each an expert in their field. Their
         extensive knowledge of Ayurveda and its various therapies, including
@@ -135,7 +134,7 @@ const SirodharaPage = () => {
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="https://naiminathayurveda.org/wp-content/uploads/2023/09/63testi_img1-150x150.jpg"
+              src="/images/gallery/shelja.jpg"
               width={100}
               height={100}
             />
@@ -143,18 +142,15 @@ const SirodharaPage = () => {
           <div className="testimonial-content">
             <div className="testimonial-rating"></div>
             <p>
-              Abhyangam Treatment at Naiminath Ayurveda is a blissful journey
-              into the world of holistic well-being. From the moment you step
-              into their tranquil oasis, you are greeted with warmth and a deep
-              commitment to your health and relaxation.
+             After the treatment, I emerged feeling rejuvenated, with a newfound clarity of mind and a lightness in my spirit that I hadn't experienced in ages. The effects of Shirodhara seemed to linger long after the session ended, leaving me with a renewed sense of vitality and well-being.
             </p>
-            <footer>— Ravi kumar</footer>
+            <footer>— Shelja</footer>
           </div>
         </blockquote>
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="https://naiminathayurveda.org/wp-content/uploads/2023/09/73_user2-150x150.jpg"
+              src="/images/gallery/dimple.jpg"
               width={100}
               height={100}
             />
@@ -162,13 +158,9 @@ const SirodharaPage = () => {
           <div className="testimonial-content">
             <div className="testimonial-rating"></div>
             <p>
-              After the Abhyangam Therapy, I felt rejuvenated, both physically
-              and mentally. My body felt lighter, and my mind was at ease. The
-              benefits of this therapy extended beyond the immediate experience,
-              as I noticed improved sleep quality and increased energy levels in
-              the days that followed.
+             I recently had the pleasure of experiencing the Shirodhara treatment at Naiminath Ayurveda, and I must say it was nothing short of transformative. From the moment I stepped into their serene clinic, I was greeted by a warm and welcoming atmosphere that instantly put me at ease.
             </p>
-            <footer>— Yashi</footer>
+            <footer>— Dimple</footer>
           </div>
         </blockquote>
       </div>

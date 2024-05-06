@@ -4,8 +4,17 @@ import React from 'react'
   return (
     <div>
         <style dangerouslySetInnerHTML={{__html: "\n    .testimonials {\n     box-sizing: border-box;\n     display: flex;\n     flex-wrap: wrap;\n     gap: 30px;\n     justify-content: center;\n     margin: 0px auto;\n     width: 100%;\n     padding: 40px 20px;\n     background-color: rgb(244, 246, 249);\n    }\n    .testimonial {\n     box-sizing: border-box;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     width: 250px;\n     max-width: 100%;\n     margin: 0px;\n     padding: 25px;\n     border-radius: 5px;\n     background-color: rgb(255, 255, 255);\n     box-shadow: rgba(13, 45, 160, 0.15) 0px 6px 20px -5px;\n     overflow: hidden;\n    }\n    .testimonial-image {\n     box-sizing: border-box;\n     width: 100px;\n     height: 100px;\n     min-width: 100px;\n     min-height: 100px;\n     margin-bottom: 15px;\n     border-radius: 50%;\n     overflow: hidden;\n    }\n    .testimonial-content {\n     display: flex;\n     flex-direction: column;\n     box-sizing: border-box;\n     width: 100%;\n     flex: 1 1 0%;\n     height: 100%;\n    }\n    .testimonial-content p {\n     display: flex;\n     flex: 1 1 0%;\n     box-sizing: border-box;\n     position: relative;\n     font-family: \"Open Sans\", sans-serif;\n     font-size: 14px;\n     font-style: italic;\n     line-height: 1.5;\n     margin: 0px;\n     padding: 25px 5px 5px;\n     color: rgb(105, 114, 138);\n     overflow-wrap: break-word;\n    }\n    .testimonial-content p::before {\n     content: \"\\201C\";\n     font-size: 4em;\n     font-weight: 700;\n     font-family: \"Open Sans\", sans-serif;\n     font-style: normal;\n     color: rgb(0, 123, 255);\n     position: absolute;\n     top: -25px;\n     left: -2px;\n    }\n    .testimonial-content footer {\n     box-sizing: border-box;\n     font-family: \"Open Sans\", sans-serif;\n     font-size: 12px;\n     color: rgb(141, 149, 172);\n     margin-top: 15px;\n    }\n    .testimonial-rating {\n     box-sizing: border-box;\n     display: flex;\n     justify-content: center;\n     align-items: center;\n     margin-bottom: 15px;\n     gap: 2px;\n    }\n    .testimonial-rating svg {\n     fill: rgb(241, 196, 15);\n    }\n    .testimonial.horizontal {\n     flex-direction: row;\n     width: 320px;\n    }\n    .testimonial.horizontal .testimonial-image {\n     margin-right: 15px;\n    }\n    .testimonial.horizontal .testimonial-rating {\n     justify-content: flex-end;\n    }\n    " }} />
-        <div>
-          <img decoding="async" fetchPriority="high" width={640} height={325} src="https://naiminathayurveda.org/wp-content/uploads/2023/09/Spine-Basti1-1024x520.jpg" alt="" srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/Spine-Basti1-1024x520.jpg 1024w, https://naiminathayurveda.org/wp-content/uploads/2023/09/Spine-Basti1-300x152.jpg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/Spine-Basti1-768x390.jpg 768w, https://naiminathayurveda.org/wp-content/uploads/2023/09/Spine-Basti1.jpg 1280w" sizes="(max-width: 640px) 100vw, 640px" />															</div>
+        <div> 
+            <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/spinebasti.jpg"
+        alt="Spine Basti"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/gallery/spinebasti.jpg 800w, /images/gallery/spinebasti-300x225.jpg 300w, /images/gallery/spinebasti-768x576.jpg 768w"
+        width="640"
+        height="480"
+    />
+             </div>
+   </div>
         In the realm of holistic healing and natural remedies, Ayurveda shines as an ancient system that aims to restore harmony within the body. Among its many therapeutic techniques, Spine Basti stands out as a profound treatment for spinal issues and related discomforts. At Naiminath Ayurvedic Medical College, Hospital &amp; Research Center (NAMC) in Agra, India, the tradition of Ayurveda is upheld with unwavering dedication, offering Spine Basti and a comprehensive range of healthcare services. With a highly knowledgeable faculty and a team of dedicated workers, NAMC has emerged as a beacon of Ayurvedic excellence.
         <h2>The Essence of Spine Basti</h2>
         Spine Basti, derived from the Sanskrit word “Basti” meaning to retain or hold, is a therapeutic Ayurvedic procedure focused on the spine. It involves creating a dam-like structure over the spinal area using dough made from medicinal grains. Warm, herbalized oil is then poured within this structure, allowing the oil to be absorbed by the tissues around the spine. This treatment aims to nourish and revitalize the spinal column, addressing a wide range of spinal issues and promoting overall wellness.
@@ -57,19 +66,44 @@ import React from 'react'
             Conclusion:
           </li>
         </ol>
+    <div className="testimonials">
         <blockquote className="testimonial">
-          <div className="testimonial-image" >
-            <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/download-1-150x150.jpeg" width={100} height={100} />
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/akshay.jpg"
+              width={100}
+              height={100}
+            />
           </div>
-          <div className="testimonial-content" >
-            <div className="testimonial-rating" >
-            </div>
-            <p>The therapists at Naiminath Ayurveda are true masters of their craft. Their deep knowledge of Ayurveda and their meticulous approach to the Spine Basti treatment instilled confidence from the outset. They patiently explained the procedure, making sure I felt comfortable and well-informed throughout the process.</p>
-            <footer>— aruna</footer>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+            Spine Basti treatment at Naiminath Ayurveda surpassed all my expectations, providing me with a profound sense of rejuvenation and relief. From the moment I stepped into the serene atmosphere of the clinic, I knew I was in good hands. The therapists exuded professionalism and expertise, immediately putting me at ease and instilling confidence in the treatment process.
+
+
+            </p>
+            <footer>— Akshat</footer>
+          </div>
+        </blockquote>
+        <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/aruna.jpg"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+            The Spine Basti treatment itself was a transformative experience. The warm herbal oil used during the procedure penetrated deep into my spinal muscles, releasing years of accumulated tension and stiffness. With each session, I could feel my spine becoming more flexible and supple, and the chronic back pain that had been plaguing me for years gradually diminishing.
+            </p>
+            <footer>— Sonali</footer>
           </div>
         </blockquote>
       </div>
-  )
-}
+    </div>
+  );
+};
 
 export default SpineBastiPage;

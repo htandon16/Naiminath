@@ -10,16 +10,15 @@ const MukhaLepam = () => {
         }}
       />
       <div>
-        <img
-          decoding="async"
-          fetchPriority="high"
-          width={640}
-          height={480}
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/sddefault.jpg"
-          alt=""
-          srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/sddefault.jpg 640w, https://naiminathayurveda.org/wp-content/uploads/2023/09/sddefault-300x225.jpg 300w"
-          sizes="(max-width: 640px) 100vw, 640px"
-        />{" "}
+         <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/mukha.jpg"
+        alt="Kati Basti"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/gallery/mukha.jpg 800w, /images/gallery/mukha-300x225.jpg 300w, /images/gallery/mukha-768x576.jpg 768w"
+        width="640"
+        height="480"
+    />
+   </div>
       </div>
       In a world where stress, pollution, and daily life challenges can take a
       toll on our skin, the timeless wisdom of Ayurveda offers a solution that
@@ -203,10 +202,11 @@ const MukhaLepam = () => {
           </li>
         </ol>
       </ol>
+       <div className="testimonials">
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="https://naiminathayurveda.org/wp-content/uploads/2023/09/SSVM-Parent-Testimonial-min-150x150.jpeg"
+            src="/images/gallery/lepan.jpg"
             width={100}
             height={100}
           />
@@ -214,16 +214,31 @@ const MukhaLepam = () => {
         <div className="testimonial-content">
           <div className="testimonial-rating"></div>
           <p>
-            The therapists at Naiminath Ayurveda exemplify expertise and
-            dedication in the realm of Ayurveda. Their profound knowledge and
-            personalized approach were apparent from the outset. They took the
-            time to explain the Mukha Lepam procedure, ensuring I felt
-            comfortable and well-informed throughout the process.
+           At Naiminath Ayurveda, Mukha Lepam is more than just a cosmetic procedure; it's a holistic approach to skincare and well-being. The therapy not only nourishes the skin externally but also aims to restore energetic balance, promoting inner well-being and radiance. By stimulating marma points (energy centers) on the face, Mukha Lepam helps in promoting overall energy flow and well-being.
           </p>
-          <footer>— ravnish</footer>
+          <footer>— Sajid</footer>
         </div>
       </blockquote>
-    </div>
+<blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/lepan2.jpg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+The therapists at Naiminath Ayurveda are skilled practitioners with profound knowledge of herbal formulations and their effects on the skin. They customize Mukha Lepam sessions according to individual skin types and concerns, ensuring effective and safe treatments. The center offers a comprehensive approach to Ayurvedic therapies, allowing patients to complement Mukha Lepam with other holistic treatments for overall well-being.          </p>
+          <footer>— Samiksha</footer>
+        </div>
+      </blockquote>
+     </div>
+      </div>
+    
+    
+    
   );
 };
 

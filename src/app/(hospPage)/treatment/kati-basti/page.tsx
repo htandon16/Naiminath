@@ -4,8 +4,16 @@ import React from 'react'
   return (
     <div>
         <style dangerouslySetInnerHTML={{__html: "\n    .testimonials {\n     box-sizing: border-box;\n     display: flex;\n     flex-wrap: wrap;\n     gap: 30px;\n     justify-content: center;\n     margin: 0px auto;\n     width: 100%;\n     padding: 40px 20px;\n     background-color: rgb(244, 246, 249);\n    }\n    .testimonial {\n     box-sizing: border-box;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     width: 250px;\n     max-width: 100%;\n     margin: 0px;\n     padding: 25px;\n     border-radius: 5px;\n     background-color: rgb(255, 255, 255);\n     box-shadow: rgba(13, 45, 160, 0.15) 0px 6px 20px -5px;\n     overflow: hidden;\n    }\n    .testimonial-image {\n     box-sizing: border-box;\n     width: 100px;\n     height: 100px;\n     min-width: 100px;\n     min-height: 100px;\n     margin-bottom: 15px;\n     border-radius: 50%;\n     overflow: hidden;\n    }\n    .testimonial-content {\n     display: flex;\n     flex-direction: column;\n     box-sizing: border-box;\n     width: 100%;\n     flex: 1 1 0%;\n     height: 100%;\n    }\n    .testimonial-content p {\n     display: flex;\n     flex: 1 1 0%;\n     box-sizing: border-box;\n     position: relative;\n     font-family: \"Open Sans\", sans-serif;\n     font-size: 14px;\n     font-style: italic;\n     line-height: 1.5;\n     margin: 0px;\n     padding: 25px 5px 5px;\n     color: rgb(105, 114, 138);\n     overflow-wrap: break-word;\n    }\n    .testimonial-content p::before {\n     content: \"\\201C\";\n     font-size: 4em;\n     font-weight: 700;\n     font-family: \"Open Sans\", sans-serif;\n     font-style: normal;\n     color: rgb(0, 123, 255);\n     position: absolute;\n     top: -25px;\n     left: -2px;\n    }\n    .testimonial-content footer {\n     box-sizing: border-box;\n     font-family: \"Open Sans\", sans-serif;\n     font-size: 12px;\n     color: rgb(141, 149, 172);\n     margin-top: 15px;\n    }\n    .testimonial-rating {\n     box-sizing: border-box;\n     display: flex;\n     justify-content: center;\n     align-items: center;\n     margin-bottom: 15px;\n     gap: 2px;\n    }\n    .testimonial-rating svg {\n     fill: rgb(241, 196, 15);\n    }\n    .testimonial.horizontal {\n     flex-direction: row;\n     width: 320px;\n    }\n    .testimonial.horizontal .testimonial-image {\n     margin-right: 15px;\n    }\n    .testimonial.horizontal .testimonial-rating {\n     justify-content: flex-end;\n    }\n    " }} />
-        <div>
-          <img decoding="async" fetchPriority="high" width={625} height={400} src="https://naiminathayurveda.org/wp-content/uploads/2023/09/kativasti.jpeg" alt="" srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/kativasti.jpeg 625w, https://naiminathayurveda.org/wp-content/uploads/2023/09/kativasti-300x192.jpeg 300w" sizes="(max-width: 625px) 100vw, 625px" /></div>
+        <div> </div>
+            <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/katibasti.jpg"
+        alt="Kati Basti"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/gallery/katibasti.jpg 800w, /images/gallery/katibasti-300x225.jpg 300w, /images/gallery/katibasti-768x576.jpg 768w"
+        width="640"
+        height="480"
+    />
+   </div>
         In the realm of holistic healing and natural remedies, Ayurveda has stood the test of time as an ancient system that seeks to restore balance and harmony within the body. Among its many therapies, Kati Basti holds a special place as a powerful treatment for back pain, spinal issues, and related discomforts. Naiminath Ayurvedic Medical College, Hospital &amp; Research Center (NAMC) in Agra, India, stands as a beacon of Ayurvedic excellence, offering not only the traditional Kati Basti treatment but also a wide array of comprehensive healthcare services backed by knowledgeable faculty and dedicated workers.
         <h2>The Essence of Kati Basti</h2>
         Kati Basti is derived from two Sanskrit words, “Kati” meaning lower back or waist and “Basti” referring to an oil-based treatment. This therapy involves creating a dough ring on the lower back area and filling it with warm medicated oil. The warmth of the oil penetrates deep into the muscles and tissues, promoting relaxation, relieving pain, and enhancing circulation in the targeted area. It is particularly effective in addressing conditions like lower back pain, sciatica, herniated discs, and degenerative spinal issues.
@@ -56,19 +64,41 @@ import React from 'react'
             Every patient’s journey is unique at NAMC, with personalized treatment plans that consider individual needs, preferences, and goals.
           </li>
         </ol>	
-        <blockquote className="testimonial">
-          <div className="testimonial-image" >
-            <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/download-1-150x150.jpeg" width={100} height={100} />
-          </div>
-          <div className="testimonial-content" >
-            <div className="testimonial-rating" >
-            </div>
-            <p>I recently had the privilege of undergoing Kati Basti treatment at Naiminath Ayurveda, and I must say it was a truly remarkable experience. From the moment I stepped into their sanctuary of healing, I felt a sense of calm and assurance that I was in capable hands.</p>
-            <footer>— avanti</footer>
-          </div>
-        </blockquote>
-      </div>
-  )
+        <div className="testimonials">
+      <blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/pushp.jpg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+           The Kati Basti treatment itself was incredibly effective in addressing my lower back issues. The warm medicated oil poured into the dough ring created a soothing sensation that penetrated deep into my muscles, alleviating tension and discomfort. With each session, I could feel my flexibility improving, and the chronic pain I had been experiencing gradually subsiding.
+          </p>
+          <footer>— Pushpinder Thakur</footer>
+        </div>
+      </blockquote>
+<blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/yasika.jpg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+Kati Basti treatment at Naiminath Ayurveda was nothing short of remarkable. From the moment I arrived, I was greeted with warmth and professionalism, putting me at ease instantly. The therapists' expertise and dedication to their craft were evident from the start, instilling confidence in the treatment process.          </p>
+          <footer>— Yasika</footer>
+        </div>
+      </blockquote>
+     </div>
+    </div>
+  );
 }
 
 export default KatiBastiPage;

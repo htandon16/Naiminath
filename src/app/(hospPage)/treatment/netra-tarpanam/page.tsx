@@ -10,16 +10,15 @@ const NetraTarpanamPage = () => {
         }}
       />
       <div>
-        <img
-          decoding="async"
-          fetchPriority="high"
-          width={640}
-          height={427}
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/Netra-tarpana.jpg"
-          alt=""
-          srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/Netra-tarpana.jpg 900w, https://naiminathayurveda.org/wp-content/uploads/2023/09/Netra-tarpana-300x200.jpg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/Netra-tarpana-768x512.jpg 768w"
-          sizes="(max-width: 640px) 100vw, 640px"
-        />{" "}
+         <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/netra.webp"
+        alt="Netra"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/gallery/netra.webp 800w, /images/gallery/netra-300x225.webp 300w, /images/gallery/netra-768x576.webp 768w"
+        width="640"
+        height="480"
+    />
+   </div>
       </div>
       In the age of digital screens and environmental stressors, preserving and
       enhancing visual health has become a paramount concern. Ayurveda, the
@@ -132,10 +131,11 @@ const NetraTarpanamPage = () => {
           nurtured and cared for, facilitating a nurturing space for healing.
         </li>
       </ol>
+      <div className="testimonials">
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="https://naiminathayurveda.org/wp-content/uploads/2023/09/rohit-kumar-150x150.jpg"
+            src="/images/gallery/netra2.jpg"
             width={100}
             height={100}
           />
@@ -148,9 +148,26 @@ const NetraTarpanamPage = () => {
             exceptional experience. From start to finish, my journey with this
             traditional Ayurvedic therapy was nothing short of transformative.
           </p>
-          <footer>— avnish</footer>
+          <footer>— Avantika</footer>
         </div>
       </blockquote>
+        <blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/netra3.jpg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+          As the treatment unfolded, I found myself immersed in a state of profound relaxation, surrendering to the gentle rhythm of the therapeutic process. With each soothing application of medicated ghee to my eyes, I could feel tensions melting away and a deep sense of rejuvenation taking hold.
+          </p>
+          <footer>— Radhika</footer>
+        </div>
+      </blockquote>
+    </div>
     </div>
   );
 };

@@ -10,15 +10,18 @@ const KashydharaPage = () => {
         }}
       />
       <div>
-        <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/jan_2014_Panchakarma_Hindi_960x636__copy.jpg"
-          sizes="(max-width: 640px) 100vw, 640px"
-          srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/jan_2014_Panchakarma_Hindi_960x636__copy.jpg 960w, https://naiminathayurveda.org/wp-content/uploads/2023/09/jan_2014_Panchakarma_Hindi_960x636__copy-300x199.jpg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/jan_2014_Panchakarma_Hindi_960x636__copy-768x509.jpg 768w"
-          alt=""
-          width={640}
-          height={424}
-        />
-      </div>
+         </div>
+ 
+   <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/kashayadhara.jpg"
+        alt="Greeva Basti"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/gallery/kashayadhara.jpg 800w, /images/gallery/kashayadhara-300x225.jpg 300w, /images/gallery/kashayadhara-768x576.jpg 768w"
+        width="640"
+        height="480"
+    />
+     </div>
+  
       <div>
         Nestled in the heart of Agra, a city renowned for its cultural heritage,
         lies a sanctuary of health and healing – Naiminath Ayurvedic Medical
@@ -167,7 +170,7 @@ const KashydharaPage = () => {
         <blockquote className="testimonial">
           <div className="testimonial-image">
             <img
-              src="https://naiminathayurveda.org/wp-content/uploads/2023/09/images-150x150.jpeg"
+              src="/images/gallery/anshita.jpg"
               width={100}
               height={100}
             />
@@ -181,7 +184,23 @@ const KashydharaPage = () => {
               improved sleep quality, enhanced mental clarity, and an overall
               sense of rejuvenation after their sessions.
             </p>
-            <footer>— vishwa</footer>
+            <footer>— Anshita</footer>
+          </div>
+        </blockquote>
+          <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/anurag.jpg"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+            From the moment I stepped into the serene environment of NAMC, I was greeted with warmth and professionalism. The expert practitioners not only administered the therapy with precision but also provided personalized care tailored to my specific needs.
+            </p>
+            <footer>— Anurag</footer>
           </div>
         </blockquote>
       </div>

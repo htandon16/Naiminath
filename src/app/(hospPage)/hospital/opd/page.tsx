@@ -13,6 +13,10 @@ import SirodharaPage from "../../treatment/shirodhara/page";
 import KashydharaPage from "../../treatment/kashayadhara/page";
 import MukhaLepam from "../../treatment/mukha-lepam/page";
 import NetraTarpanamPage from "../../treatment/netra-tarpanam/page";
+import ImageGallery from "../opd/ImageGallery"
+
+
+
 
 
 const Hospital = ({
@@ -73,6 +77,8 @@ const Hospital = ({
           </p>
         </>
       ),
+
+
       meta: (
         <head>
           <title>Kayachikitsa - Naiminath Ayurveda </title>
@@ -81,6 +87,7 @@ const Hospital = ({
       ),
       image:"kayachikitsa.webp"
     },
+      
     {
       title: "Kaumarbhritya",
       content: (
@@ -149,6 +156,25 @@ const Hospital = ({
             body, which needs to be flushed out in the right way by Purvakarma.
           </p>
           <br />
+
+         <ImageGallery/>
+{/*  <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+
+    <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients1.jpeg" alt="Panchkarma Patients" />
+
+ 
+           <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients2.jpeg" alt="Panchkarma Patients" />
+
+             </div>
+   <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+        
+    <img className="rounded-md w-auto aspect-auto max-h-60"  src="/images/opd/panchkarma-patients3.jpeg" alt="Panchkarma Patients" />
+           <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients4.jpeg" alt="Panchkarma Patients" />
+       <img className="rounded-md w-auto aspect-auto max-h-60" src="/images/opd/panchkarma-patients5.jpeg" alt="Panchkarma Patients" />
+
+             </div> */}
+
+
           <p>
             To undergo a purification therapy it is highly important for the
             body to be prepared for the rigorous process to encourage the body
@@ -584,7 +610,7 @@ const Hospital = ({
     },
   ];
 
-  const rounter = useRouter();
+ const rounter = useRouter();
 
   const [itemsContent, setItemsContent] = useState(items[id]);
   const [currentId, setCurrentId] = useState(id);
@@ -617,7 +643,7 @@ const Hospital = ({
           backgroundImage: `linear-gradient(93deg, rgb(246 255 238), rgb(255 255 255 / 65% ), #f5ffa399), url('/images/opd/${itemsContent.image}')`,
           backgroundSize: 'cover',
         }}>
-          <div className=" flex flex-col basis-[30%] flex-none  gap-3 items-center justify-center ">
+          <div className="hidden sm:hidden md:hidden lg:flex xl:flex flex-col lg:basis-[30%] lg:flex-none gap-3 items-center justify-center">
             <ul className="list-none list-inside text-[17px] ps-6 custom-list cursor-pointer font-serif mt-2 ">
               {items.slice(0, 7).map((item, index) => (
                 <li

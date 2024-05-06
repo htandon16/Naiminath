@@ -9,17 +9,18 @@ import React from 'react'
           '\n    .testimonials {\n     box-sizing: border-box;\n     display: flex;\n     flex-wrap: wrap;\n     gap: 30px;\n     justify-content: center;\n     margin: 0px auto;\n     width: 100%;\n     padding: 40px 20px;\n     background-color: rgb(244, 246, 249);\n    }\n    .testimonial {\n     box-sizing: border-box;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     width: 250px;\n     max-width: 100%;\n     margin: 0px;\n     padding: 25px;\n     border-radius: 5px;\n     background-color: rgb(255, 255, 255);\n     box-shadow: rgba(13, 45, 160, 0.15) 0px 6px 20px -5px;\n     overflow: hidden;\n    }\n    .testimonial-image {\n     box-sizing: border-box;\n     width: 100px;\n     height: 100px;\n     min-width: 100px;\n     min-height: 100px;\n     margin-bottom: 15px;\n     border-radius: 50%;\n     overflow: hidden;\n    }\n    .testimonial-content {\n     display: flex;\n     flex-direction: column;\n     box-sizing: border-box;\n     width: 100%;\n     flex: 1 1 0%;\n     height: 100%;\n    }\n    .testimonial-content p {\n     display: flex;\n     flex: 1 1 0%;\n     box-sizing: border-box;\n     position: relative;\n     font-family: "Open Sans", sans-serif;\n     font-size: 14px;\n     font-style: italic;\n     line-height: 1.5;\n     margin: 0px;\n     padding: 25px 5px 5px;\n     color: rgb(105, 114, 138);\n     overflow-wrap: break-word;\n    }\n    .testimonial-content p::before {\n     content: "\\201C";\n     font-size: 4em;\n     font-weight: 700;\n     font-family: "Open Sans", sans-serif;\n     font-style: normal;\n     color: rgb(0, 123, 255);\n     position: absolute;\n     top: -25px;\n     left: -2px;\n    }\n    .testimonial-content footer {\n     box-sizing: border-box;\n     font-family: "Open Sans", sans-serif;\n     font-size: 12px;\n     color: rgb(141, 149, 172);\n     margin-top: 15px;\n    }\n    .testimonial-rating {\n     box-sizing: border-box;\n     display: flex;\n     justify-content: center;\n     align-items: center;\n     margin-bottom: 15px;\n     gap: 2px;\n    }\n    .testimonial-rating svg {\n     fill: rgb(241, 196, 15);\n    }\n    .testimonial.horizontal {\n     flex-direction: row;\n     width: 320px;\n    }\n    .testimonial.horizontal .testimonial-image {\n     margin-right: 15px;\n    }\n    .testimonial.horizontal .testimonial-rating {\n     justify-content: flex-end;\n    }\n    '
       }}
     />
-    <div>
-      <img
-        decoding="async"
-        fetchPriority="high"
-        width={550}
-        height={366}
-        src="https://naiminathayurveda.org/wp-content/uploads/2023/09/podi-kizhi-therapy-1588144601-5398343.png"
-        alt=""
-        srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/podi-kizhi-therapy-1588144601-5398343.png 550w, https://naiminathayurveda.org/wp-content/uploads/2023/09/podi-kizhi-therapy-1588144601-5398343-300x200.png 300w"
-        sizes="(max-width: 550px) 100vw, 550px"
-      />{" "}
+     <div>
+  
+         <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/gallery/kizhi.jpg"
+        alt="Kizhi"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/gallery/kizhi.jpg 800w, /images/gallery/kizhi-300x225.jpg 300w, /images/gallery/kizhi-768x576.jpg 768w"
+        width="640"
+        height="480"
+    />
+          </div>
+  
     </div>
     In a world inundated with modern stresses and health challenges, the age-old
     wisdom of Ayurveda shines as a beacon of holistic healing. Among its
@@ -176,10 +177,12 @@ import React from 'react'
         effective therapies.
       </li>
     </ol>
-    <blockquote className="testimonial">
+
+     <div className="testimonials">
+      <blockquote className="testimonial">
       <div className="testimonial-image" >
         <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/Digital-Photo-33-150x150.jpg"
+          src="/images/gallery/aman.jpeg"
           width={100}
           height={100}
         />
@@ -187,15 +190,30 @@ import React from 'react'
       <div className="testimonial-content" >
         <div className="testimonial-rating" ></div>
         <p>
-          The therapists at Naiminath Ayurveda are true experts in the realm of
-          Ayurveda. Their extensive knowledge and commitment to their craft were
-          evident from the beginning. They patiently explained the intricacies of
-          Kizhi treatment, ensuring I was comfortable and well-informed throughout
+         During the treatment, I felt a sense of deep relaxation wash over me as the poultices were applied to specific points on my body. The therapists' gentle touch and expert manipulation of the poultices seemed to melt away my muscular tension and joint stiffness, leaving me feeling rejuvenated and refreshed.
+        </p>
+        <footer>— Shivam Sharma</footer>
+       </div>
+       </blockquote>
+          <blockquote className="testimonial">
+      <div className="testimonial-image" >
+        <img
+          src="/images/gallery/shivam.webp"
+          width={100}
+          height={100}
+        />
+      </div>
+      <div className="testimonial-content" >
+        <div className="testimonial-rating" ></div>
+        <p>
+         I recently had the opportunity to experience the Kizhi treatment at Naiminath Ayurveda, and I must say, it was truly transformative. From the moment I stepped into the serene ambiance of their facility, I knew I was in good hands.
           the process.
         </p>
-        <footer>— shivam</footer>
+        <footer>— Aman</footer>
+       </div>
+       </blockquote>
       </div>
-    </blockquote>
+    
   </>
   )
 }

@@ -14,8 +14,13 @@ const Abhyangam = () => {
         }}
       />
       <div>
-        <img
-          src="https://naiminath.org/NAMC/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c-768x512.jpg"
+
+        
+  
+ 
+     </div>
+       <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+        <img className="rounded-md w-auto aspect-auto max-h-576" src="https://naiminath.org/NAMC/20230904101400_fpdl.in_young-woman-doing-healthcare-indian-traditional-treatment-ayurveda-body-c-768x512.jpg"
           sizes="(max-width: 640px) 100vw, 640px"
           alt=""
           width={640}
@@ -153,36 +158,49 @@ const Abhyangam = () => {
         Research Center, Abhyangam is administered with expertise and care,
         making it a powerful tool for promoting overall health and well-being.
       </div>
-      {/* Generated with CodeShack Testimonial Tool 
-  <div class="testimonials" bis_skin_checked="1">
-    <blockquote class="testimonial">
-      <div class="testimonial-image" bis_skin_checked="1">
-        <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/SSVM-Parent-Testimonial-min-150x150.jpeg" width="100" height="100" />
-        </div>
-        <div class="testimonial-content" bis_skin_checked="1">
-          <div class="testimonial-rating" bis_skin_checked="1">
+
+        <div className="testimonials">
+        <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/ravikumar.jpg"
+              width={100}
+              height={100}
+            />
           </div>
-          <p>Abhyangam Treatment at Naiminath Ayurveda is a blissful journey into the world of holistic well-being. From the moment you step into their tranquil oasis, you are greeted with warmth and a deep commitment to your health and relaxation.</p>
-          <footer>— Abhay</footer>
-        </div>
-      </blockquote>
-      <blockquote class="testimonial">
-        <div class="testimonial-image" bis_skin_checked="1">
-          <img src="https://naiminathayurveda.org/wp-content/uploads/2023/09/download-150x150.jpeg" width="100" height="100" />
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+              Abhyangam Treatment at Naiminath Ayurveda is a blissful journey
+              into the world of holistic well-being. From the moment you step
+              into their tranquil oasis, you are greeted with warmth and a deep
+              commitment to your health and relaxation.
+            </p>
+            <footer>— Ravi kumar</footer>
           </div>
-          <div class="testimonial-content" bis_skin_checked="1">
-            <div class="testimonial-rating" bis_skin_checked="1">
-            </div>
-            <p>Abhyangam Treatment at Naiminath Ayurveda is a blissful journey into the world of holistic well-being. From the moment you step into their tranquil oasis, you are greeted with warmth and a deep commitment to your health and relaxation.</p>
-            <footer>— akash</footer>
+        </blockquote>
+        <blockquote className="testimonial">
+          <div className="testimonial-image">
+            <img
+              src="/images/gallery/yashi.jpeg"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="testimonial-content">
+            <div className="testimonial-rating"></div>
+            <p>
+              After the Abhyangam Therapy, I felt rejuvenated, both physically
+              and mentally. My body felt lighter, and my mind was at ease. The
+              benefits of this therapy extended beyond the immediate experience,
+              as I noticed improved sleep quality and increased energy levels in
+              the days that followed.
+            </p>
+            <footer>— Yashi</footer>
           </div>
         </blockquote>
       </div>
-    </body>
-  </html>
-*/}
     </div>
-    
   );
 };
 

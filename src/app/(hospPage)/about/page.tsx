@@ -25,16 +25,20 @@ const AboutUs = () => {
           About Us
         </div>
         <div className="bg-[url('/images/About_naiminath_hospital-overlay (1).webp')] bg-center bg-cover
-bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 px-20 ">
+bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 lg:px-20 sm:px-0 ">
+
+        
           <Image
             src="/images/About_naiminath_hospital.webp"
-            className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100"
+            className="w-[390px] h-[240px] md:h-[290px] rounded-[7px] shadow-md ring-1 ring-slate-100 mx-auto sm:mx-0"
             alt="about image"
             width={800}
             height={400}
           />
-          <div className="text-[#000000] text-[17px] text-justify">
-            <p className="text-[#000000] ">
+           
+           <div className="text-[#000000]"> 
+             {/*   <div className="w-[95%] md:w-[85%] h-full mt-3 md:mx-[10%] mx-[5%] py-[2%]">*/}
+            <p className="mt-3 ml-2 mr-2">
               Naiminath Ayurveda holds a commitment to providing quality
               education and top-notch facilities in the field of ayurveda
               medicine. We are a 100 bedded state of art Ayurvedic Hospital
@@ -42,7 +46,7 @@ bg-no-repeat  flex md:flex-row flex-col justify-center gap-6 mt-10 px-20 ">
               the Outpatient Department every day and around 40 patients are
               present in the Inpatient Department.
             </p>
-            <p className=" mt-3 text-[#000000]">
+            <p className="mt-3 ml-2 mr-2">
               The college offers a comprehensive curriculum that not only covers
               traditional Ayurvedic practices but also integrates modern medical
               advancements with its emphasis on practical training and

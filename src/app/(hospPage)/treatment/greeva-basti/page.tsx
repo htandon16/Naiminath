@@ -10,14 +10,31 @@ import React from 'react'
         }}
       />
       <div>
-        <img
-          src="https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti.jpeg"
+
+      
+
+   <div className="flex flex-wrap flex-row flex-4 gap-2 justify-center mx-2 md:mx-10 my-10">
+    <img className="rounded-md w-auto aspect-auto max-h-576" src="/images/opd/greevabasti.jpg"
+        alt="Greeva Basti"
+        sizes="(max-width: 640px) 100vw, 640px"
+        srcSet="/images/opd/greevabasti.jpg 800w, /images/opd/greevabasti-300x225.jpg 300w, /images/opd/greevabasti-768x576.jpg 768w"
+        width="640"
+        height="480"
+    />
+     </div>
+
+
+
+
+       
+{/*         <img
+          src="/images/opd/greevabasti.jpg"
           sizes="(max-width: 640px) 100vw, 640px"
           srcSet="https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti.jpeg 800w, https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti-300x225.jpeg 300w, https://naiminathayurveda.org/wp-content/uploads/2023/09/greevabasti-768x576.jpeg 768w"
-          alt=""
+          alt="FGreeva Basti"
           width={640}
           height={480}
-        />
+        /> */}
       </div>
       <div>
         Nestled amidst the historical beauty of Agra, Naiminath Ayurvedic
@@ -177,10 +194,12 @@ import React from 'react'
           </li>
         </ol>
       </div>
+
+ <div className="testimonials">
       <blockquote className="testimonial">
         <div className="testimonial-image">
           <img
-            src="https://naiminathayurveda.org/wp-content/uploads/2023/09/Greeva-Basti--150x150.jpeg"
+            src="/images/gallery/divyanshi.jpg"
             width={100}
             height={100}
           />
@@ -197,6 +216,23 @@ import React from 'react'
           <footer>— divyanshi</footer>
         </div>
       </blockquote>
+<blockquote className="testimonial">
+        <div className="testimonial-image">
+          <img
+            src="/images/gallery/sakshi.jpeg"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="testimonial-content">
+          <div className="testimonial-rating"></div>
+          <p>
+            I recently experienced the Greeva Basti treatment at Naiminath Ayurveda, and I must say, the therapists there are truly experts in their field. Their deep understanding of Greeva Basti and its holistic healing benefits was evident throughout the session.
+          </p>
+          <footer>— sakshi</footer>
+        </div>
+      </blockquote>
+     </div>
     </div>
   );
 }
