@@ -7,7 +7,7 @@ import { GlobalContextProvider } from "./context/store";
 import BannerHeader from "./(components)/BannerHeader";
 import Footer from "./(components)/footer";
 import { ImportantLink } from "./(components)/ImportantLink";
-import Whatsapp from "./(components)/Whatsapp";
+// import Whatsapp from "./(components)/Whatsapp";
 
 
 config.autoAddCss = false;
