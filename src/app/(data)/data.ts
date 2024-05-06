@@ -35,35 +35,6 @@ export const postData: Blogs[] =
             established: 2016,
 
             content: "Naiminath Ayurvedic Medical College is driven by a profound mission: to enhance the well-being of our local and global communities by setting a benchmark of excellence in patient care. We aim to establish ourselves as the foremost Ayurvedic healthcare institution worldwide. We are committed to nurturing future healthcare professionals and engaging in meaningful clinical research At the heart of our institution is a culture built on trust, integrity, mutual respect, and compassion.We believe in holistic training and guidance, aiming to shape the next generation of doctors into highly skilled professionals in the field of Ayurvedic System of Medicine Our vision is to emerge as an innovative global leader in Ayurvedic Medical education, healthcare, and research.Through rigorous training and a holistic approach, we aspire to equip our students with the highest levels of professional and clinical competence.We are dedicated to transforming youth into competent doctors who will contribute significantly to the advancement of Ayurvedic medicine ",
-            // facilities: [
-            //     { 
-            //         name: "Library ",
-            //     },
-            //     { 
-            //         name: "Auditorium",
-            //     },
-            //     { 
-            //         name: "Hostel ",
-            //     },
-            //     { 
-            //         name: "Cafeteria",
-            //     },
-            //     { 
-            //         name: "laboratory	Hospital / Medical Facility",
-            //     },
-            //     { 
-            //         name: "Herbal Garden",
-            //     },
-            //     { 
-            //         name: "Computer Lab",
-            //     },
-            //     { 
-            //         name: "Anti Ragging",
-            //     },
-            //     { 
-            //         name: "Healthcare Services",
-            //     }
-            // ],
             course_offered: {
                 conts: "Naiminath Ayurvedic Medical College Agra offers a quality medical program under the supervision of highly qualified faculty and state-of-the-art infrastructure",
                 id: 1,
@@ -74,3 +45,6 @@ export const postData: Blogs[] =
         },
 
     ]
+
+
+

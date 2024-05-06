@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useGlobalContext } from "@/app/context/store";
 import { Helmet } from "react-helmet";
 import Link from "next/link";
+import VideoTestimonial from "@/app/(components)/testimonials/VideoTestimonial";
 
 type SliderItem = {
   image: string;
@@ -55,6 +56,8 @@ const HomePage = () => {
 
         <AboutUsSection />
         <NaiminathAyurvedaSection />
+
+        <VideoTestimonial />
       </div>
     </>
   );
@@ -226,7 +229,7 @@ const AboutUsSection = () => {
           Shalya tantra, Swasthavritta, Dental and Physiotherapy. The Hospital
           prides itself in providing a well-equipped, hygienically maintained
           panchkarma therapy rooms to suit the need and affordability of one and
-          all.<br/>
+          all.<br />
         </p>
         <p className="text-[#381a04] mt-[3%] text-[14px]  md:text-[16px]">
           To provide world class education and treatment, this 100 bedded state
@@ -309,9 +312,12 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
           <p className="text-[11px] md:text-[18px] word-wrap break-words">
             {item.text}
           </p>
+
+
         </div>
       ))}
     </Slider>
+
   );
 };
 

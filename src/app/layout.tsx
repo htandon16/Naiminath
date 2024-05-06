@@ -7,6 +7,8 @@ import { GlobalContextProvider } from "./context/store";
 import BannerHeader from "./(components)/BannerHeader";
 import Footer from "./(components)/footer";
 import { ImportantLink } from "./(components)/ImportantLink";
+import Whatsapp from "./(components)/Whatsapp";
+
 
 config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
@@ -44,6 +46,7 @@ export default function RootLayout({
           <GlobalContextProvider>
             <BannerHeader />
             {children}
+            {/* <Whatsapp/> */}
             <Footer />
           <ImportantLink/>
           </GlobalContextProvider>

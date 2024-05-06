@@ -2,8 +2,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { SizeProp } from "@fortawesome/fontawesome-svg-core";
-
-
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
 const Footer = () => {
   const customSize: SizeProp = "lg";
   return (
@@ -39,6 +38,8 @@ const Footer = () => {
             <a href="/bams-fees">BAMS Fees</a> */}
           </div>
         </div>
+
+        {/* About section */}
         <div className="p-5 md:basis-[25%]">
           <div className="text-lg md:text-xl  text-white font-extrabold">
             About Naiminath Ayurveda
@@ -49,7 +50,24 @@ const Footer = () => {
             than 200 patients visit the Outdoor Department every day and around
             40 patients are present in the Indoor Department.
           </p>
+
+          <div className=" flex  gap-8 justify-center">
+            <Link className="text-white text-xl " href={"https://www.facebook.com/naiminathagra/"}>
+              <FaFacebook />
+            </Link>
+            <Link className="text-white text-xl " href={"https://www.instagram.com/naiminath/?hl=en"}>
+              <FaInstagram />
+            </Link>
+            <Link className="text-white text-xl " href={"https://www.youtube.com/channel/UCDzQIdrr0QpFg5XK0UbKUIQ"}>
+              <FaYoutube />
+            </Link>
+            <Link className="text-white text-xl " href={"https://twitter.com/nhmcagra?lang=en"}>
+              <FaTwitter />
+            </Link>
+          </div>
         </div>
+
+        {/* address  */}
         <div className="p-5 md:basis-[25%]">
           <div className=" text-white font-extrabold flex flex-col">
             <div className="text-lg md:text-xl">Naiminath Ayurveda</div>
@@ -62,22 +80,24 @@ const Footer = () => {
               href="/bams"
               className="text-[#50b9ce] text-[15px] font-sans font-semibold mt-10  hover:text-white"
             >
-               <span className="text-xl">&rarr;</span> UP BAMS Counselling
+              <span className="text-xl">&rarr;</span> UP BAMS Counselling
             </Link>
             <Link
               href="/doc/anti_rag.pdf"
               className="text-[#50b9ce] text-[15px] font-sans font-semibold mt-3  hover:text-white"
             >
-               <span className="text-xl">&rarr;</span> Anti Ragging Committee
+              <span className="text-xl">&rarr;</span> Anti Ragging Committee
             </Link>
             <Link
               href="https://forms.eduqfix.com/namcharcaof/home" rel="noopener noreferrer" target="_blank"
               className="text-[#50b9ce] text-[13px] md:text-[15px] font-sans font-bold mt-3  hover:text-white"
             >
-               <span className="text-xl">&rarr;</span> FEES PAYMENT: CLICK HERE TO PAY FEES
+              <span className="text-xl">&rarr;</span> FEES PAYMENT: CLICK HERE TO PAY FEES
             </Link>
           </div>
         </div>
+
+        {/* contact */}
         <div className="p-5 md:basis-[25%] w-full">
           <div className=" text-white font-extrabold flex flex-col">
             <div className="text-lg md:text-xl">Get In Touch</div>
@@ -118,7 +138,7 @@ const Footer = () => {
                   size={customSize}
                   className="pr-2"
                 />
-              <a href={`tel:${9528024473}`} >+91-9528024473</a>
+                <a href={`tel:${9528024473}`} >+91-9528024473</a>
               </div>
             </div>
           </div>

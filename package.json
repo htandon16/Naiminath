@@ -21,8 +21,8 @@
     "kontentino"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@google-cloud/local-auth": "^3.0.0",
     "@radix-ui/colors": "^3.0.0",
@@ -41,8 +41,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^5.1.0",
     "react-pro-sidebar": "^1.1.0-alpha.1",
-    "react-quill": "^2.0.0",
+    "react-quill": "^0.0.2",
     "react-slick": "^0.29.0",
     "react-style-classes": "^2.0.2",
     "rehype-format": "^5.0.0",

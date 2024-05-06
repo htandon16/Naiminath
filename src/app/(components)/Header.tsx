@@ -98,6 +98,7 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
           </div>
         </div>
       </div>
+ 
     </div>
   );
 };
