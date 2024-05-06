@@ -71,7 +71,9 @@ const HomePage = () => {
           <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4" />
         </div>
         {/* <NaiminathAyurvedaSection /> */}
-        {/* <VideoTestimonial /> */}
+
+        {/* video testimonials added */}
+        <VideoTestimonial />
       </div>
     </>
   );

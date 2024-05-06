@@ -51,20 +51,22 @@ const Footer = () => {
             40 patients are present in the Indoor Department.
           </p>
 
+          {/* social media links */}
           <div className=" flex  gap-8 justify-center">
-            <Link className="text-white text-xl " href={"https://www.facebook.com/naiminathagra/"}>
+            <a className="text-white text-xl " href="https://www.facebook.com/naiminathagra/">
               <FaFacebook />
-            </Link>
-            <Link className="text-white text-xl " href={"https://www.instagram.com/naiminath/?hl=en"}>
+            </a>
+            <a className="text-white text-xl " href="https://www.instagram.com/naiminath/?hl=en">
               <FaInstagram />
-            </Link>
-            <Link className="text-white text-xl " href={"https://www.youtube.com/channel/UCDzQIdrr0QpFg5XK0UbKUIQ"}>
+            </a>
+            <a className="text-white text-xl " href="https://www.youtube.com/channel/UCDzQIdrr0QpFg5XK0UbKUIQ">
               <FaYoutube />
-            </Link>
-            <Link className="text-white text-xl " href={"https://twitter.com/nhmcagra?lang=en"}>
+            </a>
+            <a className="text-white text-xl " href="https://twitter.com/nhmcagra?lang=en">
               <FaTwitter />
-            </Link>
+            </a>
           </div>
+          {/* social link ended  */}
         </div>
 
         {/* address  */}
