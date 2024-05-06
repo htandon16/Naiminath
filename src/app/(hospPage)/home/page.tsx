@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useGlobalContext } from "@/app/context/store";
 import { Helmet } from "react-helmet";
 import Link from "next/link";
-import VideoTestimonial from "@/app/(components)/VideoTestimonial";
+import VideoTestimonial from "@/app/(components)/testimonials/VideoTestimonial";
 
 type SliderItem = {
   image: string;
