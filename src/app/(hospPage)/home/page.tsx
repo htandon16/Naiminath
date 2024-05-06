@@ -18,7 +18,7 @@ import VideoTestimonial from "@/app/(components)/testimonials/VideoTestimonial";
 type SliderItem = {
   image: string;
   text: string;
-  link?:string;
+  link?: string;
 };
 
 const HomePage = () => {
@@ -47,30 +47,31 @@ const HomePage = () => {
       bg-[url('https://hindijaankaari.in/wp-content/uploads/2023/12/greenbg-scaled.jpeg')] font-sans"
         >
           <div className=" bg-slate-500 w-full h-3 mb-[32px]"></div>
-     <OpdSection /> 
-     
-    <AyurvedaTreatmentSection />
+          <OpdSection />
+
+          <AyurvedaTreatmentSection />
 
           {/* <WhatIsAyurveda /> */}
         </div>
 
         <AboutUsSection />
         <div className="w-full flex flex-col justify-center items-center pt-5">
-     
+
           <PrivateBamsSection />
         </div>
 
-          <h2 className="text-[26px] md:text-[32px] mt-5 mb-5 text-[#525252] font-semibold">
-        Most Appreciated Services </h2>
+        <h2 className="text-[26px] md:text-[32px] mt-5 mb-5 text-[#525252] font-semibold">
+          Most Appreciated Services </h2>
 
         <div className="flex flex-row flex-wrap justify-center flex-4 gap-2 ">
 
-          <Image className="rounded-md w-auto h-60" src="/images/gallery/n1.jpg" alt="Patient 1"/>
-          <Image className="rounded-md w-auto h-60" src="/images/gallery/n2.jpg" alt="Patient 2"/>
-          <Image className="rounded-md w-auto h-60 sm:w-48 sm:h-60" src="/images/gallery/n3.jpg" alt="Patient 3"/>
-          <Image className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4"/>
-          </div>
-{/*          <NaiminathAyurvedaSection /> */}
+          <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n1.jpg" alt="Patient 1" />
+          <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n2.jpg" alt="Patient 2" />
+          <Image width="100" height="100" className="rounded-md w-auto h-60 sm:w-48 sm:h-60" src="/images/gallery/n3.jpg" alt="Patient 3" />
+          <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4" />
+        </div>
+        {/* <NaiminathAyurvedaSection /> */}
+        <VideoTestimonial />
       </div>
     </>
   );
@@ -88,7 +89,7 @@ const HomePage = () => {
 //     { image: "/images/ayd_treate8.jpg", text: "Kizhi" },
 //   ];
 
-  
+
 const AyurvedaTreatmentSection = () => {
   const sliderItems = [
     { image: "/images/ayd_treate1.jpg", text: "Abhyangam", link: "https://naiminathayurveda.org/hospital/opd?id=7" },
@@ -101,7 +102,7 @@ const AyurvedaTreatmentSection = () => {
     { image: "/images/ayd_treate8.jpg", text: "Kizhi", link: "https://naiminathayurveda.org/hospital/opd?id=14" },
   ];
 
-return (
+  return (
     <>
       <h2 className="text-[28px] md:text-[34px] text-[#525252] font-semibold">
         Ayurvedic Treatments
@@ -110,7 +111,7 @@ return (
         List of Ayurvedic Treatments
       </p>
       <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
-      <AyurvedaTreatmentImageSlider items={sliderItems}/>
+        <AyurvedaTreatmentImageSlider items={sliderItems} />
       </div>
     </>
   );
@@ -124,7 +125,7 @@ return (
       ))}
     </div>
   );
-  
+
 };
 {/*
 const AyurvedaTreatmentSection = () => {
@@ -156,13 +157,13 @@ const AyurvedaTreatmentSection = () => {
 
 const OpdSection = () => {
   const sliderItems: SliderItem[] = [
-    { image: "/images/images.jpeg", text: "Kaumarbhritya" ,link :"https://naiminathayurveda.org/hospital/opd?id=1"},
-    { image: "/images/opd2.jpg", text: "Kayachikitsa" , link:"https://naiminathayurveda.org/hospital/opd?id=0" },
-    { image: "/images/opd3.jpg", text: "Panchkarma" , link:"https://naiminathayurveda.org/hospital/opd?id=2"},
-    { image: "/images/opd4.jpg", text: "Prasuti & Stri Roga" , link:"https://naiminathayurveda.org/hospital/opd?id=3" },
-    { image: "/images/opd5.jpg", text: "Shalakya Tantra" , link:"https://naiminathayurveda.org/hospital/opd?id=4" },
-    { image: "/images/opd6.jpg", text: "Shalya Tantra", link:"https://naiminathayurveda.org/hospital/opd?id=5" },
-    { image: "/images/opd7.jpg", text: "Swasthavritta" , link:"https://naiminathayurveda.org/hospital/opd?id=6" },
+    { image: "/images/images.jpeg", text: "Kaumarbhritya", link: "https://naiminathayurveda.org/hospital/opd?id=1" },
+    { image: "/images/opd2.jpg", text: "Kayachikitsa", link: "https://naiminathayurveda.org/hospital/opd?id=0" },
+    { image: "/images/opd3.jpg", text: "Panchkarma", link: "https://naiminathayurveda.org/hospital/opd?id=2" },
+    { image: "/images/opd4.jpg", text: "Prasuti & Stri Roga", link: "https://naiminathayurveda.org/hospital/opd?id=3" },
+    { image: "/images/opd5.jpg", text: "Shalakya Tantra", link: "https://naiminathayurveda.org/hospital/opd?id=4" },
+    { image: "/images/opd6.jpg", text: "Shalya Tantra", link: "https://naiminathayurveda.org/hospital/opd?id=5" },
+    { image: "/images/opd7.jpg", text: "Swasthavritta", link: "https://naiminathayurveda.org/hospital/opd?id=6" },
     // { image: "/images/images.jpeg", text: "Kaumarbhritya" , link:"https://naiminathayurveda.org/hospital/opd?id=1"},
   ];
   return (
@@ -172,7 +173,7 @@ const OpdSection = () => {
       <div className="w-[80%] md:w-[66%] my-[3%] md:mx-[20%] mx-[10%] items-center justify-center">
         <AyurvedaTreatmentImageSlider items={sliderItems} />
       </div>
-  
+
     </>
   );
 };
@@ -215,11 +216,11 @@ const PrivateBamsSection = () => {
       <div className="w-[300px] h-[400px] md:w-[40vw] md:h-[35vw] bg-contain -mt-[4%] bg-no-repeat bg-[url('/images/private_bams_img.jpg')]" />
       <div className="md:w-[44vw] h-full md:mr-[10%]">
         <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
-        Naiminath Ayurveda: Leading Excellence in BAMS Education and Practice(India)
+          Naiminath Ayurveda: Leading Excellence in BAMS Education and Practice(India)
         </label>
         <p className="text-[#7c7777] mt-[3%]">
-Naiminath Ayurveda, situated in the historic city of Agra, Uttar Pradesh, stands out as one of the top ayurvedic colleges in Agra and among the private ayurvedic colleges in UP. Renowned for its unwavering commitment to quality education and state-of-the-art facilities, Naiminath Ayurveda has emerged as a leader in the field of Ayurvedic medicine. Its comprehensive curriculum seamlessly integrates traditional Ayurvedic practices with modern medical advancements, ensuring graduates are well-equipped for the professional world. What sets Naiminath Ayurveda apart is its emphasis on practical training and experiential learning. With access to well-equipped laboratories and guidance from experienced faculty members, students develop essential skills and gain hands-on experience, preparing them with confidence and expertise. The college's excellent faculty further enriches the learning experience, providing students with invaluable mentorship and expertise. Additionally, Naiminath Ayurveda stands as one of the private BAMS colleges in UP, offering competitive private BAMS college fees in UP. The college also offers unique opportunities for internships at the attached hospital, allowing students to further enhance their practical knowledge under the mentorship of seasoned practitioners. This holistic approach to education distinguishes Naiminath Ayurveda as a premier institution in the field of Ayurvedic medicine.        </p>
-{/*         <p className="text-[#7c7777] mt-[3.5%]">
+          Naiminath Ayurveda, situated in the historic city of Agra, Uttar Pradesh, stands out as one of the top ayurvedic colleges in Agra and among the private ayurvedic colleges in UP. Renowned for its unwavering commitment to quality education and state-of-the-art facilities, Naiminath Ayurveda has emerged as a leader in the field of Ayurvedic medicine. Its comprehensive curriculum seamlessly integrates traditional Ayurvedic practices with modern medical advancements, ensuring graduates are well-equipped for the professional world. What sets Naiminath Ayurveda apart is its emphasis on practical training and experiential learning. With access to well-equipped laboratories and guidance from experienced faculty members, students develop essential skills and gain hands-on experience, preparing them with confidence and expertise. The college's excellent faculty further enriches the learning experience, providing students with invaluable mentorship and expertise. Additionally, Naiminath Ayurveda stands as one of the private BAMS colleges in UP, offering competitive private BAMS college fees in UP. The college also offers unique opportunities for internships at the attached hospital, allowing students to further enhance their practical knowledge under the mentorship of seasoned practitioners. This holistic approach to education distinguishes Naiminath Ayurveda as a premier institution in the field of Ayurvedic medicine.        </p>
+        {/*         <p className="text-[#7c7777] mt-[3.5%]">
           What sets Naiminath Ayurveda apart from other institutions is its
           emphasis on practical training and experiential learning. Students
           have access to well-equipped laboratories where they can develop their
@@ -235,7 +236,7 @@ Naiminath Ayurveda, situated in the historic city of Agra, Uttar Pradesh, stands
 // const NaiminathAyurvedaSection = () => {
 //   return (
 //     <div className="w-[90%] md:w-[70%] h-full mt-[3%] md:mx-[10%] mx-[5%]  flex md:flex-row-reverse flex-col ">
-      
+
 //       <div className="md:w-[44vw] h-full mr-[1%]">
 //         <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
 //           Naiminath Ayurveda : Inside Agra&apos;s Ayurvedic Medical College
@@ -330,7 +331,7 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
   };
 
   const NextArrow = (props: any) => {
-    const { className, style, onClick} = props;
+    const { className, style, onClick } = props;
     return (
       <div
         className="slick-arrow w-fit h-fit absolute z-10 top-[30%] md:top-[40%] right-[5%]"
@@ -366,15 +367,15 @@ const AyurvedaTreatmentImageSlider = ({ items }: { items: SliderItem[] }) => {
               className=" h-[12vh] w-[18vw] md:h-[235px] md:w-[235px] bg-cover bg-no-repeat rounded-[10px]"
               style={{ backgroundImage: `url(${item.image})` }}
             />
-{/* <p className="[10px] text-center slide-content flex flex-col items-center"> */}
+            {/* <p className="[10px] text-center slide-content flex flex-col items-center"> */}
 
- <p className="text-[11px] sm:text-[11px] md:text-[18px] mt-2"> 
-{/*                         <p className="absolute bottom-0 left-0 right-0 text-[11px] md:text-[18px] bg-white bg-opacity-75"> */}
+            <p className="text-[11px] sm:text-[11px] md:text-[18px] mt-2">
+              {/*                         <p className="absolute bottom-0 left-0 right-0 text-[11px] md:text-[18px] bg-white bg-opacity-75"> */}
 
-          <p className="text-[11px] md:text-[18px] word-wrap break-words">
-            {item.text}
-          </p>
-        </div>
+              {item.text}
+            </p>
+          </div>
+        </a>
       ))}
     </Slider>
 

@@ -13,7 +13,7 @@ const VideoTestimonial = () => {
     ]
 
     return (
-        <div className="">
+        <div className="mt-4 gap-3 flex flex-col">
             <div>
 
                 <h1 className="text-center font-semibold text-[28px] md:text-[34px]  text-[#525252]"> Testimonial's</h1>
