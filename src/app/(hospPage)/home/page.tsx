@@ -62,22 +62,43 @@ const HomePage = () => {
 
         <div className="mb-14 mt-5 text-center">
 
-          <h2 className="text-[26px] md:text-[32px] mt-5 mb-5 text-[#525252] font-semibold">
-            Most Appreciated Services </h2>
+          <div className="mt-5 mb-5">
 
-          <div className="flex flex-row flex-wrap justify-center flex-4 gap-2 ">
+            <h2 className="text-[26px] md:text-[32px]  text-[#525252] font-semibold">
+              {/* Most Appreciated Services */}
+              A Glimpse Of Campus
+            </h2>
+            <p className="text-center text-lg my-[3px] capitalize">
+              A place to learn, grow, and thrive.
+            </p>
+          </div>
 
-            <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n1.jpg" alt="Patient 1" />
+
+          {/* Previous added ayurveda picture */}
+          {/* <div className="flex flex-row flex-wrap justify-center flex-4 gap-2 "> */}
+
+          {/* <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n1.jpg" alt="Patient 1" />
             <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n2.jpg" alt="Patient 2" />
             <Image width="100" height="100" className="rounded-md w-auto h-60 sm:w-48 sm:h-60" src="/images/gallery/n3.jpg" alt="Patient 3" />
-            <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4" />
+            <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4" /> */}
+
+          {/* Previous added ayurveda picture section end */}
+
+          {/* if want the ayurved image back comment from here */}
+          <div className="flex flex-row flex-wrap justify-center flex-4 gap-2 md:w-[78%] w-[95%] m-auto ">
+
+            <Image width="300" height="240" className="rounded-md w-auto h-60 sm:w-[calc(50%-10px)] md:w-[calc(33.33%-10px)] lg:w-[calc(25%-10px)]" src="/images/gallery/gallery1-min.jpg" alt="Campus Glimpse" />
+            <Image width="300" height="240" className="rounded-md w-auto h-60 sm:w-[calc(50%-10px)] md:w-[calc(33.33%-10px)] lg:w-[calc(25%-10px)]" src="/images/gallery/gallery4-min.jpg" alt="Campus Glimpse" />
+            <Image width="300" height="240" className="rounded-md w-auto h-60 sm:w-[calc(50%-10px)] md:w-[calc(33.33%-10px)] lg:w-[calc(25%-10px)]" src="/images/gallery/gallery10-min.jpg" alt="Campus Glimpse" />
+            <Image width="300" height="240" className="rounded-md w-auto h-60 sm:w-[calc(50%-10px)] md:w-[calc(33.33%-10px)] lg:w-[calc(25%-10px)]" src="/images/gallery/gallery22-min.jpg" alt="Campus Glimpse" />
+            {/* remove till here */}
           </div>
         </div>
         {/* <NaiminathAyurvedaSection /> */}
 
         {/* video testimonials added */}
         <Testimonial />
-      </div>
+      </div >
     </>
   );
 };
@@ -217,7 +238,7 @@ const WhatIsAyurveda = () => {
 */}
 const PrivateBamsSection = () => {
   return (
-    <div className="w-[90%] md:w-[70%] h-full mt-[6%] md:mx-[10%] mx-[5%] flex md:flex-row-reverse flex-col justify-center items-center md:items-start">
+    <div className="w-[90%] md:w-[70%] h-full mt-[2%] md:mx-[10%] mx-[5%] flex md:flex-row-reverse flex-col justify-center items-center md:items-start">
       <div className="w-[300px] h-[400px] md:w-[40vw] md:h-[35vw] bg-contain -mt-[4%] bg-no-repeat bg-[url('/images/private_bams_img.jpg')]" />
       <div className="md:w-[44vw] h-full md:mr-[10%]">
         <label className="text-2xl md:text-3xl text-[#525252] font-semibold">
