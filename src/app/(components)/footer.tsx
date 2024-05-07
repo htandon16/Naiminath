@@ -53,16 +53,16 @@ const Footer = () => {
 
           {/* social media links */}
           <div className=" flex  gap-8 justify-center">
-            <a className="text-white text-xl " href="https://www.facebook.com/naiminathagra/">
+            <a className="text-white text-xl hover:text-[#50b9ce]" href="https://www.facebook.com/naiminathagra/">
               <FaFacebook />
             </a>
-            <a className="text-white text-xl " href="https://www.instagram.com/naiminath/?hl=en">
+            <a className="text-white text-xl hover:text-[#50b9ce]" href="https://www.instagram.com/naiminath/?hl=en">
               <FaInstagram />
             </a>
-            <a className="text-white text-xl " href="https://www.youtube.com/channel/UCDzQIdrr0QpFg5XK0UbKUIQ">
+            <a className="text-white text-xl hover:text-[#50b9ce]" href="https://www.youtube.com/channel/UCDzQIdrr0QpFg5XK0UbKUIQ">
               <FaYoutube />
             </a>
-            <a className="text-white text-xl " href="https://twitter.com/nhmcagra?lang=en">
+            <a className="text-white text-xl hover:text-[#50b9ce]" href="https://twitter.com/nhmcagra?lang=en">
               <FaTwitter />
             </a>
           </div>

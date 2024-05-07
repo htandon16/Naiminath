@@ -18,13 +18,12 @@ const NavBar = () => {
             <Link
               href="/home"
               prefetch
-              className={` p-1.5 hover:text-gray-600 border-[#3b3b3b] link ${
-                pathname === "/home" ? "border-[2px]" : "border-[0px]"
-              } `}
+              className={` p-1.5 hover:text-gray-600 border-[#3b3b3b] link ${pathname === "/home" ? "border-[2px]" : "border-[0px]"
+                } `}
               scroll={false}
               onClick={(e) => {
                 console.log("pathname==", pathname);
-                
+
               }}
             >
               Home
@@ -45,12 +44,11 @@ const NavBar = () => {
             </Link> */}
           </li>
           <li>
-         <div
-              className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
-                (pathname === "/about" || pathname === "/about/gallery"|| pathname ==="/about/student-gallery" )
-                  ? "border-[2px]"
-                  : "border-[0px]"
-              } `}
+            <div
+              className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${(pathname === "/about" || pathname === "/about/gallery" || pathname === "/about/student-gallery")
+                ? "border-[2px]"
+                : "border-[0px]"
+                } `}
             >
               <Link
                 href="/about"
@@ -64,33 +62,34 @@ const NavBar = () => {
               >
                 About Us
               </Link>
-              <Dropdown  openOnHover={true} title="">
+              <Dropdown openOnHover={true} title="">  
                 <Dropdown.Item className="text-[12px]"
-                 onClick={()=>{
-                  ////setImageSlide(false);
-                  router.push(`/about/gallery`)}
-               }>
+                  onClick={() => {
+                    ////setImageSlide(false);
+                    router.push(`/about/gallery`)
+                  }
+                  }>
                   GALLERY
                 </Dropdown.Item>
-                <Dropdown.Divider size="xs"/>
+                <Dropdown.Divider size="xs" />
                 <Dropdown.Item className="text-[12px]"
-                onClick={()=>{
-                  //setImageSlide(false);
-                  router.push(`/about/student-gallery`)}
-               }>
+                  onClick={() => {
+                    //setImageSlide(false);
+                    router.push(`/about/student-gallery`)
+                  }
+                  }>
                   STUDENT GALLERY
                 </Dropdown.Item>
-                </Dropdown>
+              </Dropdown>
             </div>
-                   </li>
+          </li>
           <li>
             <div
-              className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
-                (pathname === "/hospital"||pathname === "/hospital/opd"||
-                pathname ==="/hospital/medical-sup"||pathname === "/hospital/ipd")
-                  ? "border-[2px]"
-                  : "border-[0px]"
-              } `}
+              className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${(pathname === "/hospital" || pathname === "/hospital/opd" ||
+                pathname === "/hospital/medical-sup" || pathname === "/hospital/ipd")
+                ? "border-[2px]"
+                : "border-[0px]"
+                } `}
             >
               <Link
                 href="#"
@@ -104,74 +103,83 @@ const NavBar = () => {
               >
                 Hospital
               </Link>
-              <Dropdown openOnHover={true} title="">
+              <Dropdown openOnHover={true}>
                 <Dropdown.Item className="text-[12px]">
                   <div className="w-full flex flex-row justify-between">
                     <div>OPD</div>
                     <div>{'>'}</div>
                   </div>
-                 
+
                   <Dropdown.Submenu>
-                    <Dropdown.Item  className="text-[12px]" onClick={()=>{//setImageSlide(false); 
-                       router.push(`/hospital/opd?id=${0}`)}
+                    <Dropdown.Item className="text-[12px]" onClick={() => {//setImageSlide(false); 
+                      router.push(`/hospital/opd?id=${0}`)
+                    }
                     }>
                       Kayachikitsa
-                      </Dropdown.Item>
-                      <Dropdown.Divider size="xs"/>
-                    <Dropdown.Item  className="text-[12px]"
-                    onClick={()=>{//setImageSlide(false);
-                       router.push(`/hospital/opd?id=${1}`)}
-                    }>
-                      Kaumarbhritya
-                      </Dropdown.Item>
-                      <Dropdown.Divider size="xs"/>
-                    <Dropdown.Item className="text-[12px]"
-                     onClick={()=>{//setImageSlide(false);
-                      router.push(`/hospital/opd?id=${2}`)}
-                   }>
-                    Panchkarma
                     </Dropdown.Item>
-                    <Dropdown.Divider size="xs"/>
+                    <Dropdown.Divider size="xs" />
                     <Dropdown.Item className="text-[12px]"
-                     onClick={()=>{//setImageSlide(false);
-                      router.push(`/hospital/opd?id=${3}`)}
-                   }>Prasuti & Stri Roga
-                   </Dropdown.Item>
-                   <Dropdown.Divider size="xs"/>
+                      onClick={() => {//setImageSlide(false);
+                        router.push(`/hospital/opd?id=${1}`)
+                      }
+                      }>
+                      Kaumarbhritya
+                    </Dropdown.Item>
+                    <Dropdown.Divider size="xs" />
                     <Dropdown.Item className="text-[12px]"
-                     onClick={()=>{//setImageSlide(false);
-                      router.push(`/hospital/opd?id=${4}`)}
-                   }>Shalakya Tantra
-                   </Dropdown.Item>
-                   <Dropdown.Divider size="xs"/>
+                      onClick={() => {//setImageSlide(false);
+                        router.push(`/hospital/opd?id=${2}`)
+                      }
+                      }>
+                      Panchkarma
+                    </Dropdown.Item>
+                    <Dropdown.Divider size="xs" />
                     <Dropdown.Item className="text-[12px]"
-                     onClick={()=>{//setImageSlide(false);
-                      router.push(`/hospital/opd?id=${5}`)}
-                   }>Shalya Tantra
-                   </Dropdown.Item>
-                   <Dropdown.Divider size="xs"/>
+                      onClick={() => {//setImageSlide(false);
+                        router.push(`/hospital/opd?id=${3}`)
+                      }
+                      }>Prasuti & Stri Roga
+                    </Dropdown.Item>
+                    <Dropdown.Divider size="xs" />
                     <Dropdown.Item className="text-[12px]"
-                     onClick={()=>{
-                      //setImageSlide(false);
-                      router.push(`/hospital/opd?id=${6}`)}
-                   }>Swasthavritta
-                   </Dropdown.Item>
+                      onClick={() => {//setImageSlide(false);
+                        router.push(`/hospital/opd?id=${4}`)
+                      }
+                      }>Shalakya Tantra
+                    </Dropdown.Item>
+                    <Dropdown.Divider size="xs" />
+                    <Dropdown.Item className="text-[12px]"
+                      onClick={() => {//setImageSlide(false);
+                        router.push(`/hospital/opd?id=${5}`)
+                      }
+                      }>Shalya Tantra
+                    </Dropdown.Item>
+                    <Dropdown.Divider size="xs" />
+                    <Dropdown.Item className="text-[12px]"
+                      onClick={() => {
+                        //setImageSlide(false);
+                        router.push(`/hospital/opd?id=${6}`)
+                      }
+                      }>Swasthavritta
+                    </Dropdown.Item>
                   </Dropdown.Submenu>
                 </Dropdown.Item>
-                <Dropdown.Divider size="xs"/>
+                <Dropdown.Divider size="xs" />
                 <Dropdown.Item className="text-[12px]"
-                onClick={()=>{
-                  //setImageSlide(false);
-                  router.push(`/hospital/ipd`)}
-               }>
+                  onClick={() => {
+                    //setImageSlide(false);
+                    router.push(`/hospital/ipd`)
+                  }
+                  }>
                   IPD
                 </Dropdown.Item>
-                <Dropdown.Divider size="xs"/>
+                <Dropdown.Divider size="xs" />
                 <Dropdown.Item className="text-[12px]"
-                  onClick={()=>{
+                  onClick={() => {
                     //setImageSlide(false);
-                    router.push(`/hospital/medical-sup`)}
-                 }>
+                    router.push(`/hospital/medical-sup`)
+                  }
+                  }>
                   MEDICAL<br className="hidden" />SUPERINTENDENT
                 </Dropdown.Item>
               </Dropdown>
@@ -192,13 +200,12 @@ const NavBar = () => {
             </Link> */}
           </li>
           <li>
-          <div
-              className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${
-                (pathname === "/college"||pathname === "/college/course"||
-                pathname ==="/college/faculty"||pathname === "/college/principle-profile")
-                  ? "border-[2px]"
-                  : "border-[0px]"
-              } `}
+            <div
+              className={`outline-none focus:outline-none flex flex-row items-center border-[#3b3b3b]  pr-1  ${(pathname === "/college" || pathname === "/college/course" ||
+                pathname === "/college/faculty" || pathname === "/college/principle-profile")
+                ? "border-[2px]"
+                : "border-[0px]"
+                } `}
             >
               <Link
                 href="#"
@@ -212,28 +219,31 @@ const NavBar = () => {
               >
                 College
               </Link>
-              <Dropdown  openOnHover={true} title="">
+              <Dropdown openOnHover={true} title="">
                 <Dropdown.Item className="text-[12px]"
-                 onClick={()=>{
-                  ////setImageSlide(false);
-                  router.push(`/college/course`)}
-               }>
+                  onClick={() => {
+                    ////setImageSlide(false);
+                    router.push(`/college/course`)
+                  }
+                  }>
                   COURSES OFFERED
                 </Dropdown.Item>
-                <Dropdown.Divider size="xs"/>
+                <Dropdown.Divider size="xs" />
                 <Dropdown.Item className="text-[12px]"
-                onClick={()=>{
-                  //setImageSlide(false);
-                  router.push(`/college/faculty`)}
-               }>
+                  onClick={() => {
+                    //setImageSlide(false);
+                    router.push(`/college/faculty`)
+                  }
+                  }>
                   FACULTY
                 </Dropdown.Item>
-                <Dropdown.Divider size="xs"/>
+                <Dropdown.Divider size="xs" />
                 <Dropdown.Item className="text-[12px]"
-                  onClick={()=>{
+                  onClick={() => {
                     //setImageSlide(false);
-                    router.push(`/college/principle-profile`)}
-                 }>
+                    router.push(`/college/principle-profile`)
+                  }
+                  }>
                   PRINCIPALS PROFILE
                 </Dropdown.Item>
               </Dropdown>
@@ -259,9 +269,8 @@ const NavBar = () => {
             <Link
               href="/ncism"
               prefetch
-              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/ncism" ? "border-[2px]" : "border-[0px]"
-              } transition-opacity duration-300 ease-in-out`}
+              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${pathname === "/ncism" ? "border-[2px]" : "border-[0px]"
+                } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
                 //setImageSlide(false);
@@ -275,9 +284,8 @@ const NavBar = () => {
             <Link
               href="/blog"
               prefetch
-              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/blog" ? "border-[2px]" : "border-[0px]"
-              } transition-opacity duration-300 ease-in-out`}
+              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${pathname === "/blog" ? "border-[2px]" : "border-[0px]"
+                } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
                 //setImageSlide(false);
@@ -291,11 +299,10 @@ const NavBar = () => {
             <Link
               href="/facilities"
               prefetch
-              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/facilities"
-                  ? "border-[2px]"
-                  : "border-[0px]"
-              } transition-opacity duration-300 ease-in-out`}
+              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${pathname === "/facilities"
+                ? "border-[2px]"
+                : "border-[0px]"
+                } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
                 //setImageSlide(false);
@@ -309,11 +316,10 @@ const NavBar = () => {
             <Link
               href="/contactus"
               prefetch
-              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${
-                pathname === "/contactus"
-                  ? "border-[2px]"
-                  : "border-[0px]"
-              } transition-opacity duration-300 ease-in-out`}
+              className={` p-1.5  hover:text-gray-600 border-[#3b3b3b] ${pathname === "/contactus"
+                ? "border-[2px]"
+                : "border-[0px]"
+                } transition-opacity duration-300 ease-in-out`}
               scroll={false}
               onClick={(e) => {
                 //setImageSlide(false);

@@ -60,15 +60,18 @@ const HomePage = () => {
           <PrivateBamsSection />
         </div>
 
-        <h2 className="text-[26px] md:text-[32px] mt-5 mb-5 text-[#525252] font-semibold">
-          Most Appreciated Services </h2>
+        <div className="mb-14 mt-5 text-center">
 
-        <div className="flex flex-row flex-wrap justify-center flex-4 gap-2 ">
+          <h2 className="text-[26px] md:text-[32px] mt-5 mb-5 text-[#525252] font-semibold">
+            Most Appreciated Services </h2>
 
-          <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n1.jpg" alt="Patient 1" />
-          <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n2.jpg" alt="Patient 2" />
-          <Image width="100" height="100" className="rounded-md w-auto h-60 sm:w-48 sm:h-60" src="/images/gallery/n3.jpg" alt="Patient 3" />
-          <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4" />
+          <div className="flex flex-row flex-wrap justify-center flex-4 gap-2 ">
+
+            <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n1.jpg" alt="Patient 1" />
+            <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n2.jpg" alt="Patient 2" />
+            <Image width="100" height="100" className="rounded-md w-auto h-60 sm:w-48 sm:h-60" src="/images/gallery/n3.jpg" alt="Patient 3" />
+            <Image width="100" height="100" className="rounded-md w-auto h-60" src="/images/gallery/n4.jpg" alt="Patient 4" />
+          </div>
         </div>
         {/* <NaiminathAyurvedaSection /> */}
 
@@ -315,11 +318,11 @@ const AboutUsSection = () => {
 
 const Testimonial = () => {
   return (
-    <div className="mt-4 gap-3 flex flex-col">
+    <div className="gap-6 flex flex-col">
       <div>
 
         <h1 className="text-center font-semibold text-[28px] md:text-[34px]  text-[#525252]"> Testimonial's</h1>
-        <p className="text-center text-lg my-[3px]">What People Say About US </p>
+        <p className="text-center text-lg my-[3px]">What People Say About US</p>
       </div>
 
       <div className="flex justify-between gap-2 flex-col sm:flex-row">
