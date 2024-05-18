@@ -1,0 +1,197 @@
+
+
+/* ************************************************************************* */
+.element {
+    width: 99vw; /* Set the width of the element */
+    height: 99vh; /* Set the height of the element */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position the element */
+  }
+  
+  .element::before {
+    content: ""; /* Create a pseudo-element */
+    background-image: url("/new_home/wall.jpg");
+    background-size: cover; /* Make sure the background image covers the entire div */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Position the background image in the center of the div */
+    position: absolute; /* Position the pseudo-element absolutely */
+    top: 0; /* Align the pseudo-element to the top of the div */
+    left: 0; /* Align the pseudo-element to the left of the div */
+    width: 100%; /* Set the width of the pseudo-element to fill the div */
+    height: 100%; /* Set the height of the pseudo-element to fill the div */
+    animation: zoomIn 10s infinite alternate ease-in-out; /* Apply the zoomIn animation */
+    z-index: -1; /* Move the pseudo-element behind the content */
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1); /* Start with the original size */
+    }
+    100% {
+      transform: scale(1.2); /* Zoom in to 120% size */
+    }
+  }
+  
+  .hero-heading {
+    font-family:'Inter','serif' ;
+    font-weight: 900;
+  }
+  
+  .hero-para {
+  }
+  
+  .element {
+    width: 300px; /* Set the width of the element */
+    height: 200px; /* Set the height of the element */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position the element */
+  }
+  
+  .content {
+    position: relative; /* Position the content */
+    z-index: 1; /* Ensure content is above the background image */
+    opacity: 0; /* Start with opacity 0 to hide the content */
+    animation: fadeIn 3s forwards; /* Apply the fadeIn animation to fade in the content */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+      opacity: 1; /* Fade in to full opacity */
+    }
+  }
+  
+  .element::before {
+    content: ""; /* Create a pseudo-element */
+    background-image: url("/new_home/wall.jpg"); /* Replace 'your-image.jpg' with your image URL */
+    background-size: cover; /* Make sure the background image covers the entire div */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Position the background image in the center of the div */
+    position: absolute; /* Position the pseudo-element absolutely */
+    top: 0; /* Align the pseudo-element to the top of the div */
+    left: 0; /* Align the pseudo-element to the left of the div */
+    width: 100%; /* Set the width of the pseudo-element to fill the div */
+    height: 100%; /* Set the height of the pseudo-element to fill the div */
+    animation: zoomIn 5s infinite alternate; /* Apply the zoomIn animation */
+    z-index: 0; /* Move the pseudo-element behind the content */
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1); /* Start with the original size */
+    }
+    100% {
+      transform: scale(1.2); /* Zoom in to 120% size */
+    }
+  }
+  
+  /* ------------------------------------------------------------------------------------------ */
+  .element {
+    width: 100vw; /* Set the width of the element */
+    height: 100vh; /* Set the height of the element */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position the element */
+  }
+  
+  .content {
+    position: absolute;
+    z-index: 1; /* Ensure content is above the background image */
+    opacity: 0; /* Start with opacity 0 to hide the content */
+    animation: fadeInAndMoveUp 5s forwards;
+    transform: translateY(40px);
+    bottom: 150px;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .content > h2 {
+    font-size: 4rem;
+    width: 50%;
+    word-wrap: break-word;
+  }
+  
+  .content > p {
+    font-size: 1.5rem;
+  }
+  
+  .hero-btn {
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: fit-content;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-btn:hover {
+    background-color: var(--white);
+    color: var(--red);
+    transition: background-color 0.3s ease; /* Apply transition to hover state */
+  }
+  
+  @keyframes fadeInAndMoveUp {
+    0% {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateY(40px); /* Move the content down initially */
+    }
+    100% {
+      opacity: 1; /* Fade in to full opacity */
+      transform: translateY(
+        0
+      ); /* Move the content back to its original position */
+    }
+  }
+  
+  .element::before {
+    content: ""; /* Create a pseudo-element */
+    background-image: url("/new_home/wall.jpg"); /* Replace 'your-image.jpg' with your image URL */
+    background-size: cover; /* Make sure the background image covers the entire div */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Position the background image in the center of the div */
+    position: absolute; /* Position the pseudo-element absolutely */
+    top: 0; /* Align the pseudo-element to the top of the div */
+    left: 0; /* Align the pseudo-element to the left of the div */
+    width: 100%; /* Set the width of the pseudo-element to fill the div */
+    height: 100%; /* Set the height of the pseudo-element to fill the div */
+    animation: zoomIn 10s infinite alternate ease-in-out; /* Apply the zoomIn animation */
+    z-index: 0; /* Move the pseudo-element behind the content */
+    transform: translateY(-20px); /* Move the background image up initially */
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1) translateY(-20px); /* Start with the original size and moved up */
+    }
+    100% {
+      transform: scale(1.2) translateY(0); /* Zoom in to 120% size and move back to its original position */
+    }
+  }
+  
+  /* ##################################responsive################ */
+  
+  @media only screen and (max-width: 600px) {
+    .content > h2 {
+      font-size: 2rem;
+      width: 80vw;
+      margin-left: -2rem;
+    }
+  
+    .content > p {
+      font-size: 1rem;
+      width: 80vw;
+      margin-left: -2rem;
+    }
+  
+    .hero-btn {
+      margin-left: -2rem;
+    }
+  }
+  

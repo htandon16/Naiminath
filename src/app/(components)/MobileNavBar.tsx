@@ -28,7 +28,7 @@ const MobileNavBar = ({
   const targetRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const mobileNavLinks: NavLink[] = [
-    { label: "Home", path: "/home" },
+    { label: "Home", path: "/" },
     { label: "About us", path: "/about" },
     { label: "Gallery", path: "/about/gallery" },
     { label: "Student Gallery", path: "https://naiminathayurveda.org/about/student-gallery" },

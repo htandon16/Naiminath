@@ -7,6 +7,7 @@ import { GlobalContextProvider } from "./context/store";
 import BannerHeader from "./(components)/BannerHeader";
 import Footer from "./(components)/footer";
 import { ImportantLink } from "./(components)/ImportantLink";
+import Whatsapp from "./(components)/Whatsapp";
 // import Whatsapp from "./(components)/Whatsapp";
 
 
@@ -46,9 +47,9 @@ export default function RootLayout({
           <GlobalContextProvider>
             <BannerHeader />
             {children}
-            {/* <Whatsapp/> */}
+            <Whatsapp />
             <Footer />
-          <ImportantLink/>
+            <ImportantLink />
           </GlobalContextProvider>
         </div>
       </body>

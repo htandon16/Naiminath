@@ -16,7 +16,7 @@ const NavBar = () => {
         text-[#252525] text-[15px] font-bold">
           <li>
             <Link
-              href="/home"
+              href="/"
               prefetch
               className={` p-1.5 hover:text-gray-600 border-[#3b3b3b] link ${pathname === "/home" ? "border-[2px]" : "border-[0px]"
                 } `}
@@ -62,7 +62,7 @@ const NavBar = () => {
               >
                 About Us
               </Link>
-              <Dropdown openOnHover={true} title="">  
+              <Dropdown openOnHover={true} title="">
                 <Dropdown.Item className="text-[12px]"
                   onClick={() => {
                     ////setImageSlide(false);
