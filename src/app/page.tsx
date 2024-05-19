@@ -6,8 +6,8 @@ import Home from "./(hospPage)/home_new/page";
 const DashBoard = () => {
   return (
     <div>
-      <Home />
-      {/* <HomePage /> */}
+      {/* <Home /> */}
+      <HomePage />
       {/* <BannerHeader />
       <HomePage />
       <Footer /> */}

@@ -78,7 +78,7 @@ const BannerHeader = () => {
       </div>)}
 
       {!isMobile && <Header imageSlider={imageSlide} />}
-      {/* <div className="">{imageSlide && <ImageSlider />}</div> */}
+      <div className="">{imageSlide && <ImageSlider />}</div>
     </div>
   );
 };
