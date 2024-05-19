@@ -36,7 +36,7 @@
   z-index: 1;
 } */
 
-
+/* 
 :root {
   --black: #0d1317;
   --white: #eef1f2;
@@ -70,19 +70,17 @@ body {
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-
+} */
+/* 
 .hr {
   border: none;
-  border-top: 2px solid var(--red);
-  /* width: 300px; */
+  border-top: 2px solid var(--red); 
 }
 
 .btns:hover {
   background-color: var(--black);
   color: var(--white);
-  transition: background-color 0.3s ease;
-  /* Apply transition to hover state */
+  transition: background-color 0.3s ease; 
 }
 
 .more-btns {
@@ -97,4 +95,4 @@ body {
   section {
     height: fit-content;
   }
-}
+} */
