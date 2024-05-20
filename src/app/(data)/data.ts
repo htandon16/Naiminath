@@ -29,7 +29,7 @@ export const postData: Blogs[] =
             id: 1,
             college: "Naiminath Ayurvedic Medical College",
             district: "Etmadpur, Agra – 283202",
-            affiliated_by: "It is affiliated with Dr Bhimrao Ambedkar University and authorised by the National Commission for Indian System or Medicine ",
+            affiliated_by: "It is affiliated with Mahayogi Guru Gorakhnath AYUSH University, Gorakhpur and authorised by the National Commission for Indian System or Medicine ",
             state: "Uttar Pradesh",
             address: "N.H. 19, Nawalpur, Kuberpur, Behind Maruti TrueValue Showroom, Etmadpur, Agra – 283202, Uttar Pradesh, India.",
             established: 2016,
