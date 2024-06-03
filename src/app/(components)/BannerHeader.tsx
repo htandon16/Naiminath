@@ -8,6 +8,17 @@ import MobileNavBar from "./MobileNavBar";
 import Image from "next/image";
 import { faVirusCovid } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+
+import {
+  faBook,
+  faMailBulk,
+  faPhone,
+  faStopwatch,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
+
 
 // const Header = dynamic(
 //   () => import('./Header'),
@@ -40,9 +51,33 @@ const BannerHeader = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const customSize: SizeProp = "lg";
   // const imageSlide = false;
   return (
     <div className=" md:relative">
+
+      {/* self */}
+      {isMobile && (<div className={`flex flex-row justify-center items-center w-full h-fit font-medium bg-[#ded636]`}>
+        <div className="flex flex-row gap-2 my-4 justify-end items-center text-[11px]  font-semibold"
+        >
+          <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize} />
+          <a href={`tel: +91-8193896320`}>
+            +91-8193896320
+          </a>
+          <div className="h-full border mx-3 border-[#a33a2e]"></div>
+
+          <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize} />
+
+          <a href={`tel: +91-8193896320`}>
+            +91-8193896320
+          </a>
+
+
+          {/* <div className="h-full border mx-3 border-[#a33a2e]"></div>
+          <Link href={"/doc/perm_letter.pdf"}>Permission Letter</Link> */}
+        </div>
+      </div>)}
+      {/* self */}
 
       {isMobile && (<div className=" flex flex-row justify-between w-full my-5">
 
@@ -52,6 +87,7 @@ const BannerHeader = () => {
           }></div>
 
         <div className=" absolute z-20 right-0">
+
           {!isExpanded && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +106,8 @@ const BannerHeader = () => {
             </svg>
           )}
           {isExpanded && (
+
+
             <MobileNavBar isOpen={isExpanded} setOpen={setIsExpanded} />
           )}
 

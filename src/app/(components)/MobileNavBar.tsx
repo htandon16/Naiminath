@@ -89,29 +89,29 @@ const MobileNavBar = ({
   }, []); // Empty dependency array ensures that the effect runs only once on mount
 
   const renderMenuItems = (items: NavLink[]) =>
-  items.map((item, index) => (
-    <div key={index}>
-      {!item.submenu && (
-        <MenuItem onClick={() => {
+    items.map((item, index) => (
+      <div key={index}>
+        {!item.submenu && (
+          <MenuItem onClick={() => {
 
-          router.push(item.path || "")
-          setOpen(!isOpen)
+            router.push(item.path || "")
+            setOpen(!isOpen)
           }}>
-          {item.label}
-        </MenuItem>
-      )}
+            {item.label}
+          </MenuItem>
+        )}
 
-      {item.submenu && (
-        <SubMenu label={item.label}>
-          {renderMenuItems(item.submenu)}
-        </SubMenu>
-      )}
-    </div>
-  ));
+        {item.submenu && (
+          <SubMenu label={item.label}>
+            {renderMenuItems(item.submenu)}
+          </SubMenu>
+        )}
+      </div>
+    ));
 
   return (
     <div ref={targetRef}>
-      <Sidebar  
+      <Sidebar
         width={isOpen ? "250px" : "0px"}
         style={{
           height: "80vh",

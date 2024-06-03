@@ -67,23 +67,35 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
     >
       <div className="flex flex-col  w-full justify-center">
         <div className="flex md:flex-row flex-col border-[#748182] bg-[#ded636] py-3 px-[60px]">
-          <div className="basis-[70%]  flex md:flex-row flex-col gap-1 md:gap-4 justify-start items-center text-[13px] md:text-[14px] text-stone-700">
+          <div className="basis-[40%]  flex md:flex-row flex-col gap-1 md:gap-4 justify-start items-center text-[13px] md:text-[14px] text-stone-700">
             <FontAwesomeIcon icon={faStopwatch} color="#a33a2e" size={customSize} />
             <p>Open Hours-9am to 4pm</p>
             <div className="h-full border border-[#a33a2e]"></div>
             <FontAwesomeIcon icon={faMailBulk} color="#a33a2e" size={customSize} />
             <a href={`mailto:info@naiminathayurveda.org`}>info@naiminathayurveda.org</a>
           </div>
-          <div className="flex md:flex-row flex-col basis-[30%] md:mt-0 mt-4 justify-end items-center text-[11px] md:text-[14px] font-semibold"
+
+
+          <div className="flex md:flex-row flex-col basis-[60%] gap-2 md:mt-0 mt-4 justify-end items-center text-[11px] md:text-[14px] font-semibold"
           >
             <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize} />
             <a href={`tel: +91-8193896320`}>
               +91-8193896320
             </a>
+            <div className="h-full border mx-3 border-[#a33a2e]"></div>
+
+            <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize} />
+
+            <a href={`tel: +91-8193896320`}>
+              +91-8193896320
+            </a>
+
 
             <div className="h-full border mx-3 border-[#a33a2e]"></div>
             <Link href={"/doc/perm_letter.pdf"}>Permission Letter</Link>
           </div>
+
+
         </div>
         <div className=" flex md:flex-row flex-col px-[60px] w-full h-fit justify-between items-center
          bg-white py-5 border-b-[1px] border-r-slate-300">
