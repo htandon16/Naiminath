@@ -78,11 +78,10 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
 
           <div className="flex md:flex-row flex-col basis-[60%] gap-2 md:mt-0 mt-4 justify-end items-center text-[11px] md:text-[14px] font-semibold"
           >
-            <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize} />
-            <a href={`tel: +91-8193896320`}>
-              +91-8193896320
-            </a>
-            <div className="h-full border mx-3 border-[#a33a2e]"></div>
+            <span className="font-bold text-red-900 text-[14px]">
+
+              Admission enquiry :-
+            </span>
 
             <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize} />
 
