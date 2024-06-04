@@ -86,8 +86,8 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
 
             <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize} />
 
-            <a href={`tel: +91-8193896320`}>
-              +91-8193896320
+            <a href={`tel: +91-9528024473`}>
+              +91-9528024473
             </a>
 
 

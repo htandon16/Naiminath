@@ -58,10 +58,11 @@ const BannerHeader = () => {
 
       {/* self */}
       {isMobile && (<div className={`flex flex-row justify-center items-center w-full h-fit font-medium bg-[#ded636]`}>
-        <div className="flex flex-row gap-2 my-4 justify-end items-center text-[11px]  font-semibold"
+        <div className="flex flex-row gap-2 my-4 justify-between m-auto font-bold  items-center text-[11px]"
         >
           <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize} />
           <a href={`tel: +91-8193896320`}>
+            ADMISSION ENQUIRY <br />
             +91-8193896320
           </a>
           <div className="h-full border mx-3 border-[#a33a2e]"></div>
@@ -69,6 +70,8 @@ const BannerHeader = () => {
           <FontAwesomeIcon icon={faPhone} color="#a33a2e" size={customSize} />
 
           <a href={`tel: +91-9528024473`}>
+
+            BAMS Admission <br />
             +91-9528024473
           </a>
 
