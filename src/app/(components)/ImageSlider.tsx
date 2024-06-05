@@ -34,9 +34,10 @@ const ImageSlider = () => {
     <Slider {...settings}>
       {/* Add your slider images here */}
 
-<div className="h-fit w-screen">
-  <img className="h-full object-cover" src="/images/gallery/homepage1.png" alt="Banner 1" />
+<div className="h-[50vh] w-screen">
+  <img className="h-full object-cover w-full" src="/images/gallery/homepage1.png" alt="Banner 1" />
 </div>
+
 
 
 
