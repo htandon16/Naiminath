@@ -34,8 +34,8 @@ const ImageSlider = () => {
     <Slider {...settings}>
       {/* Add your slider images here */}
 
-<div className="h-[50vh] w-screen">
-  <img className="h-full object-cover w-full" src="/images/gallery/homepage1.png" alt="Banner 1" />
+<div className="h-fit w-screen">
+  <img className="h-full object-cover" src="/images/gallery/homepage1.png" alt="Banner 1" />
 </div>
 
 
@@ -46,21 +46,21 @@ const ImageSlider = () => {
 </div>
 
 
-      <div className="h-fit md:h-[80vh] w-[100vw]">
+     <div className="h-fit w-screen">
  <img className="w-full h-full object-cover" src="/images/banner1.jpg" alt="Banner 3" />
 </div>
 
-<div className="h-fit md:h-[80vh] w-[100vw]">
+<div className="h-fit w-screen">
    <a href = "https://naiminathayurveda.org/contactus">
   <img className="w-full h-full object-cover" src="/images/banner2.jpg" alt="Banner 4" /> </a>
 </div>
 
-<div className="h-fit md:h-[80vh] w-[100vw]">
+<div className="h-fit w-screen">
    <a href = "https://naiminathayurveda.org/contactus">
   <img className="w-full h-full object-cover" src="/images/banner3.jpg" alt="Banner 5" /></a>
 </div>
 
-<div className="h-fit md:h-[80vh] w-[100vw]">
+<div className="h-fit w-screen">
    <a href = "https://naiminathayurveda.org/contactus">
   <img className="w-full h-full object-cover" src="/images/banner4.jpg" alt="Banner 6" /> </a>
 </div>
