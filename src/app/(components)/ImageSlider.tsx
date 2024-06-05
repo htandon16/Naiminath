@@ -33,23 +33,34 @@ const ImageSlider = () => {
   return (
     <Slider {...settings}>
       {/* Add your slider images here */}
-      <div className="h-fit md:h-[80vh] w-[100vw]">
- <img className="w-full h-full object-cover" src="/images/banner1.jpg" alt="Banner 1" />
+
+  <div className="h-fit md:h-[80vh] w-[100vw]">
+  <img className="w-full h-full object-cover" src="/images/gallery/homepage1.png" alt="Banner 1" />
 </div>
 
-<div className="h-fit md:h-[80vh] w-[100vw]">
-   <a href = "https://naiminathayurveda.org/contactus">
-  <img className="w-full h-full object-cover" src="/images/banner2.jpg" alt="Banner 2" /> </a>
+
+  <div className="h-fit md:h-[80vh] w-[100vw]">
+ <img className="w-full h-full object-cover" src="/images/gallery/certificate.png" alt="Banner 2" />
 </div>
 
-<div className="h-fit md:h-[80vh] w-[100vw]">
-   <a href = "https://naiminathayurveda.org/contactus">
-  <img className="w-full h-full object-cover" src="/images/banner3.jpg" alt="Banner 3" /></a>
+
+     <div className="h-fit md:h-[80vh] w-[100vw]">
+ <img className="w-full h-full object-cover" src="/images/banner1.jpg" alt="Banner 3" />
 </div>
 
-<div className="h-fit md:h-[80vh] w-[100vw]">
+  <div className="h-fit md:h-[80vh] w-[100vw]">
    <a href = "https://naiminathayurveda.org/contactus">
-  <img className="w-full h-full object-cover" src="/images/banner4.jpg" alt="Banner 4" /> </a>
+  <img className="w-full h-full object-cover" src="/images/banner2.jpg" alt="Banner 4" /> </a>
+</div>
+
+  <div className="h-fit md:h-[80vh] w-[100vw]">
+   <a href = "https://naiminathayurveda.org/contactus">
+  <img className="w-full h-full object-cover" src="/images/banner3.jpg" alt="Banner 5" /></a>
+</div>
+
+  <div className="h-fit md:h-[80vh] w-[100vw]">
+   <a href = "https://naiminathayurveda.org/contactus">
+  <img className="w-full h-full object-cover" src="/images/banner4.jpg" alt="Banner 6" /> </a>
 </div>
 
       {/* Add more images as needed */}
