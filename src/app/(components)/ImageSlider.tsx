@@ -40,7 +40,7 @@ const ImageSlider = () => {
 
 
         <div className="h-fit md:h-[80vh] w-[100vw]">
- <img className="w-full h-full object-cover" src="/images/gallery/certificate.png" alt="Banner 2" />
+ <img className="bg-center bg-cover" src="/images/gallery/certificate.png" alt="Banner 2" />
 </div>
       <div className="h-fit md:h-[80vh] w-[100vw]">
  <img className="w-full h-full object-cover" src="/images/banner1.jpg" alt="Banner 3" />
