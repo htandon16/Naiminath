@@ -35,8 +35,9 @@ const ImageSlider = () => {
       {/* Add your slider images here */}
 
       <div className="h-fit md:h-[80vh] w-[100vw]">
- <img className="w-full h-full object-cover" src="/images/gallery/homepage1.png" alt="Banner 1" />
+ <img className="w-full h-full object-contain" src="/images/gallery/homepage1.png" alt="Banner 1" />
 </div>
+
 
         <div className="h-fit md:h-[80vh] w-[100vw]">
  <img className="w-full h-full object-cover" src="/images/gallery/certificate.png" alt="Banner 2" />
