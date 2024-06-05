@@ -38,13 +38,9 @@ const ImageSlider = () => {
   <img className="w-full h-full object-contain" src="/images/gallery/homepage1.png" alt="Banner 1" />
 </div>
 
-
-
-
-
-
-     <div className="h-fit md:h-[80vh] w-[100vw] flex items-center justify-center overflow-hidden">
- <img className="min-w-full min-h-full" src="/images/gallery/certificate.png" alt="Banner 2" />
+    
+ <div className="h-fit md:h-[80vh] w-[100vw] overflow-hidden flex items-center justify-center">
+  <img className="w-full h-full object-contain" src="/images/gallery/certificate.png" alt="Banner 2" />
 </div>
 
       <div className="h-fit md:h-[80vh] w-[100vw]">
