@@ -43,7 +43,6 @@ const ImageSlider = () => {
  <img className="min-w-full min-h-full" src="/images/gallery/certificate.png" alt="Banner 2" />
 </div>
 
-</div>
       <div className="h-fit md:h-[80vh] w-[100vw]">
  <img className="w-full h-full object-cover" src="/images/banner1.jpg" alt="Banner 3" />
 </div>
