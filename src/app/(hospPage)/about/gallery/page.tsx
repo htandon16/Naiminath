@@ -33,7 +33,7 @@ const AboutGallery = () => {
   //   "https://naiminathayurveda.org/wp-content/uploads/cache/2021/10/IMG-20211209-WA0035/3010540637.jpg",
   // ];
 
-  const imageUrls = Array.from({ length: 23 }, (url, index) => {
+  const imageUrls = Array.from({ length: 28 }, (url, index) => {
     if (index == 13 || index == 14) {
       return `/images/gallery/gallery${index + 1}-min.png`;
     } else {
