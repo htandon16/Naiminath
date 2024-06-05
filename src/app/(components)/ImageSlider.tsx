@@ -34,9 +34,10 @@ const ImageSlider = () => {
     <Slider {...settings}>
       {/* Add your slider images here */}
 
-<div className="h-[80vh] w-screen overflow-hidden flex justify-center">
-  <img className="h-full w-full object-cover" src="/images/gallery/homepage1.png" alt="Banner 1" />
+<div className="h-fit w-screen overflow-hidden flex justify-center">
+  <img className="h-full object-cover" src="/images/gallery/homepage1.png" alt="Banner 1" />
 </div>
+
 
 
 <div className="h-fit w-screen overflow-hidden flex justify-center">
