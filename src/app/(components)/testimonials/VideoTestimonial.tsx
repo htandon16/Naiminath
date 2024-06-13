@@ -5,7 +5,7 @@ const VideoTestimonial = () => {
 
     const url = [
         {
-            link: "https://www.youtube.com/embed/wlOJYMW13zc?si=Ru3u7DiXWQspBGIg"
+            link: "https://www.youtube.com/embed/VzHCtwGn6-0?si=kvYJNU7pJyh0NKX4"
         },
         {
             link: "https://www.youtube.com/embed/7_s8wssOzuc?si=iabpQEVYQukV1gdb"

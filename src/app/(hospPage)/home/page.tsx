@@ -348,10 +348,10 @@ const Testimonial = () => {
 
       <div className="flex justify-between gap-2 flex-col sm:flex-row">
 
-        <iframe src="https://www.youtube.com/embed/wlOJYMW13zc?si=Ru3u7DiXWQspBGIg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="sm:w-[400px] lg:w-[560px] h-[315px]"></iframe>
+        <iframe src="https://www.youtube.com/embed/VzHCtwGn6-0?si=kvYJNU7pJyh0NKX4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="sm:w-[400px] lg:w-[560px] h-[315px]"></iframe>
 
 
-        <iframe src="https://www.youtube.com/embed/7_s8wssOzuc?si=iabpQEVYQukV1gdb" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="sm:w-[400px] lg:w-[560px] h-[315px]"></iframe>
+        <iframe src="https://www.youtube.com/embed/1KE89Nvwfko?si=d3bNxq-qkAoHFXRM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="sm:w-[400px] lg:w-[560px] h-[315px]"></iframe>
 
       </div>
     </div>
