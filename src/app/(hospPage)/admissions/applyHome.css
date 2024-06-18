@@ -1,0 +1,112 @@
+.applyHome {
+  padding: 100px 0;
+  background-image: url("/adm/bg-college.jpg");
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-direction: column;
+  position: relative;
+  height: 120vh;
+}
+
+.apply-box {
+  background-color: #fff;
+}
+
+.apply-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid var(--red);
+  padding: 40px;
+  width: 700px;
+  gap: 30px;
+}
+
+.applyp {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.counter {
+  background-image: url("/adm/lines.png");
+  background-color: var(--red);
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counts {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+  width: 100%;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+
+.count-num {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.count-val {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .applyHome {
+    /* height: 100vh; */
+    height: auto;
+    position: static;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .applyp {
+    text-align: start;
+  }
+
+  .apply-sec {
+    text-align: start;
+    width: 80vw;
+    padding: 10px;
+  }
+
+  .counter {
+    height: 100vh;
+    margin-top: 100px;
+    position: static;
+    padding: 40px 0;
+  }
+
+  .counts {
+    flex-direction: column;
+    /* gap: 30px; */
+  }
+
+  .count {
+    gap: 10px;
+  }
+
+  .count-num {
+    font-size: 3rem;
+  }
+}
