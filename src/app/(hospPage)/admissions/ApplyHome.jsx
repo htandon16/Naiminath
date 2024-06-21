@@ -10,7 +10,7 @@ const counters = [
 
 const ApplyHome = () => {
   // const [showModal, setshowModal] = useState(false);
-  const closeModal = () => setshowModal(false);
+  // const closeModal = () => setshowModal(false);
 
   // if (showModal) {
   //   document.body.style.overflow = "hidden";
@@ -50,14 +50,10 @@ const ApplyHome = () => {
             students who are inquisitive, passionate, original and determined to
             grow.
           </p>
-          <a href="https://naiminath-ayurveda.vercel.app/"><button
-            className="btns hero-btn rest-btns"
-{/*             onClick={() => setshowModal(!showModal)} */}
-          >
-            Apply Now
-          </button></a>
+          <a href="https://naiminath-ayurveda.vercel.app/">
+            <button className="btns hero-btn rest-btns">Apply Now</button>
+          </a>
         </div>
-{/*         {showModal && <ShowModal closeModal={closeModal} />} */}
       </div>
       <div className="counter p-[100px_0]">
         <div className="counts">
