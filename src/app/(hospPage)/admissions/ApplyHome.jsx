@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./applyHome.css";
-import ShowModal from "./modal/ShowModal";
+// import ShowModal from "./modal/ShowModal";
 
 const counters = [
   { num: "576 K+", val: "Patients Treated" },
@@ -9,7 +9,7 @@ const counters = [
 ];
 
 const ApplyHome = () => {
-  const [showModal, setshowModal] = useState(false);
+  // const [showModal, setshowModal] = useState(false);
   const closeModal = () => setshowModal(false);
 
   // if (showModal) {
@@ -50,14 +50,14 @@ const ApplyHome = () => {
             students who are inquisitive, passionate, original and determined to
             grow.
           </p>
-          <button
+          <a href="https://naiminath-ayurveda.vercel.app/"><button
             className="btns hero-btn rest-btns"
-            onClick={() => setshowModal(!showModal)}
+{/*             onClick={() => setshowModal(!showModal)} */}
           >
             Apply Now
-          </button>
+          </button></a>
         </div>
-        {showModal && <ShowModal closeModal={closeModal} />}
+{/*         {showModal && <ShowModal closeModal={closeModal} />} */}
       </div>
       <div className="counter p-[100px_0]">
         <div className="counts">
