@@ -98,6 +98,7 @@ const Home = () => {
       {/* <ContactHome /> */}
       <Whatsapp />
       <Brochure />
+            <a href="https://naiminath-ayurveda.vercel.app/"><div className="apply-now-form-nt">Apply Now</div></a>
     </div>
   );
 };
