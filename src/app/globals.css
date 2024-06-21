@@ -201,6 +201,15 @@ body {
   background: #fff700c0;
   margin-top: -25px;
 }
+.apply-now-form-nt {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: orange;
+  display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
   section {
@@ -214,5 +223,20 @@ body {
     right: 0%;
     height: 4px;
     margin-top: -7px;
+  }
+   
+  .apply-now-form-nt {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
   }
 }
