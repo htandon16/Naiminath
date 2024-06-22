@@ -72,11 +72,17 @@ const testimonials = [
   },
   {
     divtoshow: (
-      <Reviews
-        name={review[1].name}
-        review={review[1].review}
-        time={review[1].time}
-      />
+      <iframe
+        width="400"
+        // width="560"
+        height="220"
+        src="https://www.youtube.com/embed/xbujA9IEXrA?si=ZBkSneNxyWsGeJ67"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     ),
   },
   {
@@ -85,15 +91,6 @@ const testimonials = [
         name={review[2].name}
         review={review[2].review}
         time={review[2].time}
-      />
-    ),
-  },
-  {
-    divtoshow: (
-      <Reviews
-        name={review[3].name}
-        review={review[3].review}
-        time={review[3].time}
       />
     ),
   },
@@ -112,6 +109,15 @@ const testimonials = [
       ></iframe>
     ),
   },
+  {
+    divtoshow: (
+      <Reviews
+        name={review[3].name}
+        review={review[3].review}
+        time={review[3].time}
+      />
+    ),
+  },
 ];
 
 const TestimonialHome = () => {
@@ -119,7 +125,9 @@ const TestimonialHome = () => {
     <>
       <div className="testimonial-container">
         <div className="why-wrapper">
-          <h3 className="why-heading text-white roboto-serif-heading lined-heading">What our students say about us</h3>
+          <h3 className="why-heading text-white roboto-serif-heading lined-heading">
+            What our students say about us
+          </h3>
           {/* <hr className="hr" /> */}
           <div className="testimonials">
             {testimonials.map((test, index) => (

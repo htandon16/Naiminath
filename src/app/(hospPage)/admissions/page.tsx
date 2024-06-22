@@ -80,9 +80,9 @@ const Home = () => {
     <div>
       {/* <Hero /> */}
       <AboutHome />
+      <TreatmentOpd />
       <WhyChoose />
 
-      <TreatmentOpd />
       <Youtube />
       {/* <Opd />
       <Treatment /> */}
@@ -91,8 +91,8 @@ const Home = () => {
 
       <TestimonialHome />
       <SocialPost />
-      <EventsHome />
-      <Glimpse />
+      {/* <EventsHome /> */}
+      {/* <Glimpse /> */}
       <ApplyHome />
       {/* <GalleryHome /> */}
       {/* <ContactHome /> */}
