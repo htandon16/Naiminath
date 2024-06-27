@@ -91,7 +91,7 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
 
 
             <div className="h-full border mx-3 border-[#a33a2e]"></div>
-            <Link href={"/doc/perm_letter.pdf"}>Permission Letter</Link>
+            <Link href={"/doc/perm24.pdf"}>Permission Letter</Link>
           </div>
 
 
