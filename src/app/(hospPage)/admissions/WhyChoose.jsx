@@ -19,7 +19,7 @@ const cardData = [
     img: <FaGraduationCap />,
     heading: "Infrastructure",
     desc: "The foundation for success. Our infrastructure solutions create a thriving landscape for businesses and residents alike.",
-    btn: "https://naiminathayurveda.org/about/gallery",
+    btn: "/about/infrastructure",
   },
 ];
 

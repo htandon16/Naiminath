@@ -54,10 +54,9 @@ const testimonials = [
         height="220"
         src="https://www.youtube.com/embed/1KE89Nvwfko?si=kiXmA0ApQWxoAtUr"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
       ></iframe>
     ),
   },
@@ -78,10 +77,9 @@ const testimonials = [
         height="220"
         src="https://www.youtube.com/embed/xbujA9IEXrA?si=ZBkSneNxyWsGeJ67"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
       ></iframe>
     ),
   },
@@ -102,10 +100,9 @@ const testimonials = [
         height="220"
         src="https://www.youtube.com/embed/VzHCtwGn6-0?si=C7PCSf8cj_5LkSgU"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
       ></iframe>
     ),
   },

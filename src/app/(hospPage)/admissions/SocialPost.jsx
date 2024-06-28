@@ -45,8 +45,7 @@ const SocialPost = () => {
           >
             <img
               className="h-full w-full max-w-full rounded-lg  object-center transform transition-transform duration-300 hover:scale-110"
-              src={imageLink}
-              loading="lazy"
+              src={imageLink} 
               alt="gallery-photo"
             />
 
