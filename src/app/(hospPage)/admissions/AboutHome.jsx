@@ -4,9 +4,9 @@ const AboutHome = () => {
   return (
     <section>
       <div className="about-container">
-        <div className="about-wrapper">
+        <div className="about-wrapper z-[999] ">
           <hr className="hr" />
-          <div className="about-content">
+          <div className="about-content z-[999]">
             <h3 className="about-heading roboto-serif-heading">
               Welcome to Naiminath
             </h3>
