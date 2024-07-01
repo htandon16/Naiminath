@@ -83,7 +83,7 @@ const Course = () => {
           </div>
 
           <div className="grid col-span-2 bg-blue-500 ">
-            <img className="w-full h-[280px]" src="/images/gallery/gallery29-min.jpg" alt="" />
+            <img className="w-full h-[280px]" src="/images/gallery/gallery29-min.JPG" alt="" />
           </div>
 
           <div className="grid col-span-1 bg-black h-[180px]">
