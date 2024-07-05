@@ -8,6 +8,7 @@ import BannerHeader from "./(components)/BannerHeader";
 import Footer from "./(components)/footer";
 import { ImportantLink } from "./(components)/ImportantLink";
 import Whatsapp from "./(components)/Whatsapp";
+import CustomModal from "./(components)/modal/Modal";
 // import Whatsapp from "./(components)/Whatsapp";
 
 
@@ -45,6 +46,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="w-full min-h-screen overflow-hidden">
           <GlobalContextProvider>
+            <CustomModal />
             <BannerHeader />
             {children}
             <Whatsapp />

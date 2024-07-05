@@ -31,7 +31,7 @@
   background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column;
   /* gap: 20px; */
   position: relative;
@@ -44,7 +44,6 @@
   color: var(--red);
 }
 
-.rreview {}
 
 .rtime {
   position: absolute;
