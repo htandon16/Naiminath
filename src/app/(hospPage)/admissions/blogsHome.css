@@ -80,9 +80,7 @@
   color: var(--red);
 }
 
-.blog-single.unhovered.bdate {
-  /* color: grey; */
-}
+
 
 .blog-single.hovered.bdate {
   color: var(--red);

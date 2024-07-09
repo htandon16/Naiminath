@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+
 .why-container {
-    margin-top: 80px;
-    font-family: 'Inter', 'serif';
+    background: radial-gradient(circle, rgba(218, 237, 80, 0.45) 0%, rgba(204, 221, 242, 0.55) 100%);
+    padding: 100px 0;
 }
 
 .why-heading {
     font-size: 3rem;
-    font-weight: 700;
 }
 
 .hr {
@@ -19,6 +21,7 @@
     margin: 50px 100px;
     gap: 50px;
 }
+
 
 .why-card {
     width: 400px;
@@ -75,6 +78,11 @@
 @media only screen and (max-width: 600px) {
     .why-wrapper {
         margin-top: 70px;
+    }
+
+    .card-desc {
+        text-align: start;
+        padding: 0px;
     }
 
     .why-heading {

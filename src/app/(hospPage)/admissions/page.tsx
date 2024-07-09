@@ -26,55 +26,27 @@
 "use client";
 
 import React from "react";
-import Hero from "./Hero";
-import AboutHome from "./AboutHome";
-import ContactHome from "./ContactHome";
-import EventsHome from "./EventsHome";
-import NewsHome from "./NewsHome";
-import TestimonialHome from "./TestimonialHome";
-import GalleryHome from "./GalleryHome";
-import ApplyHome from "./ApplyHome";
-import WhyChoose from "./WhyChoose";
-import Youtube from "./Youtube";
-import Whatsapp from "./whatsapp/Whatsapp";
-import BlogsHome from "./BlogsHome";
-import SocialPost from "./SocialPost";
-import Glimpse from "./Glimpse";
-// import Treatment from "../Treatment";
-import Brochure from "./Brochure";
-import Opd from "./Opd";
-import TreatmentOpd from "./TreatmentOpd";
+// import AboutHome from "./AboutHome"; 
+// import TestimonialHome from "./TestimonialHome"; 
+// import ApplyHome from "./ApplyHome";
+// import WhyChoose from "./WhyChoose";
+// import Youtube from "./Youtube";
+// import Whatsapp from "./whatsapp/Whatsapp";
+// import BlogsHome from "./BlogsHome";
+// import SocialPost from "./SocialPost"; 
+// import Treatment from "../Treatment"; 
+import TreatmentOpd from "@/app/(components)/home/treatment/TreatmentOpd";
+import Brochure from "@/app/(components)/home/Brochure";
+import AboutHome from "@/app/(components)/home/about/AboutHome";
+import WhyChoose from "@/app/(components)/home/chooseUs/WhyChoose";
+import Youtube from "@/app/(components)/home/youtube/Youtube";
+import BlogsHome from "@/app/(components)/home/blogs/BlogsHome";
+import TestimonialHome from "@/app/(components)/home/testimonial/TestimonialHome";
+import SocialPost from "@/app/(components)/home/social/SocialPost";
+import ApplyHome from "@/app/(components)/home/apply/ApplyHome";
+import Whatsapp from "@/app/(components)/Whatsapp";
+// import TreatmentOpd from "./TreatmentOpd";
 const Home = () => {
-  // useEffect(() => {
-  //   // Function to handle scroll event
-  //   const handleScroll = () => {
-  //     // Get all sections
-  //     const sections = document.querySelectorAll(".section");
-
-  //     // Iterate through each section
-  //     sections.forEach((section, index) => {
-  //       // Calculate the distance between the top of the section and the top of the viewport
-  //       const distanceToTop = section.getBoundingClientRect().top;
-
-  //       // If the distance to the top of the section is less than or equal to 0 (i.e., it's in view or above the viewport)
-  //       if (distanceToTop <= 0) {
-  //         // If the next section exists
-  //         if (sections[index + 1]) {
-  //           // Scroll to the next section
-  //           sections[index + 1].scrollIntoView({ behavior: "smooth" });
-  //         }
-  //       }
-  //     });
-  //   };
-
-  //   // Add scroll event listener to the window
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   // Remove event listener on component unmount
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []); // Empty dependency array ensures the effect runs only once on component mount
 
   return (
     <div>
@@ -98,7 +70,7 @@ const Home = () => {
       {/* <ContactHome /> */}
       <Whatsapp />
       <Brochure />
-            <a href="https://naiminath-ayurveda.vercel.app/"><div className="apply-now-form-nt">Apply Now</div></a>
+      <a href="https://naiminath-ayurveda.vercel.app/"><div className="apply-now-form-nt">Apply Now</div></a>
     </div>
   );
 };

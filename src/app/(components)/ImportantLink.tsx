@@ -13,9 +13,9 @@ export const ImportantLink = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-[999]">
       <button
-        className="fixed bottom-[55vh] right-2 bg-black text-white px-4 py-2 rounded transform origin-bottom-right -rotate-90"
+        className="fixed bottom-[72vh] z-[999] right-2 bg-black text-white px-4 py-2 rounded transform origin-bottom-right -rotate-90"
         onMouseEnter={showPopup}
         onMouseLeave={hidePopup}
       >
