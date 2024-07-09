@@ -13,7 +13,7 @@
   height: 100%;
   background: url('/images/yoga_banner.JPG') no-repeat center center;
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.4;
   z-index: 1;
 }
 
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(145deg, rgba(40, 83, 118, 0.304), rgba(255, 255, 255, 0.675));
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.304), rgba(255, 255, 255, 0.675));
 }
 
 .about-wrapper {
@@ -46,7 +46,7 @@
   flex: 2;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   gap: 40px;
 }

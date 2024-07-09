@@ -16,7 +16,7 @@ const Brochure: React.FC = () => {
     return (
         <div className="">
             <button
-                className="fixed bottom-[42vh] z-[999] right-2 bg-black text-white px-4 py-2 rounded origin-bottom-right -rotate-90"
+                className="fixed bottom-[42vh] z-[999] right-2 bg-[#de0000] text-white px-4 py-2 rounded origin-bottom-right -rotate-90"
                 onClick={() => setShowModal(!showModal)}
             >
                 Download Brochure

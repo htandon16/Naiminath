@@ -42,7 +42,7 @@ const ApplyHome = () => {
       <div className="counter p-[100px_0]">
         <div className="counts">
           {counters.map((item, index) => (
-            <div className="count">
+            <div key={index} className="count">
               <div className="count-num">{item.num}</div>
               <div className="count-val">{item.val}</div>
             </div>
