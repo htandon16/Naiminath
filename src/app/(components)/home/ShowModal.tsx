@@ -54,22 +54,13 @@ const Contact: React.FC<ContactProps> = ({ closeModal }) => {
         try {
             await validationSchema.validate(formdata, { abortEarly: false });
             const pdfUrl = "/adm/NAMC_Brochure.pdf";
-            console.log("PDF URL:", pdfUrl);
-
             const link = document.createElement("a");
             link.href = pdfUrl;
             link.target = "_blank";
-            link.download = "NAMC_Brochure.pdf";
-            document.body.appendChild(link);
-
-            console.log("About to click the link");
-            link.click();
-
-            document.body.removeChild(link);
-
-            console.log(form.current);
 
             if (form.current) {
+                console.log("send");
+
                 emailjs
                     .sendForm(
                         "service_0hecvon",
@@ -79,10 +70,28 @@ const Contact: React.FC<ContactProps> = ({ closeModal }) => {
                     )
                     .then(
                         () => {
-                            console.log("SUCCESS!");
+                            link.download = "NAMC_Brochure.pdf";
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+
+                            alert("Brochure Downloaded Sucessfully")
+
+                            setformdata({
+                                name: "",
+                                email: "",
+                                number: "",
+                                marks: "",
+                            });
                         },
                         (error) => {
-                            console.log("FAILED...", error.text);
+                            alert("Failed to Download ");
+                            setformdata({
+                                name: "",
+                                email: "",
+                                number: "",
+                                marks: "",
+                            });
                         }
                     );
             }
