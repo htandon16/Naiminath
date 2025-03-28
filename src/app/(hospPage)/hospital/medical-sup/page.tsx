@@ -71,11 +71,11 @@ const MedicalSup = () => {
                   Teacher Code: <span className="font-normal text-gray-700">AYDG01139</span>
                 </p>
                 <p>
-                  Date of Joining: <span className="font-normal text-gray-700">27/12/2022</span>
+                  Date of Joining: <span className="font-normal text-gray-700">29/09/2023</span>
                 </p>
                 <p>
                   Teaching Experience:{" "}
-                  <span className="font-normal text-gray-700">13 years, Rachana Sharir</span>
+                  <span className="font-normal text-gray-700">29 years</span>
                 </p>
               </div>
 
