@@ -46,7 +46,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="w-full min-h-screen overflow-hidden">
           <GlobalContextProvider>
-            <CustomModal />
+            {/* <CustomModal /> */}
             <BannerHeader />
             {children}
             <Whatsapp />
