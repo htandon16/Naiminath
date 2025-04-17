@@ -141,11 +141,13 @@ const Faculty = () => {
         <meta name="description" content=" " />
       </head>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col px-4">
         <div className="text-3xl mt-10 text-gray-800 text-center font-sans font-bold">
           Faculty
         </div>
-        <div className="max-w-5xl mx-auto bg-white p-6 my-10 rounded-md shadow-md ring-1 ring-slate-100 overflow-x-auto">
+
+        {/* Desktop Table */}
+        <div className="hidden lg:block max-w-6xl mx-auto bg-white p-6 my-10 rounded-md shadow-md ring-1 ring-slate-100 overflow-x-auto">
           <table className="min-w-full border border-gray-300">
             <thead className="font-sans bg-gray-200 text-left">
               <tr>
@@ -177,6 +179,23 @@ const Faculty = () => {
               )}
             </tbody>
           </table>
+        </div>
+
+        {/* Mobile Card View */}
+        <div className="lg:hidden space-y-6 my-8">
+          {facList.map((dept, deptIndex) => (
+            <div key={dept.id} className="bg-white p-4 rounded-md shadow-md ring-1 ring-gray-100">
+              <div className="text-lg font-semibold mb-2 text-[#374151]">{deptIndex + 1}. {dept.name}</div>
+              <div className="divide-y divide-gray-200">
+                {dept.faculty.map((fac, idx) => (
+                  <div key={idx} className="py-2">
+                    <p className="text-gray-800 font-medium">{fac.name}</p>
+                    <p className="text-gray-500 text-sm">{fac.designation}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>
