@@ -1,161 +1,185 @@
 "use client";
 import { useGlobalContext } from "@/app/context/store";
-import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 
 const Faculty = () => {
   const { setImageSlide } = useGlobalContext();
 
   useEffect(() => {
-    console.log("Page loaded");
     setImageSlide(false);
   }, [setImageSlide]);
 
   const facList = [
     {
       id: 1,
-      name: "Kriya Sharir",
+      name: "Rachana Sharir",
       faculty: [
-        "a) Prof. Dr. Hemant Lata Gupta Professor (HOD)",
-        "b) Dr. Sandhya Singh Associate Professor",
-        "c) Dr. Edal Singh Gurjar Assistant Professor",
+        { name: "Prof. Dr. Ganesh B. Patil", designation: "Professor & HOD" },
+        { name: "Dr. Arup Ratan Das", designation: "Associate Professor" },
+        { name: "Dr. Priyanka Kumari", designation: "Assistant Professor" },
       ],
     },
     {
       id: 2,
-      name: "Rachana Sharir",
+      name: "Kriya Sharir",
       faculty: [
-        "a) Prof. Dr. Ganesh Basweshwar Patil Principal and Professor (HOD)",
-        "b) Dr. Arup Ratan Das Associate Professor",
-        "c) Dr. Priyanka Kumari Assistant Professor",
+        { name: "Prof. Dr. Hemant Lata Gupta", designation: "Professor & HOD" },
+        { name: "Dr. Sandhya Singh", designation: "Associate Professor" },
+        { name: "Dr. Edal Singh Gurjar", designation: "Assistant Professor" },
       ],
     },
     {
       id: 3,
-      name: "Samhita & Siddhant",
+      name: "Samhita Evam Siddhant",
       faculty: [
-        "a) Prof. Dr. Chandan Singh Professor (HOD)",
-        "b) Prof. Dr. Hazera Khatun Professor",
-        "c) Dr. Siddharth Jain Assistant Professor",
+        { name: "Prof. Dr. Chandan Singh", designation: "Professor & HOD" },
+        { name: "Dr. Hezra Khatun", designation: "Associate Professor" },
+        { name: "Dr. Siddharth Jain", designation: "Assistant Professor" },
       ],
     },
     {
       id: 4,
-      name: "Sanskrit",
-      faculty: ["a) Mr. Jeetendra Kumar M.A. (Sanskrit)"],
+      name: "Agad Tantra",
+      faculty: [
+        { name: "Prof. Dr. Brijesh Kumar Sharma", designation: "Professor & HOD" },
+        { name: "Dr. Sourav Pal", designation: "Associate Professor" },
+        { name: "Dr. Sitendra Kumar", designation: "Assistant Professor" },
+      ],
     },
     {
       id: 5,
-      name: "Swasthvritta evam Yoga",
+      name: "Rog Nidan",
       faculty: [
-        "a) Prof. Dr. Girish Madhukar Shende Professor (HOD)",
-        "b) Dr. Vidyadhar Balikai  Associate Professor",
-        "c) Dr. Bajrang Ramawat Assistant Professor",
+        { name: "Dr. Vandana Thakur", designation: "Associate Professor" },
+        { name: "Dr. Khisti Kumar Dubey", designation: "Assistant Professor" },
       ],
     },
     {
       id: 6,
-      name: "Rog Nidan evum Vikriti Vigyan",
+      name: "Rasa Shastra Evam Bhaishajya",
       faculty: [
-        "a) Dr. Vandana Thakur Associate Professor",
-        "b) Dr. Prayasha Rohilla Assistant Professor",
+        { name: "Prof. Dr. Veena Kale", designation: "Professor & HOD" },
+        { name: "Dr. Shristi Balbhadra", designation: "Associate Professor" },
+        { name: "Dr. Jagdish Gehlot", designation: "Assistant Professor" },
       ],
     },
     {
       id: 7,
-      name: "Agad Tantra evum Vidhi Vaidyaka",
+      name: "Swasthavritta & Yoga",
       faculty: [
-        "a) Prof. Dr. Brijesh Kumar Sharma Professor (HOD)",
-        "b) Dr. Sourav Pal Associate Professor",
-        "c) Dr. Ankit Gupta Assistant Professor",
+        { name: "Prof. Dr. Girish M. Shende", designation: "Professor & HOD" },
+        { name: "Dr. Rajat Chaturvedi", designation: "Associate Professor" },
+        { name: "Dr. Bajrang Ramawat", designation: "Assistant Professor" },
       ],
     },
     {
       id: 8,
-      name: "Rasa shastra evum Bhaishajya Kalpana",
+      name: "Dravyaguna",
       faculty: [
-        "a) Prof. Dr. Veena I. Kale Professor (HOD)",
-        "b) Dr. Shristi Balbhadra Associate Professor",
-        "c) Dr. Jagdish Gehlot Assistant Professor",
+        { name: "Prof. Dr. Rajesh Kumar Verma", designation: "Professor & HOD" },
+        { name: "Prof. Dr. Pradeep Kumar Srivastava", designation: "Professor & Principal" },
+        { name: "Dr. Virendra Singh", designation: "Assistant Professor" },
       ],
     },
     {
       id: 9,
-      name: "Dravyaguna",
+      name: "Kayachikitsa",
       faculty: [
-        "a) Prof. Dr. Pradeep Kumar Professor (HOD)",
-        "b) Prof. Dr. Rajesh Kumar Verma Professor",
-        "c) Dr. Bhavna Gupta Assistant Professor",
+        { name: "Prof. Dr. Ujja Shaila Cirgenshetti", designation: "Professor & HOD" },
+        { name: "Dr. Pravin Kumar", designation: "Associate Professor" },
+        { name: "Dr. Garima Kashyap", designation: "Assistant Professor" },
+      ],
+    },
+    {
+      id: 10,
+      name: "Prasuti Evam Stri Roga",
+      faculty: [
+        { name: "Prof. Dr. Anupama Shamsunder M", designation: "Professor & HOD" },
+        { name: "Dr. Swarnlata Kumari", designation: "Associate Professor" },
+        { name: "Dr. Vasalini Mishra", designation: "Assistant Professor" },
+      ],
+    },
+    {
+      id: 11,
+      name: "Shalya Tantra",
+      faculty: [
+        { name: "Prof. Dr. Shantamma Pawar", designation: "Professor & HOD" },
+        { name: "Dr. Dhanashaksha Bhojraj Kande", designation: "Associate Professor" },
+        { name: "Dr. Sujeet Chowdhury", designation: "Assistant Professor" },
+      ],
+    },
+    {
+      id: 12,
+      name: "Panchkarma",
+      faculty: [
+        { name: "Prof. Dr. Meenakshi Chaudhary", designation: "Professor & HOD" },
+        { name: "Dr. Anand Kumar Singh", designation: "Assistant Professor" },
+        { name: "Dr. Sujeeta Kumari Cheepa", designation: "Assistant Professor" },
+      ],
+    },
+    {
+      id: 13,
+      name: "Shalakya Tantra",
+      faculty: [
+        { name: "Prof. Dr. Gaurav Singh Rathore", designation: "Professor & HOD" },
+        { name: "Dr. Heena Bano", designation: "Assistant Professor" },
+      ],
+    },
+    {
+      id: 14,
+      name: "Shalakya – Shalya",
+      faculty: [
+        { name: "Dr. Gaurav Singh Rathore", designation: "Professor & HOD" },
       ],
     },
   ];
 
   return (
     <>
-    <head>
-    <title>Faculty - Naiminath Ayurveda</title>
-    <meta name="description" content=" "/>
-    </head>
+      <head>
+        <title>Faculty - Naiminath Ayurveda</title>
+        <meta name="description" content=" " />
+      </head>
 
-      <div className=" flex flex-col">
-      <div className=" text-3xl mt-10 text-gray-800 text-center font-sans font-bold">
-        Faculty
-      </div>
-      <div className="max-w-4xl mx-auto bg-white p-6 my-10 rounded-md shadow-md ring-1 ring-slate-100">
-        <table className="min-w-full">
-          <thead className=" font-sans">
-            <tr className="bg-gray-200">
-              <th className="py-2 px-4 border">
-                <strong>S.No.</strong>
-              </th>
-              <th className="py-2 px-4 border">
-                <strong>Subject</strong>
-              </th>
-              <th className="py-2 px-4 border">
-                <strong>Faculty</strong>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {facList.map((department, index) => (
-              <tr key={department.id} className="text-[#748182] font-sans">
-                <td className="py-2 px-2 md:px-4 border">
-                  <strong>{index + 1}.</strong>
-                </td>
-                <td className="py-2 px-2 md:px-4 border">
-                  <strong>{department.name}</strong>
-                </td>
-                <td className="py-2 px-2 md:px-4 border">
-                  <ul className="list-inside">
-                    {department.faculty.map((faculty, facultyIndex) => (
-                      <div className="my-4" key={facultyIndex}>
-                        <li>
-                          <strong>
-                            <span>{`${faculty
-                              .split(",")
-                              .slice(0, -1)
-                              .join(",")}`}</span>
-                            <span className="font-normal italic">
-                              {faculty.split(",").pop()}
-                            </span>
-                          </strong>
-                        </li>
-
-                        {facultyIndex !== department.faculty.length - 1 && (
-                          <div className="border-t border-gray-300 my-4"></div>
-                        )}
-                      </div>
-                    ))}
-                  </ul>
-                </td>
+      <div className="flex flex-col">
+        <div className="text-3xl mt-10 text-gray-800 text-center font-sans font-bold">
+          Faculty
+        </div>
+        <div className="max-w-5xl mx-auto bg-white p-6 my-10 rounded-md shadow-md ring-1 ring-slate-100 overflow-x-auto">
+          <table className="min-w-full border border-gray-300">
+            <thead className="font-sans bg-gray-200 text-left">
+              <tr>
+                <th className="py-2 px-4 border">S.No.</th>
+                <th className="py-2 px-4 border">Subject</th>
+                <th className="py-2 px-4 border">Faculty Name</th>
+                <th className="py-2 px-4 border">Designation</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {facList.map((dept, deptIndex) =>
+                dept.faculty.map((fac, facIndex) => (
+                  <tr key={`${dept.id}-${facIndex}`} className="text-[#748182] font-sans">
+                    {facIndex === 0 && (
+                      <>
+                        <td rowSpan={dept.faculty.length} className="py-2 px-4 border align-top">
+                          {deptIndex + 1}.
+                        </td>
+                        <td rowSpan={dept.faculty.length} className="py-2 px-4 border align-top font-medium">
+                          {dept.name}
+                        </td>
+                      </>
+                    )}
+                    {facIndex !== 0 && null}
+                    <td className="py-2 px-4 border">{fac.name}</td>
+                    <td className="py-2 px-4 border">{fac.designation}</td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
     </>
-  
   );
 };
 
