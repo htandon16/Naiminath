@@ -9,7 +9,7 @@ const Faculty = () => {
     setImageSlide(false);
   }, [setImageSlide]);
 
-  const facList = [
+const facList = [
     {
       id: 1,
       name: "Rachana Sharir",
