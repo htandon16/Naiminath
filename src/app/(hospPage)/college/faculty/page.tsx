@@ -33,8 +33,10 @@ const Faculty = () => {
       name: "Samhita Evam Siddhant",
       faculty: [
         { name: "Prof. Dr. Chandan Singh", designation: "Professor & HOD" },
-        { name: "Dr. Hezra Khatun", designation: "Associate Professor" },
+        { name: "Prof. Dr. Hazera Khatun", designation: "Associate Professor" },
         { name: "Dr. Siddharth Jain", designation: "Assistant Professor" },
+        { name: "Dr. Ramvir", designation: "Assistant Professor" },
+        { name: "Mr. Murari Saraswat", designation: "Assistant Professor Sanskrit" },
       ],
     },
     {
@@ -43,22 +45,22 @@ const Faculty = () => {
       faculty: [
         { name: "Prof. Dr. Brijesh Kumar Sharma", designation: "Professor & HOD" },
         { name: "Dr. Sourav Pal", designation: "Associate Professor" },
-        { name: "Dr. Sitendra Kumar", designation: "Assistant Professor" },
+        { name: "Dr. Jitendra Kumar", designation: "Assistant Professor" },
       ],
     },
     {
       id: 5,
       name: "Rog Nidan",
       faculty: [
-        { name: "Dr. Vandana Thakur", designation: "Associate Professor" },
-        { name: "Dr. Khisti Kumar Dubey", designation: "Assistant Professor" },
+        { name: "Dr.  Vandana Thakur", designation: "Associate Professor" },
+        { name: "Dr. Kshitij Kumar Dubey", designation: "Assistant Professor" },
       ],
     },
     {
       id: 6,
-      name: "Rasa Shastra Evam Bhaishajya",
+      name: "Rasa Shastra Evam Bhaishajya Kalpana",
       faculty: [
-        { name: "Prof. Dr. Veena Kale", designation: "Professor & HOD" },
+        { name: "Prof. Dr. Veena I Kale", designation: "Professor & HOD" },
         { name: "Dr. Shristi Balbhadra", designation: "Associate Professor" },
         { name: "Dr. Jagdish Gehlot", designation: "Assistant Professor" },
       ],
@@ -83,56 +85,77 @@ const Faculty = () => {
     },
     {
       id: 9,
-      name: "Kayachikitsa",
+      name: "Kayachikitsha",
       faculty: [
-        { name: "Prof. Dr. Ujja Shaila Cirgenshetti", designation: "Professor & HOD" },
+        { name: "Prof. Dr. Diyya Shaila Chrysenthia", designation: "Professor & HOD" },
         { name: "Dr. Pravin Kumar", designation: "Associate Professor" },
         { name: "Dr. Garima Kashyap", designation: "Assistant Professor" },
+        { name: "Dr. Suman Rani", designation: "Assistant Professor" },
       ],
     },
     {
       id: 10,
       name: "Prasuti Evam Stri Roga",
       faculty: [
-        { name: "Prof. Dr. Anupama Shamsunder M", designation: "Professor & HOD" },
-        { name: "Dr. Swarnlata Kumari", designation: "Associate Professor" },
-        { name: "Dr. Vasalini Mishra", designation: "Assistant Professor" },
+        { name: "Prof. Dr. Anupama Shamsunder Madhekar", designation: "Professor & HOD" },
+        { name: "Dr. Bhawana Yadav", designation: "Associate Professor" },
+        { name: "Dr. Suman Kumari", designation: "Assistant Professor" },
+        { name: "Dr. Vasihali Mishra", designation: "Assistant Professor" },
+        { name: "Dr. Ashwini Shamrao Pawar", designation: "Assistant Professor" },
       ],
     },
     {
       id: 11,
-      name: "Shalya Tantra",
+      name: "Panchkarma",
       faculty: [
-        { name: "Prof. Dr. Shantamma Pawar", designation: "Professor & HOD" },
-        { name: "Dr. Dhanashaksha Bhojraj Kande", designation: "Associate Professor" },
-        { name: "Dr. Sujeet Chowdhury", designation: "Assistant Professor" },
+        { name: "Prof. Dr. Maheshchandra Bhojraj Kandate", designation: "Professor & HOD" },
+        { name: "Dr. Subhajit Chowdhury", designation: "Associate Professor" },
+        { name: "Dr. Neelam Prakash Dubey", designation: "Assistant Professor" },
+        { name: "Dr. Hemendra Kumar Singh", designation: "Assistant Professor" },
       ],
     },
     {
       id: 12,
-      name: "Panchkarma",
+      name: "Bal Rog",
       faculty: [
-        { name: "Prof. Dr. Meenakshi Chaudhary", designation: "Professor & HOD" },
-        { name: "Dr. Anand Kumar Singh", designation: "Assistant Professor" },
-        { name: "Dr. Sujeeta Kumari Cheepa", designation: "Assistant Professor" },
+        { name: "Prof. Dr. Sanjay Kumar Chheepa", designation: "Professor & HOD" },
+        { name: "Dr. Jaipal Poonia", designation: "Assistant Professor" },
       ],
     },
     {
       id: 13,
       name: "Shalakya Tantra",
       faculty: [
-        { name: "Prof. Dr. Gaurav Singh Rathore", designation: "Professor & HOD" },
-        { name: "Dr. Heena Bano", designation: "Assistant Professor" },
+        { name: "Prof. Dr. Devendra Singh Rathore", designation: "Professor & HOD" },
+        { name: "Dr. Sandeep Anand", designation: "Associate Professor" },
+        { name: "Dr. Snehapriya P.R.", designation: "Assistant Professor" },
       ],
     },
     {
       id: 14,
-      name: "Shalakya – Shalya",
+      name: "Shalya Tantra",
       faculty: [
-        { name: "Dr. Gaurav Singh Rathore", designation: "Professor & HOD" },
+        { name: "Prof. Dr. Dheeraj Mohan", designation: "Professor & HOD" },
+        { name: "Dr. Sayantan Chakraborty", designation: "Assistant Professor" },
+        { name: "Dr. Indrabir Mishra", designation: "Assistant Professor" },
+      ],
+    },
+    {
+      id: 15,
+      name: "Biostatistics",
+      faculty: [
+        { name: "Mrs. Anjali Bhardwaj", designation: "Biostatistician" },
+      ],
+    },
+    {
+      id: 16,
+      name: "Yoga",
+      faculty: [
+        { name: "Mr. Rahul Dubey", designation: "Yoga Teacher" },
       ],
     },
   ];
+  
 
   return (
     <>
