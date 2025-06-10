@@ -106,7 +106,7 @@ const Header = ({ imageSlider }: { imageSlider: boolean }) => {
           <NavBar />
           <div className="flex md:flex-row flex-col h-fit justify-start items-center bg-[#fff500] rounded-lg px-4 py-3 gap-2 text-[14px] font-semibold">
             <FontAwesomeIcon icon={faBook} color="#a33a2e" className="" size={customSize} />
-            <a href="https://bams-admission.naiminathayurveda.org/"> <p className=" ">Admission Open</p></a>
+            <a href="https://bams-admission.vercel.app/"> <p className=" ">Admission Open</p></a>
           </div>
         </div>
       </div>

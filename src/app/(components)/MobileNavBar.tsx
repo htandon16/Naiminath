@@ -67,7 +67,7 @@ const MobileNavBar = ({
     { label: "Blog", path: "/blog" },
     { label: "Facilities", path: "/facilities" },
     { label: "Contact", path: "/contactus" },
-    { label: "Admission Open", path: "https://bams-admission.naiminathayurveda.org/" },
+    { label: "Admission Open", path: "https://bams-admission.vercel.app/" },
     // Add other links as needed
   ];
 
