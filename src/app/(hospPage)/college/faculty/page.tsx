@@ -9,7 +9,7 @@ const Faculty = () => {
     setImageSlide(false);
   }, [setImageSlide]);
 
-  const facList = [
+const facList = [
     {
       id: 1,
       name: "Rachana Sharir",
@@ -100,8 +100,7 @@ const Faculty = () => {
         { name: "Prof. Dr. Anupama Shamsunder Madhekar", designation: "Professor & HOD" },
         { name: "Dr. Bhawana Yadav", designation: "Associate Professor" },
         { name: "Dr. Suman Kumari", designation: "Assistant Professor" },
-        { name: "Dr. Vasihali Mishra", designation: "Assistant Professor" },
-        { name: "Dr. Ashwini Shamrao Pawar", designation: "Assistant Professor" },
+        { name: "Dr. Vaishali Mishra", designation: "Assistant Professor" },
       ],
     },
     {
