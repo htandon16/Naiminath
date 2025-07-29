@@ -1,69 +1,54 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
-import "./style.css";
 import Image from "next/image";
-import modalImg from "/public/images/modal.png"
+import modalImg from "/public/images/popup_images/naminathpopup.png";
 import { IoMdCloseCircleOutline } from "react-icons/io";
+// import Cookies from "js-cookie";
 
 const CustomModal = () => {
-    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
-    useEffect(() => {
-        console.log("Modal state has changed:", isModalOpen);
-        setTimeout(() => {
-            setIsModalOpen(true)
-        }, 300)
-    }, []);
+  useEffect(() => {
+    // const hasSeenPopup = Cookies.get("popup_seen");
 
-    const handleClose = () => {
-        console.log("call");
+    // if (!hasSeenPopup) {
+    //   setTimeout(() => {
+        setIsModalOpen(true);
+    //     Cookies.set("popup_seen", "true", { expires: 1 });
+    //   }, 300);
+    // }
+  }, []);
 
-        setIsModalOpen(false)
-    }
+  const handleClose = () => {
+    setIsModalOpen(false);
+  };
 
-    return (
-        // <div className={isModalOpen ? "openModal" : "closeModal"}>
-        //     <div className="modal-content">
-        //         <div className="modal-header">
+  return (
+    <div
+      className={`${
+        isModalOpen ? "flex" : "hidden"
+      } p-4 sm:p-6 rounded-lg flex-col w-full fixed top-0 left-0 right-0 bottom-0 bg-black/60 justify-center items-center z-[999]`}
+      onClick={()=>setIsModalOpen(false)}
+    >
+      <div className="relative w-full max-w-[90%] sm:max-w-[500px] aspect-[4/5] bg-white rounded-lg overflow-hidden" onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}>
+        <button
+          onClick={handleClose}
+          className="absolute top-2 right-2 bg-black p-1 rounded-full text-2xl text-white z-10"
+        >
+          <IoMdCloseCircleOutline />
+        </button>
 
-        //             <button onClick={handleClose}>X</button>
-        //         </div>
-        //         <div className="modal-body ">
-        //             <Image height={750}
-        //                 className="flex flex-row mx-auto"
-        //                 src={modalImg}
-        //                 alt=""
-        //                 loading="lazy"
-        //             />
-        //         </div>
-        //     </div>
-        // </div>
-
-
-        <div className={`${isModalOpen ? "flex" : "hidden"} p-10 rounded-lg  flex-col w-full fixed top-0 left-0 right-0 bottom-0 bg-[#ffffffa3] justify-center z-[999] max-w-[12000px]`}>
-            <div
-                className="flex flex-col relative justify-center m-auto w-full md:h-[95vh] rounded-lg md:w-[50%]  bg-white "
-            >
-                <button
-                    onClick={handleClose}
-                    className="absolute top-0 right-[50%] bg-black p-2 rounded-full text-3xl text-white font-extrabold "
-                >
-                    <IoMdCloseCircleOutline />
-                </button>
-                {/* name & email field */}
-
-                <div className="modal-body h-full w-full ">
-                    <Image height={750}
-                        className="flex flex-row"
-                        src={modalImg}
-                        alt=""
-                        loading="lazy"
-                    />
-                </div>
-            </div>
-        </div>
-    );
+        <Image
+          src={modalImg}
+          alt="Popup"
+          fill
+          className="object-contain rounded-lg"
+          priority
+        />
+      </div>
+    </div>
+  );
 };
-
 
 export default CustomModal;
