@@ -4,13 +4,13 @@ const nextConfig = {
     images: {
         domains: ['naiminathayurveda.org'],
     },
-    env: {
-        NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-    },
-    experimental: {
-        scrollRestoration: true,
-        nftTracing: true 
-    },
+    // env: {
+    //     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+    // },
+    // experimental: {
+    //     scrollRestoration: true,
+    //     nftTracing: true 
+    // },
     rewrites: async () => {
         return [
             {
