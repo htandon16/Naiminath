@@ -14,11 +14,11 @@ const PdfViewerPage: React.FC<PdfViewerPageProps> = ({ params }) => {
   const { name } = params;
   const cloudName = "dhlqc0ymy";
 
-  const pdfUrl = `https://res.cloudinary.com/${cloudName}/image/upload/v1762755923/${name}`;
+  const pdfUrl = `https://res.cloudinary.com/${cloudName}/image/upload/${name}`;
 
   const [loading, setLoading] = useState(true);
   const [zoom, setZoom] = useState(1);
-  console.log(pdfUrl);
+ 
 
   const formattedName = name
     .replace(/_/g, " ")
