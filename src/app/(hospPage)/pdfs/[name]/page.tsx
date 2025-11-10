@@ -9,7 +9,7 @@ interface PdfViewerPageProps {
   };
 }
 
-const PdfViewerPage: React.FC<PdfViewerPageProps> = ({ params }) => {
+const PDF: React.FC<PdfViewerPageProps> = ({ params }) => {
   const router = useRouter();
   const { name } = params;
   const cloudName = "dhlqc0ymy";
@@ -108,4 +108,4 @@ const PdfViewerPage: React.FC<PdfViewerPageProps> = ({ params }) => {
   );
 };
 
-export default PdfViewerPage;
+export default PDF;
